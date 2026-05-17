@@ -77,23 +77,14 @@ def generate_projects_with_claude(existing_titles):
 
     print(f"✓ API Key present (length: {len(ANTHROPIC_API_KEY)})")
 
-    prompt = f"""Generate 3 new Claude Code project ideas (beginner/intermediate/advanced). Return ONLY valid JSON without markdown or extra text.
+    prompt = f"""Generate 3 Claude Code projects. Return ONLY a Python dict, no markdown, no explanation.
 
-Existing project titles (avoid duplicates):
-{', '.join(existing_titles)}
+Existing titles: {', '.join(existing_titles)}
 
-Return this exact JSON structure (all strings must be properly escaped, single line per field):
+Return this format (Python dict syntax):
+{{"projects": [{{"level": "初階", "title": "Title", "tagline": "One-line", "description": "Short", "prompt": "Code prompt", "tip": "Why good", "category": "生產力", "duration": "20", "source_link": "url"}}, {{"level": "中階", "title": "T", "tagline": "S", "description": "D", "prompt": "P", "tip": "T", "category": "內容創作", "duration": "60", "source_link": "u"}}, {{"level": "高階", "title": "T", "tagline": "S", "description": "D", "prompt": "P", "tip": "T", "category": "程式原型", "duration": "180", "source_link": "u"}}]}}
 
-{{"projects": [{{"level": "初階", "title": "Project Title", "tagline": "One-line slogan", "description": "1-2 sentences", "prompt": "Claude Code prompt here", "tip": "Why this is good", "category": "生產力", "duration": "20", "source_link": "https://example.com"}}, {{"level": "中階", "title": "...", "tagline": "...", "description": "...", "prompt": "...", "tip": "...", "category": "內容創作", "duration": "60", "source_link": "https://example.com"}}, {{"level": "高階", "title": "...", "tagline": "...", "description": "...", "prompt": "...", "tip": "...", "category": "程式原型", "duration": "180", "source_link": "https://example.com"}}]}}
-
-Rules:
-- Beginner: 20-30 min, suitable for beginners
-- Intermediate: 45-90 min, uses Skills or advanced techniques
-- Advanced: 2-5 hours, uses Subagent/MCP/Hooks
-- NO duplicate concepts
-- Categories: 生產力, 內容創作, 資料分析, 程式原型
-- All strings must have special chars escaped
-- Return ONLY JSON, NO other text"""
+Return ONLY the dict, nothing else."""
 
     # Verify API key before sending request
     if not ANTHROPIC_API_KEY or len(ANTHROPIC_API_KEY) < 10:
@@ -152,50 +143,41 @@ Rules:
     print(f"  Content length: {len(content)}")
     print(f"  Content preview: {content[:200]}...")
 
-    # Try to extract JSON from response (handle multiple formats)
-    json_content = content.strip()
+    # Extract Python dict from response
+    import ast
+    dict_content = content.strip()
 
-    # Try markdown JSON block first
-    json_match = re.search(r'```(?:json)?\s*\n(.*?)\n```', json_content, re.DOTALL)
-    if json_match:
-        json_content = json_match.group(1).strip()
-        print(f"  ✓ Extracted JSON from markdown block")
+    # Try to find dict/list pattern
+    dict_start = dict_content.find('{')
+    dict_end = dict_content.rfind('}') + 1
+
+    if dict_start != -1 and dict_end > dict_start:
+        dict_content = dict_content[dict_start:dict_end]
+        print(f"  ✓ Extracted dict from response")
     else:
-        print(f"  ⚠️ No markdown JSON block found, trying direct parse")
-        # Try to find JSON object directly
-        json_start = json_content.find('{')
-        json_end = json_content.rfind('}') + 1
-        if json_start != -1 and json_end > json_start:
-            json_content = json_content[json_start:json_end]
-            print(f"  ✓ Extracted JSON object from text")
+        print(f"  ❌ No dict found in response")
+        print(f"  Content: {dict_content[:200]}")
+        raise ValueError("No dict structure found in Claude response")
 
-    print(f"  JSON content preview: {json_content[:100]}...")
+    print(f"  Dict content preview: {dict_content[:100]}...")
 
     try:
-        projects_data = json.loads(json_content)
-        print(f"  ✓ JSON parsed successfully")
+        # Use ast.literal_eval for safer Python dict parsing
+        projects_data = ast.literal_eval(dict_content)
+        print(f"  ✓ Dict parsed successfully with ast.literal_eval")
         return projects_data['projects']
-    except json.JSONDecodeError as e:
-        print(f"  ❌ JSON parse error: {e}")
-        print(f"  Trying to fix JSON format...")
+    except (ValueError, SyntaxError) as e:
+        print(f"  ❌ Dict parse error: {e}")
+        print(f"  Trying JSON fallback...")
 
-        # Try to fix common JSON issues
-        # Remove control characters but keep escaped ones
-        fixed_content = json_content
-
-        # Try to parse with error recovery
         try:
-            # Use ast.literal_eval as fallback for dict-like content
-            import ast
-            fixed_content = fixed_content.replace('\n', ' ').replace('\r', ' ')
-            # Normalize quotes
-            projects_data = json.loads(fixed_content)
-            print(f"  ✓ JSON fixed and parsed")
+            # Fallback to JSON
+            projects_data = json.loads(dict_content)
+            print(f"  ✓ JSON fallback succeeded")
             return projects_data['projects']
         except:
-            print(f"  ❌ Still failed to parse")
-            print(f"  Content: {json_content[:500]}")
-            # Return dummy data for now
+            print(f"  ❌ Both parsing methods failed")
+            print(f"  Content: {dict_content[:300]}")
             raise ValueError("Unable to parse Claude API response")
 
 def level_to_class(level):
