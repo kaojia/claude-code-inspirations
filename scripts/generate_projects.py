@@ -265,19 +265,23 @@ def update_html(html, new_projects, long_date, short_date):
     return html
 
 def main():
-    print("Starting daily update...")
+    try:
+        print("Starting daily update...")
 
-    long_date, short_date = get_today_date()
-    print(f"Date: {long_date} / {short_date}")
+        long_date, short_date = get_today_date()
+        print(f"Date: {long_date} / {short_date}")
 
-    # Read current HTML
-    html = read_html()
-    print("✓ Read index.html")
+        # Read current HTML
+        html = read_html()
+        print("✓ Read index.html")
+        print(f"  HTML size: {len(html)} bytes")
 
-    # Extract existing titles to avoid duplicates
-    existing_titles = re.findall(r'<h2>(.*?)</h2>', html)
-    existing_titles = [t for t in existing_titles if t not in ['今日新增', '歷史收錄']]
-    print(f"✓ Found {len(existing_titles)} existing projects")
+        # Extract existing titles to avoid duplicates
+        existing_titles = re.findall(r'<h2>(.*?)</h2>', html)
+        existing_titles = [t for t in existing_titles if t not in ['今日新增', '歷史收錄']]
+        print(f"✓ Found {len(existing_titles)} existing projects")
+        if existing_titles:
+            print(f"  Titles: {', '.join(existing_titles[:5])}{'...' if len(existing_titles) > 5 else ''}")
 
     # Generate new projects with Claude
     print("🤖 Calling Claude API to generate projects...")
@@ -295,8 +299,14 @@ def main():
         f.write(html)
     print("✓ Updated index.html")
 
-    print("\n✅ Daily update completed successfully!")
-    print(f"Projects added: {', '.join(p['title'] for p in new_projects)}")
+        print("\n✅ Daily update completed successfully!")
+        print(f"Projects added: {', '.join(p['title'] for p in new_projects)}")
+
+    except Exception as e:
+        print(f"\n❌ Error: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        exit(1)
 
 if __name__ == '__main__':
     main()
