@@ -128,7 +128,7 @@ def generate_projects_with_claude(existing_titles):
     }
 
     data = {
-        'model': 'claude-opus-4-1-20250805',
+        'model': 'claude-opus-4-6',
         'max_tokens': 2000,
         'messages': [
             {
