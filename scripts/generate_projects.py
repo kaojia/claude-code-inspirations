@@ -77,14 +77,15 @@ def generate_projects_with_claude(existing_titles):
 
     print(f"✓ API Key present (length: {len(ANTHROPIC_API_KEY)})")
 
-    prompt = f"""Generate 3 Claude Code projects. Return ONLY a Python dict, no markdown, no explanation.
+    prompt = f"""Generate 3 Claude Code project ideas.
 
-Existing titles: {', '.join(existing_titles)}
+Existing titles to avoid: {', '.join(existing_titles[:3]) if existing_titles else 'none'}
 
-Return this format (Python dict syntax):
-{{"projects": [{{"level": "初階", "title": "Title", "tagline": "One-line", "description": "Short", "prompt": "Code prompt", "tip": "Why good", "category": "生產力", "duration": "20", "source_link": "url"}}, {{"level": "中階", "title": "T", "tagline": "S", "description": "D", "prompt": "P", "tip": "T", "category": "內容創作", "duration": "60", "source_link": "u"}}, {{"level": "高階", "title": "T", "tagline": "S", "description": "D", "prompt": "P", "tip": "T", "category": "程式原型", "duration": "180", "source_link": "u"}}]}}
+Return this EXACT format - a Python dictionary with a "projects" key containing a list of 3 dictionaries:
 
-Return ONLY the dict, nothing else."""
+{{"projects": [{{"level": "初階", "title": "終端機計時器", "tagline": "CLI計時", "description": "短說明", "prompt": "提示詞", "tip": "為何好", "category": "生產力", "duration": "25", "source_link": "url"}}, {{"level": "中階", "title": "標題", "tagline": "tag", "description": "說明", "prompt": "prompt", "tip": "tip", "category": "內容創作", "duration": "60", "source_link": "link"}}, {{"level": "高階", "title": "標題", "tagline": "tag", "description": "說明", "prompt": "prompt", "tip": "tip", "category": "程式原型", "duration": "120", "source_link": "link"}}]}}
+
+IMPORTANT: Return ONLY the dictionary. No explanation, no markdown. Start with {{ and end with }}."""
 
     # Verify API key before sending request
     if not ANTHROPIC_API_KEY or len(ANTHROPIC_API_KEY) < 10:
