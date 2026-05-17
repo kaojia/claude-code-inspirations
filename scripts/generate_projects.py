@@ -283,21 +283,21 @@ def main():
         if existing_titles:
             print(f"  Titles: {', '.join(existing_titles[:5])}{'...' if len(existing_titles) > 5 else ''}")
 
-    # Generate new projects with Claude
-    print("🤖 Calling Claude API to generate projects...")
-    new_projects = generate_projects_with_claude(existing_titles)
-    print(f"✓ Generated {len(new_projects)} new projects:")
-    for p in new_projects:
-        print(f"  - {p['title']} ({p['level']})")
+        # Generate new projects with Claude
+        print("🤖 Calling Claude API to generate projects...")
+        new_projects = generate_projects_with_claude(existing_titles)
+        print(f"✓ Generated {len(new_projects)} new projects:")
+        for p in new_projects:
+            print(f"  - {p['title']} ({p['level']})")
 
-    # Update HTML
-    print("📝 Updating HTML...")
-    html = update_html(html, new_projects, long_date, short_date)
+        # Update HTML
+        print("📝 Updating HTML...")
+        html = update_html(html, new_projects, long_date, short_date)
 
-    # Write back
-    with open(HTML_FILE, 'w', encoding='utf-8') as f:
-        f.write(html)
-    print("✓ Updated index.html")
+        # Write back
+        with open(HTML_FILE, 'w', encoding='utf-8') as f:
+            f.write(html)
+        print("✓ Updated index.html")
 
         print("\n✅ Daily update completed successfully!")
         print(f"Projects added: {', '.join(p['title'] for p in new_projects)}")
