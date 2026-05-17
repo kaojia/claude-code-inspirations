@@ -192,20 +192,32 @@ def generate_projects_with_claude(existing_titles):
     print(f"  Content length: {len(content)}")
     print(f"  Content preview: {content[:200]}...")
 
-    # Extract JSON from response
-    json_match = re.search(r'```json\n(.*?)\n```', content, re.DOTALL)
+    # Try to extract JSON from response (handle multiple formats)
+    json_content = content.strip()
+
+    # Try markdown JSON block first
+    json_match = re.search(r'```(?:json)?\s*\n(.*?)\n```', json_content, re.DOTALL)
     if json_match:
-        content = json_match.group(1)
+        json_content = json_match.group(1).strip()
         print(f"  ✓ Extracted JSON from markdown block")
     else:
         print(f"  ⚠️ No markdown JSON block found, trying direct parse")
+        # Try to find JSON object directly
+        json_start = json_content.find('{')
+        json_end = json_content.rfind('}') + 1
+        if json_start != -1 and json_end > json_start:
+            json_content = json_content[json_start:json_end]
+            print(f"  ✓ Extracted JSON object from text")
+
+    print(f"  JSON content preview: {json_content[:100]}...")
 
     try:
-        projects_data = json.loads(content)
+        projects_data = json.loads(json_content)
+        print(f"  ✓ JSON parsed successfully")
         return projects_data['projects']
     except json.JSONDecodeError as e:
         print(f"  ❌ Failed to parse projects JSON: {e}")
-        print(f"  Content: {content[:500]}")
+        print(f"  Attempted content: {json_content[:300]}")
         raise
 
 def level_to_class(level):
