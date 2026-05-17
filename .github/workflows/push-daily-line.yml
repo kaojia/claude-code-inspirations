@@ -1,0 +1,125 @@
+name: Daily Push - LINE 群組通知
+
+on:
+  schedule:
+    # 每天台灣時間 9:00 AM (UTC+8) = UTC 01:00
+    - cron: '0 1 * * *'
+  workflow_dispatch:  # 允許手動觸發
+
+jobs:
+  push-to-line:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Extract today's projects
+        id: extract
+        run: |
+          python3 << 'EOF'
+          import re
+          import json
+          from datetime import datetime
+
+          # 讀取 index.html
+          with open('index.html', 'r', encoding='utf-8') as f:
+              html_content = f.read()
+
+          # 提取「今日新增」區段的卡片
+          pattern = r'<!-- ============ 今日新增 ============ -->.*?<!-- ============ 歷史收錄 ============ -->'
+          match = re.search(pattern, html_content, re.DOTALL)
+
+          projects = []
+          if match:
+              section = match.group(0)
+              # 找出所有卡片
+              cards = re.findall(r'<article class="card searchable".*?</article>', section, re.DOTALL)
+
+              for card in cards:
+                  # 提取標題
+                  title_match = re.search(r'<h2>(.*?)</h2>', card)
+                  title = title_match.group(1) if title_match else '未命名'
+
+                  # 提取難度等級
+                  level_match = re.search(r'data-level="(.*?)"', card)
+                  level = level_match.group(1) if level_match else ''
+
+                  # 提取分類
+                  category_match = re.search(r'data-category="(.*?)"', card)
+                  category = category_match.group(1).split()[0] if category_match else ''  # 取第一個分類
+
+                  # 提取描述（tagline）
+                  desc_match = re.search(r'<div class="tagline">(.*?)</div>', card)
+                  description = desc_match.group(1) if desc_match else ''
+
+                  projects.append({
+                      'title': title,
+                      'level': level,
+                      'category': category,
+                      'description': description
+                  })
+
+          print(f"✅ 找到 {len(projects)} 個今日新增的專案")
+          print(json.dumps(projects, ensure_ascii=False, indent=2))
+
+          # 輸出為 JSON 格式供後續使用
+          with open('/tmp/projects.json', 'w', encoding='utf-8') as f:
+              json.dump(projects, f, ensure_ascii=False, indent=2)
+
+      - name: Push to LINE
+        run: |
+          python3 << 'EOF'
+          import json
+          import requests
+
+          # 讀取提取的專案
+          with open('/tmp/projects.json', 'r', encoding='utf-8') as f:
+              projects = json.load(f)
+
+          if not projects:
+              print("❌ 沒有找到今日新增的專案")
+              exit(1)
+
+          print(f"📤 準備推送 {len(projects)} 個專案...")
+
+          # 準備推送請求
+          payload = {
+              "secret": "${{ secrets.PUSH_SECRET }}",
+              "projects": projects
+          }
+
+          # 推送到 LINE Bot
+          try:
+              response = requests.post(
+                  "${{ secrets.RENDER_DEPLOY_URL }}/push/daily",
+                  json=payload,
+                  timeout=30
+              )
+
+              print(f"推送狀態碼：{response.status_code}")
+              print(f"回應：{response.text}")
+
+              if response.status_code == 200:
+                  print(f"✅ 成功推送 {len(projects)} 個專案")
+              else:
+                  print("❌ 推送失敗")
+                  exit(1)
+          except Exception as e:
+              print(f"❌ 推送發生錯誤：{e}")
+              exit(1)
+          EOF
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ LINE 推送失敗"
+          echo "檢查項目："
+          echo "1. RENDER_DEPLOY_URL 是否正確？"
+          echo "2. PUSH_SECRET 是否與 Render 環境變數相同？"
+          echo "3. Render 應用是否在線？"
