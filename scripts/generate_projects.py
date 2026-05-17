@@ -77,63 +77,23 @@ def generate_projects_with_claude(existing_titles):
 
     print(f"✓ API Key present (length: {len(ANTHROPIC_API_KEY)})")
 
-    prompt = f"""你是「Claude Code 專案靈感集」的內容設計者。
+    prompt = f"""Generate 3 new Claude Code project ideas (beginner/intermediate/advanced). Return ONLY valid JSON without markdown or extra text.
 
-現在已有的專案標題清單（避免重複）：
+Existing project titles (avoid duplicates):
 {', '.join(existing_titles)}
 
-請生成 3 個新的 Claude Code 專項靈感（初階/中階/高階各一個），格式如下的 JSON：
+Return this exact JSON structure (all strings must be properly escaped, single line per field):
 
-```json
-{{
-  "projects": [
-    {{
-      "level": "初階",
-      "title": "專案標題",
-      "tagline": "一句話 slogan",
-      "description": "1-2 句話白話說明",
-      "prompt": "直接貼到 Claude Code 的起手式提示詞（含參數與結構）",
-      "tip": "為什麼是好的初階專案",
-      "category": "生產力",
-      "duration": "20",
-      "source_link": "https://example.com"
-    }},
-    {{
-      "level": "中階",
-      "title": "...",
-      "tagline": "...",
-      "description": "...",
-      "prompt": "...",
-      "tip": "...",
-      "category": "內容創作",
-      "duration": "60",
-      "source_link": "https://example.com"
-    }},
-    {{
-      "level": "高階",
-      "title": "...",
-      "tagline": "...",
-      "description": "...",
-      "prompt": "...",
-      "tip": "為什麼是好的高階專案",
-      "category": "程式原型",
-      "duration": "180",
-      "source_link": "https://example.com"
-    }}
-  ]
-}}
-```
+{{"projects": [{{"level": "初階", "title": "Project Title", "tagline": "One-line slogan", "description": "1-2 sentences", "prompt": "Claude Code prompt here", "tip": "Why this is good", "category": "生產力", "duration": "20", "source_link": "https://example.com"}}, {{"level": "中階", "title": "...", "tagline": "...", "description": "...", "prompt": "...", "tip": "...", "category": "內容創作", "duration": "60", "source_link": "https://example.com"}}, {{"level": "高階", "title": "...", "tagline": "...", "description": "...", "prompt": "...", "tip": "...", "category": "程式原型", "duration": "180", "source_link": "https://example.com"}}]}}
 
-規則：
-- 初階：20-30 分鐘、新手友善
-- 中階：45-90 分鐘、用到 Skill 或進階技巧
-- 高階：2-5 小時、用到 Subagent / MCP / Hooks
-- 不可重複既有專案概念
-- 類別涵蓋多元（生產力、內容創作、資料分析、程式原型）
-- prompt 必須是真正可複製貼上的實用 prompt
-- source_link 可以是相關參考資源或空字串
-
-請只返回 JSON，不要其他文字。"""
+Rules:
+- Beginner: 20-30 min, suitable for beginners
+- Intermediate: 45-90 min, uses Skills or advanced techniques
+- Advanced: 2-5 hours, uses Subagent/MCP/Hooks
+- NO duplicate concepts
+- Categories: 生產力, 內容創作, 資料分析, 程式原型
+- All strings must have special chars escaped
+- Return ONLY JSON, NO other text"""
 
     # Verify API key before sending request
     if not ANTHROPIC_API_KEY or len(ANTHROPIC_API_KEY) < 10:
