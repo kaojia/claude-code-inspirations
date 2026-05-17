@@ -64,6 +64,12 @@ def extract_history_count(html):
 def generate_projects_with_claude(existing_titles):
     """Call Claude API to generate 3 new projects"""
 
+    # Debug: Check API key
+    if not ANTHROPIC_API_KEY:
+        raise ValueError("ANTHROPIC_API_KEY environment variable not set!")
+
+    print(f"✓ API Key present (length: {len(ANTHROPIC_API_KEY)})")
+
     prompt = f"""你是「Claude Code 專案靈感集」的內容設計者。
 
 現在已有的專案標題清單（避免重複）：
@@ -138,7 +144,16 @@ def generate_projects_with_claude(existing_titles):
         ]
     }
 
+    print(f"  Sending request to {API_URL}")
+    print(f"  Model: claude-opus-4-6")
+    print(f"  Prompt length: {len(prompt)} characters")
+
     response = requests.post(API_URL, headers=headers, json=data)
+
+    if response.status_code != 200:
+        print(f"  Response status: {response.status_code}")
+        print(f"  Response body: {response.text[:500]}")
+
     response.raise_for_status()
 
     result = response.json()
