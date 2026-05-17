@@ -31,7 +31,7 @@
     padding: 32px 16px;
   }
   .container {
-    max-width: 920px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   header {
@@ -341,12 +341,273 @@
     padding: 0 2px;
     border-radius: 2px;
   }
+
+  /* 左側欄導覽 */
+  .layout-wrapper {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 32px;
+    height: fit-content;
+  }
+
+  .sidebar-title {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sidebar-title::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    background: var(--primary);
+    border-radius: 999px;
+  }
+
+  .sidebar-category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  /* 大分類 */
+  .sidebar-main-category {
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    overflow: hidden;
+    margin-bottom: 12px;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sidebar-main-category:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(194, 65, 12, 0.15);
+  }
+
+  .sidebar-category-header {
+    padding: 16px 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 14px;
+    user-select: none;
+    transition: background .2s;
+  }
+
+  .sidebar-category-header:hover {
+    background: var(--primary-soft);
+  }
+
+  .sidebar-main-category.active .sidebar-category-header {
+    background: linear-gradient(135deg, var(--primary-soft) 0%, #fef5e8 100%);
+    color: var(--primary);
+  }
+
+  .sidebar-category-header .arrow {
+    display: inline-flex;
+    transition: transform .3s;
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  .sidebar-main-category.expanded .sidebar-category-header .arrow {
+    transform: rotate(180deg);
+  }
+
+  .sidebar-category-count {
+    font-size: 12px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  /* 二層卡片列表 */
+  .sidebar-subcategory-list {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-top: 1px solid var(--border);
+  }
+
+  .sidebar-main-category.expanded .sidebar-subcategory-list {
+    max-height: 500px;
+  }
+
+  .sidebar-card-item {
+    padding: 10px 18px;
+    cursor: pointer;
+    transition: all .15s;
+    font-size: 13px;
+    color: var(--muted);
+    border-left: 3px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sidebar-card-item:hover {
+    background: var(--primary-soft);
+    color: var(--primary);
+    border-left-color: var(--primary);
+  }
+
+  .sidebar-card-item.active {
+    background: var(--primary-soft);
+    color: var(--primary);
+    border-left-color: var(--primary);
+    font-weight: 600;
+  }
+
+  .sidebar-category-item {
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 2px solid var(--border);
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  .sidebar-category-item:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(194, 65, 12, 0.15);
+    transform: translateY(-2px);
+  }
+
+  .sidebar-category-item.active {
+    background: linear-gradient(135deg, var(--primary-soft) 0%, #fef5e8 100%);
+    border-color: var(--primary);
+    color: var(--primary);
+    font-weight: 600;
+    box-shadow: 0 4px 16px rgba(194, 65, 12, 0.2);
+  }
+
+  .category-label {
+    flex: 1;
+  }
+
+  .category-count {
+    font-size: 12px;
+    background: var(--primary-soft);
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-left: 8px;
+  }
+
+  .sidebar-category-item.active .category-count {
+    background: rgba(194, 65, 12, 0.2);
+    color: var(--primary);
+  }
+
+  /* 行動版導覽（標籤式） */
+  .category-tabs {
+    display: none;
+  }
+
+  /* 響應式設計 */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px 12px;
+    }
+
+    .layout-wrapper {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .sidebar {
+      position: static;
+      top: auto;
+    }
+
+    .category-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .category-tabs .sidebar-category-item {
+      padding: 8px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      font-size: 13px;
+      margin-bottom: 0;
+      background: var(--card-bg);
+      box-shadow: none;
+    }
+
+    .category-tabs .sidebar-category-item:hover {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+      transform: none;
+      box-shadow: 0 2px 8px rgba(194, 65, 12, 0.1);
+    }
+
+    .category-tabs .sidebar-category-item.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      box-shadow: 0 2px 8px rgba(194, 65, 12, 0.2);
+    }
+
+    .category-tabs .sidebar-category-item.active .category-count {
+      background: rgba(255, 255, 255, 0.3);
+      color: #fff;
+    }
+
+    .sidebar {
+      display: none;
+    }
+  }
 </style>
 </head>
 <body>
 <div class="container">
 
-  <header>
+  <!-- 行動版分類標籤導覽 -->
+  <div class="category-tabs" id="categoryTabs"></div>
+
+  <div class="layout-wrapper">
+    <!-- 左側欄 -->
+    <aside class="sidebar">
+      <div class="sidebar-title">分類</div>
+      <div class="sidebar-category-list" id="sidebarCategories"></div>
+    </aside>
+
+    <!-- 主要內容 -->
+    <div class="main-content">
+      <header>
     <div class="eyebrow">Inspiration Library</div>
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
@@ -802,6 +1063,8 @@
     <p><strong>初學者通用 3 心法：</strong>① 給上下文（檔案、範例、目的）勝過給指令 · ② 大任務先拆小步驟、一步一步確認 · ③ 卡住時用「請反問我 3 個問題」逼 Claude 釐清需求</p>
     <p style="margin-top:12px">Claude Code 專案靈感集 · 每日更新</p>
   </footer>
+    </div>
+  </div>
 
 </div>
 
@@ -814,9 +1077,164 @@
   const totalCount = document.getElementById('totalCount');
   const chips = document.querySelectorAll('.filter-chip');
   const cards = document.querySelectorAll('.card.searchable');
+  const sidebarCategoriesContainer = document.getElementById('sidebarCategories');
+  const categoryTabsContainer = document.getElementById('categoryTabs');
 
   // 設定總數
   totalCount.textContent = cards.length;
+
+  // 提取並計算分類
+  const categories = new Set();
+  const categoryCounts = {};
+  cards.forEach(card => {
+    const cardCategories = (card.dataset.category || '').split(' ').filter(c => c.trim());
+    cardCategories.forEach(cat => {
+      categories.add(cat);
+      categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+    });
+  });
+
+  const categoryList = ['生產力', '內容創作', '資料分析', '程式原型'].filter(cat => categories.has(cat));
+
+  // 生成左側欄和行動版標籤
+  const renderCategories = () => {
+    let sidebarHTML = '';
+    let tabsHTML = '';
+
+    // "所有分類" 項目
+    const allCount = cards.length;
+    sidebarHTML += `<button class="sidebar-category-item active" data-filter="all">
+      <span class="category-label">所有分類</span>
+      <span class="category-count">${allCount}</span>
+    </button>`;
+
+    tabsHTML += `<button class="sidebar-category-item active" data-filter="all">
+      <span class="category-label">所有</span>
+      <span class="category-count">${allCount}</span>
+    </button>`;
+
+    // 建立分類 -> 卡片標題的對應表
+    const categoryCardMap = {};
+    categoryList.forEach(cat => {
+      categoryCardMap[cat] = new Set();
+    });
+
+    cards.forEach(card => {
+      const cardCategories = (card.dataset.category || '').split(' ').filter(c => c.trim());
+      const cardTitle = card.querySelector('h2')?.textContent || 'Untitled';
+      cardCategories.forEach(cat => {
+        if (categoryCardMap[cat]) {
+          categoryCardMap[cat].add(cardTitle);
+        }
+      });
+    });
+
+    // 生成各分類的大分類 + 二層結構
+    categoryList.forEach(cat => {
+      const count = categoryCounts[cat] || 0;
+      const cardTitles = Array.from(categoryCardMap[cat]);
+
+      sidebarHTML += `
+        <div class="sidebar-main-category expanded" data-category="${cat}">
+          <div class="sidebar-category-header">
+            <div>
+              <span class="category-label">${cat}</span>
+              <span class="sidebar-category-count">${count}</span>
+            </div>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="sidebar-subcategory-list">
+            ${cardTitles.map(title => `
+              <div class="sidebar-card-item" data-card-title="${title}">
+                ${title}
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+
+      // 行動版只保留大分類
+      tabsHTML += `<button class="sidebar-category-item" data-filter="${cat}">
+        <span class="category-label">${cat}</span>
+        <span class="category-count">${count}</span>
+      </button>`;
+    });
+
+    sidebarCategoriesContainer.innerHTML = sidebarHTML;
+    categoryTabsContainer.innerHTML = tabsHTML;
+
+    // 為新渲染的按鈕和元素添加事件監聽
+    attachCategoryEventListeners();
+    attachSubcategoryEventListeners();
+  };
+
+  // 附加分類按鈕事件監聽
+  const attachCategoryEventListeners = () => {
+    const sidebarAndTabButtons = document.querySelectorAll('.sidebar-category-item, .category-tabs .sidebar-category-item');
+    sidebarAndTabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        activeFilter = btn.dataset.filter;
+
+        // 更新所有按鈕的 active 狀態
+        document.querySelectorAll('.filter-chip, .sidebar-category-item, .category-tabs .sidebar-category-item').forEach(b => {
+          b.classList.remove('active');
+        });
+
+        // 找到對應的 chip 按鈕並激活
+        const correspondingChip = Array.from(chips).find(c => c.dataset.filter === activeFilter);
+        if (correspondingChip) {
+          correspondingChip.classList.add('active');
+        }
+
+        // 激活對應的側邊欄和標籤按鈕
+        document.querySelectorAll('.sidebar-category-item, .category-tabs .sidebar-category-item').forEach(b => {
+          if (b.dataset.filter === activeFilter) {
+            b.classList.add('active');
+          }
+        });
+
+        // 清除卡片項目的激活狀態
+        document.querySelectorAll('.sidebar-card-item').forEach(item => {
+          item.classList.remove('active');
+        });
+
+        applyFilter();
+      });
+    });
+
+    // 大分類的展開/收起
+    document.querySelectorAll('.sidebar-category-header').forEach(header => {
+      header.addEventListener('click', (e) => {
+        e.preventDefault();
+        const mainCategory = header.closest('.sidebar-main-category');
+        mainCategory.classList.toggle('expanded');
+      });
+    });
+  };
+
+  // 附加二層卡片項目事件監聽
+  const attachSubcategoryEventListeners = () => {
+    document.querySelectorAll('.sidebar-card-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const cardTitle = item.dataset.cardTitle;
+
+        // 清除所有 active 狀態
+        document.querySelectorAll('.filter-chip, .sidebar-category-item, .category-tabs .sidebar-category-item, .sidebar-card-item').forEach(b => {
+          b.classList.remove('active');
+        });
+
+        // 激活該卡片項目
+        item.classList.add('active');
+
+        // 清除全局分類篩選，使用卡片標題搜尋
+        activeFilter = 'all';
+        searchInput.value = cardTitle;
+        applyFilter();
+      });
+    });
+  };
+
+  renderCategories();
 
   let activeFilter = 'all';
 
@@ -900,6 +1318,12 @@
       chips.forEach(c => c.classList.remove('active'));
       chip.classList.add('active');
       activeFilter = chip.dataset.filter;
+
+      // 同步更新側邊欄和標籤的 active 狀態
+      document.querySelectorAll('.sidebar-category-item, .category-tabs .sidebar-category-item').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.filter === activeFilter);
+      });
+
       applyFilter();
     });
   });
