@@ -13,6 +13,13 @@ ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY')
 HTML_FILE = 'index.html'
 API_URL = 'https://api.anthropic.com/v1/messages'
 
+# Debug: Print API Key status at module load time
+print(f"[DEBUG] ANTHROPIC_API_KEY environment variable:")
+if ANTHROPIC_API_KEY:
+    print(f"  ✓ Set (length: {len(ANTHROPIC_API_KEY)}, starts with: {ANTHROPIC_API_KEY[:20]}...)")
+else:
+    print(f"  ✗ NOT SET or empty")
+
 def get_today_date():
     """Get today's date in formats needed"""
     today = datetime.now()
@@ -128,9 +135,14 @@ def generate_projects_with_claude(existing_titles):
 
 請只返回 JSON，不要其他文字。"""
 
+    # Verify API key before sending request
+    if not ANTHROPIC_API_KEY or len(ANTHROPIC_API_KEY) < 10:
+        raise ValueError(f"Invalid ANTHROPIC_API_KEY: {ANTHROPIC_API_KEY}")
+
     headers = {
         'x-api-key': ANTHROPIC_API_KEY,
-        'content-type': 'application/json'
+        'content-type': 'application/json',
+        'anthropic-version': '2023-06-01'
     }
 
     data = {
@@ -146,6 +158,8 @@ def generate_projects_with_claude(existing_titles):
 
     print(f"  Sending request to {API_URL}")
     print(f"  Model: claude-opus-4-6")
+    print(f"  Headers set: {list(headers.keys())}")
+    print(f"  API Key length: {len(ANTHROPIC_API_KEY)}")
     print(f"  Prompt length: {len(prompt)} characters")
 
     response = requests.post(API_URL, headers=headers, json=data)
