@@ -164,13 +164,21 @@ def generate_projects_with_claude(existing_titles):
 
     response = requests.post(API_URL, headers=headers, json=data)
 
+    print(f"  Response status: {response.status_code}")
+    print(f"  Response headers: {dict(response.headers)}")
+
     if response.status_code != 200:
-        print(f"  Response status: {response.status_code}")
+        print(f"  ❌ Error response body (first 1000 chars):")
+        print(f"  {response.text[:1000]}")
+        response.raise_for_status()
+
+    try:
+        result = response.json()
+        print(f"  ✓ Response parsed successfully")
+    except Exception as e:
+        print(f"  ❌ Failed to parse JSON: {e}")
         print(f"  Response body: {response.text[:500]}")
-
-    response.raise_for_status()
-
-    result = response.json()
+        raise
     content = result['content'][0]['text']
 
     # Extract JSON from response
