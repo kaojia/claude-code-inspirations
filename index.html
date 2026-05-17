@@ -352,7 +352,7 @@
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
       <span>📅 最後更新：2026/05/17</span>
-      <span>📚 累計收錄：<span id="totalCount">8</span> 個專案</span>
+      <span>📚 累計收錄：<span id="totalCount">11</span> 個專案</span>
     </div>
   </header>
 
@@ -380,7 +380,7 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 8 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 11 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
@@ -394,11 +394,150 @@
     <span class="count">3 個新專案</span>
   </h3>
 
-  <!-- 今日 1 - 初階 -->
-  <article class="card searchable" data-level="初階" data-category="生產力 內容創作" data-searchtext="閃卡 抽認卡 anki flashcard pdf 學習 知識卡片 整理 筆記">
+  <!-- 新增 1 - 初階 -->
+  <article class="card searchable" data-level="初階" data-category="生產力 內容創作" data-searchtext="日記 日誌 journal 日記本 情緒 心情 反思 日常記錄 習慣追蹤 insights 分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">25 分鐘</span>
+      <span class="date-tag">5/17</span>
+    </div>
+    <h2>個人 AI 日誌分析助理</h2>
+    <div class="tagline">每天寫幾行日記，Claude 自動找出情緒模式、認知偏見、隱藏的習慣</div>
+
+    <p>建立一個簡單的 markdown 日誌資料夾，每天寫三兩行今天發生了什麼、心情如何。請 Claude Code 定期分析這些日記（每週或每月一次），幫你找出「什麼情況下容易感到沮喪」、「最有成就感的任務類型」、「重複出現的應對方式」。這不只是情緒追蹤，而是用 AI 做自我認知的工具。</p>
+
+    <div class="prompt-box">幫我建立一個個人日誌分析系統：
+
+資料夾結構：
+- journal/
+  - entries/ 每天一個 YYYY-MM-DD.md 檔案
+  - analysis/ 存分析結果
+
+任務：
+1. 建立 journal/entries/2026-05-17.md 的樣板（3-5 行日記 + 一個當下情緒詞描述）
+2. 寫一個分析腳本，每週執行一次（週日晚上），用 Claude 分析上週的日記
+3. 產出週報：
+   - 情緒趨勢（七天的心情曲線）
+   - 出現最多的主題詞
+   - 隱藏的模式或洞察（例如「你在專案進行到中段時最容易焦慮」）
+4. 全部存成 markdown，有圖表的用 mermaid 畫</div>
+
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      涉及「定期讀多個檔案、分析內容、產出報告」三個實用技能，而且做完直接改善生活。讓初學者體驗到 Claude Code 不只是寫代碼，更是做「有温度」的個人助理。
+    </div>
+    <a class="source-link" href="https://www.linkedin.com/pulse/how-use-claude-code-personal-productivity-2026-andrew-cohen" target="_blank" rel="noopener">參考案例：用 AI 做自我認知</a>
+  </article>
+
+  <!-- 新增 2 - 中階 -->
+  <article class="card searchable" data-level="中階" data-category="內容創作 生產力" data-searchtext="播客 podcast 音頻 transcript 逐字稿 筆記 youtube 影片 自動 轉錄">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">5/17</span>
+    </div>
+    <h2>播客 / YouTube 轉逐字稿智慧筆記</h2>
+    <div class="tagline">丟進音檔或 YouTube 連結，一鍵產出逐字稿 + 時間戳 + 重點摘要 + 可行動筆記</div>
+
+    <p>給 Claude Code 一個 mp3、m4a、或 YouTube 連結，它會：①自動轉錄成逐字稿（附時間戳），②抽取關鍵概念和數據，③產生「如果我實作這個想法會怎樣」的行動筆記，④做成 Notion / Obsidian 可直接導入的格式。適合想建立「聽覺學習庫」、快速消化產業 Podcast 的人。</p>
+
+    <div class="prompt-box">幫我建立播客筆記自動化工具：
+
+輸入：YouTube 連結或音檔 URL
+
+產出結構：
+1. 逐字稿.md
+   - 按時間戳分段
+   - 說話人標記（如果有多人）
+
+2. 摘要.md
+   - 一句話核心
+   - 重點 3-5 條（bullet）
+   - 引用的數據或研究
+
+3. 行動筆記.md
+   - 「這個對我的影響」：聽眾容易忽略的機會
+   - 「下一步」：我可以立即嘗試什麼
+   - 「延伸問題」：引發我深入思考的疑問
+
+4. 結構化資料.json
+   - 方便匯入 Obsidian、Notion、Readwise
+
+示範：丟一個最近的科技 podcast 給你分析一遍</div>
+
+    <div class="tip">
+      <span class="tip-label">中階重點：工作流設計 + API 整合</span>
+      結合音頻轉錄 API（Deepgram、Whisper）、內容分析、多格式輸出——這是「把現有工具串起來做實用產品」的典型。完成後可以自動化你的整個學習流程。
+    </div>
+    <a class="source-link" href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener">參考教學：podcast 自動化</a>
+  </article>
+
+  <!-- 新增 3 - 高階 -->
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="api 整合 多服務 串接 webhooks automation zap slack notion github automation platform orchestration">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">4-6 小時</span>
+      <span class="date-tag">5/17</span>
+    </div>
+    <h2>個人 AI 自動化樞紐（本地伺服器）</h2>
+    <div class="tagline">用 Node.js / Python 建本地伺服器，讓 Claude 協調你所有的工具：Slack、GitHub、Notion、Gmail、Google Calendar</div>
+
+    <p>高階玩法：不是用 Zapier / Make，而是自己寫一個輕量本地伺服器（監聽 webhook），它接收來自各個服務的事件（「Slack 有新訊息」、「GitHub 有 PR」、「Google Calendar 會議快開始」），交給 Claude 研判「我該怎麼響應」，然後 Claude 調用相應的 API 動作。整個流程由 Claude 編排、決策、執行——這是真正的「無代碼編程」。</p>
+
+    <div class="prompt-box">幫我建立一個個人自動化伺服器：
+
+技術棧：
+- Node.js + Express（或 Python FastAPI）
+- Webhook 監聽器（監聽 Slack、GitHub、Google Calendar）
+- Claude API 集成
+- 目標服務：Slack、Gmail、Notion、Google Calendar、GitHub
+
+核心流程：
+1. Slack 收到 @claude-hub [任務描述]
+   → 轉傳給 Claude（提供上下文：最近的 GitHub PRs、待做事項、今天的行事曆）
+   → Claude 決定需要執行什麼行動
+   → 回覆在 Slack
+
+2. GitHub 有新 PR
+   → 摘要 changes，問 Claude「這值得我立即看嗎」
+   → 如果重要，在 Slack 通知我 + 建立 Notion 任務卡
+
+3. 明天有重要會議（從 Calendar）
+   → Claude 檢查相關的 GitHub issues、Slack 討論、Notion 筆記
+   → 產生「會議前準備清單」並寄給我
+
+請建立基礎伺服器架構 + Slack 對接示範</div>
+
+    <div class="tip">
+      <span class="tip-label">為什麼這是高階專案</span>
+      涉及多 API 串接、webhook 設計、智能決策流程、狀態管理——真正的「全棧自動化」。完成後你的 Claude 不只是助理，而是所有工具的「交通警察」，只要告訴它目標，它自動協調一切。
+    </div>
+    <a class="source-link" href="https://platform.openai.com/docs/guides/function-calling" target="_blank" rel="noopener">參考：Function Calling 模式</a>
+  </article>
+
+
+
+
+  <!-- ============ 歷史收錄 ============ -->
+  <h3 class="section-title archive">
+    <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+
+  <!-- 移至歷史 1 - 初階 -->
+  <article class="card searchable" data-level="初階" data-category="生產力 內容創作" data-searchtext="閃卡 抽認卡 anki flashcard pdf 學習 知識卡片 整理 筆記">
+    <div class="card-header">
+      <span class="badge">6</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -421,16 +560,15 @@
 
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓你親身體驗 Claude「閱讀理解 + 整理輸出」的能力，而且做完馬上能用在自己的學習上——這是養成「用 AI 解決真實問題」習慣的關鍵第一步。
+      讓你親身體驗 Claude「閱讀理解 +整理輸出」的能力，而且做完馬上能用在自己的學習上——這是養成「用 AI 解決真實問題」習慣的關鍵第一步。
     </div>
     <a class="source-link" href="https://support.claude.com/en/articles/9529781-examples-of-projects-you-can-create" target="_blank" rel="noopener">參考 Claude 官方專案範例</a>
   </article>
 
-  <!-- 今日 2 - 中階 -->
+  <!-- 移至歷史 2 - 中階 -->
   <article class="card searchable" data-level="中階" data-category="生產力" data-searchtext="email 信箱 gmail 收件匣 自動回覆 分類 草稿 信件 slash command skill">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">7</span>
       <span class="tag level-2">中階</span>
       <span class="tag">生產力</span>
       <span class="tag time">90 分鐘</span>
@@ -464,11 +602,10 @@
     <a class="source-link" href="https://supalaunch.com/blog/claude-code-skills-tutorial-custom-slash-commands-and-automations-guide" target="_blank" rel="noopener">參考 Skill 教學</a>
   </article>
 
-  <!-- 今日 3 - 高階 -->
+  <!-- 移至歷史 3 - 高階 -->
   <article class="card searchable" data-level="高階" data-category="生產力 內容創作 程式原型" data-searchtext="subagent multi-agent 多 agent 團隊 編排 orchestration 研究員 校稿 翻譯 hooks">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">8</span>
       <span class="tag level-3">高階</span>
       <span class="tag">多 Agent</span>
       <span class="tag time">3-5 小時</span>
@@ -512,13 +649,6 @@
     </div>
     <a class="source-link" href="https://code.claude.com/docs/en/sub-agents" target="_blank" rel="noopener">參考 Subagent 官方文件</a>
   </article>
-
-  <!-- ============ 歷史收錄 ============ -->
-  <h3 class="section-title archive">
-    <span class="dot"></span>
-    歷史收錄
-    <span class="count">5 個專案</span>
-  </h3>
 
   <!-- 歷史 1 -->
   <article class="card searchable" data-level="初階" data-category="程式原型" data-searchtext="作品集 portfolio website 個人網站 履歷 HTML CSS netlify 部署">
