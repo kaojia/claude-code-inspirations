@@ -6,9 +6,9 @@
 
 啟用 GitHub Pages 後，可在以下網址瀏覽：
 
-```
+
 https://kaojia.github.io/claude-code-inspirations/
-```
+
 
 ## 內容分類
 
