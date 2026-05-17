@@ -179,15 +179,34 @@ def generate_projects_with_claude(existing_titles):
         print(f"  ❌ Failed to parse JSON: {e}")
         print(f"  Response body: {response.text[:500]}")
         raise
+
+    print(f"  Response keys: {list(result.keys())}")
+
+    # Extract content from response
+    if 'content' not in result:
+        print(f"  ❌ No 'content' in response!")
+        print(f"  Full response: {result}")
+        raise ValueError("No 'content' in API response")
+
     content = result['content'][0]['text']
+    print(f"  Content length: {len(content)}")
+    print(f"  Content preview: {content[:200]}...")
 
     # Extract JSON from response
     json_match = re.search(r'```json\n(.*?)\n```', content, re.DOTALL)
     if json_match:
         content = json_match.group(1)
+        print(f"  ✓ Extracted JSON from markdown block")
+    else:
+        print(f"  ⚠️ No markdown JSON block found, trying direct parse")
 
-    projects_data = json.loads(content)
-    return projects_data['projects']
+    try:
+        projects_data = json.loads(content)
+        return projects_data['projects']
+    except json.JSONDecodeError as e:
+        print(f"  ❌ Failed to parse projects JSON: {e}")
+        print(f"  Content: {content[:500]}")
+        raise
 
 def level_to_class(level):
     """Convert level name to CSS class"""
