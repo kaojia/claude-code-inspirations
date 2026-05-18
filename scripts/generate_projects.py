@@ -46,7 +46,6 @@ def extract_today_cards(html):
         print("  ⚠️ Could not find 今日新增 section in HTML")
         return []
 
-
     section = match.group(0)
     # Extract all article tags
     cards = re.findall(r'<article class="card searchable".*?</article>', section, re.DOTALL)
@@ -80,21 +79,27 @@ def generate_projects_with_claude(existing_titles):
 
     print(f"✓ API Key present (length: {len(ANTHROPIC_API_KEY)})")
 
-    prompt = f"""Generate 3 Claude Code project ideas in Traditional Chinese.
+    prompt = f"""Generate 3 Claude Code project ideas in Traditional Chinese. These should be creative, practical, and detailed.
 
-Existing titles to avoid: {', '.join(existing_titles[:3]) if existing_titles else 'none'}
+Existing titles to avoid: {', '.join(existing_titles[:5]) if existing_titles else 'none'}
 
-Return a JSON object with a "projects" key containing exactly 3 objects:
+Return a JSON object with a "projects" key containing exactly 3 objects. Here is the EXACT format with an example showing the expected level of detail:
 
-{{"projects": [{{"level": "初階", "title": "終端機計時器", "tagline": "CLI計時", "description": "用 Claude Code 建立一個簡單的 CLI 倒數計時工具", "prompt": "請幫我用 Node.js 建立一個終端機計時器", "tip": "入門友善，熟悉 CLI 開發流程", "category": "生產力", "duration": "25", "source_link": "https://docs.anthropic.com"}}, {{"level": "中階", "title": "標題", "tagline": "簡短標語", "description": "一句話說明", "prompt": "起手式提示詞", "tip": "為何適合此難度", "category": "內容創作", "duration": "60", "source_link": "https://example.com"}}, {{"level": "高階", "title": "標題", "tagline": "簡短標語", "description": "一句話說明", "prompt": "起手式提示詞", "tip": "為何適合此難度", "category": "程式原型", "duration": "120", "source_link": "https://example.com"}}]}}
+{{"projects": [{{"level": "初階", "title": "個人知識閃卡產生器", "tagline": "把任何文章/PDF 丟進去，自動產出可印或匯入 Anki 的學習卡片", "description": "給 Claude Code 一份 PDF、教科書章節、會議簡報，請它幫你抽出核心概念，產出「正面問題／背面答案」的閃卡，並輸出成 CSV（可匯入 Anki）+ 可印的 PDF 兩種格式。準備證照考試、學新領域、做讀書會的人特別好用。", "prompt": "這份 PDF [拖曳檔案] 是我要學的內容。請幫我：1. 抽出 20 個最值得記住的概念 2. 每個概念做成一張閃卡：正面一個問題、背面精簡答案+記憶口訣 3. 輸出 flashcards.csv（Anki 匯入格式）和 flashcards.pdf（A4 印 6 張卡）", "tip": "讓初學者體驗 Claude「閱讀理解＋整理輸出」的能力，做完馬上能用在自己的學習上", "category": "生產力", "duration": "25", "source_link": "https://docs.anthropic.com"}}, {{"level": "中階", "title": "專案標題", "tagline": "一句話描述這個工具做什麼、給誰用", "description": "2-3 句話詳細說明這個專案的功能、使用場景、產出物。要讓讀者看完就知道做出來長什麼樣。", "prompt": "詳細的起手式提示詞，包含具體步驟、資料夾結構、預期產出格式等，讓使用者可以直接複製貼到 Claude Code 使用", "tip": "說明為什麼這個難度適合中階，會學到什麼技能", "category": "內容創作", "duration": "60", "source_link": "https://example.com"}}, {{"level": "高階", "title": "專案標題", "tagline": "一句話描述", "description": "詳細說明", "prompt": "詳細提示詞", "tip": "為何適合高階", "category": "程式原型", "duration": "120", "source_link": "https://example.com"}}]}}
 
 STRICT RULES:
 1. Return ONLY valid JSON. No explanation, no markdown code blocks.
 2. Start with {{ and end with }}
-3. Keep fields concise: title ≤ 8 chars, tagline ≤ 6 chars, description ≤ 40 chars, prompt ≤ 60 chars, tip ≤ 30 chars
+3. IMPORTANT - Content must be DETAILED and RICH:
+   - title: 6-12 chars, creative and specific
+   - tagline: 20-50 chars, one sentence describing what it does
+   - description: 80-200 chars, 2-3 sentences with use cases and output
+   - prompt: 150-400 chars, detailed step-by-step instructions users can copy-paste
+   - tip: 40-80 chars, explain why this difficulty level is appropriate
 4. category must be one of: 生產力, 內容創作, 資料分析, 程式原型
-5. source_link must be a valid https URL
-6. All text in Traditional Chinese"""
+5. source_link must be a valid https URL (use real documentation links)
+6. All text in Traditional Chinese
+7. Make each project unique, creative, and immediately actionable"""
 
     # Verify API key before sending request
     if not ANTHROPIC_API_KEY or len(ANTHROPIC_API_KEY) < 10:
