@@ -46,6 +46,7 @@ def extract_today_cards(html):
         print("  ⚠️ Could not find 今日新增 section in HTML")
         return []
 
+
     section = match.group(0)
     # Extract all article tags
     cards = re.findall(r'<article class="card searchable".*?</article>', section, re.DOTALL)
@@ -106,7 +107,7 @@ STRICT RULES:
     }
 
     data = {
-        'model': 'claude-sonnet-4-6',
+        'model': 'claude-opus-4-6',
         'max_tokens': 4096,
         'messages': [
             {
