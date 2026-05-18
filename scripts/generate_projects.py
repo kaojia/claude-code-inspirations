@@ -37,11 +37,13 @@ def read_html():
 
 def extract_today_cards(html):
     """Extract today's 3 cards from 「今日新增」section"""
-    # Find the section between <!-- ============ 今日新增 ============ --> and <!-- ============ 歷史收錄 ============ -->
-    pattern = r'<!-- ============ 今日新增 ============ -->.*?<!-- ============ 歷史收錄 ============ -->'
+    # Find the section between 今日新增 comment and 歷史收錄 comment
+    # Note: comment may contain date like (5/17)
+    pattern = r'<!-- ============ 今日新增.*?============ -->.*?<!-- ============ 歷史收錄 ============ -->'
     match = re.search(pattern, html, re.DOTALL)
 
     if not match:
+        print("  ⚠️ Could not find 今日新增 section in HTML")
         return []
 
     section = match.group(0)
@@ -256,15 +258,21 @@ def update_html(html, new_projects, long_date, short_date):
         new_cards_html += card_html + "\n"
 
     # 5. Replace today's section
-    # Find today's cards and replace them with new ones
-    today_pattern = r'(<!-- ============ 今日新增 ============ -->\s*<h2>今日新增.*?</h2>).*?(<!-- ============ 歷史收錄 ============ -->)'
+    # The actual HTML structure uses:
+    # <!-- ============ 今日新增 (date) ============ -->
+    # <h3 class="section-title">...</h3>
+    # [cards]
+    # <!-- ============ 歷史收錄 ============ -->
+    today_pattern = r'(<!-- ============ 今日新增.*?============ -->\s*<h3 class="section-title">.*?</h3>).*?(<!-- ============ 歷史收錄 ============ -->)'
     today_replacement = r'\1\n' + new_cards_html + '\n  \2'
 
     html = re.sub(today_pattern, today_replacement, html, flags=re.DOTALL)
 
     # 6. Update history section title and add new history cards
-    history_pattern = r'(<!-- ============ 歷史收錄 ============ -->\s*<h2>歷史收錄</h2>)\s*(.*?)(\n  </section>)'
-    history_replacement = r'\1\n' + history_cards_html + r'\2\3'
+    # Actual structure: <!-- ============ 歷史收錄 ============ -->
+    #                   <h3 class="section-title archive">...</h3>
+    history_pattern = r'(<!-- ============ 歷史收錄 ============ -->\s*<h3 class="section-title archive">.*?</h3>)\s*'
+    history_replacement = r'\1\n' + history_cards_html
 
     html = re.sub(history_pattern, history_replacement, html, flags=re.DOTALL)
 
@@ -277,24 +285,32 @@ def update_html(html, new_projects, long_date, short_date):
     )
 
     # Update total count
-    new_count = int(re.search(r'<span id="totalCount">(\d+)</span>', html).group(1)) + 3
+    total_match = re.search(r'<span id="totalCount">(\d+)</span>', html)
+    if total_match:
+        new_count = int(total_match.group(1)) + 3
+        html = re.sub(
+            r'<span id="totalCount">\d+</span>',
+            f'<span id="totalCount">{new_count}</span>',
+            html
+        )
+        # Update results count
+        html = re.sub(
+            r'顯示全部 \d+ 個專案',
+            f'顯示全部 {new_count} 個專案',
+            html
+        )
+
+    # 8. Update today's section comment and title
+    # Update comment: <!-- ============ 今日新增 (old) ============ -->
     html = re.sub(
-        r'<span id="totalCount">\d+</span>',
-        f'<span id="totalCount">{new_count}</span>',
+        r'<!-- ============ 今日新增.*?============ -->',
+        f'<!-- ============ 今日新增 ({short_date}) ============ -->',
         html
     )
-
-    # Update results count
+    # Update the h3 title text
     html = re.sub(
-        r'顯示全部 \d+ 個專案',
-        f'顯示全部 {new_count} 個專案',
-        html
-    )
-
-    # 8. Update today's section title
-    html = re.sub(
-        r'<h2>今日新增.*?</h2>',
-        f'<h2>今日新增 · {long_date}</h2>',
+        r'(今日新增 ·) [\d/]+',
+        f'\\1 {long_date}',
         html
     )
 
