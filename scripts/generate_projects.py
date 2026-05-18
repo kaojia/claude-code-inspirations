@@ -77,15 +77,21 @@ def generate_projects_with_claude(existing_titles):
 
     print(f"✓ API Key present (length: {len(ANTHROPIC_API_KEY)})")
 
-    prompt = f"""Generate 3 Claude Code project ideas.
+    prompt = f"""Generate 3 Claude Code project ideas in Traditional Chinese.
 
 Existing titles to avoid: {', '.join(existing_titles[:3]) if existing_titles else 'none'}
 
-Return this EXACT format - a Python dictionary with a "projects" key containing a list of 3 dictionaries:
+Return a JSON object with a "projects" key containing exactly 3 objects:
 
-{{"projects": [{{"level": "初階", "title": "終端機計時器", "tagline": "CLI計時", "description": "短說明", "prompt": "提示詞", "tip": "為何好", "category": "生產力", "duration": "25", "source_link": "url"}}, {{"level": "中階", "title": "標題", "tagline": "tag", "description": "說明", "prompt": "prompt", "tip": "tip", "category": "內容創作", "duration": "60", "source_link": "link"}}, {{"level": "高階", "title": "標題", "tagline": "tag", "description": "說明", "prompt": "prompt", "tip": "tip", "category": "程式原型", "duration": "120", "source_link": "link"}}]}}
+{{"projects": [{{"level": "初階", "title": "終端機計時器", "tagline": "CLI計時", "description": "用 Claude Code 建立一個簡單的 CLI 倒數計時工具", "prompt": "請幫我用 Node.js 建立一個終端機計時器", "tip": "入門友善，熟悉 CLI 開發流程", "category": "生產力", "duration": "25", "source_link": "https://docs.anthropic.com"}}, {{"level": "中階", "title": "標題", "tagline": "簡短標語", "description": "一句話說明", "prompt": "起手式提示詞", "tip": "為何適合此難度", "category": "內容創作", "duration": "60", "source_link": "https://example.com"}}, {{"level": "高階", "title": "標題", "tagline": "簡短標語", "description": "一句話說明", "prompt": "起手式提示詞", "tip": "為何適合此難度", "category": "程式原型", "duration": "120", "source_link": "https://example.com"}}]}}
 
-IMPORTANT: Return ONLY the dictionary. No explanation, no markdown. Start with {{ and end with }}."""
+STRICT RULES:
+1. Return ONLY valid JSON. No explanation, no markdown code blocks.
+2. Start with {{ and end with }}
+3. Keep fields concise: title ≤ 8 chars, tagline ≤ 6 chars, description ≤ 40 chars, prompt ≤ 60 chars, tip ≤ 30 chars
+4. category must be one of: 生產力, 內容創作, 資料分析, 程式原型
+5. source_link must be a valid https URL
+6. All text in Traditional Chinese"""
 
     # Verify API key before sending request
     if not ANTHROPIC_API_KEY or len(ANTHROPIC_API_KEY) < 10:
@@ -98,8 +104,8 @@ IMPORTANT: Return ONLY the dictionary. No explanation, no markdown. Start with {
     }
 
     data = {
-        'model': 'claude-opus-4-6',
-        'max_tokens': 2000,
+        'model': 'claude-sonnet-4-5-20250514',
+        'max_tokens': 4096,
         'messages': [
             {
                 'role': 'user',
@@ -109,77 +115,78 @@ IMPORTANT: Return ONLY the dictionary. No explanation, no markdown. Start with {
     }
 
     print(f"  Sending request to {API_URL}")
-    print(f"  Model: claude-opus-4-6")
+    print(f"  Model: {data['model']}")
+    print(f"  Max tokens: {data['max_tokens']}")
     print(f"  Headers set: {list(headers.keys())}")
     print(f"  API Key length: {len(ANTHROPIC_API_KEY)}")
-    print(f"  Prompt length: {len(prompt)} characters")
 
     response = requests.post(API_URL, headers=headers, json=data)
 
     print(f"  Response status: {response.status_code}")
-    print(f"  Response headers: {dict(response.headers)}")
 
     if response.status_code != 200:
-        print(f"  ❌ Error response body (first 1000 chars):")
+        print(f"  ❌ Error response body:")
         print(f"  {response.text[:1000]}")
         response.raise_for_status()
 
-    try:
-        result = response.json()
-        print(f"  ✓ Response parsed successfully")
-    except Exception as e:
-        print(f"  ❌ Failed to parse JSON: {e}")
-        print(f"  Response body: {response.text[:500]}")
-        raise
+    result = response.json()
+    print(f"  ✓ Response parsed successfully")
 
-    print(f"  Response keys: {list(result.keys())}")
+    # Check if response was truncated
+    stop_reason = result.get('stop_reason', '')
+    print(f"  Stop reason: {stop_reason}")
+    if stop_reason == 'max_tokens':
+        print(f"  ⚠️ Response was truncated (hit max_tokens limit)")
 
     # Extract content from response
     if 'content' not in result:
         print(f"  ❌ No 'content' in response!")
-        print(f"  Full response: {result}")
         raise ValueError("No 'content' in API response")
 
     content = result['content'][0]['text']
     print(f"  Content length: {len(content)}")
     print(f"  Content preview: {content[:200]}...")
 
-    # Extract Python dict from response
-    import ast
+    # Parse JSON from response
     dict_content = content.strip()
 
-    # Try to find dict/list pattern
+    # Remove markdown code block wrapper if present
+    if dict_content.startswith('```'):
+        dict_content = re.sub(r'^```\w*\n?', '', dict_content)
+        dict_content = re.sub(r'\n?```$', '', dict_content)
+        dict_content = dict_content.strip()
+
+    # Extract JSON object
     dict_start = dict_content.find('{')
     dict_end = dict_content.rfind('}') + 1
 
     if dict_start != -1 and dict_end > dict_start:
         dict_content = dict_content[dict_start:dict_end]
-        print(f"  ✓ Extracted dict from response")
+        print(f"  ✓ Extracted JSON from response")
     else:
-        print(f"  ❌ No dict found in response")
-        print(f"  Content: {dict_content[:200]}")
-        raise ValueError("No dict structure found in Claude response")
+        print(f"  ❌ No JSON object found in response")
+        print(f"  Content: {dict_content[:300]}")
+        raise ValueError("No JSON structure found in Claude response")
 
-    print(f"  Dict content preview: {dict_content[:100]}...")
-
+    # Try JSON parsing first (more reliable for this use case)
     try:
-        # Use ast.literal_eval for safer Python dict parsing
-        projects_data = ast.literal_eval(dict_content)
-        print(f"  ✓ Dict parsed successfully with ast.literal_eval")
+        projects_data = json.loads(dict_content)
+        print(f"  ✓ JSON parsed successfully")
         return projects_data['projects']
-    except (ValueError, SyntaxError) as e:
-        print(f"  ❌ Dict parse error: {e}")
-        print(f"  Trying JSON fallback...")
+    except json.JSONDecodeError as e:
+        print(f"  ❌ JSON parse error: {e}")
+        print(f"  Trying ast.literal_eval fallback...")
 
-        try:
-            # Fallback to JSON
-            projects_data = json.loads(dict_content)
-            print(f"  ✓ JSON fallback succeeded")
-            return projects_data['projects']
-        except:
-            print(f"  ❌ Both parsing methods failed")
-            print(f"  Content: {dict_content[:300]}")
-            raise ValueError("Unable to parse Claude API response")
+    # Fallback to ast.literal_eval for Python dict format
+    import ast
+    try:
+        projects_data = ast.literal_eval(dict_content)
+        print(f"  ✓ ast.literal_eval parsed successfully")
+        return projects_data['projects']
+    except (ValueError, SyntaxError) as e2:
+        print(f"  ❌ ast.literal_eval also failed: {e2}")
+        print(f"  Content (first 500 chars): {dict_content[:500]}")
+        raise ValueError("Unable to parse Claude API response - likely truncated output")
 
 def level_to_class(level):
     """Convert level name to CSS class"""
