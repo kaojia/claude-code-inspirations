@@ -613,7 +613,7 @@
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
       <span>📅 最後更新：2026/05/19</span>
-      <span>📚 累計收錄：<span id="totalCount">29</span> 個專案</span>
+      <span>📚 累計收錄：<span id="totalCount">32</span> 個專案</span>
     </div>
   </header>
 
@@ -641,7 +641,7 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 29 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 32 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
@@ -654,66 +654,80 @@
     今日新增 · 2026/05/19
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">5/18</span>
+      <span class="date-tag">5/19</span>
     </div>
-    <h2>Git 提交訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史，自動重寫成語意清晰、格式一致的 Conventional Commits</div>
-    <p>很多開發者的 commit message 寫得隨意（如 fix、update、WIP），日後回溯非常痛苦。這個工具讓 Claude Code 讀取你的 git log，逐筆分析 diff 內容，產出符合 Conventional Commits 規範的建議訊息，並輸出一份 Markdown 變更日誌，方便貼進 Release Notes 或團隊週報。</p>
-    <div class="prompt-box">請在這個 Git 專案資料夾中執行以下步驟：1. 讀取最近 30 筆 commit（用 git log --oneline -30 和對應的 git diff）2. 針對每筆 commit，根據實際程式碼變更重寫成 Conventional Commits 格式（feat/fix/refactor/docs/chore + scope + 中文描述）3. 產出 improved_commits.md，用表格列出「原始訊息 → 建議訊息 → 變更摘要」4. 額外產出 CHANGELOG.md，按 feat/fix/refactor 分類彙整這 30 筆變更 5. 如果發現有筆 commit 混合多種變更，標註建議拆分的方式</div>
+    <h2>會議逐字稿摘要精靈</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的行動清單與決策紀錄</div>
+    <p>將 Zoom、Teams 或 Google Meet 匯出的會議逐字稿丟給 Claude Code，自動產出三份文件：一頁式會議摘要、按負責人分類的行動項目清單（含截止日）、以及需要追蹤的未決議題表。特別適合 PM、主管、或每天開不完會的上班族，再也不用手動整理會議紀錄。</p>
+    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳檔案]。請幫我做以下處理：1. 產出一份 500 字以內的會議摘要，包含主題、與會者、關鍵討論點 2. 列出所有行動項目，格式為表格：負責人 / 待辦事項 / 截止日期 / 優先級（高中低）3. 整理出所有尚未做出結論的未決議題 4. 輸出成 meeting_summary.md 和 action_items.csv 兩個檔案 5. 如果逐字稿中有模糊的時間描述如『下週』，請換算成實際日期</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習：體驗 Claude Code 讀取本地檔案與指令輸出的整合能力，成果立刻可用
+      練習 Claude 的文本摘要與資訊擷取能力，輸出格式簡單，新手立刻能在工作中使用
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 端點自動測試產生器 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能差異分析器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">5/18</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">55 分鐘</span>
+      <span class="date-tag">5/19</span>
     </div>
-    <h2>API 端點自動測試產生器</h2>
-    <div class="tagline">餵入後端路由程式碼，自動生成完整的測試案例與 Mock 資料</div>
-    <p>手動撰寫 API 測試既耗時又容易遺漏邊界情境。這個工具讓 Claude Code 掃描你的 Express/FastAPI/NestJS 路由檔，自動分析每個端點的參數、驗證規則與回傳格式，產出涵蓋正常流程、錯誤處理、邊界值的測試檔案（支援 Jest/Pytest），同時生成對應的 Mock 資料 JSON，讓你一鍵跑完整套整合測試。</p>
-    <div class="prompt-box">請掃描 ./src/routes/ 資料夾中所有路由檔案，執行以下步驟：1. 列出每個 API 端點的 HTTP method、路徑、請求參數與回傳型別 2. 為每個端點產生至少 5 個測試案例：正常請求、缺少必填欄位、型別錯誤、邊界值（空陣列/超長字串/特殊字元）、未授權存取 3. 在 ./tests/api/ 資料夾產出對應的測試檔案，使用專案現有的測試框架 4. 在 ./tests/mocks/ 產出每個端點的 mock-data.json 5. 產出 test-coverage-report.md 彙整所有端點的測試覆蓋狀態，標記哪些端點邏輯較複雜建議手動補測</div>
+    <h2>競品功能差異分析器</h2>
+    <div class="tagline">輸入多個競品網址或文件，自動產出視覺化的功能比較矩陣與策略建議</div>
+    <p>給 Claude Code 你的產品規格書與 2-5 個競品的公開資料（官網截圖、定價頁、功能清單），它會自動建立互動式 HTML 功能比較矩陣、計算功能覆蓋率雷達圖、找出你的產品缺口與差異化優勢，最後產出一份可直接放進簡報的競品分析報告。適合產品經理、行銷團隊、創業者在做市場研究時使用。</p>
+    <div class="prompt-box">我要做競品分析。以下是資料：
+- 我的產品功能清單：[貼上或拖曳檔案]
+- 競品 A 資訊：[貼上網址或截圖]
+- 競品 B 資訊：[貼上網址或截圖]
+- 競品 C 資訊：[貼上網址或截圖]
+
+請幫我：1. 建立資料夾結構 competitor_analysis/，包含 index.html 主頁面 2. 產出互動式功能比較表，支援篩選與排序，用綠色勾/紅色叉標示 3. 用 Chart.js 畫出各產品的功能覆蓋率雷達圖 4. 分析我的產品在哪些維度領先、哪些落後 5. 給出 3-5 條具體的產品策略建議 6. 整份報告要能直接用瀏覽器開啟，風格專業簡潔</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：需理解多檔案掃描、程式碼語意分析與測試框架整合，培養自動化測試思維
+      需要處理多來源非結構化資料並整合成視覺化報告，練習 Claude 的資料整理與前端圖表生成能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用追蹤儀表板 程式原型">
+  <article class="card searchable" data-level="高階" data-category="內容創作" data-searchtext="多語系文案工作流引擎 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">內容創作</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">5/18</span>
+      <span class="date-tag">5/19</span>
     </div>
-    <h2>全端費用追蹤儀表板</h2>
-    <div class="tagline">從零搭建含前後端與資料庫的個人記帳應用，附互動式圖表與月報匯出</div>
-    <p>這個專案讓 Claude Code 幫你建立一套完整的全端記帳系統：React 前端含分類輸入、篩選與 Chart.js 互動式圖表；Node.js/Express 後端提供 CRUD API 與分類統計端點；SQLite 資料庫儲存交易紀錄。系統每月自動產出支出分析 PDF 報告，包含各類別佔比圓餅圖、趨勢折線圖與異常支出提醒，適合想體驗 Claude Code 一次搭建完整應用的開發者。</p>
-    <div class="prompt-box">請幫我從零建立一個全端個人費用追蹤應用，完整資料夾結構如下：/client（React + Vite）、/server（Express）、/database（SQLite）。具體需求：1. 資料庫設計：expenses 表含 id、amount、category（飲食/交通/娛樂/住居/其他）、description、date、created_at 2. 後端 API：POST /expenses 新增、GET /expenses 列表（支援日期範圍與分類篩選）、GET /stats/monthly 月統計、DELETE /expenses/:id 刪除 3. 前端頁面：輸入表單含金額/分類/日期/備註、交易列表含篩選器與刪除、儀表板含 Chart.js 圓餅圖（分類佔比）與折線圖（每日花費趨勢）4. 匯出功能：GET /report/monthly?month=2025-01 產出 PDF 月報，含圖表與「比上月多花最多的分類」提醒 5. 建立 seed.js 產出 60 筆假資料方便展示 6. 根目錄建立 docker-compose.yml 一鍵啟動，README.md 含截圖位置標記與使用說明</div>
+    <h2>多語系文案工作流引擎</h2>
+    <div class="tagline">建立一套完整的 i18n 內容管線，從文案撰寫、翻譯、語氣校正到部署格式輸出</div>
+    <p>打造一個端對端的多語系內容生產系統：輸入產品功能描述或行銷需求，Claude Code 會依照品牌語氣指南產出中文主文案，接著自動翻譯成英文、日文、韓文等目標語言，針對每種語言做文化在地化調整（不只是直翻），產出 JSON i18n 檔案、各語系的 SEO meta 標籤、以及一份翻譯品質自檢報告。整套系統包含 Node.js CLI 工具，可整合進 CI/CD 流程，適合有多國市場的產品團隊與獨立開發者。</p>
+    <div class="prompt-box">請幫我建立一個多語系文案工作流工具，專案名稱 i18n-content-engine/，結構如下：
+
+1. 建立 CLI 入口 cli.js，支援指令：generate（產文案）、translate（翻譯）、validate（檢查）、export（輸出）
+2. 讀取 config/brand-voice.yaml 品牌語氣設定檔（請產生範本，包含語氣關鍵字、禁用詞、各語系注意事項）
+3. generate 指令：輸入功能描述，依品牌語氣產出 zh-TW 主文案，包含標題、副標、CTA、功能說明段落
+4. translate 指令：將主文案翻譯至 en、ja、ko，每種語言要做文化適配（如日文敬語層級、韓文語尾處理），不能是機械直翻
+5. validate 指令：自動檢查各語系字數限制、placeholder 變數一致性、是否有未翻譯殘留、敏感詞篩查
+6. export 指令：輸出 locales/[lang].json（i18n 標準格式）、seo-meta.csv、translation-report.md（含各語系品質分數與改善建議）
+7. 加上 package.json 與完整 README.md，包含安裝步驟與使用範例
+8. 請為核心函式寫單元測試放在 tests/ 資料夾</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階綜合挑戰：涵蓋資料庫設計、REST API、前端互動圖表與 PDF 生成，考驗多層架構協作能力
+      整合 CLI 架構設計、多語系 NLP 處理、YAML/JSON 配置管理與測試撰寫，是真正可投入生產的開發級專案
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
 
   
-  <h3 class="section-title archive">
     <span class="dot"></span>
     歷史收錄
     <span class="count">8 個專案</span>
