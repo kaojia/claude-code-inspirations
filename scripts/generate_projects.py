@@ -21,13 +21,12 @@ else:
     print(f"  ✗ NOT SET or empty")
 
 def get_today_date():
-    """Get today's date in formats needed"""
-    today = datetime.now()
+    """Get today's date in Taiwan timezone (UTC+8)"""
+    from datetime import timezone, timedelta
+    tw_tz = timezone(timedelta(hours=8))
+    today = datetime.now(tw_tz)
     long_date = today.strftime('%Y/%m/%d')
-    short_date = today.strftime('%-m/%-d').replace('-m', 'm').replace('-d', 'd')
-    # Handle Windows format differences
-    if '-' in short_date:
-        short_date = f"{today.month}/{today.day}"
+    short_date = f"{today.month}/{today.day}"
     return long_date, short_date
 
 def read_html():
