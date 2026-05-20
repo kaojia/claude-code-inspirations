@@ -636,7 +636,7 @@
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
       <span>📅 最後更新：2026/05/20</span>
-      <span>📚 累計收錄：<span id="totalCount">38</span> 個專案</span>
+      <span>📚 累計收錄：<span id="totalCount">41</span> 個專案</span>
     </div>
   </header>
 
@@ -664,7 +664,7 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 38 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 41 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
@@ -677,79 +677,124 @@
     今日新增 · 2026/05/20
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="日記情緒週報產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">5/19</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">5/20</span>
     </div>
-    <h2>會議逐字稿摘要精靈</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的行動清單與決策紀錄</div>
-    <p>將 Zoom、Teams 或 Google Meet 匯出的會議逐字稿丟給 Claude Code，自動產出三份文件：一頁式會議摘要、按負責人分類的行動項目清單（含截止日）、以及需要追蹤的未決議題表。特別適合 PM、主管、或每天開不完會的上班族，再也不用手動整理會議紀錄。</p>
-    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳檔案]。請幫我做以下處理：1. 產出一份 500 字以內的會議摘要，包含主題、與會者、關鍵討論點 2. 列出所有行動項目，格式為表格：負責人 / 待辦事項 / 截止日期 / 優先級（高中低）3. 整理出所有尚未做出結論的未決議題 4. 輸出成 meeting_summary.md 和 action_items.csv 兩個檔案 5. 如果逐字稿中有模糊的時間描述如『下週』，請換算成實際日期</div>
+    <h2>日記情緒週報產生器</h2>
+    <div class="tagline">每天貼上一段心情文字，週末自動產出情緒趨勢週報與自我照顧建議</div>
+    <p>把一週七天的日記、隨手筆記或語音轉文字貼給 Claude Code，它會分析每天的情緒指數（1-10）、抽出關鍵事件與情緒觸發點，最後產出一份含有情緒折線圖數據、本週高低點回顧、以及下週自我照顧行動清單的 Markdown 週報，還能輸出成精美 HTML 頁面方便存檔或分享給諮商師。</p>
+    <div class="prompt-box">以下是我這週七天的日記內容：
+
+週一：[貼上文字]
+週二：[貼上文字]
+...
+週日：[貼上文字]
+
+請幫我：
+1. 分析每天的情緒分數（1-10）並標註正面／負面／中性
+2. 找出本週前三大情緒觸發事件與對應的身心反應
+3. 繪製情緒趨勢的 ASCII 折線圖
+4. 撰寫 300 字的「本週情緒回顧」段落
+5. 根據分析結果提供 5 個具體的下週自我照顧建議
+6. 全部輸出為 weekly_mood_report.md 和 weekly_mood_report.html 兩種格式，HTML 版要有漂亮的配色和排版</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      練習 Claude 的文本摘要與資訊擷取能力，輸出格式簡單，新手立刻能在工作中使用
+      讓初學者體驗 Claude 的文字情感分析與結構化輸出能力，完成後馬上能融入每週生活習慣
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能差異分析器 資料分析">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 倉庫健檢報告器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">55 分鐘</span>
-      <span class="date-tag">5/19</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">5/20</span>
     </div>
-    <h2>競品功能差異分析器</h2>
-    <div class="tagline">輸入多個競品網址或文件，自動產出視覺化的功能比較矩陣與策略建議</div>
-    <p>給 Claude Code 你的產品規格書與 2-5 個競品的公開資料（官網截圖、定價頁、功能清單），它會自動建立互動式 HTML 功能比較矩陣、計算功能覆蓋率雷達圖、找出你的產品缺口與差異化優勢，最後產出一份可直接放進簡報的競品分析報告。適合產品經理、行銷團隊、創業者在做市場研究時使用。</p>
-    <div class="prompt-box">我要做競品分析。以下是資料：
-- 我的產品功能清單：[貼上或拖曳檔案]
-- 競品 A 資訊：[貼上網址或截圖]
-- 競品 B 資訊：[貼上網址或截圖]
-- 競品 C 資訊：[貼上網址或截圖]
+    <h2>GitHub 倉庫健檢報告器</h2>
+    <div class="tagline">輸入 GitHub Repo 網址，自動掃描程式碼品質並產出完整健檢報告</div>
+    <p>把一個 GitHub 專案 clone 到本地後交給 Claude Code，它會掃描目錄結構、分析 README 完整度、檢查是否有測試覆蓋、評估依賴套件新舊程度、找出潛在的安全風險與程式碼異味，最後產出一份評分制的健檢報告（A-F 等級）。報告包含雷達圖數據、具體改善建議與優先順序，適合開源維護者、技術主管做專案體檢。</p>
+    <div class="prompt-box">請幫我對這個專案做一份完整的程式碼倉庫健檢：
 
-請幫我：1. 建立資料夾結構 competitor_analysis/，包含 index.html 主頁面 2. 產出互動式功能比較表，支援篩選與排序，用綠色勾/紅色叉標示 3. 用 Chart.js 畫出各產品的功能覆蓋率雷達圖 4. 分析我的產品在哪些維度領先、哪些落後 5. 給出 3-5 條具體的產品策略建議 6. 整份報告要能直接用瀏覽器開啟，風格專業簡潔</div>
+專案路徑：[拖曳資料夾或輸入路徑]
+
+請依照以下六大面向進行分析，每項 0-100 分：
+1. 文件完整度：README、CONTRIBUTING、LICENSE、CHANGELOG 是否齊全且內容充實
+2. 程式碼結構：資料夾組織是否合理、命名慣例是否一致、是否有過大的單一檔案
+3. 測試健康度：是否有測試檔案、測試命名是否清晰、估算覆蓋率
+4. 依賴管理：package.json/requirements.txt 中的套件是否過時、是否有已知漏洞
+5. 安全性：是否有硬編碼密鑰、敏感資訊、不安全的設定
+6. 開發者體驗：是否有 CI/CD 設定、linter 設定、Docker 支援
+
+產出：
+- repo_health_report.md：含六角雷達圖的 ASCII 版、總評等級 A-F、各面向詳細說明
+- action_items.md：依優先順序列出前 10 個最該立刻修的改善項目，附具體修改建議
+- 一個 fix_quick_wins.sh 腳本，自動修復能自動化處理的簡單問題</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      需要處理多來源非結構化資料並整合成視覺化報告，練習 Claude 的資料整理與前端圖表生成能力
+      中階挑戰在於讓 Claude 同時處理多種檔案類型的分析與交叉比對，學會用結構化評分框架做技術評估
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="內容創作" data-searchtext="多語系文案工作流引擎 內容創作">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="API 文件互動沙盒引擎 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">5/19</span>
+      <span class="date-tag">5/20</span>
     </div>
-    <h2>多語系文案工作流引擎</h2>
-    <div class="tagline">建立一套完整的 i18n 內容管線，從文案撰寫、翻譯、語氣校正到部署格式輸出</div>
-    <p>打造一個端對端的多語系內容生產系統：輸入產品功能描述或行銷需求，Claude Code 會依照品牌語氣指南產出中文主文案，接著自動翻譯成英文、日文、韓文等目標語言，針對每種語言做文化在地化調整（不只是直翻），產出 JSON i18n 檔案、各語系的 SEO meta 標籤、以及一份翻譯品質自檢報告。整套系統包含 Node.js CLI 工具，可整合進 CI/CD 流程，適合有多國市場的產品團隊與獨立開發者。</p>
-    <div class="prompt-box">請幫我建立一個多語系文案工作流工具，專案名稱 i18n-content-engine/，結構如下：
+    <h2>API 文件互動沙盒引擎</h2>
+    <div class="tagline">上傳任何 API 文件，自動生成可即時測試的互動式文件網站與 Mock Server</div>
+    <p>將 OpenAPI/Swagger JSON 或任何格式的 API 文件交給 Claude Code，它會解析所有端點、參數與回應格式，自動產出三樣東西：一個有側邊欄導航的互動式 HTML 文件網站（含程式碼範例切換 cURL/Python/JavaScript）、一個基於 Node.js 的 Mock Server 可以在本地模擬所有 API 回應、以及一套 Postman Collection 匯入檔。特別適合後端工程師交接 API、前端工程師不等後端就先開工、或技術文件撰寫者快速產出精美文件。</p>
+    <div class="prompt-box">這是我們的 API 規格文件：[拖曳 OpenAPI JSON/YAML 或任意格式的 API 文件]
 
-1. 建立 CLI 入口 cli.js，支援指令：generate（產文案）、translate（翻譯）、validate（檢查）、export（輸出）
-2. 讀取 config/brand-voice.yaml 品牌語氣設定檔（請產生範本，包含語氣關鍵字、禁用詞、各語系注意事項）
-3. generate 指令：輸入功能描述，依品牌語氣產出 zh-TW 主文案，包含標題、副標、CTA、功能說明段落
-4. translate 指令：將主文案翻譯至 en、ja、ko，每種語言要做文化適配（如日文敬語層級、韓文語尾處理），不能是機械直翻
-5. validate 指令：自動檢查各語系字數限制、placeholder 變數一致性、是否有未翻譯殘留、敏感詞篩查
-6. export 指令：輸出 locales/[lang].json（i18n 標準格式）、seo-meta.csv、translation-report.md（含各語系品質分數與改善建議）
-7. 加上 package.json 與完整 README.md，包含安裝步驟與使用範例
-8. 請為核心函式寫單元測試放在 tests/ 資料夾</div>
+請幫我建立完整的 API 互動沙盒，步驟如下：
+
+第一步 - 解析與標準化：
+- 解析所有 API 端點、HTTP 方法、路徑參數、查詢參數、請求體、回應格式
+- 如果不是 OpenAPI 格式，先轉換為標準化的 JSON 結構
+
+第二步 - 互動式文件網站（輸出至 /docs 資料夾）：
+- index.html：含側邊欄導航、搜尋功能、深色/淺色模式切換
+- 每個端點顯示：描述、參數表格、請求範例（可切換 cURL / Python requests / JavaScript fetch）、回應範例（含不同狀態碼）
+- 加入「Try it」按鈕，可直接在頁面填參數送出請求到 Mock Server
+- 使用純 HTML/CSS/JS，不需要任何建構工具
+
+第三步 - Mock Server（輸出至 /mock-server 資料夾）：
+- 用 Node.js + Express 建立
+- 每個端點回傳符合 schema 的假資料（用 faker 風格的隨機資料）
+- 支援 query parameter 篩選與分頁模擬
+- 附 package.json 和 README，npm start 即可啟動
+
+第四步 - 匯出檔案：
+- postman_collection.json：可直接匯入 Postman
+- api_examples.py：Python 範例腳本，每個端點一個函式
+- setup.sh：一鍵啟動 Mock Server 並在瀏覽器開啟文件
+
+資料夾結構：
+/api-sandbox
+  /docs（靜態文件網站）
+  /mock-server（Express Mock Server）
+  /exports（Postman Collection + Python 範例）
+  setup.sh
+  README.md</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      整合 CLI 架構設計、多語系 NLP 處理、YAML/JSON 配置管理與測試撰寫，是真正可投入生產的開發級專案
+      高階挑戰需要 Claude 同時產出前端網站、後端伺服器與多種匯出格式，考驗跨技術棧的整合能力與複雜專案架構設計
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <h3 class="section-title archive">
+
+  
     <span class="dot"></span>
     歷史收錄
     <span class="count">8 個專案</span>
