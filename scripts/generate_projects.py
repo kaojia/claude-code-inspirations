@@ -36,8 +36,8 @@ def read_html():
 
 def extract_today_cards(html):
     """Extract today's 3 cards from 「今日新增」section"""
-    # Find the section between 今日新增 comment and the archive h3 section
-    pattern = r'<!-- ============ 今日新增.*?============ -->.*?(?=<h3 class="section-title archive">)'
+    # Find the section between 今日新增 comment and 歷史收錄 text
+    pattern = r'<!-- ============ 今日新增.*?============ -->.*?(?=\s*<span class="dot"></span>\s*\n\s*歷史收錄)'
     match = re.search(pattern, html, re.DOTALL)
 
     if not match:
@@ -51,9 +51,9 @@ def extract_today_cards(html):
 
 def extract_history_count(html):
     """Extract the highest badge number from history section"""
-    # Find badge numbers in history section (starts at archive h3)
+    # Find badge numbers in history section (starts at 歷史收錄 text)
     history_section_match = re.search(
-        r'<h3 class="section-title archive">.*',
+        r'歷史收錄.*',
         html,
         re.DOTALL
     )
@@ -266,14 +266,14 @@ def update_html(html, new_projects, long_date, short_date):
     # <!-- ============ 今日新增 (date) ============ -->
     # <h3 class="section-title">...</h3>
     # [cards]
-    # <h3 class="section-title archive">  (history section starts here)
-    today_pattern = r'(<!-- ============ 今日新增.*?============ -->\s*<h3 class="section-title">\s*<span class="dot"></span>\s*今日新增.*?</h3>).*?(<h3 class="section-title archive">)'
-    today_replacement = r'\1\n' + new_cards_html + '\n  \2'
+    # (blank line + <span class="dot"> + 歷史收錄 marks the history section)
+    today_pattern = r'(<!-- ============ 今日新增.*?============ -->\s*<h3 class="section-title">\s*<span class="dot"></span>\s*今日新增.*?</h3>).*?(\s*<span class="dot"></span>\s*\n\s*歷史收錄)'
+    today_replacement = r'\1\n' + new_cards_html + r'\2'
 
     html = re.sub(today_pattern, today_replacement, html, flags=re.DOTALL)
 
-    # 6. Update history section: insert old today's cards after the archive h3 header
-    history_pattern = r'(<h3 class="section-title archive">.*?</h3>)\s*'
+    # 6. Update history section: insert old today's cards after the 歷史收錄 </h3>
+    history_pattern = r'(歷史收錄\s*<span class="count">.*?</span>\s*</h3>)\s*'
     history_replacement = r'\1\n' + history_cards_html
 
     html = re.sub(history_pattern, history_replacement, html, flags=re.DOTALL)
