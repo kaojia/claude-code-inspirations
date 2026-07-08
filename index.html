@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/07</span>
-      <span>📚 累計收錄：<span id="totalCount">14</span> 個專案</span>
+      <span>📅 最後更新：2026/07/08</span>
+      <span>📚 累計收錄：<span id="totalCount">17</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,85 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 14 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 17 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/7) ============ -->
+  <!-- ============ 今日新增 (7/8) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/07
+    今日新增 · 2026/07/08
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要引擎 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件模板工廠 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/8</span>
+    </div>
+    <h2>電子郵件模板工廠</h2>
+    <div class="tagline">輸入你的職業角色與常見情境，批量產出專業回信模板庫</div>
+    <p>告訴 Claude Code 你的職位（如 PM、業務、客服），它會幫你針對 10 種最常見情境（催進度、拒絕需求、感謝合作等）各產出 2 種語氣版本的信件模板，最後整理成一個 Markdown 檔案和可直接貼進 Gmail 範本的 HTML 檔。再也不用每次寫信都從零開始。</p>
+    <div class="prompt-box">我是一位 [你的職位，例如：軟體專案經理]，平常主要用 email 和 [對象，例如：客戶、工程師、主管] 溝通。請幫我：1. 列出我這個角色最常遇到的 10 種 email 情境（例如：催進度、回報延遲、拒絕不合理需求） 2. 每種情境寫 2 個版本：正式版與親和版 3. 每封信控制在 150 字內，標注主旨欄建議 4. 產出 email_templates.md（方便查閱）和 email_templates.html（可匯入 Gmail 範本） 5. 在文件最前面附一張情境索引表，方便快速查找</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：感受 Claude 理解角色情境並批量產出格式化內容的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動沙盒 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/8</span>
+    </div>
+    <h2>API 文件互動沙盒</h2>
+    <div class="tagline">貼上任何 REST API 文件，自動產出可執行的測試沙盒網頁</div>
+    <p>把一份 API 文件（Swagger JSON、OpenAPI YAML 或純文字說明）交給 Claude Code，它會解析所有端點，產出一個帶有表單介面的單頁 HTML 應用，讓你直接在瀏覽器填參數、送請求、看回應。適合後端工程師快速驗證 API、前端工程師熟悉接口、技術寫手撰寫範例。產出包含完整的錯誤處理與請求歷史紀錄面板。</p>
+    <div class="prompt-box">這是我們的 API 文件 [貼上 Swagger JSON 或 OpenAPI YAML]。請幫我建立一個互動式 API 測試沙盒：1. 解析所有端點，依資源分組顯示在左側選單 2. 每個端點有表單可填入 headers、path params、query params、request body 3. 支援設定 Base URL 和全域 Authorization header 4. 送出請求後顯示 status code、回應時間、格式化的 JSON 回應 5. 加入請求歷史面板，可重送或複製為 cURL 指令 6. 用 Tailwind CSS 做深色主題 UI 7. 所有邏輯寫在單一 index.html，不需後端 8. 資料夾結構：api-sandbox/index.html + README.md（使用說明）</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：結合檔案解析、動態 UI 生成與網路請求處理，學會讓 Claude 建構有狀態的前端應用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫遷移顧問 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/8</span>
+    </div>
+    <h2>程式碼庫遷移顧問</h2>
+    <div class="tagline">分析整個舊專案結構，產出完整的現代化遷移計畫與自動轉換腳本</div>
+    <p>將一個老舊專案（如 jQuery 轉 React、Class Component 轉 Hooks、JavaScript 轉 TypeScript）交給 Claude Code，它會掃描整個程式碼庫，產出依賴關係圖、風險評估報告、分階段遷移計畫，並自動生成批量轉換腳本（codemod）。最終輸出包含甘特圖式的遷移時程表 HTML、逐檔案的改動清單 CSV、以及可直接執行的轉換腳本。適合技術主管規劃重構、團隊評估技術債。</p>
+    <div class="prompt-box">請分析這個專案 [拖曳資料夾或指定路徑] 並擔任遷移顧問，目標是從 [舊技術，例如 JavaScript + Class Components] 遷移到 [新技術，例如 TypeScript + React Hooks]。請執行以下步驟：1. 掃描所有原始碼，統計檔案數量、行數、使用的套件版本 2. 繪製模組依賴關係（產出 dependency-graph.html 用 D3.js 視覺化） 3. 識別高風險檔案（依賴最多、邏輯最複雜的前 10 個）並說明風險原因 4. 制定 3 階段遷移計畫：Phase 1 基礎設施、Phase 2 核心模組、Phase 3 邊緣功能 5. 每階段列出具體檔案清單與預估工時，產出 migration-plan.html（含互動式甘特圖） 6. 產出 changes.csv（每列：檔案路徑、變更類型、優先級、預估時間） 7. 針對最常見的 5 種轉換模式各寫一個 codemod 腳本放在 scripts/ 資料夾 8. 產出 README.md 說明如何執行遷移 9. 資料夾結構：migration-report/dependency-graph.html, migration-plan.html, changes.csv, scripts/*.js, README.md</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：需要 Claude 同時具備程式碼分析、架構規劃、視覺化與腳本生成能力，學會用 AI 處理大規模重構決策
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+    <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要引擎 生產力">
+    <div class="card-header">
+      <span class="badge">12</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -698,8 +760,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">13</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">55 分鐘</span>
@@ -730,8 +791,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端部署腳手架生成器 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">14</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -767,12 +827,7 @@ my-saas/
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-    <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="日記情緒週報產生器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="日記情緒週報產生器 生產力">
     <div class="card-header">
       <span class="badge">9</span>
       <span class="tag level-1">初階</span>
