@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/10</span>
-      <span>📚 累計收錄：<span id="totalCount">23</span> 個專案</span>
+      <span>📅 最後更新：2026/07/11</span>
+      <span>📚 累計收錄：<span id="totalCount">26</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,88 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 23 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 26 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/10) ============ -->
+  <!-- ============ 今日新增 (7/11) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/10
+    今日新增 · 2026/07/11
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動彙整器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">7/11</span>
+    </div>
+    <h2>會議逐字稿摘要精靈</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿濃縮成結構化的會議紀錄與待辦事項</div>
+    <p>將 Zoom、Teams 或 Google Meet 匯出的會議逐字稿丟給 Claude Code，自動整理成「會議摘要、關鍵決議、各人待辦事項、下次會議議程建議」四大區塊，輸出成 Markdown 與 Word 格式，直接寄給與會者。再也不用邊開會邊狂抄筆記。</p>
+    <div class="prompt-box">這是我們團隊今天的會議逐字稿 [貼上逐字稿內容]。請幫我完成以下工作：1. 用三段話寫出會議摘要，涵蓋討論背景與結論 2. 條列所有關鍵決議，每條標注決議者與日期 3. 依與會者姓名分類所有待辦事項，標明截止日與優先級（高/中/低） 4. 根據未解決的議題，建議下次會議的三個議程項目 5. 輸出 meeting_notes.md 和用 python-docx 產生 meeting_notes.docx 兩個檔案，Word 版要有公司 logo 預留區與表格排版</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階者可學到文本摘要與多格式輸出，完成後立刻應用於每週例會
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 倉庫健康檢測儀 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">7/11</span>
+    </div>
+    <h2>GitHub 倉庫健康檢測儀</h2>
+    <div class="tagline">掃描整個程式碼倉庫，產出程式碼品質報告與重構建議清單</div>
+    <p>指定一個本地 Git 倉庫路徑，Claude Code 會遍歷所有原始碼檔案，分析程式碼重複率、函式複雜度、未處理的 TODO/FIXME、過長檔案、缺少測試的模組等面向，產出一份視覺化 HTML 健康報告，附帶優先重構建議與預估工時。適合技術主管做 code review 前的快速掃描，或開發者自我檢視專案技術債。</p>
+    <div class="prompt-box">請掃描 ./my-project 這個倉庫，幫我做完整的程式碼健康檢查：1. 列出所有超過 300 行的檔案並建議拆分方式 2. 找出重複程式碼片段（相似度 > 70%）並建議抽成共用函式 3. 計算每個函式的圈複雜度，標記超過 10 的為高風險 4. 收集所有 TODO、FIXME、HACK 註解並依嚴重程度排序 5. 檢查哪些模組缺少對應的測試檔案 6. 產出 health_report.html，包含圓餅圖（用 Chart.js）顯示各類問題佔比、風險熱力圖、以及前十大重構建議表格含預估工時 7. 同時產出 health_report.json 供 CI/CD 整合使用</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰在於檔案系統遍歷、AST 分析概念與前端報告生成的整合，能學到自動化品質管控流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="多源資料競品雷達圖 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">7/11</span>
+    </div>
+    <h2>多源資料競品雷達圖</h2>
+    <div class="tagline">自動爬取並整合多個來源的競品資訊，產出互動式競品分析儀表板</div>
+    <p>給定三到五個競爭對手的公司名稱與官網，Claude Code 會建立一套完整的資料蒐集與分析管線：爬取官網功能頁、抓取 G2/Capterra 評價摘要、分析定價頁結構、比對功能矩陣，最終產出一個可互動的 React 單頁儀表板，包含雷達圖、功能對比表、價格區間圖、SWOT 分析卡片。產品經理、行銷團隊做季度競品報告時可大幅節省時間。</p>
+    <div class="prompt-box">我要分析這些競品：[公司A官網URL]、[公司B官網URL]、[公司C官網URL]，我們自己的產品是 [你的產品名稱與官網]。請建立一個完整的競品分析專案：1. 建立 Node.js 爬蟲腳本，用 Cheerio 解析各官網的功能列表頁與定價頁，將資料存為 data/competitors.json 2. 寫一個分析腳本比對所有產品的功能重疊度，找出我們的差異化優勢與功能缺口 3. 用 Vite + React + Recharts 建一個儀表板，包含：(a) 六維雷達圖比較各產品在功能、價格、易用性、整合性、客服、擴展性的評分 (b) 互動式功能矩陣表格，有/無用顏色標記 (c) 價格方案橫向比較的長條圖 (d) 每家競品的 SWOT 卡片，可展開收合 4. 加入深色/淺色模式切換 5. 產出 PDF 匯出按鈕，一鍵把儀表板轉成可簡報的報告 6. 用 docker-compose.yml 包裝整個專案，npm run dev 即可啟動</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合爬蟲、資料處理、React 前端、圖表視覺化與容器化部署，考驗全端架構與多系統協作能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+    <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動彙整器 生產力">
+    <div class="card-header">
+      <span class="badge">21</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -714,8 +779,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章產線 內容創作">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">22</span>
       <span class="tag level-2">中階</span>
       <span class="tag">內容創作</span>
       <span class="tag time">50 分鐘</span>
@@ -753,8 +817,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">23</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">150 分鐘</span>
@@ -797,15 +860,7 @@ split-trip/
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-    <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會報告產生器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會報告產生器 生產力">
     <div class="card-header">
       <span class="badge">18</span>
       <span class="tag level-1">初階</span>
