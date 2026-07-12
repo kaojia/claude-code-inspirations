@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/11</span>
-      <span>📚 累計收錄：<span id="totalCount">26</span> 個專案</span>
+      <span>📅 最後更新：2026/07/12</span>
+      <span>📚 累計收錄：<span id="totalCount">29</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,89 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 26 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 29 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/11) ============ -->
+  <!-- ============ 今日新增 (7/12) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/11
+    今日新增 · 2026/07/12
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養日記 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">7/12</span>
+    </div>
+    <h2>每日飲食營養日記</h2>
+    <div class="tagline">拍照或輸入今天吃了什麼，自動算出熱量與營養素並生成週報表</div>
+    <p>把每天的飲食內容用文字描述丟給 Claude Code，它會幫你估算每餐的熱量、蛋白質、碳水、脂肪，並累積成一週的營養攝取報表。產出包含每日摘要的 Markdown 檔案與一張視覺化的 HTML 營養儀表板，適合正在控制飲食、健身或管理慢性病的人使用。</p>
+    <div class="prompt-box">我要建立一個飲食營養追蹤系統。請幫我：1. 建立資料夾 nutrition-tracker/，裡面有 data/ 和 output/ 兩個子資料夾 2. 在 data/ 建立 template.md 作為每日飲食輸入模板，格式為「餐別｜食物名稱｜份量」3. 讀取以下我今天的飲食紀錄 [貼上內容]，估算每項食物的熱量、蛋白質(g)、碳水(g)、脂肪(g) 4. 產出 output/daily_report.md 含每餐明細與當日總計 5. 產出 output/dashboard.html 用簡單的 CSS 長條圖顯示各營養素佔建議攝取量的百分比（以成人每日 2000 大卡為基準）</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最適合：只需文字處理與簡單 HTML 輸出，馬上看到成果並養成記錄習慣
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="開源套件更新風險評估 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/12</span>
+    </div>
+    <h2>開源套件更新風險評估</h2>
+    <div class="tagline">掃描 package.json 或 requirements.txt，分析每個依賴套件的更新風險與安全漏洞</div>
+    <p>將專案的依賴清單丟給 Claude Code，它會逐一查詢各套件的版本落差、已知 CVE 漏洞、breaking changes 紀錄，並產出一份風險評估報告。報告以優先度排序，標記「立即更新」「計畫更新」「暫緩觀察」三個等級，同時生成可直接執行的升級腳本。適合維運中型專案、準備做季度依賴升級的工程團隊。</p>
+    <div class="prompt-box">請讀取我專案根目錄的 package.json [拖曳檔案]，幫我做完整的依賴健康檢查：1. 列出所有 dependencies 和 devDependencies 目前版本與最新穩定版的差距 2. 對每個套件評估風險等級：(a) 高風險＝落後超過 2 個大版本或有已知安全問題 (b) 中風險＝落後 1 個大版本 (c) 低風險＝僅小版本落差 3. 產出 dependency_audit.md 報告，含風險矩陣表格、每個高風險套件的 breaking changes 摘要與建議升級路徑 4. 產出 upgrade.sh 腳本，依風險等級分批升級，每批之間加上 npm test 驗證步驟 5. 產出 risk_matrix.html 用顏色標記的視覺化矩陣圖</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習：需要結合多步驟推理、外部知識整合與腳本生成，學會讓 Claude 做系統性分析
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">7/12</span>
+    </div>
+    <h2>全端原型即時腳手架</h2>
+    <div class="tagline">用一段產品需求描述，自動生成前後端完整專案骨架含資料庫設計與 API 文件</div>
+    <p>只需要提供一段產品需求敘述（例如「我要做一個二手書交換平台」），Claude Code 就會幫你產出完整的全端專案腳手架：React 前端頁面元件樹、Express/FastAPI 後端路由與控制器、PostgreSQL 資料庫 Schema 含 migration 檔、OpenAPI 3.0 規格文件、Docker Compose 開發環境配置，以及一份架構決策紀錄文件（ADR）。適合黑客松快速啟動、新創 MVP 驗證或技術主管做架構評估。</p>
+    <div class="prompt-box">我的產品需求如下：「一個讓社區住戶互相借還工具的平台，功能包含：用戶註冊登入、刊登可出借工具（含照片與說明）、搜尋瀏覽、發送借用請求、歸還確認與評價」。請幫我生成完整的全端專案腳手架：1. 建立 tool-sharing/ 根目錄，含 frontend/、backend/、database/、docs/ 四個子目錄 2. frontend/ 使用 React + TypeScript，建立頁面元件結構（首頁、工具列表、工具詳情、我的出借、借用紀錄），含 Router 設定與基本 UI 骨架 3. backend/ 使用 Node.js + Express + TypeScript，建立 RESTful API 路由、Controller、Service、Repository 分層架構，含 JWT 認證中介層 4. database/ 產出 PostgreSQL schema.sql（users、tools、borrow_requests、reviews 四張表含索引與外鍵）和 seed.sql 測試資料 5. docs/ 產出 openapi.yaml 完整 API 規格文件與 architecture_decision_record.md 說明技術選型理由 6. 根目錄產出 docker-compose.yml（含 db、backend、frontend 三個服務）與 README.md 含啟動步驟</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰：一次驅動多層架構產出，考驗對全端系統設計的理解以及 Claude 長脈絡的精準控制能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+    <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+    <div class="card-header">
+      <span class="badge">24</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">30 分鐘</span>
@@ -698,8 +764,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 倉庫健康檢測儀 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">25</span>
       <span class="tag level-2">中階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">75 分鐘</span>
@@ -717,8 +782,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="多源資料競品雷達圖 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">26</span>
       <span class="tag level-3">高階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">150 分鐘</span>
@@ -734,16 +798,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-    <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動彙整器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動彙整器 生產力">
     <div class="card-header">
       <span class="badge">21</span>
       <span class="tag level-1">初階</span>
