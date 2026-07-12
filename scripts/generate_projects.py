@@ -267,7 +267,7 @@ def update_html(html, new_projects, long_date, short_date):
     # <h3 class="section-title">...</h3>
     # [cards]
     # (blank line + <span class="dot"> + 歷史收錄 marks the history section)
-    today_pattern = r'(<!-- ============ 今日新增.*?============ -->\s*<h3 class="section-title">\s*<span class="dot"></span>\s*今日新增.*?</h3>).*?(\s*<span class="dot"></span>\s*\n\s*歷史收錄)'
+        today_pattern = r'(<!-- ============ 今日新增.*?============ -->\s*<h3 class="section-title">\s*<span class="dot"></span>\s*今日新增.*?</h3>).*?(\s*<h3 class="section-title archive">\s*<span class="dot"></span>\s*\n\s*歷史收錄)'
     today_replacement = r'\1\n' + new_cards_html + r'\2'
 
     html = re.sub(today_pattern, today_replacement, html, flags=re.DOTALL)
