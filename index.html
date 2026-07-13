@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/12</span>
-      <span>📚 累計收錄：<span id="totalCount">29</span> 個專案</span>
+      <span>📅 最後更新：2026/07/13</span>
+      <span>📚 累計收錄：<span id="totalCount">32</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,95 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 29 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 32 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/12) ============ -->
+  <!-- ============ 今日新增 (7/13) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/12
+    今日新增 · 2026/07/13
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養日記 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端指令速查小幫手 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/13</span>
+    </div>
+    <h2>終端指令速查小幫手</h2>
+    <div class="tagline">輸入你想做的事，自動產出對應的終端指令與逐行中文註解</div>
+    <p>很多開發者記不住繁瑣的 CLI 指令。把你想完成的任務用白話文描述，Claude Code 會幫你產出正確的終端指令、附上每個參數的中文解釋，並整理成一份 Markdown 速查表。適合剛接觸 Linux、Git 或 Docker 的新手，做完立刻存在桌面隨時查閱。</p>
+    <div class="prompt-box">我是一個剛學 Linux 和 Git 的初學者，請幫我建立一份終端指令速查手冊：1. 涵蓋以下五大類別：檔案操作、Git 版本控制、Docker 基礎、網路診斷、套件管理 2. 每個類別列出 8-10 個最常用的指令 3. 每條指令格式為：指令範例 → 白話文說明 → 各參數逐一解釋 4. 在每個類別最後加一個「常見踩坑提醒」區塊 5. 輸出成 cheatsheet.md，用表格排版方便閱讀 6. 額外產出一份 cheatsheet.pdf 可列印版本</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 整理與歸納知識的能力，成品可立即用於日常開發
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/13</span>
+    </div>
+    <h2>競品功能矩陣分析器</h2>
+    <div class="tagline">貼上多個競品網址或文件，自動產出功能比較矩陣與策略建議報告</div>
+    <p>產品經理或創業者在做市場調查時，需要花大量時間整理競品功能。將競品的官網介紹、定價頁面或產品文件丟給 Claude Code，它會自動抽取功能特色、建立橫向比較矩陣、標示差異化機會，最後產出一份含視覺化表格的 HTML 報告與原始資料 CSV。適合撰寫商業計畫、產品規劃、投資簡報前的前置研究。</p>
+    <div class="prompt-box">我正在做一個 [填入你的產品領域] 的競品分析，以下是 3-5 個競品的資料 [貼上網址或文字內容]。請幫我：1. 從每個競品中抽取核心功能、目標客群、定價模式、技術特色四大面向 2. 建立一個功能比較矩陣表，用 ✅/⚠️/❌ 標示支援程度 3. 分析出市場中尚未被滿足的功能缺口，列出至少 3 個差異化機會 4. 為每個機會撰寫一段 50 字的策略建議 5. 產出 competitor_matrix.csv 原始資料檔 6. 產出 report.html 含互動式表格與長條圖的視覺化報告，使用 Chart.js 繪圖 7. 在報告最後附上「建議行動方案」章節</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需要 Claude 同時處理多來源資料整合、結構化分析與前端視覺化輸出，訓練系統性思維
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時協作白板系統 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/13</span>
+    </div>
+    <h2>多人即時協作白板系統</h2>
+    <div class="tagline">從零搭建支援多人同步繪圖、便利貼與投票功能的線上白板應用</div>
+    <p>打造一個類似 Miro 精簡版的即時協作白板：支援多人同時在畫布上新增便利貼、自由繪圖、拖曳排列，並內建投票功能讓團隊對想法做優先排序。後端使用 WebSocket 實現即時同步，前端用 Canvas API 處理繪圖，資料存於 SQLite。適合遠端團隊腦力激盪、設計衝刺、回顧會議等場景，部署後可直接在團隊內使用。</p>
+    <div class="prompt-box">請幫我從零建立一個多人即時協作白板應用，技術需求如下：
+
+後端：1. 使用 Node.js + Express 建立伺服器 2. 用 Socket.IO 實現 WebSocket 即時雙向通訊 3. SQLite 儲存白板資料（房間、便利貼、繪圖路徑、投票紀錄）4. 支援建立/加入房間，每個房間有獨立 URL
+
+前端：1. HTML Canvas API 實現自由繪圖功能（畫筆、橡皮擦、顏色選擇）2. 可拖曳的便利貼元件，支援編輯文字與更換顏色 3. 每張便利貼可投票（+1），即時顯示票數排序 4. 工具列包含：繪圖模式、便利貼模式、投票模式、清除畫布、匯出 PNG
+
+資料夾結構：server/ 放後端、client/ 放前端靜態檔、db/ 放 SQLite
+
+請逐步完成：先建立專案結構與 package.json → 後端 API 與 Socket 事件 → 前端 Canvas 與互動邏輯 → 整合測試，確保兩個瀏覽器分頁能即時同步所有操作</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋 WebSocket 即時通訊、Canvas 繪圖引擎、狀態同步衝突處理與全端整合，挑戰系統架構設計能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養日記 生產力">
+    <div class="card-header">
+      <span class="badge">27</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">30 分鐘</span>
@@ -698,8 +770,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="開源套件更新風險評估 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">28</span>
       <span class="tag level-2">中階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">50 分鐘</span>
@@ -717,8 +788,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">29</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">90 分鐘</span>
@@ -734,14 +804,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">24</span>
       <span class="tag level-1">初階</span>
