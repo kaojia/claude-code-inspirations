@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/13</span>
-      <span>📚 累計收錄：<span id="totalCount">32</span> 個專案</span>
+      <span>📅 最後更新：2026/07/14</span>
+      <span>📚 累計收錄：<span id="totalCount">35</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,88 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 32 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 35 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/13) ============ -->
+  <!-- ============ 今日新增 (7/14) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/13
+    今日新增 · 2026/07/14
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端指令速查小幫手 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/14</span>
+    </div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">分析你的 Git 歷史，自動重寫成語意清晰、風格統一的 Conventional Commits 格式</div>
+    <p>把你的專案資料夾丟給 Claude Code，它會讀取 git log，找出訊息模糊的提交（如「fix bug」「update」），重新生成符合 Conventional Commits 規範的訊息，並產出一份 markdown 對照表與可執行的 rebase 腳本。適合想整理開源專案歷史、準備上線前 code review 的開發者。</p>
+    <div class="prompt-box">請分析這個專案的 Git 提交歷史：1. 執行 git log --oneline 取得最近 50 筆提交 2. 找出訊息不符合 Conventional Commits 規範的提交（缺少 type prefix、描述過於模糊、中英混雜等） 3. 為每一筆產生建議的新訊息，格式為 type(scope): description 4. 輸出 commit-review.md 對照表，包含原始訊息、建議訊息、修改原因 5. 產生 rebase-script.sh 讓我可以選擇性地批次修改歷史訊息</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階使用者可立即學會 Claude Code 與終端指令整合的基本流程，成果馬上可用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">7/14</span>
+    </div>
+    <h2>API 文件互動測試台</h2>
+    <div class="tagline">貼上任何 REST API 文件，自動生成可執行的測試腳本與互動式文件網頁</div>
+    <p>將 Swagger/OpenAPI JSON 或純文字 API 文件交給 Claude Code，它會解析所有端點，為每個端點生成 curl 指令、Python requests 範例、錯誤處理邏輯，並建立一個本地 HTML 互動頁面，讓你在瀏覽器中直接填參數送出請求。適合後端工程師快速驗證第三方 API、前端工程師理解後端介面。</p>
+    <div class="prompt-box">這是我們的 API 文件 [貼上 OpenAPI JSON 或文字說明]。請幫我：1. 解析所有端點，列出 method、path、必填/選填參數、回傳格式 2. 為每個端點生成 test_api.py 測試腳本，使用 requests 庫，包含成功與失敗的 assert 3. 生成 curl-commands.sh 收錄所有端點的 curl 範例 4. 建立 api-playground/index.html 互動測試頁面，使用純 HTML+JS，每個端點一個表單可填入參數並顯示 JSON 回應 5. 加入 .env.example 管理 API key 等機密資訊 6. 資料夾結構：api-playground/ 含 index.html, style.css, app.js, test_api.py, curl-commands.sh</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合檔案解析、多語言程式碼生成與前端互動，學會 Claude Code 多步驟工作流
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/14</span>
+    </div>
+    <h2>程式碼庫健康儀表板</h2>
+    <div class="tagline">深度掃描整個程式碼庫，產出涵蓋複雜度、重複率、依賴風險的視覺化健康報告</div>
+    <p>讓 Claude Code 遞迴掃描你的整個專案，分析每個檔案的圈複雜度、函式長度、重複程式碼片段、未使用的匯入與變數、依賴套件的已知漏洞，最終產出一個可在瀏覽器開啟的互動式儀表板，包含整體健康分數、趨勢圖表、逐檔案熱力圖與優先修復建議。適合技術主管在衝刺結束時做技術債盤點，或開源維護者定期檢視專案品質。</p>
+    <div class="prompt-box">請對這個程式碼庫進行全面健康檢查：1. 遞迴掃描所有 .js/.ts/.py 檔案，統計：總行數、檔案數、函式數、平均函式長度 2. 計算每個函式的圈複雜度，標記超過 10 的為高風險 3. 用文字比對找出重複超過 8 行的程式碼片段，列出位置與建議抽取方式 4. 分析 package.json 或 requirements.txt，檢查每個依賴的最新版本與已知 CVE 5. 掃描未使用的 import、未呼叫的 export function、TODO/FIXME 註解 6. 產出 health-dashboard/index.html 互動儀表板：總分（0-100）雷達圖、檔案複雜度熱力圖（用 D3.js）、依賴風險表格、前 10 優先修復項目卡片 7. 同時輸出 health-report.json 結構化資料與 health-report.md 文字摘要 8. 資料夾結構：health-dashboard/ 含 index.html, charts.js, styles.css, data.json</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涉及遞迴檔案系統操作、多維度靜態分析、D3.js 視覺化與結構化報告生成，全面鍛鍊架構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端指令速查小幫手 生產力">
+    <div class="card-header">
+      <span class="badge">30</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -698,8 +763,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">31</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
@@ -717,8 +781,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時協作白板系統 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">32</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -742,15 +805,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養日記 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養日記 生產力">
     <div class="card-header">
       <span class="badge">27</span>
       <span class="tag level-1">初階</span>
