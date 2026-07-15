@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/14</span>
-      <span>📚 累計收錄：<span id="totalCount">35</span> 個專案</span>
+      <span>📅 最後更新：2026/07/15</span>
+      <span>📚 累計收錄：<span id="totalCount">38</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,108 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 35 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 38 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/14) ============ -->
+  <!-- ============ 今日新增 (7/15) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/14
+    今日新增 · 2026/07/15
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點摘要機 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/15</span>
+    </div>
+    <h2>會議逐字稿重點摘要機</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的待辦清單與決策摘要</div>
+    <p>將會議逐字稿丟給 Claude Code，它會自動辨識發言者、提取關鍵決策、列出行動項目（含負責人與截止日），最後輸出一份精美的 Markdown 會議紀錄與可匯入 Notion 的 CSV 待辦清單。適合專案經理、團隊主管、任何每週被會議淹沒的人。</p>
+    <div class="prompt-box">這份文字檔 [拖曳逐字稿] 是我們團隊會議的逐字稿。請幫我：1. 辨識每位發言者並標註他們的主要觀點 2. 提取所有「決策事項」並用表格呈現（決策內容／決策者／日期）3. 提取所有「待辦行動」並用表格呈現（任務／負責人／截止日／優先級）4. 產出 meeting_summary.md（含議題摘要、決策表、待辦表、下次會議建議議程）5. 產出 action_items.csv（可匯入 Notion 或 Trello 的格式）6. 最後附上一段 50 字以內的會議一句話總結，方便貼到 Slack</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者學會用 Claude 做「非結構化文字→結構化資料」的轉換，成果立刻能用在工作中
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工作坊 內容創作">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/15</span>
+    </div>
+    <h2>多語系行銷文案工作坊</h2>
+    <div class="tagline">輸入一個產品特色，自動產出五種語言、三種風格的社群貼文與廣告文案</div>
+    <p>給 Claude Code 你的產品名稱、核心賣點和目標受眾，它會幫你生成繁中、簡中、英文、日文、韓文五種語言版本的行銷文案，每種語言各有專業正式、輕鬆幽默、急迫促銷三種風格。產出包含一個資料夾結構，每語言一個 Markdown 檔，加上一份總覽比較表。適合跨國電商、獨立開發者推廣產品、行銷團隊快速產出 A/B 測試素材。</p>
+    <div class="prompt-box">我的產品資訊如下：
+- 產品名稱：[填入]
+- 核心賣點：[填入三個重點]
+- 目標受眾：[填入]
+- 使用場景：[填入]
+
+請幫我：1. 建立 /marketing_copy 資料夾 2. 為繁中、簡中、英文、日文、韓文各建一個 .md 檔 3. 每個檔案包含三種風格的文案：(a) 專業正式版—適合 LinkedIn 和官網 (b) 輕鬆幽默版—適合 Instagram 和 Twitter (c) 急迫促銷版—適合限時活動廣告 4. 每則文案含標題、正文（80-150字）、三個 hashtag、一句 CTA 5. 產出 comparison_table.md 用表格橫向比較所有版本 6. 在每則文案旁加上「文化備註」提醒該語系的禁忌用語或在地化建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰在於理解多語系在地化差異與品牌語調一致性，學會用 Claude 建立可重複使用的文案產線
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型腳手架產生器 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/15</span>
+    </div>
+    <h2>全端原型腳手架產生器</h2>
+    <div class="tagline">描述你的應用概念，自動生成含前後端、資料庫、Docker 的完整專案骨架</div>
+    <p>告訴 Claude Code 你想做什麼應用（例如「寵物領養媒合平台」），它會幫你生成完整的全端專案骨架：React 前端含路由與元件架構、Node.js/Express 後端含 RESTful API 設計、PostgreSQL 資料庫 schema 與種子資料、Docker Compose 一鍵啟動環境、加上 README 文件與 API 文件。適合想快速驗證 MVP 概念的創業者與全端開發者。</p>
+    <div class="prompt-box">我想做一個應用程式，概念如下：
+- 應用名稱：[填入]
+- 一句話描述：[填入]
+- 核心功能（列3-5個）：[填入]
+- 目標用戶：[填入]
+
+請幫我建立完整的專案骨架：
+1. 建立 /project-root 資料夾，包含 /client（React + Vite + TailwindCSS）和 /server（Node.js + Express + TypeScript）
+2. /client 中建立：路由設定（React Router）、至少 5 個頁面元件骨架、共用元件庫（Navbar, Footer, Card, Modal）、狀態管理架構（Context API）、API 呼叫工具函式
+3. /server 中建立：RESTful API 路由與控制器、中介軟體（驗證、錯誤處理、CORS）、PostgreSQL 連線設定與 Knex migration 檔、至少 3 張資料表的 schema 與種子資料、JWT 認證流程
+4. 根目錄建立 docker-compose.yml（含 app、db、adminer 三個服務）
+5. 產出 README.md（含架構圖 ASCII art、安裝步驟、環境變數說明、API 端點列表）
+6. 產出 API_DOCS.md（每個端點含方法、路徑、請求範例、回應範例）
+7. 加入 .env.example 和 .gitignore</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰涵蓋前後端架構設計、資料庫建模、容器化部署，學會用 Claude 快速搭建生產級專案骨架
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">33</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -698,8 +783,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">34</span>
       <span class="tag level-2">中階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">60 分鐘</span>
@@ -717,8 +801,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康儀表板 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">35</span>
       <span class="tag level-3">高階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">120 分鐘</span>
@@ -734,16 +817,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端指令速查小幫手 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端指令速查小幫手 生產力">
     <div class="card-header">
       <span class="badge">30</span>
       <span class="tag level-1">初階</span>
