@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/15</span>
-      <span>📚 累計收錄：<span id="totalCount">38</span> 個專案</span>
+      <span>📅 最後更新：2026/07/16</span>
+      <span>📚 累計收錄：<span id="totalCount">41</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,90 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 38 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 41 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/15) ============ -->
+  <!-- ============ 今日新增 (7/16) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/15
+    今日新增 · 2026/07/16
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點摘要機 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/16</span>
+    </div>
+    <h2>每日天氣穿搭建議器</h2>
+    <div class="tagline">根據天氣預報與個人衣櫃清單，自動產出今日穿搭組合與出門提醒</div>
+    <p>把你的衣櫃清單（類型、顏色、厚薄）整理成一份 CSV，搭配目標城市的天氣資訊，讓 Claude Code 幫你產出當日穿搭建議、是否需帶傘或外套的提醒，並輸出一份漂亮的 HTML 每日穿搭卡片。適合每天早上不知道穿什麼的人，也能當成學習 HTML 模板生成的入門練習。</p>
+    <div class="prompt-box">我有一份衣櫃清單 wardrobe.csv，欄位包含：品項名稱、類型（上衣/褲子/外套/鞋子/配件）、顏色、適合溫度範圍、風格標籤。今天的天氣資訊如下：台北，28°C，午後雷陣雨，濕度 80%。請幫我：1. 從衣櫃中挑出 3 套適合今天天氣的穿搭組合，每套包含上衣＋褲子＋鞋子，視情況加外套或配件 2. 每套標註風格（休閒/正式/運動）與舒適度評分 3. 附上出門提醒（帶傘、防曬等） 4. 產出 daily-outfit.html，用卡片式排版呈現三套方案，配色用柔和色調</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 的邏輯推薦與 HTML 產出能力，成品馬上可以在瀏覽器開啟使用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析台 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/16</span>
+    </div>
+    <h2>競品功能矩陣分析台</h2>
+    <div class="tagline">輸入多個競品網址或資料，自動產出功能比較矩陣、差異分析與策略建議報告</div>
+    <p>把 3-5 個競品的功能說明（網頁文字、截圖文字、規格表）丟給 Claude Code，它會自動歸納功能維度、建立比較矩陣、標示各家優劣勢，最終產出一份含互動式表格的 HTML 報告與策略建議的 Markdown 文件。PM、行銷企劃、創業者在做市場調查時能省下數小時的手動整理時間。</p>
+    <div class="prompt-box">我正在分析以下 4 個專案管理工具的競品差異：[工具A資料.txt] [工具B資料.txt] [工具C資料.txt] [工具D資料.txt]。每份檔案包含該產品的功能頁面文字與定價方案。請幫我：1. 自動歸納出 8-12 個關鍵功能維度（如：任務管理、甘特圖、自動化、整合數量、定價等） 2. 建立功能比較矩陣，每格用 ✅ 完整支援 / ⚠️ 部分支援 / ❌ 不支援 標示 3. 每個維度給出最佳選擇與理由 4. 產出 competitive-analysis/ 資料夾，內含：matrix.html（互動式表格，可排序過濾）、report.md（完整分析報告含策略建議）、summary.csv（原始矩陣數據） 5. 在報告最後加入「市場空白機會」章節，指出沒有競品做好的功能領域</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習涵蓋多文件分析、結構化資料歸納、多格式輸出與商業策略思維，適合有基本使用經驗的人挑戰
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全自動週報儀表板系統 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/16</span>
+    </div>
+    <h2>全自動週報儀表板系統</h2>
+    <div class="tagline">串接多個資料源，自動彙整成互動式週報儀表板並產出郵件摘要</div>
+    <p>建立一套完整的週報自動化系統：讀取 CSV 銷售數據、JSON 格式的專案進度、Markdown 格式的團隊週記，由 Claude Code 產出含圖表的互動式 HTML 儀表板（用 Chart.js 繪製折線圖、長條圖、甜甜圈圖）、自動計算 KPI 達成率與趨勢分析，並生成可直接寄出的純文字郵件摘要。整套系統含 Node.js 資料處理腳本、模板引擎、以及一鍵執行的 shell 腳本，適合想學全流程自動化的進階使用者。</p>
+    <div class="prompt-box">請幫我建立一套週報自動化系統，資料夾結構如下：weekly-report-system/├── data/│ ├── sales.csv（欄位：日期,產品,營收,數量,區域）│ ├── projects.json（欄位：專案名,負責人,進度百分比,狀態,風險等級）│ └── team-notes.md（各組員用 ## 標題寫的本週摘要）├── scripts/│ ├── process-data.js（讀取所有資料源，計算 KPI）│ ├── generate-dashboard.js（用模板產出 HTML 儀表板）│ └── generate-email.js（產出郵件摘要純文字）├── templates/│ └── dashboard-template.html（Chart.js 互動圖表模板）├── output/（生成結果放這裡）└── run.sh（一鍵執行全流程）功能需求：1. 銷售分析：週營收趨勢折線圖、產品佔比甜甜圈圖、區域比較長條圖、WoW 成長率 2. 專案追蹤：進度總覽表格、風險項目高亮、預計延遲警示 3. 團隊動態：自動從 Markdown 摘取每人三大重點 4. KPI 儀表板：5 個核心指標含達標燈號（綠/黃/紅） 5. 郵件摘要：300 字以內的純文字版本，適合直接貼到信件 請先產出完整的範例資料檔，再建構所有腳本與模板，最後確認 run.sh 可一鍵執行</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合多資料格式解析、Node.js 腳本撰寫、Chart.js 視覺化與 shell 自動化，完整體驗端到端系統建構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點摘要機 生產力">
+    <div class="card-header">
+      <span class="badge">36</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -698,8 +765,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工作坊 內容創作">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">37</span>
       <span class="tag level-2">中階</span>
       <span class="tag">內容創作</span>
       <span class="tag time">50 分鐘</span>
@@ -723,8 +789,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型腳手架產生器 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">38</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -753,17 +818,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">33</span>
       <span class="tag level-1">初階</span>
