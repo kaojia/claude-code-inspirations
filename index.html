@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/17</span>
-      <span>📚 累計收錄：<span id="totalCount">44</span> 個專案</span>
+      <span>📅 最後更新：2026/07/18</span>
+      <span>📚 累計收錄：<span id="totalCount">47</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,92 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 44 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 47 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/17) ============ -->
+  <!-- ============ 今日新增 (7/18) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/17
+    今日新增 · 2026/07/18
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人飲食紀錄與營養分析器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要與待辦提取器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/18</span>
+    </div>
+    <h2>會議逐字稿摘要與待辦提取器</h2>
+    <div class="tagline">把冗長的會議紀錄丟進去，自動產出結構化摘要、決議事項與個人待辦清單</div>
+    <p>將會議逐字稿或筆記貼給 Claude Code，它會自動辨識討論主題、歸納每段重點、標記決議事項，並依與會者拆分個人待辦清單，最後輸出 Markdown 摘要檔與可匯入 Notion 的 CSV 待辦表。適合 PM、主管、或任何每天被會議淹沒的人，開完會五分鐘就有完整紀錄可發給團隊。</p>
+    <div class="prompt-box">以下是我今天的會議逐字稿 [貼上文字]。請幫我：1. 用三層結構整理摘要（主題→討論要點→結論）2. 列出所有決議事項，標注負責人與截止日 3. 依每位與會者產出個人待辦清單 4. 輸出 meeting_summary.md（含完整摘要）和 action_items.csv（欄位：負責人、待辦事項、截止日、優先級）5. 若逐字稿中有模糊未決事項，另開一區標記為「待確認」</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階即可完成，體驗 Claude 的文本理解與結構化輸出能力，成果馬上可用於工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="社群貼文批量排程工作台 內容創作">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/18</span>
+    </div>
+    <h2>社群貼文批量排程工作台</h2>
+    <div class="tagline">輸入一個主題，自動生成一週份跨平台社群貼文並匯出排程表</div>
+    <p>給 Claude Code 一個產品主題或行銷活動名稱，它會針對 Instagram、LinkedIn、X（Twitter）三個平台的特性，分別產出七天份的貼文內容，包含文案、Hashtag建議、最佳發文時段，以及配圖的 DALL-E 提示詞。最終輸出一份含所有貼文的 HTML 預覽頁面與 CSV 排程表，可直接匯入 Buffer 或 Hootsuite。適合一人行銷團隊或自媒體經營者。</p>
+    <div class="prompt-box">我的產品/主題是：[填入主題]，目標受眾是：[填入受眾]。請幫我建立一個社群內容工作台：1. 建立資料夾 social-content-studio/ 2. 為 Instagram、LinkedIn、X 各產出 7 篇貼文，每篇包含：文案（符合該平台調性與字數限制）、5 個 Hashtag、建議發文時段、一段配圖生成提示詞 3. 產出 schedule.csv（欄位：日期、平台、文案、Hashtag、發文時間、圖片提示詞）4. 產出 preview.html，用卡片式排版預覽所有 21 篇貼文，依平台分頁籤顯示 5. 文案風格要有變化：混合教學型、故事型、互動型、數據型貼文</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習：需整合多平台邏輯、HTML/CSS 前端排版與 CSV 資料結構，學會讓 Claude 處理有條件約束的批量內容生成
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="本地端開支儀表板全棧應用 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/18</span>
+    </div>
+    <h2>本地端開支儀表板全棧應用</h2>
+    <div class="tagline">上傳銀行對帳單 CSV，自動分類消費並生成互動式視覺化財務儀表板</div>
+    <p>打造一個完整的本地端財務分析應用：使用者上傳銀行匯出的 CSV 對帳單，系統自動辨識消費類別（餐飲、交通、訂閱等），用 Python 後端處理資料，搭配 React 前端呈現互動式圖表——包含月度趨勢折線圖、類別佔比甜甜圈圖、異常大額消費警示、以及每月儲蓄率追蹤。所有資料僅存於本地，不上傳任何雲端服務，適合重視隱私的個人理財使用者。</p>
+    <div class="prompt-box">請幫我建立一個全棧個人財務儀表板專案：1. 建立 expense-dashboard/ 資料夾，後端用 FastAPI，前端用 React + Recharts 2. 後端功能：(a) 接收 CSV 上傳 API，支援常見台灣銀行匯出格式（至少處理欄位：日期、摘要、支出、收入、餘額）(b) 用規則引擎+關鍵字比對自動分類為 8 大類別（餐飲、交通、購物、訂閱、醫療、娛樂、居住、其他）(c) 提供 /api/summary、/api/trends、/api/alerts 三個端點 3. 前端功能：(a) 拖拽上傳區 (b) 月度支出趨勢折線圖 (c) 類別佔比甜甜圈圖（可點擊展開明細）(d) 異常消費警示卡片（超過該類別月均值 2 倍）(e) 儲蓄率追蹤儀表 4. 加入 SQLite 本地儲存，支援多月份資料累積比較 5. 附 README.md 含安裝指令與截圖說明</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰：涵蓋全端架構設計、資料處理管線、互動式視覺化與本地資料庫整合，全面考驗 Claude Code 的工程能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人飲食紀錄與營養分析器 生產力">
+    <div class="card-header">
+      <span class="badge">42</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">30 分鐘</span>
@@ -698,8 +767,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="GitHub儲存庫健康檢查儀表板 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">43</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
@@ -717,8 +785,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端微型SaaS原型產生器 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">44</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -734,19 +801,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議器 生產力">
     <div class="card-header">
       <span class="badge">39</span>
       <span class="tag level-1">初階</span>
