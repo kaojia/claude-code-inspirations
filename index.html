@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/18</span>
-      <span>📚 累計收錄：<span id="totalCount">47</span> 個專案</span>
+      <span>📅 最後更新：2026/07/19</span>
+      <span>📚 累計收錄：<span id="totalCount">50</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,110 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 47 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 50 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/18) ============ -->
+  <!-- ============ 今日新增 (7/19) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/18
+    今日新增 · 2026/07/19
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要與待辦提取器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件模板智慧產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/19</span>
+    </div>
+    <h2>電子郵件模板智慧產生器</h2>
+    <div class="tagline">輸入你的職業角色與常見情境，自動產出一整套專業郵件模板庫</div>
+    <p>告訴 Claude Code 你的工作角色（如 PM、業務、HR），它會幫你產出涵蓋請求、催促、道歉、感謝、會議邀請等十種常見情境的專業郵件模板，每封附上可替換的變數欄位，最終輸出成 Markdown 檔與可直接貼入 Gmail 的 HTML 版本。適合每天花大量時間寫信的上班族。</p>
+    <div class="prompt-box">我是一位 [你的職位，例如：B2B 業務經理]，每天需要寄很多信給客戶和內部同事。請幫我：1. 列出我這個角色最常用的 12 種郵件情境（如初次開發、報價跟進、交期延遲致歉等）2. 每種情境寫一封專業模板，用 {{客戶名稱}}、{{日期}} 等變數標記可替換處 3. 每封信附上「正式版」和「親切版」兩種語氣 4. 全部輸出成 email-templates.md 以及 email-templates.html（含基本排版樣式）5. 最後做一份 README.md 說明各模板的使用時機</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：體驗 Claude Code 批量生成結構化文字檔並組織成專案資料夾的流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析工作台 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">7/19</span>
+    </div>
+    <h2>競品功能矩陣分析工作台</h2>
+    <div class="tagline">貼上多個競品網址或資料，自動產出視覺化功能比較矩陣與策略建議報告</div>
+    <p>將你蒐集的競品資訊（產品頁截圖文字、定價頁面、功能清單）丟給 Claude Code，它會建立一個完整的分析專案：包含互動式 HTML 功能比較矩陣表、雷達圖視覺化各產品強弱項、SWOT 分析摘要，以及最終的策略建議 PDF。特別適合產品經理做季度競品研究、創業者評估市場切入點。</p>
+    <div class="prompt-box">我正在做競品分析，以下是 [3-5 個競品名稱] 的功能與定價資訊：[貼上資料]。請幫我建立一個競品分析專案：1. 建立資料夾結構：/data（原始資料）、/output（產出報告）、/assets（圖表）2. 解析所有競品資訊，整理出統一的功能維度分類（至少 8 個維度如定價、API支援、整合數量等）3. 產出 comparison-matrix.html：互動式表格，支援排序與篩選，用顏色標記優劣勢 4. 用 Chart.js 製作雷達圖比較各產品在不同維度的評分 5. 為每個競品撰寫 SWOT 分析 6. 產出 strategic-report.md 包含市場機會、差異化建議、定價策略建議 7. 加入 index.html 作為儀表板首頁，連結所有分析頁面</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習整合多來源資料、建構多頁面前端專案與資料視覺化，學會讓 Claude Code 處理複雜分析邏輯
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時協作看板系統 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">7/19</span>
+    </div>
+    <h2>多人即時協作看板系統</h2>
+    <div class="tagline">用 WebSocket 打造支援拖放、即時同步、歷史回溯的全端看板應用</div>
+    <p>請 Claude Code 從零搭建一個類似 Trello 的即時協作看板系統：後端用 Node.js + Express + WebSocket 處理即時同步，前端用原生 JavaScript 實現拖放排序與動態更新，SQLite 儲存資料並支援操作歷史回溯。包含使用者驗證、多看板管理、卡片標籤篩選、活動日誌等完整功能。適合想理解全端即時應用架構的開發者練手。</p>
+    <div class="prompt-box">請幫我從零建立一個即時協作看板系統，完整全端專案：
+
+後端需求：
+1. Node.js + Express 建立 REST API（看板 CRUD、卡片 CRUD、使用者註冊登入）
+2. 用 ws 套件實作 WebSocket 伺服器，處理即時事件廣播（卡片移動、新增、刪除）
+3. SQLite + better-sqlite3 做持久化儲存，設計 users、boards、columns、cards、activity_log 五張表
+4. JWT 驗證中介層，支援多使用者各自的看板權限
+5. 每次操作寫入 activity_log，支援最近 50 筆歷史回溯（undo）
+
+前端需求：
+1. 純 HTML/CSS/JS，不用框架，用 CSS Grid 排列看板欄位
+2. 原生 Drag & Drop API 實現卡片拖放，跨欄位移動時即時透過 WebSocket 同步
+3. 卡片支援標題、描述、標籤（可自訂顏色）、到期日
+4. 側邊欄顯示即時活動日誌，標註是哪位使用者的操作
+5. 響應式設計，手機上可水平滑動欄位
+
+專案結構：/server（後端）、/client（前端靜態檔）、/database（SQLite 檔與 migration）
+請附上 package.json、啟動腳本、.env.example 與完整 README 含架構圖說明</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階全端挑戰：涵蓋 WebSocket 即時通訊、資料庫設計、驗證授權、前端拖放互動，全面鍛鍊系統設計與除錯能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要與待辦提取器 生產力">
+    <div class="card-header">
+      <span class="badge">45</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -698,8 +785,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="社群貼文批量排程工作台 內容創作">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">46</span>
       <span class="tag level-2">中階</span>
       <span class="tag">內容創作</span>
       <span class="tag time">50 分鐘</span>
@@ -717,8 +803,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="本地端開支儀表板全棧應用 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">47</span>
       <span class="tag level-3">高階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">120 分鐘</span>
@@ -734,20 +819,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人飲食紀錄與營養分析器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人飲食紀錄與營養分析器 生產力">
     <div class="card-header">
       <span class="badge">42</span>
       <span class="tag level-1">初階</span>
