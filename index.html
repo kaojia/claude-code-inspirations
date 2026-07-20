@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/19</span>
-      <span>📚 累計收錄：<span id="totalCount">50</span> 個專案</span>
+      <span>📅 最後更新：2026/07/20</span>
+      <span>📚 累計收錄：<span id="totalCount">53</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,136 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 50 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 53 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/19) ============ -->
+  <!-- ============ 今日新增 (7/20) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/19
+    今日新增 · 2026/07/20
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件模板智慧產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人日記情緒週報產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/20</span>
+    </div>
+    <h2>個人日記情緒週報產生器</h2>
+    <div class="tagline">每天貼上日記或心情紀錄，週末自動產出情緒趨勢週報與自我照顧建議</div>
+    <p>把一週的日記、隨手筆記或語音轉文字貼給 Claude Code，它會分析每天的情緒指數（1-10）、辨識反覆出現的壓力源與正向事件，最後產出一份含情緒折線圖數據、關鍵詞雲清單、以及個人化自我照顧建議的 Markdown 週報。適合想建立自我覺察習慣但不知從何下手的人。</p>
+    <div class="prompt-box">以下是我這一週七天的日記內容：
+[貼上七天的文字紀錄]
+
+請幫我：
+1. 為每天評估一個情緒分數（1-10），並標註主要情緒類型（焦慮、開心、疲憊等）
+2. 找出這週重複出現的前 3 個壓力源和前 3 個正向事件
+3. 統計最常出現的 15 個情緒相關關鍵詞
+4. 根據分析結果，給我 5 個具體可執行的下週自我照顧建議
+5. 將以上內容整理成 weekly_mood_report.md，包含情緒分數表格、趨勢說明、關鍵詞清單、建議區塊
+6. 另外產出 mood_data.csv 方便我長期追蹤</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階使用者可體驗 Claude 的文本情感分析與結構化輸出能力，成品立刻可用於自我照顧
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章翻修工作台 內容創作">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/20</span>
+    </div>
+    <h2>技術部落格文章翻修工作台</h2>
+    <div class="tagline">丟入舊文草稿，自動產出 SEO 優化版本、社群摘要、與多平台發佈包</div>
+    <p>將一篇技術部落格草稿或舊文丟給 Claude Code，它會進行結構重組、補充程式碼範例與圖表說明建議、產生 SEO 元資料（title tag、meta description、slug），同時自動衍生 Twitter 推文串、LinkedIn 貼文、電子報摘要三種社群版本。最終輸出完整的發佈資料夾，含重寫後的 Markdown 文章與所有衍生內容。適合有技術內容但苦於行銷推廣的工程師與獨立開發者。</p>
+    <div class="prompt-box">以下是我的技術部落格草稿：
+[貼上文章或拖曳 .md 檔案]
+
+目標讀者：[例如：中階前端工程師]
+主要關鍵字：[例如：React Server Components]
+
+請幫我執行以下工作：
+1. 分析原文結構，指出邏輯斷層或缺少範例的段落，給出修改建議
+2. 重寫全文：加入清楚的 H2/H3 層級、程式碼區塊標註語言、每段核心重點粗體標記
+3. 產生 SEO 元資料：title tag（60 字內）、meta description（155 字內）、建議 URL slug
+4. 衍生社群內容：Twitter 推文串（5-7 則）、LinkedIn 長貼文（300 字）、電子報摘要（150 字）
+5. 建立資料夾結構如下：
+   /publish-pack
+     ├── article_rewritten.md
+     ├── seo_metadata.json
+     ├── twitter_thread.md
+     ├── linkedin_post.md
+     └── newsletter_blurb.md</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合多種輸出格式與 SEO 知識，學會用 Claude 建立可重複使用的內容生產流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用原型機 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/20</span>
+    </div>
+    <h2>全端費用拆帳應用原型機</h2>
+    <div class="tagline">從零搭建一個多人旅行拆帳 Web App，含債務最小化演算法與匯出功能</div>
+    <p>請 Claude Code 從零開始建立一個完整的旅行拆帳 Web 應用原型：使用者可建立旅行群組、新增支出紀錄（含付款人、分帳對象、幣別）、系統自動執行債務最小化演算法計算最少轉帳次數，最終提供結算摘要頁面與 PDF 匯出。前端使用 React + TailwindCSS，後端使用 Node.js + SQLite，全部在本地運行。適合想用 Claude Code 實際搭建完整應用、理解前後端整合的開發者。</p>
+    <div class="prompt-box">請幫我從零建立一個「旅行拆帳 Web App」完整原型，需求如下：
+
+【功能需求】
+1. 建立旅行群組：輸入旅行名稱、新增成員姓名
+2. 新增支出：選擇付款人、輸入金額與幣別（TWD/JPY/USD，固定匯率即可）、勾選分帳對象、可加備註
+3. 帳本總覽：列出所有支出，可按日期/付款人篩選
+4. 智慧結算：用債務最小化演算法（圖論最少邊方法）算出最少轉帳筆數，顯示「A 付給 B 多少元」的結算清單
+5. 匯出 PDF 結算報告
+
+【技術規格】
+- 前端：React 18 + Vite + TailwindCSS + React Router
+- 後端：Node.js + Express + better-sqlite3
+- 資料夾結構：/client 和 /server 分開
+- 提供 package.json、啟動腳本、README.md
+- 附上債務最小化核心演算法的單元測試（至少 5 個測試案例）
+
+請先建立完整檔案結構，再逐一實作每個檔案，確保 npm install && npm run dev 可直接啟動。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋全端開發、演算法實作、資料庫設計與測試撰寫，全面挑戰 Claude Code 的程式產出能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件模板智慧產生器 生產力">
+    <div class="card-header">
+      <span class="badge">48</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -698,8 +811,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析工作台 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">49</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">60 分鐘</span>
@@ -717,8 +829,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時協作看板系統 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">50</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">150 分鐘</span>
@@ -751,21 +862,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要與待辦提取器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要與待辦提取器 生產力">
     <div class="card-header">
       <span class="badge">45</span>
       <span class="tag level-1">初階</span>
