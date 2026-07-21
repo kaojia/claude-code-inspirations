@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/20</span>
-      <span>📚 累計收錄：<span id="totalCount">53</span> 個專案</span>
+      <span>📅 最後更新：2026/07/21</span>
+      <span>📚 累計收錄：<span id="totalCount">56</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,95 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 53 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 56 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/20) ============ -->
+  <!-- ============ 今日新增 (7/21) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/20
+    今日新增 · 2026/07/21
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人日記情緒週報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點摘要機 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/21</span>
+    </div>
+    <h2>會議逐字稿重點摘要機</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的行動清單與決策紀錄</div>
+    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿丟進 Claude Code，自動產出三份文件：一頁式會議摘要、依負責人分類的待辦事項清單（含截止日），以及決策紀錄表。適合專案經理、團隊主管每週例會後快速同步進度。</p>
+    <div class="prompt-box">這份 [拖曳逐字稿檔案] 是我們今天的團隊會議紀錄，大約 45 分鐘。請幫我：1. 產出一份 500 字以內的會議摘要，包含主題、參與者、關鍵討論點 2. 列出所有被提到的待辦事項，格式為「負責人｜任務內容｜截止日期｜優先級」表格 3. 整理所有已達成的決策，標註決策理由 4. 把以上三部分輸出成一份 meeting_summary.md 檔案，用清晰的 Markdown 標題分隔 5. 另外產出 action_items.csv 方便匯入專案管理工具</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：體驗 Claude 的長文閱讀與資訊萃取能力，產出立刻可用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="開源專案文件健檢診所 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/21</span>
+    </div>
+    <h2>開源專案文件健檢診所</h2>
+    <div class="tagline">自動掃描 GitHub 專案資料夾，產出完整的文件品質報告與修補建議</div>
+    <p>指定一個本地端的開源專案資料夾，Claude Code 會掃描 README、CONTRIBUTING、CHANGELOG、程式碼註解覆蓋率等，產出文件健康度評分卡（滿分 100）、缺失文件清單，並自動生成補足範本。適合開源維護者在發佈新版前做文件品質把關，也適合想貢獻開源但不知從何下手的開發者。</p>
+    <div class="prompt-box">請掃描這個專案資料夾 [拖曳資料夾] 的文件品質，幫我完成以下工作：1. 檢查是否存在 README.md、CONTRIBUTING.md、CHANGELOG.md、LICENSE、CODE_OF_CONDUCT.md，缺少的請標記 2. 分析 README 是否包含：專案簡介、安裝步驟、使用範例、API 文件連結、徽章、授權說明，逐項評分 3. 隨機抽查 10 個程式檔案，評估註解覆蓋率與 docstring 品質 4. 產出 docs_health_report.md 包含總分、各項細節、改善優先順序 5. 對每個缺失項目，在 /generated_docs 資料夾中產出建議範本檔案 6. 額外產出一份 docs_roadmap.md 列出建議的文件改善路線圖</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：需理解專案結構分析與多檔案批次產出，學會讓 Claude 做系統性審查
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="互動式資料儀表板建構器 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/21</span>
+    </div>
+    <h2>互動式資料儀表板建構器</h2>
+    <div class="tagline">上傳 CSV 資料集，全自動產出含篩選器與圖表的單頁互動式儀表板網頁</div>
+    <p>將任意 CSV 資料（銷售紀錄、用戶行為、感測器數據等）交給 Claude Code，它會自動分析欄位型態與資料分佈，選擇最適合的圖表類型，並產出一個使用 HTML + Chart.js + Tailwind CSS 的完整單頁儀表板。包含動態篩選器、日期範圍選擇、關鍵指標卡片、響應式佈局，直接開瀏覽器就能用，也可部署到 GitHub Pages。</p>
+    <div class="prompt-box">這份 [拖曳 CSV 檔案] 是我的業務資料。請幫我建構一個完整的互動式儀表板：1. 先分析 CSV 結構，列出所有欄位的型態（數值/類別/日期/文字）與基本統計 2. 根據資料特性，自動選擇 4-6 個最有洞察價值的圖表（折線圖、長條圖、圓餅圖、散佈圖等） 3. 建立專案資料夾 /dashboard，結構為 index.html + /css/style.css + /js/app.js + /data/data.json 4. 使用 Chart.js 繪圖、Tailwind CSS 排版，頂部放 3-4 個 KPI 摘要卡片 5. 實作至少兩個互動篩選器（下拉選單與日期範圍），篩選時所有圖表同步更新 6. 加入深色模式切換按鈕 7. 確保 RWD 響應式設計，手機平板都能正常瀏覽 8. 產出 README.md 說明如何開啟與自訂儀表板</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：結合資料分析、前端開發、互動設計，需多輪迭代調整圖表與佈局細節
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人日記情緒週報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">51</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -707,8 +779,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章翻修工作台 內容創作">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">52</span>
       <span class="tag level-2">中階</span>
       <span class="tag">內容創作</span>
       <span class="tag time">50 分鐘</span>
@@ -743,8 +814,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用原型機 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">53</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -776,22 +846,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件模板智慧產生器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件模板智慧產生器 生產力">
     <div class="card-header">
       <span class="badge">48</span>
       <span class="tag level-1">初階</span>
