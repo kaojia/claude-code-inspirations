@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/22</span>
-      <span>📚 累計收錄：<span id="totalCount">59</span> 個專案</span>
+      <span>📅 最後更新：2026/07/23</span>
+      <span>📚 累計收錄：<span id="totalCount">62</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 59 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 62 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/22) ============ -->
+  <!-- ============ 今日新增 (7/23) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/22
+    今日新增 · 2026/07/23
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼註解翻譯潤色器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日儀表板 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">7/22</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">7/23</span>
     </div>
-    <h2>程式碼註解翻譯潤色器</h2>
-    <div class="tagline">把英文程式碼註解全部翻成中文，順便補上缺少的說明讓新人也看得懂</div>
-    <p>將整個專案資料夾丟給 Claude Code，它會掃描所有程式檔案，把英文註解翻譯成流暢的繁體中文，對沒有註解的關鍵函式自動補上說明，最後產出一份「註解覆蓋率報告」。特別適合接手別人專案、帶新人 onboarding、或想把 side project 中文化的開發者。</p>
-    <div class="prompt-box">請掃描目前資料夾中所有 .js / .ts / .py 檔案，幫我做以下事情：1. 把所有英文註解翻譯成繁體中文，保持語氣簡潔專業 2. 找出沒有任何註解的函式或類別，自動補上中文說明（含參數用途與回傳值描述）3. 不要改動任何程式邏輯，只動註解部分 4. 完成後產出 annotation-report.md，列出：已翻譯註解數量、新增註解數量、各檔案的註解覆蓋率百分比 5. 如果遇到技術專有名詞（如 middleware、callback）保留英文並加括號附中文解釋</div>
+    <h2>終端機每日儀表板</h2>
+    <div class="tagline">打開終端就看到天氣、待辦、行事曆與習慣追蹤的個人儀表板</div>
+    <p>請 Claude Code 建立一個純終端機的每日儀表板腳本，每次開啟 Terminal 自動顯示今日天氣概況、從本地 JSON 讀取的待辦清單、本週行事曆摘要，以及習慣打卡追蹤進度條。產出是一支可直接加進 .zshrc/.bashrc 的 Python 腳本，讓你的終端機不再只有黑底白字。</p>
+    <div class="prompt-box">請幫我用 Python 寫一支 daily_dashboard.py 終端機儀表板腳本：1. 用 rich 套件做漂亮的終端排版，分成四個面板 2. 天氣面板：呼叫 wttr.in API 取得指定城市天氣，顯示溫度+天氣圖示 3. 待辦面板：從 ~/todos.json 讀取任務清單，支援 python daily_dashboard.py --add '買牛奶' 新增項目 4. 習慣面板：追蹤「喝水/運動/閱讀」三個習慣，用進度條顯示本週達成率 5. 產出 requirements.txt，並給我一行可加進 .zshrc 的 alias 指令。資料夾結構放在 ~/dashboard/ 下</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習：只修改註解不動邏輯，零風險體驗 Claude Code 批次處理檔案的能力
+      初階但有成就感，學會 API 串接與終端美化，打開電腦就能用
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 端點自動測試工廠 程式原型">
+  <article class="card searchable" data-level="中階" data-category="生產力" data-searchtext="Git 倉庫變更週報產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">生產力</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">7/22</span>
+      <span class="date-tag">7/23</span>
     </div>
-    <h2>API 端點自動測試工廠</h2>
-    <div class="tagline">讀取後端路由定義，自動產出完整的 API 測試腳本與 mock 資料</div>
-    <p>給 Claude Code 你的後端專案（Express、FastAPI、Django 等），它會自動解析所有 API 路由，為每個端點生成對應的測試案例，包含正常請求、邊界值、錯誤處理三種情境，同時產出 mock 資料檔案與測試覆蓋率摘要。適合想補測試但懶得從零開始寫的後端工程師，一次把技術債清掉。</p>
-    <div class="prompt-box">請分析這個後端專案的所有 API 路由定義，幫我自動產出測試：1. 先掃描路由檔案，列出所有端點（方法、路徑、需要的參數）2. 為每個端點建立測試檔案放在 /tests 資料夾，使用 Jest + Supertest（如果是 Python 專案則用 pytest）3. 每個端點至少包含三種測試情境：(a) 正常請求回傳 200 (b) 缺少必要參數回傳 400 (c) 未授權請求回傳 401 4. 在 /tests/mocks 資料夾產出對應的 mock 資料 JSON 檔 5. 產出 test-coverage-plan.md 列出所有端點與對應測試案例的對照表 6. 加上 npm script 或 Makefile 讓我一鍵跑全部測試</div>
+    <h2>Git 倉庫變更週報產生器</h2>
+    <div class="tagline">掃描整週的 Git commit 與 diff，自動產出給主管看的中文週報</div>
+    <p>讓 Claude Code 寫一個 CLI 工具，自動讀取指定 Git 倉庫過去七天的所有 commit 訊息、檔案變更統計與 diff 摘要，透過分類歸納（新功能、修 Bug、重構、文件）產出一份結構化的 Markdown 週報。支援多倉庫合併報告，特別適合需要每週交報告的工程師與技術主管。產出包含 Markdown 檔與可寄出的 HTML 電子郵件版本。</p>
+    <div class="prompt-box">請幫我建立一個 Git 週報產生器專案 git-weekly-report/：1. 用 Python + GitPython 套件掃描指定資料夾下所有 git repo 2. 抓取過去 7 天的 commits，解析 commit message 自動分類成「✨ 新功能」「🐛 修復」「♻️ 重構」「📝 文件」四類 3. 統計每個 repo 的新增/刪除行數、最活躍的檔案 Top 5 4. 產出 weekly_report_YYYYMMDD.md，格式包含：摘要段落、分類明細表、變更統計圖（用 ASCII bar chart）5. 額外產出 HTML 版本可直接貼進 email 6. 支援 config.yaml 設定多個 repo 路徑與作者篩選 7. 加上 --since 和 --until 參數可自訂日期範圍</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：需要理解路由結構與測試框架，學會讓 Claude Code 分析既有程式碼並產出結構化產出
+      中階適合已會基本 Git 操作的人，學會解析 Git 物件與自動化報告流程
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="資料庫結構反向文件站 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">7/22</span>
+      <span class="date-tag">7/23</span>
     </div>
-    <h2>全端原型即時腳手架</h2>
-    <div class="tagline">用一段產品需求描述，一次生成前後端完整原型含資料庫設計與部署設定</div>
-    <p>只要給 Claude Code 一段用自然語言寫的產品需求（例如「我要做一個團隊共用的書籤管理工具，支援標籤分類和全文搜尋」），它就會一次產出完整的全端專案：React 前端、Node.js API 後端、PostgreSQL schema、Docker Compose 部署檔、README 文件，以及基本的 CI/CD 設定。適合 hackathon 快速出 MVP、或技術主管想驗證概念可行性時使用。</p>
-    <div class="prompt-box">我的產品需求如下：[貼上你的需求描述]。請幫我從零建立一個完整的全端原型專案，按以下結構執行：1. 建立 /client（React + TypeScript + Tailwind）和 /server（Node.js + Express + Prisma）兩個資料夾 2. 根據需求設計資料庫 schema，寫好 Prisma migration 檔案，至少包含 3 個以上的資料表與關聯 3. 後端實作所有 RESTful API，包含 JWT 驗證中間件、輸入驗證、統一錯誤處理 4. 前端實作所有頁面，包含路由設定、狀態管理（Zustand）、API 串接層、響應式設計 5. 寫好 docker-compose.yml 含 app + db + nginx 三個服務 6. 產出 .github/workflows/ci.yml 做基本的 lint + test + build 7. README.md 包含架構圖（用 Mermaid）、環境設定步驟、API 文件摘要 8. 加入 seed 腳本產出示範資料，讓啟動後馬上能看到畫面</div>
+    <h2>資料庫結構反向文件站</h2>
+    <div class="tagline">連上任意資料庫，自動產出含 ER 圖的互動式資料字典網站</div>
+    <p>給 Claude Code 一組資料庫連線資訊，讓它自動掃描所有 table、column、index、foreign key 與 constraint，產出一個完整的靜態資料字典網站。包含 Mermaid ER 圖、欄位說明（由 AI 根據命名推測語意）、資料範例抽樣、表格關聯分析，以及全文搜尋功能。適合接手老專案、做資料庫稽核或建立團隊共用知識庫。部署為一鍵可上 GitHub Pages 的靜態站。</p>
+    <div class="prompt-box">請幫我建立 db-doc-site/ 專案，功能是連接資料庫並自動產出互動式資料字典網站：1. 用 Python 的 SQLAlchemy 支援 PostgreSQL/MySQL/SQLite 連線，透過 reflection 取得所有 schema metadata 2. 對每張表產出：欄位名稱、型別、nullable、預設值、索引、FK 關聯，並用 AI 根據欄位名推測中文說明 3. 用 Mermaid.js 語法自動產生 ER Diagram，超過 20 張表時自動分群組顯示 4. 每張表抽樣 5 筆資料作為範例（敏感欄位自動遮罩） 5. 前端用 Next.js 靜態匯出（SSG），側邊欄列出所有表，支援 Fuse.js 全文搜尋 6. 首頁顯示資料庫總覽儀表板：表數量、總欄位數、關聯圖譜、孤立表警告 7. 提供 generate.py --db-url 'postgresql://...' --output ./site 一鍵指令 8. 附 GitHub Actions workflow 可自動排程更新並部署到 GitHub Pages 9. 建立 config.yaml 可設定遮罩規則與自訂欄位說明覆寫</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階綜合挑戰：涵蓋前後端架構、資料庫設計、容器化部署與 CI/CD，完整體驗用 Claude Code 搭建生產級腳手架的流程
+      高階專案整合資料庫反射、AI 推測語意、前後端靜態生成與 CI/CD 部署，考驗系統設計能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -751,7 +752,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點摘要機 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼註解翻譯潤色器 生產力">
+    <div class="card-header">
+      <span class="badge">57</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/22</span>
+    </div>
+    <h2>程式碼註解翻譯潤色器</h2>
+    <div class="tagline">把英文程式碼註解全部翻成中文，順便補上缺少的說明讓新人也看得懂</div>
+    <p>將整個專案資料夾丟給 Claude Code，它會掃描所有程式檔案，把英文註解翻譯成流暢的繁體中文，對沒有註解的關鍵函式自動補上說明，最後產出一份「註解覆蓋率報告」。特別適合接手別人專案、帶新人 onboarding、或想把 side project 中文化的開發者。</p>
+    <div class="prompt-box">請掃描目前資料夾中所有 .js / .ts / .py 檔案，幫我做以下事情：1. 把所有英文註解翻譯成繁體中文，保持語氣簡潔專業 2. 找出沒有任何註解的函式或類別，自動補上中文說明（含參數用途與回傳值描述）3. 不要改動任何程式邏輯，只動註解部分 4. 完成後產出 annotation-report.md，列出：已翻譯註解數量、新增註解數量、各檔案的註解覆蓋率百分比 5. 如果遇到技術專有名詞（如 middleware、callback）保留英文並加括號附中文解釋</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：只修改註解不動邏輯，零風險體驗 Claude Code 批次處理檔案的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 端點自動測試工廠 程式原型">
+    <div class="card-header">
+      <span class="badge">58</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/22</span>
+    </div>
+    <h2>API 端點自動測試工廠</h2>
+    <div class="tagline">讀取後端路由定義，自動產出完整的 API 測試腳本與 mock 資料</div>
+    <p>給 Claude Code 你的後端專案（Express、FastAPI、Django 等），它會自動解析所有 API 路由，為每個端點生成對應的測試案例，包含正常請求、邊界值、錯誤處理三種情境，同時產出 mock 資料檔案與測試覆蓋率摘要。適合想補測試但懶得從零開始寫的後端工程師，一次把技術債清掉。</p>
+    <div class="prompt-box">請分析這個後端專案的所有 API 路由定義，幫我自動產出測試：1. 先掃描路由檔案，列出所有端點（方法、路徑、需要的參數）2. 為每個端點建立測試檔案放在 /tests 資料夾，使用 Jest + Supertest（如果是 Python 專案則用 pytest）3. 每個端點至少包含三種測試情境：(a) 正常請求回傳 200 (b) 缺少必要參數回傳 400 (c) 未授權請求回傳 401 4. 在 /tests/mocks 資料夾產出對應的 mock 資料 JSON 檔 5. 產出 test-coverage-plan.md 列出所有端點與對應測試案例的對照表 6. 加上 npm script 或 Makefile 讓我一鍵跑全部測試</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：需要理解路由結構與測試框架，學會讓 Claude Code 分析既有程式碼並產出結構化產出
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
+    <div class="card-header">
+      <span class="badge">59</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/22</span>
+    </div>
+    <h2>全端原型即時腳手架</h2>
+    <div class="tagline">用一段產品需求描述，一次生成前後端完整原型含資料庫設計與部署設定</div>
+    <p>只要給 Claude Code 一段用自然語言寫的產品需求（例如「我要做一個團隊共用的書籤管理工具，支援標籤分類和全文搜尋」），它就會一次產出完整的全端專案：React 前端、Node.js API 後端、PostgreSQL schema、Docker Compose 部署檔、README 文件，以及基本的 CI/CD 設定。適合 hackathon 快速出 MVP、或技術主管想驗證概念可行性時使用。</p>
+    <div class="prompt-box">我的產品需求如下：[貼上你的需求描述]。請幫我從零建立一個完整的全端原型專案，按以下結構執行：1. 建立 /client（React + TypeScript + Tailwind）和 /server（Node.js + Express + Prisma）兩個資料夾 2. 根據需求設計資料庫 schema，寫好 Prisma migration 檔案，至少包含 3 個以上的資料表與關聯 3. 後端實作所有 RESTful API，包含 JWT 驗證中間件、輸入驗證、統一錯誤處理 4. 前端實作所有頁面，包含路由設定、狀態管理（Zustand）、API 串接層、響應式設計 5. 寫好 docker-compose.yml 含 app + db + nginx 三個服務 6. 產出 .github/workflows/ci.yml 做基本的 lint + test + build 7. README.md 包含架構圖（用 Mermaid）、環境設定步驟、API 文件摘要 8. 加入 seed 腳本產出示範資料，讓啟動後馬上能看到畫面</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：涵蓋前後端架構、資料庫設計、容器化部署與 CI/CD，完整體驗用 Claude Code 搭建生產級腳手架的流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點摘要機 生產力">
     <div class="card-header">
       <span class="badge">54</span>
       <span class="tag level-1">初階</span>
