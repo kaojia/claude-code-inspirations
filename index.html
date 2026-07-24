@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/23</span>
-      <span>📚 累計收錄：<span id="totalCount">62</span> 個專案</span>
+      <span>📅 最後更新：2026/07/24</span>
+      <span>📚 累計收錄：<span id="totalCount">65</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 62 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 65 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/23) ============ -->
+  <!-- ============ 今日新增 (7/24) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/23
+    今日新增 · 2026/07/24
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日儀表板 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機待辦清單管理器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">30 分鐘</span>
-      <span class="date-tag">7/23</span>
+      <span class="date-tag">7/24</span>
     </div>
-    <h2>終端機每日儀表板</h2>
-    <div class="tagline">打開終端就看到天氣、待辦、行事曆與習慣追蹤的個人儀表板</div>
-    <p>請 Claude Code 建立一個純終端機的每日儀表板腳本，每次開啟 Terminal 自動顯示今日天氣概況、從本地 JSON 讀取的待辦清單、本週行事曆摘要，以及習慣打卡追蹤進度條。產出是一支可直接加進 .zshrc/.bashrc 的 Python 腳本，讓你的終端機不再只有黑底白字。</p>
-    <div class="prompt-box">請幫我用 Python 寫一支 daily_dashboard.py 終端機儀表板腳本：1. 用 rich 套件做漂亮的終端排版，分成四個面板 2. 天氣面板：呼叫 wttr.in API 取得指定城市天氣，顯示溫度+天氣圖示 3. 待辦面板：從 ~/todos.json 讀取任務清單，支援 python daily_dashboard.py --add '買牛奶' 新增項目 4. 習慣面板：追蹤「喝水/運動/閱讀」三個習慣，用進度條顯示本週達成率 5. 產出 requirements.txt，並給我一行可加進 .zshrc 的 alias 指令。資料夾結構放在 ~/dashboard/ 下</div>
+    <h2>終端機待辦清單管理器</h2>
+    <div class="tagline">用純文字檔打造極簡但強大的命令列待辦事項系統，支援優先級與到期日</div>
+    <p>請 Claude Code 建立一個基於 Node.js 的 CLI 待辦清單工具，支援新增、刪除、標記完成、依優先級排序、篩選到期日等功能。所有資料存在本地 JSON 檔，不需資料庫。適合想快速管理工作任務又不想離開終端機的開發者，做完直接加進 .bashrc alias 每天使用。</p>
+    <div class="prompt-box">請幫我用 Node.js 建立一個終端機待辦清單 CLI 工具，專案名稱 todo-cli。需求如下：1. 支援指令：todo add "任務名" --priority high --due 2025-02-01、todo list（列出全部）、todo list --filter overdue、todo done <id>、todo remove <id> 2. 資料存在 ~/.todo-data.json 3. 列表輸出用 chalk 套件上色：高優先紅色、中優先黃色、低優先綠色，過期任務閃爍提示 4. 加上 todo stats 顯示完成率與本週到期數量 5. 請產出完整 package.json 並支援 npm link 全域安裝</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階但有成就感，學會 API 串接與終端美化，打開電腦就能用
+      初階入門好專案，學會用 Claude Code 搭建 CLI 工具骨架與檔案讀寫操作
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="生產力" data-searchtext="Git 倉庫變更週報產生器 生產力">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="Markdown 部落格靜態產生器 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">生產力</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">7/23</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">7/24</span>
     </div>
-    <h2>Git 倉庫變更週報產生器</h2>
-    <div class="tagline">掃描整週的 Git commit 與 diff，自動產出給主管看的中文週報</div>
-    <p>讓 Claude Code 寫一個 CLI 工具，自動讀取指定 Git 倉庫過去七天的所有 commit 訊息、檔案變更統計與 diff 摘要，透過分類歸納（新功能、修 Bug、重構、文件）產出一份結構化的 Markdown 週報。支援多倉庫合併報告，特別適合需要每週交報告的工程師與技術主管。產出包含 Markdown 檔與可寄出的 HTML 電子郵件版本。</p>
-    <div class="prompt-box">請幫我建立一個 Git 週報產生器專案 git-weekly-report/：1. 用 Python + GitPython 套件掃描指定資料夾下所有 git repo 2. 抓取過去 7 天的 commits，解析 commit message 自動分類成「✨ 新功能」「🐛 修復」「♻️ 重構」「📝 文件」四類 3. 統計每個 repo 的新增/刪除行數、最活躍的檔案 Top 5 4. 產出 weekly_report_YYYYMMDD.md，格式包含：摘要段落、分類明細表、變更統計圖（用 ASCII bar chart）5. 額外產出 HTML 版本可直接貼進 email 6. 支援 config.yaml 設定多個 repo 路徑與作者篩選 7. 加上 --since 和 --until 參數可自訂日期範圍</div>
+    <h2>Markdown 部落格靜態產生器</h2>
+    <div class="tagline">把一堆 Markdown 文章自動編譯成完整靜態部落格網站，含分類、標籤與 RSS</div>
+    <p>請 Claude Code 從零打造一個輕量靜態網站產生器：讀取 posts/ 資料夾中的 Markdown 檔案，解析 frontmatter 中繼資料（標題、日期、標籤、分類），產出完整 HTML 網站，包含首頁文章列表、分類頁、標籤雲、單篇文章頁面、RSS feed 與 sitemap.xml。使用 Handlebars 模板引擎與 Tailwind CSS，產出的 dist/ 資料夾可直接部署到 GitHub Pages。</p>
+    <div class="prompt-box">請用 Node.js 建立一個靜態部落格產生器，專案結構如下：/posts（放 .md 檔）、/templates（Handlebars 模板）、/static（CSS/圖片）、/dist（輸出）。具體需求：1. Markdown 檔案 frontmatter 格式：title, date, tags[], category, excerpt 2. 建立 build.js 主程式，掃描 posts/ 解析所有文章，依日期排序 3. 產出頁面：index.html（最新 10 篇+分頁）、/posts/slug.html（單篇含上下篇導航）、/tags/tagname.html、/categories/catname.html 4. 自動產生 RSS 2.0 feed.xml 與 sitemap.xml 5. 模板用 Tailwind CSS 響應式設計，支援深色模式切換 6. 加入 npm run build 與 npm run dev（watch 模式自動重建+live reload）7. 請先產生 3 篇範例文章方便測試</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階適合已會基本 Git 操作的人，學會解析 Git 物件與自動化報告流程
+      中階專案涵蓋檔案系統批次處理、模板引擎、XML 產生與前端整合，學會系統性架構思維
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="資料庫結構反向文件站 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多源資料即時監控儀 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">7/23</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">7/24</span>
     </div>
-    <h2>資料庫結構反向文件站</h2>
-    <div class="tagline">連上任意資料庫，自動產出含 ER 圖的互動式資料字典網站</div>
-    <p>給 Claude Code 一組資料庫連線資訊，讓它自動掃描所有 table、column、index、foreign key 與 constraint，產出一個完整的靜態資料字典網站。包含 Mermaid ER 圖、欄位說明（由 AI 根據命名推測語意）、資料範例抽樣、表格關聯分析，以及全文搜尋功能。適合接手老專案、做資料庫稽核或建立團隊共用知識庫。部署為一鍵可上 GitHub Pages 的靜態站。</p>
-    <div class="prompt-box">請幫我建立 db-doc-site/ 專案，功能是連接資料庫並自動產出互動式資料字典網站：1. 用 Python 的 SQLAlchemy 支援 PostgreSQL/MySQL/SQLite 連線，透過 reflection 取得所有 schema metadata 2. 對每張表產出：欄位名稱、型別、nullable、預設值、索引、FK 關聯，並用 AI 根據欄位名推測中文說明 3. 用 Mermaid.js 語法自動產生 ER Diagram，超過 20 張表時自動分群組顯示 4. 每張表抽樣 5 筆資料作為範例（敏感欄位自動遮罩） 5. 前端用 Next.js 靜態匯出（SSG），側邊欄列出所有表，支援 Fuse.js 全文搜尋 6. 首頁顯示資料庫總覽儀表板：表數量、總欄位數、關聯圖譜、孤立表警告 7. 提供 generate.py --db-url 'postgresql://...' --output ./site 一鍵指令 8. 附 GitHub Actions workflow 可自動排程更新並部署到 GitHub Pages 9. 建立 config.yaml 可設定遮罩規則與自訂欄位說明覆寫</div>
+    <h2>多源資料即時監控儀</h2>
+    <div class="tagline">整合多個 API 資料源，建立 WebSocket 即時更新的全端監控儀表板</div>
+    <p>請 Claude Code 建立一個全端即時監控系統：後端用 Express + WebSocket 定時抓取多個資料源（GitHub repo stars、NPM 下載量、自訂 API 端點健康檢查、伺服器系統指標），前端用 React + Recharts 呈現即時折線圖、狀態卡片與告警通知。支援 SQLite 歷史資料儲存、可設定閾值告警（當 API 回應時間超過 500ms 發送桌面通知）、資料匯出 CSV，以及使用者自訂監控面板佈局（拖曳排列 widget）。</p>
+    <div class="prompt-box">請建立一個全端即時監控儀表板，專案名 monitor-hub。技術棧：後端 Express + ws + better-sqlite3 + node-cron，前端 React 18 + Vite + Recharts + react-grid-layout。具體需求：1. 後端架構：/api/sources CRUD 管理監控資料源，每個 source 設定 url、polling interval、type（json_api / health_check / github_stats）；node-cron 定時輪詢各資料源並存入 SQLite，同時透過 WebSocket 推送即時數據 2. 前端頁面：Dashboard 主頁用 react-grid-layout 實現可拖曳的 widget 佈局，每個 widget 可選擇顯示為即時數值卡片、折線圖（最近 24hr）或狀態燈號；Settings 頁面管理資料源與告警閾值 3. 告警系統：當指標超過設定閾值，觸發瀏覽器 Notification API 通知並在儀表板標紅 4. 支援 /api/export?source=xxx&from=&to= 匯出歷史 CSV 5. 請建立 docker-compose.yml 包含前後端服務 6. 內建 3 個示範資料源：一個假 API（自建 /mock-api 隨機回應）、GitHub API 抓某 repo 星數、系統 CPU/記憶體指標</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案整合資料庫反射、AI 推測語意、前後端靜態生成與 CI/CD 部署，考驗系統設計能力
+      高階專案整合 WebSocket 即時通訊、排程任務、資料庫設計、React 進階佈局與 Docker 部署，挑戰全端架構能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -752,7 +753,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼註解翻譯潤色器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日儀表板 生產力">
+    <div class="card-header">
+      <span class="badge">60</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">7/23</span>
+    </div>
+    <h2>終端機每日儀表板</h2>
+    <div class="tagline">打開終端就看到天氣、待辦、行事曆與習慣追蹤的個人儀表板</div>
+    <p>請 Claude Code 建立一個純終端機的每日儀表板腳本，每次開啟 Terminal 自動顯示今日天氣概況、從本地 JSON 讀取的待辦清單、本週行事曆摘要，以及習慣打卡追蹤進度條。產出是一支可直接加進 .zshrc/.bashrc 的 Python 腳本，讓你的終端機不再只有黑底白字。</p>
+    <div class="prompt-box">請幫我用 Python 寫一支 daily_dashboard.py 終端機儀表板腳本：1. 用 rich 套件做漂亮的終端排版，分成四個面板 2. 天氣面板：呼叫 wttr.in API 取得指定城市天氣，顯示溫度+天氣圖示 3. 待辦面板：從 ~/todos.json 讀取任務清單，支援 python daily_dashboard.py --add '買牛奶' 新增項目 4. 習慣面板：追蹤「喝水/運動/閱讀」三個習慣，用進度條顯示本週達成率 5. 產出 requirements.txt，並給我一行可加進 .zshrc 的 alias 指令。資料夾結構放在 ~/dashboard/ 下</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階但有成就感，學會 API 串接與終端美化，打開電腦就能用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="生產力" data-searchtext="Git 倉庫變更週報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">61</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/23</span>
+    </div>
+    <h2>Git 倉庫變更週報產生器</h2>
+    <div class="tagline">掃描整週的 Git commit 與 diff，自動產出給主管看的中文週報</div>
+    <p>讓 Claude Code 寫一個 CLI 工具，自動讀取指定 Git 倉庫過去七天的所有 commit 訊息、檔案變更統計與 diff 摘要，透過分類歸納（新功能、修 Bug、重構、文件）產出一份結構化的 Markdown 週報。支援多倉庫合併報告，特別適合需要每週交報告的工程師與技術主管。產出包含 Markdown 檔與可寄出的 HTML 電子郵件版本。</p>
+    <div class="prompt-box">請幫我建立一個 Git 週報產生器專案 git-weekly-report/：1. 用 Python + GitPython 套件掃描指定資料夾下所有 git repo 2. 抓取過去 7 天的 commits，解析 commit message 自動分類成「✨ 新功能」「🐛 修復」「♻️ 重構」「📝 文件」四類 3. 統計每個 repo 的新增/刪除行數、最活躍的檔案 Top 5 4. 產出 weekly_report_YYYYMMDD.md，格式包含：摘要段落、分類明細表、變更統計圖（用 ASCII bar chart）5. 額外產出 HTML 版本可直接貼進 email 6. 支援 config.yaml 設定多個 repo 路徑與作者篩選 7. 加上 --since 和 --until 參數可自訂日期範圍</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階適合已會基本 Git 操作的人，學會解析 Git 物件與自動化報告流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="資料庫結構反向文件站 程式原型">
+    <div class="card-header">
+      <span class="badge">62</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/23</span>
+    </div>
+    <h2>資料庫結構反向文件站</h2>
+    <div class="tagline">連上任意資料庫，自動產出含 ER 圖的互動式資料字典網站</div>
+    <p>給 Claude Code 一組資料庫連線資訊，讓它自動掃描所有 table、column、index、foreign key 與 constraint，產出一個完整的靜態資料字典網站。包含 Mermaid ER 圖、欄位說明（由 AI 根據命名推測語意）、資料範例抽樣、表格關聯分析，以及全文搜尋功能。適合接手老專案、做資料庫稽核或建立團隊共用知識庫。部署為一鍵可上 GitHub Pages 的靜態站。</p>
+    <div class="prompt-box">請幫我建立 db-doc-site/ 專案，功能是連接資料庫並自動產出互動式資料字典網站：1. 用 Python 的 SQLAlchemy 支援 PostgreSQL/MySQL/SQLite 連線，透過 reflection 取得所有 schema metadata 2. 對每張表產出：欄位名稱、型別、nullable、預設值、索引、FK 關聯，並用 AI 根據欄位名推測中文說明 3. 用 Mermaid.js 語法自動產生 ER Diagram，超過 20 張表時自動分群組顯示 4. 每張表抽樣 5 筆資料作為範例（敏感欄位自動遮罩） 5. 前端用 Next.js 靜態匯出（SSG），側邊欄列出所有表，支援 Fuse.js 全文搜尋 6. 首頁顯示資料庫總覽儀表板：表數量、總欄位數、關聯圖譜、孤立表警告 7. 提供 generate.py --db-url 'postgresql://...' --output ./site 一鍵指令 8. 附 GitHub Actions workflow 可自動排程更新並部署到 GitHub Pages 9. 建立 config.yaml 可設定遮罩規則與自訂欄位說明覆寫</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合資料庫反射、AI 推測語意、前後端靜態生成與 CI/CD 部署，考驗系統設計能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼註解翻譯潤色器 生產力">
     <div class="card-header">
       <span class="badge">57</span>
       <span class="tag level-1">初階</span>
