@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/24</span>
-      <span>📚 累計收錄：<span id="totalCount">65</span> 個專案</span>
+      <span>📅 最後更新：2026/07/25</span>
+      <span>📚 累計收錄：<span id="totalCount">68</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 65 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 68 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/24) ============ -->
+  <!-- ============ 今日新增 (7/25) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/24
+    今日新增 · 2026/07/25
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機待辦清單管理器 生產力">
+  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="終端機個人記帳分析師 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
-      <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">7/24</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/25</span>
     </div>
-    <h2>終端機待辦清單管理器</h2>
-    <div class="tagline">用純文字檔打造極簡但強大的命令列待辦事項系統，支援優先級與到期日</div>
-    <p>請 Claude Code 建立一個基於 Node.js 的 CLI 待辦清單工具，支援新增、刪除、標記完成、依優先級排序、篩選到期日等功能。所有資料存在本地 JSON 檔，不需資料庫。適合想快速管理工作任務又不想離開終端機的開發者，做完直接加進 .bashrc alias 每天使用。</p>
-    <div class="prompt-box">請幫我用 Node.js 建立一個終端機待辦清單 CLI 工具，專案名稱 todo-cli。需求如下：1. 支援指令：todo add "任務名" --priority high --due 2025-02-01、todo list（列出全部）、todo list --filter overdue、todo done <id>、todo remove <id> 2. 資料存在 ~/.todo-data.json 3. 列表輸出用 chalk 套件上色：高優先紅色、中優先黃色、低優先綠色，過期任務閃爍提示 4. 加上 todo stats 顯示完成率與本週到期數量 5. 請產出完整 package.json 並支援 npm link 全域安裝</div>
+    <h2>終端機個人記帳分析師</h2>
+    <div class="tagline">把銀行對帳單 CSV 丟進去，自動分類支出並產出月度財務報告</div>
+    <p>將銀行或信用卡匯出的 CSV 對帳單交給 Claude Code，它會自動辨識商家名稱、歸類為餐飲／交通／娛樂等類別，計算各類佔比，最後產出一份含圓餅圖資料的 Markdown 報告與精簡的節流建議。適合想掌握花錢習慣卻懶得手動記帳的人。</p>
+    <div class="prompt-box">這是我這個月的信用卡對帳單 [拖曳 CSV 檔案]。請幫我：1. 讀取所有交易紀錄，根據商家名稱自動分成至少 8 個支出類別（餐飲、交通、訂閱服務、日用品、娛樂、醫療、購物、其他）2. 計算每個類別的總金額與佔比百分比 3. 找出金額最高的前 5 筆交易並標注 4. 產出 report.md 包含分類表格、各類佔比、消費趨勢摘要與 3 條具體節流建議 5. 另外產出 summary.csv 整理後的分類資料，方便我下個月比較</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門好專案，學會用 Claude Code 搭建 CLI 工具骨架與檔案讀寫操作
+      讓初學者體驗 Claude 解析結構化資料與自動分類的能力，成果馬上能用在日常理財
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="Markdown 部落格靜態產生器 內容創作">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件自動產生器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
-      <span class="tag time">75 分鐘</span>
-      <span class="date-tag">7/24</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">7/25</span>
     </div>
-    <h2>Markdown 部落格靜態產生器</h2>
-    <div class="tagline">把一堆 Markdown 文章自動編譯成完整靜態部落格網站，含分類、標籤與 RSS</div>
-    <p>請 Claude Code 從零打造一個輕量靜態網站產生器：讀取 posts/ 資料夾中的 Markdown 檔案，解析 frontmatter 中繼資料（標題、日期、標籤、分類），產出完整 HTML 網站，包含首頁文章列表、分類頁、標籤雲、單篇文章頁面、RSS feed 與 sitemap.xml。使用 Handlebars 模板引擎與 Tailwind CSS，產出的 dist/ 資料夾可直接部署到 GitHub Pages。</p>
-    <div class="prompt-box">請用 Node.js 建立一個靜態部落格產生器，專案結構如下：/posts（放 .md 檔）、/templates（Handlebars 模板）、/static（CSS/圖片）、/dist（輸出）。具體需求：1. Markdown 檔案 frontmatter 格式：title, date, tags[], category, excerpt 2. 建立 build.js 主程式，掃描 posts/ 解析所有文章，依日期排序 3. 產出頁面：index.html（最新 10 篇+分頁）、/posts/slug.html（單篇含上下篇導航）、/tags/tagname.html、/categories/catname.html 4. 自動產生 RSS 2.0 feed.xml 與 sitemap.xml 5. 模板用 Tailwind CSS 響應式設計，支援深色模式切換 6. 加入 npm run build 與 npm run dev（watch 模式自動重建+live reload）7. 請先產生 3 篇範例文章方便測試</div>
+    <h2>API 文件自動產生器</h2>
+    <div class="tagline">掃描整個程式碼庫，自動產出完整的 REST API 參考文件網站</div>
+    <p>把你的後端專案資料夾指給 Claude Code，它會遞迴掃描所有路由定義、Controller、中間件與資料模型，自動擷取端點路徑、HTTP 方法、請求參數、回應格式與錯誤碼，最終產出一個可直接部署的靜態 HTML API 文件站，支援搜尋、分組摺疊與深色模式。適合沒時間寫文件的小團隊與獨立開發者。</p>
+    <div class="prompt-box">請掃描這個專案 [拖曳資料夾] 的所有程式碼，幫我自動產生 API 參考文件。具體步驟：1. 遞迴讀取 src/ 下所有路由檔案（支援 Express、FastAPI、Flask 等框架）2. 針對每個端點擷取：HTTP 方法、路徑、路徑參數、Query 參數、Request Body 結構、Response 範例、認證需求、錯誤碼 3. 按功能模組分組（如 /users、/orders）4. 建立資料夾 api-docs/，產出：index.html（主頁含側邊欄導航與全文搜尋）、各模組獨立頁面、style.css（支援亮色/深色切換）5. 每個端點附上 curl 範例指令 6. 頂部加上「最後更新時間」與專案版本號</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案涵蓋檔案系統批次處理、模板引擎、XML 產生與前端整合，學會系統性架構思維
+      需要理解多種框架的路由模式與遞迴檔案解析，練習 Claude 處理大型程式碼庫的工作流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多源資料即時監控儀 程式原型">
+  <article class="card searchable" data-level="高階" data-category="生產力" data-searchtext="智慧會議逐字稿處理器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">150 分鐘</span>
-      <span class="date-tag">7/24</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">7/25</span>
     </div>
-    <h2>多源資料即時監控儀</h2>
-    <div class="tagline">整合多個 API 資料源，建立 WebSocket 即時更新的全端監控儀表板</div>
-    <p>請 Claude Code 建立一個全端即時監控系統：後端用 Express + WebSocket 定時抓取多個資料源（GitHub repo stars、NPM 下載量、自訂 API 端點健康檢查、伺服器系統指標），前端用 React + Recharts 呈現即時折線圖、狀態卡片與告警通知。支援 SQLite 歷史資料儲存、可設定閾值告警（當 API 回應時間超過 500ms 發送桌面通知）、資料匯出 CSV，以及使用者自訂監控面板佈局（拖曳排列 widget）。</p>
-    <div class="prompt-box">請建立一個全端即時監控儀表板，專案名 monitor-hub。技術棧：後端 Express + ws + better-sqlite3 + node-cron，前端 React 18 + Vite + Recharts + react-grid-layout。具體需求：1. 後端架構：/api/sources CRUD 管理監控資料源，每個 source 設定 url、polling interval、type（json_api / health_check / github_stats）；node-cron 定時輪詢各資料源並存入 SQLite，同時透過 WebSocket 推送即時數據 2. 前端頁面：Dashboard 主頁用 react-grid-layout 實現可拖曳的 widget 佈局，每個 widget 可選擇顯示為即時數值卡片、折線圖（最近 24hr）或狀態燈號；Settings 頁面管理資料源與告警閾值 3. 告警系統：當指標超過設定閾值，觸發瀏覽器 Notification API 通知並在儀表板標紅 4. 支援 /api/export?source=xxx&from=&to= 匯出歷史 CSV 5. 請建立 docker-compose.yml 包含前後端服務 6. 內建 3 個示範資料源：一個假 API（自建 /mock-api 隨機回應）、GitHub API 抓某 repo 星數、系統 CPU/記憶體指標</div>
+    <h2>智慧會議逐字稿處理器</h2>
+    <div class="tagline">將冗長會議錄音逐字稿轉化為結構化決策文件、待辦追蹤表與後續行動郵件</div>
+    <p>把會議逐字稿（SRT、TXT 或 VTT 字幕檔）丟給 Claude Code，它會辨識與會者發言、提取所有討論議題與決策結論、標記未解決爭議、整理出具體待辦事項並指定負責人與期限，最後產出三份文件：一份精煉的會議紀錄 PDF、一份可匯入 Notion/Jira 的待辦 CSV、一份可直接寄出的會後跟進郵件草稿。還會建立一個本地 SQLite 資料庫來累積追蹤跨會議的待辦進度。適合 PM、主管或任何每週開超過五場會議的人。</p>
+    <div class="prompt-box">這是今天的會議逐字稿 [拖曳 .txt 或 .srt 檔]。請執行以下完整流程：1. 解析逐字稿，辨識不同發言者（若有時間戳記請保留）2. 將內容分段為各討論議題，每個議題摘要 2-3 句 3. 提取所有「決策」——誰決定了什麼、理由為何 4. 提取所有「待辦事項」——具體任務、負責人、截止日期（若未明確提及截止日，根據緊急程度建議一個）5. 標記任何「未解決議題」並建議下次會議追蹤 6. 建立 meeting-output/ 資料夾，產出：(a) minutes.md — 完整會議紀錄含出席者、議題、決策、待辦 (b) action_items.csv — 欄位為 task, owner, deadline, priority, status (c) followup_email.md — 專業的會後郵件草稿，摘要重點與各人待辦 (d) meetings.db — SQLite 資料庫，建立 meetings 與 action_items 兩張表，把本次資料寫入 7. 若 meetings.db 已存在，比對上次會議的待辦事項，在報告最後加上「跨會議追蹤」區塊顯示哪些過期未完成</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案整合 WebSocket 即時通訊、排程任務、資料庫設計、React 進階佈局與 Docker 部署，挑戰全端架構能力
+      整合自然語言理解、多格式輸出、資料庫操作與跨次執行狀態管理，充分展現 Claude Code 處理複雜工作流的高階能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -753,7 +754,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日儀表板 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機待辦清單管理器 生產力">
+    <div class="card-header">
+      <span class="badge">63</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">7/24</span>
+    </div>
+    <h2>終端機待辦清單管理器</h2>
+    <div class="tagline">用純文字檔打造極簡但強大的命令列待辦事項系統，支援優先級與到期日</div>
+    <p>請 Claude Code 建立一個基於 Node.js 的 CLI 待辦清單工具，支援新增、刪除、標記完成、依優先級排序、篩選到期日等功能。所有資料存在本地 JSON 檔，不需資料庫。適合想快速管理工作任務又不想離開終端機的開發者，做完直接加進 .bashrc alias 每天使用。</p>
+    <div class="prompt-box">請幫我用 Node.js 建立一個終端機待辦清單 CLI 工具，專案名稱 todo-cli。需求如下：1. 支援指令：todo add "任務名" --priority high --due 2025-02-01、todo list（列出全部）、todo list --filter overdue、todo done <id>、todo remove <id> 2. 資料存在 ~/.todo-data.json 3. 列表輸出用 chalk 套件上色：高優先紅色、中優先黃色、低優先綠色，過期任務閃爍提示 4. 加上 todo stats 顯示完成率與本週到期數量 5. 請產出完整 package.json 並支援 npm link 全域安裝</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門好專案，學會用 Claude Code 搭建 CLI 工具骨架與檔案讀寫操作
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="Markdown 部落格靜態產生器 內容創作">
+    <div class="card-header">
+      <span class="badge">64</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">7/24</span>
+    </div>
+    <h2>Markdown 部落格靜態產生器</h2>
+    <div class="tagline">把一堆 Markdown 文章自動編譯成完整靜態部落格網站，含分類、標籤與 RSS</div>
+    <p>請 Claude Code 從零打造一個輕量靜態網站產生器：讀取 posts/ 資料夾中的 Markdown 檔案，解析 frontmatter 中繼資料（標題、日期、標籤、分類），產出完整 HTML 網站，包含首頁文章列表、分類頁、標籤雲、單篇文章頁面、RSS feed 與 sitemap.xml。使用 Handlebars 模板引擎與 Tailwind CSS，產出的 dist/ 資料夾可直接部署到 GitHub Pages。</p>
+    <div class="prompt-box">請用 Node.js 建立一個靜態部落格產生器，專案結構如下：/posts（放 .md 檔）、/templates（Handlebars 模板）、/static（CSS/圖片）、/dist（輸出）。具體需求：1. Markdown 檔案 frontmatter 格式：title, date, tags[], category, excerpt 2. 建立 build.js 主程式，掃描 posts/ 解析所有文章，依日期排序 3. 產出頁面：index.html（最新 10 篇+分頁）、/posts/slug.html（單篇含上下篇導航）、/tags/tagname.html、/categories/catname.html 4. 自動產生 RSS 2.0 feed.xml 與 sitemap.xml 5. 模板用 Tailwind CSS 響應式設計，支援深色模式切換 6. 加入 npm run build 與 npm run dev（watch 模式自動重建+live reload）7. 請先產生 3 篇範例文章方便測試</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案涵蓋檔案系統批次處理、模板引擎、XML 產生與前端整合，學會系統性架構思維
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多源資料即時監控儀 程式原型">
+    <div class="card-header">
+      <span class="badge">65</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">7/24</span>
+    </div>
+    <h2>多源資料即時監控儀</h2>
+    <div class="tagline">整合多個 API 資料源，建立 WebSocket 即時更新的全端監控儀表板</div>
+    <p>請 Claude Code 建立一個全端即時監控系統：後端用 Express + WebSocket 定時抓取多個資料源（GitHub repo stars、NPM 下載量、自訂 API 端點健康檢查、伺服器系統指標），前端用 React + Recharts 呈現即時折線圖、狀態卡片與告警通知。支援 SQLite 歷史資料儲存、可設定閾值告警（當 API 回應時間超過 500ms 發送桌面通知）、資料匯出 CSV，以及使用者自訂監控面板佈局（拖曳排列 widget）。</p>
+    <div class="prompt-box">請建立一個全端即時監控儀表板，專案名 monitor-hub。技術棧：後端 Express + ws + better-sqlite3 + node-cron，前端 React 18 + Vite + Recharts + react-grid-layout。具體需求：1. 後端架構：/api/sources CRUD 管理監控資料源，每個 source 設定 url、polling interval、type（json_api / health_check / github_stats）；node-cron 定時輪詢各資料源並存入 SQLite，同時透過 WebSocket 推送即時數據 2. 前端頁面：Dashboard 主頁用 react-grid-layout 實現可拖曳的 widget 佈局，每個 widget 可選擇顯示為即時數值卡片、折線圖（最近 24hr）或狀態燈號；Settings 頁面管理資料源與告警閾值 3. 告警系統：當指標超過設定閾值，觸發瀏覽器 Notification API 通知並在儀表板標紅 4. 支援 /api/export?source=xxx&from=&to= 匯出歷史 CSV 5. 請建立 docker-compose.yml 包含前後端服務 6. 內建 3 個示範資料源：一個假 API（自建 /mock-api 隨機回應）、GitHub API 抓某 repo 星數、系統 CPU/記憶體指標</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合 WebSocket 即時通訊、排程任務、資料庫設計、React 進階佈局與 Docker 部署，挑戰全端架構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日儀表板 生產力">
     <div class="card-header">
       <span class="badge">60</span>
       <span class="tag level-1">初階</span>
