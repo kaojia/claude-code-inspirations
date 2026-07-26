@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/25</span>
-      <span>📚 累計收錄：<span id="totalCount">68</span> 個專案</span>
+      <span>📅 最後更新：2026/07/26</span>
+      <span>📚 累計收錄：<span id="totalCount">71</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 68 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 71 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/25) ============ -->
+  <!-- ============ 今日新增 (7/26) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/25
+    今日新增 · 2026/07/26
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="終端機個人記帳分析師 資料分析">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
-      <span class="tag">資料分析</span>
+      <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">7/25</span>
+      <span class="date-tag">7/26</span>
     </div>
-    <h2>終端機個人記帳分析師</h2>
-    <div class="tagline">把銀行對帳單 CSV 丟進去，自動分類支出並產出月度財務報告</div>
-    <p>將銀行或信用卡匯出的 CSV 對帳單交給 Claude Code，它會自動辨識商家名稱、歸類為餐飲／交通／娛樂等類別，計算各類佔比，最後產出一份含圓餅圖資料的 Markdown 報告與精簡的節流建議。適合想掌握花錢習慣卻懶得手動記帳的人。</p>
-    <div class="prompt-box">這是我這個月的信用卡對帳單 [拖曳 CSV 檔案]。請幫我：1. 讀取所有交易紀錄，根據商家名稱自動分成至少 8 個支出類別（餐飲、交通、訂閱服務、日用品、娛樂、醫療、購物、其他）2. 計算每個類別的總金額與佔比百分比 3. 找出金額最高的前 5 筆交易並標注 4. 產出 report.md 包含分類表格、各類佔比、消費趨勢摘要與 3 條具體節流建議 5. 另外產出 summary.csv 整理後的分類資料，方便我下個月比較</div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰的 Conventional Commits 格式</div>
+    <p>把一個混亂的 Git 專案丟給 Claude Code，它會讀取最近的 commit log，分析每次變更的意圖，產出符合 Conventional Commits 規範的改寫建議清單，並生成一份漂亮的 CHANGELOG.md。適合想整理舊專案、準備開源、或學習好的版控習慣的開發者。</p>
+    <div class="prompt-box">請幫我分析這個專案的 Git 提交歷史並美化訊息：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 根據每筆 diff 內容判斷屬於 feat/fix/refactor/docs/chore 哪種類型 3. 改寫成 Conventional Commits 格式，加上 scope 和清晰描述 4. 產出 commit-suggestions.md 對照表（原始→建議）5. 自動生成 CHANGELOG.md 依版本分組，包含 Features、Bug Fixes、Breaking Changes 區塊</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude 解析結構化資料與自動分類的能力，成果馬上能用在日常理財
+      讓初學者體驗 Claude Code 讀取終端機指令輸出並整理成結構化文件的流程
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件自動產生器 程式原型">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="多語系翻譯同步引擎 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">60 分鐘</span>
-      <span class="date-tag">7/25</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/26</span>
     </div>
-    <h2>API 文件自動產生器</h2>
-    <div class="tagline">掃描整個程式碼庫，自動產出完整的 REST API 參考文件網站</div>
-    <p>把你的後端專案資料夾指給 Claude Code，它會遞迴掃描所有路由定義、Controller、中間件與資料模型，自動擷取端點路徑、HTTP 方法、請求參數、回應格式與錯誤碼，最終產出一個可直接部署的靜態 HTML API 文件站，支援搜尋、分組摺疊與深色模式。適合沒時間寫文件的小團隊與獨立開發者。</p>
-    <div class="prompt-box">請掃描這個專案 [拖曳資料夾] 的所有程式碼，幫我自動產生 API 參考文件。具體步驟：1. 遞迴讀取 src/ 下所有路由檔案（支援 Express、FastAPI、Flask 等框架）2. 針對每個端點擷取：HTTP 方法、路徑、路徑參數、Query 參數、Request Body 結構、Response 範例、認證需求、錯誤碼 3. 按功能模組分組（如 /users、/orders）4. 建立資料夾 api-docs/，產出：index.html（主頁含側邊欄導航與全文搜尋）、各模組獨立頁面、style.css（支援亮色/深色切換）5. 每個端點附上 curl 範例指令 6. 頂部加上「最後更新時間」與專案版本號</div>
+    <h2>多語系翻譯同步引擎</h2>
+    <div class="tagline">偵測 i18n JSON 檔案的缺漏鍵值，自動翻譯補齊並保持格式一致</div>
+    <p>前端專案常有多語系 JSON 檔不同步的問題。這個工具讓 Claude Code 掃描整個 locales 資料夾，以主語言（如 zh-TW）為基準，找出其他語言檔缺少的鍵值，自動翻譯補上，還會產出覆蓋率報告。支援巢狀 JSON 結構與 ICU 複數語法，適合維護多國語系的前端團隊。</p>
+    <div class="prompt-box">我的專案 locales 資料夾結構如下：locales/zh-TW.json（主語言）、locales/en.json、locales/ja.json。請幫我：1. 讀取所有語言檔並解析巢狀結構 2. 以 zh-TW.json 為基準，找出 en.json 和 ja.json 中缺少的鍵值 3. 將缺少的鍵值自動翻譯成對應語言，保持語氣一致（正式用語）4. 檢查是否有多餘的鍵值（存在於子語言但主語言沒有）5. 回寫修補後的 JSON 檔案，保持縮排與排序一致 6. 產出 i18n-report.md 包含覆蓋率百分比、缺漏清單、多餘鍵值警告</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      需要理解多種框架的路由模式與遞迴檔案解析，練習 Claude 處理大型程式碼庫的工作流程
+      中階練習涉及多檔案讀寫、巢狀資料比對與批次處理，學會讓 Claude Code 操作檔案系統
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="生產力" data-searchtext="智慧會議逐字稿處理器 生產力">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康儀表板 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">生產力</span>
-      <span class="tag time">90 分鐘</span>
-      <span class="date-tag">7/25</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/26</span>
     </div>
-    <h2>智慧會議逐字稿處理器</h2>
-    <div class="tagline">將冗長會議錄音逐字稿轉化為結構化決策文件、待辦追蹤表與後續行動郵件</div>
-    <p>把會議逐字稿（SRT、TXT 或 VTT 字幕檔）丟給 Claude Code，它會辨識與會者發言、提取所有討論議題與決策結論、標記未解決爭議、整理出具體待辦事項並指定負責人與期限，最後產出三份文件：一份精煉的會議紀錄 PDF、一份可匯入 Notion/Jira 的待辦 CSV、一份可直接寄出的會後跟進郵件草稿。還會建立一個本地 SQLite 資料庫來累積追蹤跨會議的待辦進度。適合 PM、主管或任何每週開超過五場會議的人。</p>
-    <div class="prompt-box">這是今天的會議逐字稿 [拖曳 .txt 或 .srt 檔]。請執行以下完整流程：1. 解析逐字稿，辨識不同發言者（若有時間戳記請保留）2. 將內容分段為各討論議題，每個議題摘要 2-3 句 3. 提取所有「決策」——誰決定了什麼、理由為何 4. 提取所有「待辦事項」——具體任務、負責人、截止日期（若未明確提及截止日，根據緊急程度建議一個）5. 標記任何「未解決議題」並建議下次會議追蹤 6. 建立 meeting-output/ 資料夾，產出：(a) minutes.md — 完整會議紀錄含出席者、議題、決策、待辦 (b) action_items.csv — 欄位為 task, owner, deadline, priority, status (c) followup_email.md — 專業的會後郵件草稿，摘要重點與各人待辦 (d) meetings.db — SQLite 資料庫，建立 meetings 與 action_items 兩張表，把本次資料寫入 7. 若 meetings.db 已存在，比對上次會議的待辦事項，在報告最後加上「跨會議追蹤」區塊顯示哪些過期未完成</div>
+    <h2>程式碼庫健康儀表板</h2>
+    <div class="tagline">全面掃描專案程式碼，產出包含複雜度、重複率、依賴風險的互動式 HTML 報告</div>
+    <p>讓 Claude Code 扮演資深技術顧問，深度分析整個程式碼庫的健康狀態。它會計算每個檔案的圈複雜度、偵測重複程式碼區塊、分析 package.json 的依賴過時程度與已知漏洞、檢查未使用的 export，最終產出一個帶有圖表的互動式 HTML 儀表板。適合技術主管做專案體檢、接手遺留系統前的評估報告。</p>
+    <div class="prompt-box">請對這個專案進行全面的程式碼健康檢查，並產出互動式報告：1. 掃描 src/ 資料夾所有 .ts/.js 檔案，計算每個函式的圈複雜度（Cyclomatic Complexity），標記超過 10 的為高風險 2. 偵測重複程式碼：找出超過 6 行相似的程式碼區塊，列出檔案位置與建議抽取方式 3. 分析 package.json：檢查每個依賴的最新版本，標記大版本落後的套件，查詢是否有已知 CVE 4. 找出所有 export 但從未被其他檔案 import 的死碼 5. 統計檔案大小分布，標記超過 300 行的檔案建議拆分 6. 將所有結果產出為 health-report.html：用 Chart.js 畫複雜度分布圖、依賴風險矩陣，支援點擊展開詳細資訊 7. 同時產出 health-summary.json 供 CI/CD 整合使用</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      整合自然語言理解、多格式輸出、資料庫操作與跨次執行狀態管理，充分展現 Claude Code 處理複雜工作流的高階能力
+      高階專案整合靜態分析、網路查詢、資料視覺化與完整前端頁面生成，考驗多步驟協調能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -754,7 +755,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機待辦清單管理器 生產力">
+  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="終端機個人記帳分析師 資料分析">
+    <div class="card-header">
+      <span class="badge">66</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/25</span>
+    </div>
+    <h2>終端機個人記帳分析師</h2>
+    <div class="tagline">把銀行對帳單 CSV 丟進去，自動分類支出並產出月度財務報告</div>
+    <p>將銀行或信用卡匯出的 CSV 對帳單交給 Claude Code，它會自動辨識商家名稱、歸類為餐飲／交通／娛樂等類別，計算各類佔比，最後產出一份含圓餅圖資料的 Markdown 報告與精簡的節流建議。適合想掌握花錢習慣卻懶得手動記帳的人。</p>
+    <div class="prompt-box">這是我這個月的信用卡對帳單 [拖曳 CSV 檔案]。請幫我：1. 讀取所有交易紀錄，根據商家名稱自動分成至少 8 個支出類別（餐飲、交通、訂閱服務、日用品、娛樂、醫療、購物、其他）2. 計算每個類別的總金額與佔比百分比 3. 找出金額最高的前 5 筆交易並標注 4. 產出 report.md 包含分類表格、各類佔比、消費趨勢摘要與 3 條具體節流建議 5. 另外產出 summary.csv 整理後的分類資料，方便我下個月比較</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 解析結構化資料與自動分類的能力，成果馬上能用在日常理財
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件自動產生器 程式原型">
+    <div class="card-header">
+      <span class="badge">67</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">7/25</span>
+    </div>
+    <h2>API 文件自動產生器</h2>
+    <div class="tagline">掃描整個程式碼庫，自動產出完整的 REST API 參考文件網站</div>
+    <p>把你的後端專案資料夾指給 Claude Code，它會遞迴掃描所有路由定義、Controller、中間件與資料模型，自動擷取端點路徑、HTTP 方法、請求參數、回應格式與錯誤碼，最終產出一個可直接部署的靜態 HTML API 文件站，支援搜尋、分組摺疊與深色模式。適合沒時間寫文件的小團隊與獨立開發者。</p>
+    <div class="prompt-box">請掃描這個專案 [拖曳資料夾] 的所有程式碼，幫我自動產生 API 參考文件。具體步驟：1. 遞迴讀取 src/ 下所有路由檔案（支援 Express、FastAPI、Flask 等框架）2. 針對每個端點擷取：HTTP 方法、路徑、路徑參數、Query 參數、Request Body 結構、Response 範例、認證需求、錯誤碼 3. 按功能模組分組（如 /users、/orders）4. 建立資料夾 api-docs/，產出：index.html（主頁含側邊欄導航與全文搜尋）、各模組獨立頁面、style.css（支援亮色/深色切換）5. 每個端點附上 curl 範例指令 6. 頂部加上「最後更新時間」與專案版本號</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      需要理解多種框架的路由模式與遞迴檔案解析，練習 Claude 處理大型程式碼庫的工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="生產力" data-searchtext="智慧會議逐字稿處理器 生產力">
+    <div class="card-header">
+      <span class="badge">68</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">7/25</span>
+    </div>
+    <h2>智慧會議逐字稿處理器</h2>
+    <div class="tagline">將冗長會議錄音逐字稿轉化為結構化決策文件、待辦追蹤表與後續行動郵件</div>
+    <p>把會議逐字稿（SRT、TXT 或 VTT 字幕檔）丟給 Claude Code，它會辨識與會者發言、提取所有討論議題與決策結論、標記未解決爭議、整理出具體待辦事項並指定負責人與期限，最後產出三份文件：一份精煉的會議紀錄 PDF、一份可匯入 Notion/Jira 的待辦 CSV、一份可直接寄出的會後跟進郵件草稿。還會建立一個本地 SQLite 資料庫來累積追蹤跨會議的待辦進度。適合 PM、主管或任何每週開超過五場會議的人。</p>
+    <div class="prompt-box">這是今天的會議逐字稿 [拖曳 .txt 或 .srt 檔]。請執行以下完整流程：1. 解析逐字稿，辨識不同發言者（若有時間戳記請保留）2. 將內容分段為各討論議題，每個議題摘要 2-3 句 3. 提取所有「決策」——誰決定了什麼、理由為何 4. 提取所有「待辦事項」——具體任務、負責人、截止日期（若未明確提及截止日，根據緊急程度建議一個）5. 標記任何「未解決議題」並建議下次會議追蹤 6. 建立 meeting-output/ 資料夾，產出：(a) minutes.md — 完整會議紀錄含出席者、議題、決策、待辦 (b) action_items.csv — 欄位為 task, owner, deadline, priority, status (c) followup_email.md — 專業的會後郵件草稿，摘要重點與各人待辦 (d) meetings.db — SQLite 資料庫，建立 meetings 與 action_items 兩張表，把本次資料寫入 7. 若 meetings.db 已存在，比對上次會議的待辦事項，在報告最後加上「跨會議追蹤」區塊顯示哪些過期未完成</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      整合自然語言理解、多格式輸出、資料庫操作與跨次執行狀態管理，充分展現 Claude Code 處理複雜工作流的高階能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機待辦清單管理器 生產力">
     <div class="card-header">
       <span class="badge">63</span>
       <span class="tag level-1">初階</span>
