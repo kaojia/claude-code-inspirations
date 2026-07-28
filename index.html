@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/27</span>
-      <span>📚 累計收錄：<span id="totalCount">74</span> 個專案</span>
+      <span>📅 最後更新：2026/07/28</span>
+      <span>📚 累計收錄：<span id="totalCount">77</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,102 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 74 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 77 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/27) ============ -->
+  <!-- ============ 今日新增 (7/28) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/27
+    今日新增 · 2026/07/28
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日晨報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="專案結構視覺化地圖 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">7/28</span>
+    </div>
+    <h2>專案結構視覺化地圖</h2>
+    <div class="tagline">掃描任何程式專案資料夾，自動產出互動式樹狀結構圖與模組依賴關係圖</div>
+    <p>把一個程式專案的根目錄丟給 Claude Code，它會遍歷所有檔案，分析資料夾層級、模組 import 關係、檔案大小分布，最終產出一份精美的 HTML 互動頁面，包含可收合的樹狀圖、依賴關係箭頭圖、以及各目錄的用途說明。新加入團隊的工程師或接手老專案時特別實用。</p>
+    <div class="prompt-box">請幫我分析這個專案資料夾的完整結構。步驟如下：1. 遞迴掃描所有檔案與資料夾，忽略 node_modules、.git、__pycache__ 等常見忽略目錄 2. 對每個資料夾寫一句中文用途說明 3. 分析所有 .js/.ts/.py 檔案的 import/require 語句，建立模組依賴關係 4. 產出 project-map.html：包含可互動展開收合的樹狀圖（用純 CSS+JS 實作）、依賴關係用 SVG 箭頭呈現、檔案大小用色塊深淺表示 5. 另產出 README-structure.md 純文字版本的結構說明文件</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階者可體驗 Claude Code 檔案系統操作與 HTML 生成能力，成品立即可用於團隊文件
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 端點模擬伺服器 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">7/28</span>
+    </div>
+    <h2>API 端點模擬伺服器</h2>
+    <div class="tagline">貼上 API 文件或 Swagger JSON，自動生成可在本地跑的 Mock Server 與測試資料</div>
+    <p>前端開發常需要等後端 API 完成才能串接。這個專案讓你把 API 規格文件（Swagger/OpenAPI JSON 或純文字描述）交給 Claude Code，它會自動建立一個 Express.js Mock Server，包含所有端點、符合 schema 的假資料產生器、可設定延遲與錯誤率的中介層，還附帶 Postman Collection 匯出檔。前端工程師可以馬上開始串接開發，不用再乾等。</p>
+    <div class="prompt-box">這是我們的 API 規格文件 [貼上 Swagger JSON 或文字描述]。請幫我建立完整的 Mock Server 專案：1. 建立資料夾結構：mock-server/（routes/、data/、middleware/、config/）2. 用 Express.js 實作所有端點，GET 回傳符合 schema 的隨機假資料（用 faker.js 風格產生中文姓名、地址、電話等）3. POST/PUT/PATCH 端點要能暫存資料到記憶體，模擬 CRUD 4. 加入 middleware/delay.js 可設定 200-2000ms 隨機延遲 5. 加入 middleware/error.js 可設定 10% 機率回傳 500 錯誤 6. 產出 postman-collection.json 可直接匯入 Postman 7. 寫好 package.json 和啟動指令，npm start 就能跑在 port 3001</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習涵蓋 Node.js 伺服器架構、中介層設計、動態資料生成，學會後能大幅加速前後端協作
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="資料庫效能診斷報告器 資料分析">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/28</span>
+    </div>
+    <h2>資料庫效能診斷報告器</h2>
+    <div class="tagline">連接資料庫分析慢查詢、索引缺漏與表結構問題，產出完整最佳化建議報告</div>
+    <p>將資料庫連線資訊提供給 Claude Code，它會透過腳本連接資料庫，自動執行一系列診斷查詢：抓出最慢的 Top 20 查詢、分析缺少索引的欄位、偵測未使用的冗餘索引、檢查表的正規化程度與欄位型別適當性、評估表大小與成長趨勢。最終產出一份專業的 HTML 診斷報告，包含嚴重程度分級、具體 ALTER TABLE / CREATE INDEX 的修復 SQL、以及預估效能提升幅度。適合 DBA 或資深後端做定期健檢。</p>
+    <div class="prompt-box">請幫我建立一個資料庫效能診斷工具專案。目標資料庫類型：PostgreSQL。步驟如下：1. 建立專案結構 db-health-check/（analyzers/、reporters/、sql-templates/、output/）2. 在 analyzers/ 建立以下分析模組：slow-queries.js（從 pg_stat_statements 抓前 20 慢查詢並用 EXPLAIN ANALYZE 分析）、index-advisor.js（找出 seq_scan 次數高但無索引的欄位，建議 CREATE INDEX 語句）、unused-indexes.js（找出幾乎沒被用到的索引，建議 DROP）、table-bloat.js（計算各表的膨脹率與死行比例）、schema-review.js（檢查 TEXT vs VARCHAR、缺少 NOT NULL、沒有主鍵等問題）3. reporters/html-report.js 產出精美 HTML 報告，用紅黃綠燈標示嚴重程度，每個問題附修復 SQL 和風險說明 4. 主程式 diagnose.js 讀取 .env 的連線資訊依序執行所有分析器 5. 加入 --dry-run 模式只產報告不執行任何修改 6. 產出的報告存到 output/report-{timestamp}.html</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涉及資料庫內部統計表操作、效能分析理論、多模組架構設計，完成後可作為實際運維工具持續使用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日晨報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">72</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">30 分鐘</span>
@@ -705,8 +784,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="Markdown 部落格靜態站台 內容創作">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">73</span>
       <span class="tag level-2">中階</span>
       <span class="tag">內容創作</span>
       <span class="tag time">60 分鐘</span>
@@ -733,8 +811,7 @@
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="本地程式碼審查助理 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">74</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -758,29 +835,7 @@
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">69</span>
       <span class="tag level-1">初階</span>
