@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/29</span>
-      <span>📚 累計收錄：<span id="totalCount">80</span> 個專案</span>
+      <span>📅 最後更新：2026/07/30</span>
+      <span>📚 累計收錄：<span id="totalCount">83</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 80 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 83 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/29) ============ -->
+  <!-- ============ 今日新增 (7/30) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/29
+    今日新增 · 2026/07/30
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站立會議摘要機 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">7/29</span>
+      <span class="date-tag">7/30</span>
     </div>
-    <h2>Git 提交訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史紀錄，自動重寫成語意化且一致風格的提交訊息</div>
-    <p>很多開發者的 commit message 寫得雜亂無章，這個工具會讀取指定區間的 Git log，分析每次變更的 diff 內容，然後產出符合 Conventional Commits 規範的提交訊息建議清單，並輸出一份 Markdown 變更日誌。適合開源專案維護者、準備上線前整理紀錄的團隊。</p>
-    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具。步驟如下：1. 讀取當前資料夾的 git log --oneline -30 及對應的 diff 摘要 2. 針對每個 commit 分析實際變更內容，重新撰寫符合 Conventional Commits 格式的訊息（如 feat:、fix:、refactor:） 3. 產出 improved-commits.md，用表格呈現「原始訊息 → 建議訊息 → 變更類型」 4. 額外產出 CHANGELOG.md，按版本分組列出功能新增、修復、重構 5. 如果偵測到連續多個小 commit 可以合併，也請標註 squash 建議</div>
+    <h2>每日站立會議摘要機</h2>
+    <div class="tagline">把散亂的 Slack/Teams 訊息整理成結構化的站立會議紀錄與待辦追蹤表</div>
+    <p>每天早上把團隊頻道的聊天紀錄貼給 Claude Code，它會自動辨識每位成員昨日完成事項、今日計畫、遇到的阻礙，產出格式統一的 Markdown 會議紀錄與 JSON 待辦清單。適合 Scrum Master、小型團隊 leader，省去手動整理的時間，還能累積成週報素材。</p>
+    <div class="prompt-box">以下是我們團隊今天在 Slack 頻道的對話紀錄 [貼上文字]。請幫我：1. 辨識每位成員的發言，歸納出「昨日完成」「今日計畫」「阻礙/需要協助」三個欄位 2. 產出 standup_YYYY-MM-DD.md，用表格呈現每個人的三欄內容 3. 額外產出 action_items.json，把所有待辦抽出來，欄位包含 assignee、task、priority（high/medium/low）、due_date 4. 最後附上一段 50 字以內的「今日團隊健康度摘要」，提示有無風險</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階但實用，讓新手學會 Claude 讀取本地 Git 資料並產出結構化文件的流程
+      初階入門最佳練習：體驗 Claude 的文本解析與結構化輸出能力，成品立刻可用於團隊協作
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="全端錯誤追蹤儀表板 資料分析">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料儀表板產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
-      <span class="tag time">75 分鐘</span>
-      <span class="date-tag">7/29</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">7/30</span>
     </div>
-    <h2>全端錯誤追蹤儀表板</h2>
-    <div class="tagline">自動掃描日誌檔，分類錯誤並生成即時互動式 HTML 儀表板</div>
-    <p>將散落在各處的 error log、crash report、stderr 輸出丟給 Claude Code，它會自動分類錯誤嚴重等級、辨識重複模式、計算發生頻率，最終產出一個可以用瀏覽器打開的單檔互動式儀表板，含篩選器、時間軸圖表與根因分析建議。適合沒有 Sentry 預算的小團隊或個人開發者。</p>
-    <div class="prompt-box">請幫我打造一個錯誤追蹤儀表板系統。需求如下：1. 在 error-dashboard/ 資料夾建立專案 2. 寫一個 parse_logs.py 腳本，能讀取 logs/ 目錄下所有 .log 和 .txt 檔案 3. 用正則表達式擷取時間戳、錯誤等級（ERROR/WARN/FATAL）、錯誤訊息、堆疊追蹤 4. 將相似錯誤自動歸類（用字串相似度分組），計算每類的出現次數與最近發生時間 5. 產出 dashboard.html 單一檔案，內嵌 Chart.js，包含：錯誤趨勢折線圖、嚴重度圓餅圖、Top 10 錯誤排行表格、每個錯誤可展開看完整堆疊 6. 加入篩選功能：按日期範圍、嚴重度、關鍵字過濾 7. 對 Top 5 錯誤各提供一段根因分析與修復建議</div>
+    <h2>互動式資料儀表板產生器</h2>
+    <div class="tagline">丟入 CSV 原始資料，自動生成含篩選器與圖表的單頁互動式 HTML 儀表板</div>
+    <p>將任何 CSV 資料集交給 Claude Code，它會分析欄位類型、建議最佳視覺化方式，然後產出一個不需要後端的純前端 HTML 儀表板，內含 Chart.js 圖表、下拉篩選器、關鍵指標卡片。適合行銷人員做廣告成效報告、PM 做產品數據簡報，打開瀏覽器就能用，也能直接寄給主管。</p>
+    <div class="prompt-box">這是我的資料集 [拖曳 CSV 檔案]。請幫我打造一個互動式儀表板：1. 先分析所有欄位，列出資料摘要（筆數、欄位型別、缺值比例） 2. 自動選擇 3-5 個最有洞察力的視覺化圖表（折線圖、長條圖、圓餅圖等），使用 Chart.js 繪製 3. 頂部放 4 張 KPI 摘要卡片（自動挑選最關鍵的數值指標） 4. 加入至少 2 個下拉式篩選器，可即時過濾圖表資料 5. 整體風格用深色主題，RWD 響應式設計 6. 所有程式碼打包成單一 dashboard.html，開瀏覽器直接能用 7. 附上 README.md 說明如何替換自己的資料</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案需整合檔案解析、資料分群、前端視覺化，練習 Claude 跨領域協作生成能力
+      中階挑戰：需要理解前端框架整合、資料處理邏輯與 RWD 排版，學會讓 Claude 產出完整可運行的應用
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系文案同步引擎 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="智慧合約審計報告產生器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">7/29</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">7/30</span>
     </div>
-    <h2>多語系文案同步引擎</h2>
-    <div class="tagline">監控 i18n 翻譯檔，自動偵測缺漏鍵值、翻譯新增文案並維持語氣一致性</div>
-    <p>大型應用的多語系維護是噩夢——某個語言漏了鍵值、翻譯風格不統一、新功能的文案只寫了中文沒翻其他語言。這個引擎會掃描整個 locales 資料夾，交叉比對所有語言檔的鍵值完整性，自動補翻缺漏項目，並根據既有翻譯學習該專案的語氣風格，確保新翻譯融入現有語境。最終產出完整的翻譯檔與一份差異報告。</p>
-    <div class="prompt-box">請建立一個多語系文案同步引擎，在 i18n-sync/ 資料夾下作業：1. 掃描 locales/ 目錄下所有 JSON 翻譯檔（如 zh-TW.json、en.json、ja.json），解析巢狀結構並攤平為 dot notation 鍵值表 2. 建立 sync_report.md：列出每個語言缺少哪些鍵值、哪些鍵值有值但為空字串、哪些鍵值疑似未翻譯（內容與原文相同） 3. 分析現有翻譯的語氣風格（正式/口語、你/您、句尾習慣），整理成 style_guide.md 4. 自動補翻所有缺漏鍵值，遵守分析出的語氣指南，產出修補後的完整 JSON 檔案 5. 建立 validate.py 腳本，可在 CI 中執行，檢查所有語言檔鍵值是否同步，不同步則 exit 1 並印出差異 6. 建立 translate_new.py，接受參數 --key='feature.title' --text='新功能標題'，自動翻譯成所有目標語言並寫入對應檔案 7. 產出 diff_preview.html，用顏色標示新增、修改、刪除的翻譯條目供 PM 審閱</div>
+    <h2>智慧合約審計報告產生器</h2>
+    <div class="tagline">自動掃描 Solidity 智慧合約原始碼，產出專業級安全審計報告與修補建議</div>
+    <p>將整個 Solidity 專案資料夾交給 Claude Code，它會逐檔掃描合約程式碼，檢測重入攻擊、整數溢位、權限漏洞等常見安全風險，依嚴重等級分類，產出包含風險矩陣、程式碼標註、修補範例的完整 PDF 審計報告。適合 Web3 開發者在部署前做自我檢查，或審計公司用來加速初步篩查流程。</p>
+    <div class="prompt-box">請掃描這個 Solidity 專案 [拖曳資料夾]，執行完整的智慧合約安全審計：1. 遍歷所有 .sol 檔案，建立合約繼承關係圖與函式呼叫流程圖（用 Mermaid 語法） 2. 針對以下類別逐一檢測：重入攻擊、tx.origin 濫用、整數溢位/下溢、未檢查的外部呼叫、存取控制缺陷、前端運行攻擊風險、Gas 限制問題 3. 每個發現標註嚴重等級（Critical/High/Medium/Low/Info），附上有問題的程式碼片段與行號 4. 對每個漏洞提供修補後的程式碼範例 5. 產出 audit_report.md 包含：執行摘要、風險矩陣熱力圖、詳細發現清單、修補建議、最佳實踐檢查表 6. 額外產出 findings.json 方便整合進 CI/CD 流程 7. 附上 gas_optimization.md 列出可節省 Gas 的重構建議</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涉及多檔案交叉分析、語氣風格推論、CI 整合腳本與審閱介面，考驗系統性架構能力
+      高階專案：需要深入理解區塊鏈安全、靜態分析邏輯與多檔案交叉引用，考驗 Claude 的推理與系統性分析能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/security" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -758,7 +759,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="專案結構視覺化地圖 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">78</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/29</span>
+    </div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動重寫成語意化且一致風格的提交訊息</div>
+    <p>很多開發者的 commit message 寫得雜亂無章，這個工具會讀取指定區間的 Git log，分析每次變更的 diff 內容，然後產出符合 Conventional Commits 規範的提交訊息建議清單，並輸出一份 Markdown 變更日誌。適合開源專案維護者、準備上線前整理紀錄的團隊。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具。步驟如下：1. 讀取當前資料夾的 git log --oneline -30 及對應的 diff 摘要 2. 針對每個 commit 分析實際變更內容，重新撰寫符合 Conventional Commits 格式的訊息（如 feat:、fix:、refactor:） 3. 產出 improved-commits.md，用表格呈現「原始訊息 → 建議訊息 → 變更類型」 4. 額外產出 CHANGELOG.md，按版本分組列出功能新增、修復、重構 5. 如果偵測到連續多個小 commit 可以合併，也請標註 squash 建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階但實用，讓新手學會 Claude 讀取本地 Git 資料並產出結構化文件的流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="全端錯誤追蹤儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">79</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">7/29</span>
+    </div>
+    <h2>全端錯誤追蹤儀表板</h2>
+    <div class="tagline">自動掃描日誌檔，分類錯誤並生成即時互動式 HTML 儀表板</div>
+    <p>將散落在各處的 error log、crash report、stderr 輸出丟給 Claude Code，它會自動分類錯誤嚴重等級、辨識重複模式、計算發生頻率，最終產出一個可以用瀏覽器打開的單檔互動式儀表板，含篩選器、時間軸圖表與根因分析建議。適合沒有 Sentry 預算的小團隊或個人開發者。</p>
+    <div class="prompt-box">請幫我打造一個錯誤追蹤儀表板系統。需求如下：1. 在 error-dashboard/ 資料夾建立專案 2. 寫一個 parse_logs.py 腳本，能讀取 logs/ 目錄下所有 .log 和 .txt 檔案 3. 用正則表達式擷取時間戳、錯誤等級（ERROR/WARN/FATAL）、錯誤訊息、堆疊追蹤 4. 將相似錯誤自動歸類（用字串相似度分組），計算每類的出現次數與最近發生時間 5. 產出 dashboard.html 單一檔案，內嵌 Chart.js，包含：錯誤趨勢折線圖、嚴重度圓餅圖、Top 10 錯誤排行表格、每個錯誤可展開看完整堆疊 6. 加入篩選功能：按日期範圍、嚴重度、關鍵字過濾 7. 對 Top 5 錯誤各提供一段根因分析與修復建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合檔案解析、資料分群、前端視覺化，練習 Claude 跨領域協作生成能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系文案同步引擎 程式原型">
+    <div class="card-header">
+      <span class="badge">80</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/29</span>
+    </div>
+    <h2>多語系文案同步引擎</h2>
+    <div class="tagline">監控 i18n 翻譯檔，自動偵測缺漏鍵值、翻譯新增文案並維持語氣一致性</div>
+    <p>大型應用的多語系維護是噩夢——某個語言漏了鍵值、翻譯風格不統一、新功能的文案只寫了中文沒翻其他語言。這個引擎會掃描整個 locales 資料夾，交叉比對所有語言檔的鍵值完整性，自動補翻缺漏項目，並根據既有翻譯學習該專案的語氣風格，確保新翻譯融入現有語境。最終產出完整的翻譯檔與一份差異報告。</p>
+    <div class="prompt-box">請建立一個多語系文案同步引擎，在 i18n-sync/ 資料夾下作業：1. 掃描 locales/ 目錄下所有 JSON 翻譯檔（如 zh-TW.json、en.json、ja.json），解析巢狀結構並攤平為 dot notation 鍵值表 2. 建立 sync_report.md：列出每個語言缺少哪些鍵值、哪些鍵值有值但為空字串、哪些鍵值疑似未翻譯（內容與原文相同） 3. 分析現有翻譯的語氣風格（正式/口語、你/您、句尾習慣），整理成 style_guide.md 4. 自動補翻所有缺漏鍵值，遵守分析出的語氣指南，產出修補後的完整 JSON 檔案 5. 建立 validate.py 腳本，可在 CI 中執行，檢查所有語言檔鍵值是否同步，不同步則 exit 1 並印出差異 6. 建立 translate_new.py，接受參數 --key='feature.title' --text='新功能標題'，自動翻譯成所有目標語言並寫入對應檔案 7. 產出 diff_preview.html，用顏色標示新增、修改、刪除的翻譯條目供 PM 審閱</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涉及多檔案交叉分析、語氣風格推論、CI 整合腳本與審閱介面，考驗系統性架構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="專案結構視覺化地圖 生產力">
     <div class="card-header">
       <span class="badge">75</span>
       <span class="tag level-1">初階</span>
