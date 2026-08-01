@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/07/31</span>
-      <span>📚 累計收錄：<span id="totalCount">86</span> 個專案</span>
+      <span>📅 最後更新：2026/08/01</span>
+      <span>📚 累計收錄：<span id="totalCount">89</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 86 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 89 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (7/31) ============ -->
+  <!-- ============ 今日新增 (8/1) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/07/31
+    今日新增 · 2026/08/01
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="自動週報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">7/31</span>
+      <span class="date-tag">8/1</span>
     </div>
-    <h2>自動週報產生器</h2>
-    <div class="tagline">把一週的工作日誌、聊天紀錄丟進去，自動產出格式漂亮的週報</div>
-    <p>每週五最痛苦的事就是寫週報。把你這週的待辦清單、Slack 訊息、會議筆記通通丟給 Claude Code，它會自動歸類成「已完成」「進行中」「下週計畫」三大區塊，產出 Markdown 週報和 HTML 信件版本，直接寄給主管。適合工程師、PM、任何需要定期彙報的上班族。</p>
-    <div class="prompt-box">以下是我這週的工作紀錄 [貼上或拖曳檔案]。請幫我：1. 分析所有內容，歸類成「已完成項目」「進行中項目」「遇到的阻礙」「下週計畫」四個區塊 2. 每個項目用一句話精簡描述，附上完成百分比 3. 自動偵測關鍵成就並加上 ⭐ 標記 4. 產出 weekly_report.md（Markdown 格式）和 weekly_report.html（可直接貼進 email 的美化版本，含表格和顏色標籤） 5. 最後附上一段 3 行的「本週摘要」供主管快速瀏覽</div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動重寫成語意清晰、格式統一的 Conventional Commits</div>
+    <p>很多開發者的 commit message 寫得很隨意，像「fix bug」「update」這種毫無資訊量的訊息。這個工具會讀取你指定的 Git 倉庫最近 N 筆提交紀錄，分析每筆 diff 的實際變更內容，然後產出符合 Conventional Commits 規範的改寫建議清單，並輸出一份 Markdown 格式的對照表和一鍵執行的 git rebase 腳本。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具：1. 讀取當前資料夾的 Git 倉庫，取得最近 30 筆 commit 的 hash、原始訊息和 diff 摘要 2. 根據每筆 diff 的實際變更判斷類型（feat/fix/refactor/docs/chore 等）3. 用 Conventional Commits 格式重寫每條訊息，加上適當的 scope 4. 產出 commit-review.md 對照表（原始→建議）5. 產出 rewrite.sh 腳本，用 git rebase -i 方式批次改寫 6. 在對照表中標記「變更幅度最大的 5 筆提交」提醒特別檢查</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初學者可體驗 Claude 的文字歸納與多格式輸出能力，成品馬上能用在職場上
+      讓初學者理解 Claude 分析程式碼差異的能力，同時學到 Git 最佳實踐與 Conventional Commits 規範
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件自動生成站 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">75 分鐘</span>
-      <span class="date-tag">7/31</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/1</span>
     </div>
-    <h2>API 文件自動生成站</h2>
-    <div class="tagline">掃描程式碼庫，自動產出互動式 API 文件網站，含範例與測試按鈕</div>
-    <p>把你的後端專案資料夾交給 Claude Code，它會掃描所有路由、控制器、型別定義，自動產出一個完整的靜態 API 文件網站。包含每個端點的請求格式、回應範例、錯誤碼說明，還有可直接發送請求的互動式測試面板。適合新創團隊快速建立技術文件、開源專案維護者提升開發者體驗。</p>
-    <div class="prompt-box">請掃描 [拖曳專案資料夾] 這個後端專案，幫我自動產生 API 文件網站：1. 遞迴讀取所有路由檔案（支援 Express/FastAPI/Spring 等框架） 2. 每個端點提取：HTTP 方法、路徑、參數、請求 body 型別、回應格式 3. 為每個端點自動生成 curl 範例和 JavaScript fetch 範例 4. 建立資料夾 api-docs/，用 HTML+CSS+JS 做成單頁互動文件站，左側為端點導覽列，右側顯示詳細說明 5. 加入「Try it」按鈕，使用者填入參數後可直接發送測試請求 6. 頂部加搜尋功能，可即時過濾端點 7. 產出 api-docs/index.html 可直接用瀏覽器開啟</div>
+    <h2>競品功能矩陣分析器</h2>
+    <div class="tagline">輸入多個競品網址或截圖，自動產出功能比較矩陣、差異化分析與產品策略建議報告</div>
+    <p>產品經理在做競品研究時，常需要手動建立功能比較表格，非常耗時。這個工具讓你提供 3-5 個競品的網站截圖、定價頁面或功能列表文件，Claude 會自動辨識各產品功能、分類歸納，產出一份完整的競品分析報告，包含功能矩陣 HTML 互動表格、SWOT 分析、定價策略比較圖，以及針對你的產品的差異化機會建議。</p>
+    <div class="prompt-box">我要做競品功能分析，請幫我建立一套完整的分析工具：1. 在 /competitor-analysis 資料夾下建立專案結構 2. 讀取我提供的這些競品資料 [拖曳截圖或文件]，每個競品辨識出所有功能點 3. 建立 features-matrix.html：用互動表格呈現所有競品的功能對照（有/無/部分支援），支援篩選和排序 4. 建立 swot-analysis.md：為每個競品做 SWOT 分析 5. 建立 pricing-comparison.html：視覺化比較各家定價方案 6. 建立 opportunities.md：根據功能缺口分析，列出 10 個差異化機會並按「影響力×可行性」排序 7. 最後產出 executive-summary.md 一頁式摘要供主管閱讀</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案需整合檔案系統掃描、程式碼解析、前端生成等多項技能，學會讓 Claude 處理真實程式碼庫
+      中階專案結合了多來源資訊整合、結構化分析思維，以及 HTML 視覺化輸出，適合有產品或商業分析背景的使用者
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="生產力" data-searchtext="多語系內容管理管線 生產力">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型腳手架引擎 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">生產力</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">7/31</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">8/1</span>
     </div>
-    <h2>多語系內容管理管線</h2>
-    <div class="tagline">一鍵將產品文案翻譯、校審、同步到多個平台的自動化工作流</div>
-    <p>建立一套完整的多語系內容管線：輸入中文原稿，Claude Code 會翻譯成指定語言，產生翻譯記憶庫（TM）避免術語不一致，自動比對舊版翻譯標出差異，最後輸出各平台所需格式（iOS strings、Android XML、Web JSON、CSV）。還會建立一個本地 diff 檢視器，讓你逐條審核修改。適合出海團隊、獨立開發者、需要管理多語系 App 的產品經理。</p>
-    <div class="prompt-box">我要建立一套多語系內容管理系統。請在 i18n-pipeline/ 資料夾中完成以下工作：1. 讀取 source/zh-TW.json 作為原始中文內容（格式為 key-value） 2. 翻譯成英文(en)、日文(ja)、韓文(ko)，存入 translations/ 資料夾 3. 建立 glossary.json 術語表，確保品牌名稱、專有名詞在所有語言中一致 4. 若 translations/ 中已有舊版翻譯，自動比對標出新增、修改、刪除的條目，產出 diff_report.html 以紅綠色標示差異 5. 輸出各平台格式：ios/ 下的 Localizable.strings、android/ 下的 strings.xml、web/ 下的各語言 JSON 6. 建立 review/ 資料夾，產出一個本地 HTML 審核工具，左右對照原文與譯文，可勾選「通過」或「需修改」 7. 產出 stats.md 統計各語言翻譯覆蓋率、字數、與上版差異數量 8. 寫一個 update.sh 腳本，之後只要更新 zh-TW.json 就能重新執行整個流程</div>
+    <h2>全端原型腳手架引擎</h2>
+    <div class="tagline">用一段產品需求描述，自動生成包含前後端程式碼、資料庫 schema 與部署設定的完整可運行原型</div>
+    <p>從零開始建一個全端應用原型通常需要數天時間處理各種樣板程式碼。這個專案讓你只需提供一段自然語言的產品需求描述（例如「一個讓團隊投票決定午餐吃什麼的 App」），Claude Code 就會自動生成完整的技術架構文件、React 前端元件、Express/FastAPI 後端 API、SQLite 資料庫 schema 與種子資料、Docker Compose 部署設定，以及端對端測試腳本，讓你在 10 分鐘內就能 docker compose up 看到可運行的原型。</p>
+    <div class="prompt-box">我想快速建立一個全端應用原型，產品需求如下：[在此貼上你的一段話需求描述]。請幫我完成以下所有步驟：1. 在 /prototype 下建立 monorepo 結構，分 frontend/、backend/、database/、docker/ 四個資料夾 2. 建立 ARCHITECTURE.md 說明技術選型（React + Vite 前端、Python FastAPI 後端、SQLite 資料庫）與系統架構圖（ASCII） 3. database/schema.sql：完整的資料表設計含索引和外鍵約束；database/seed.sql：10 筆以上的測試假資料 4. backend/main.py：完整的 RESTful API 含 CRUD 端點、輸入驗證、錯誤處理、CORS 設定 5. frontend/：React 元件含路由、狀態管理、API 串接、響應式 UI（用 Tailwind CSS） 6. docker/docker-compose.yml：一鍵啟動前後端與資料庫 7. tests/：至少 5 個 API 端對端測試用 pytest 撰寫 8. README.md：含啟動指令、API 文件、截圖佔位符 9. Makefile：提供 make setup、make dev、make test、make deploy 四個指令</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涉及多檔案協作、差異比對演算法、多格式輸出、互動式審核介面，全面考驗架構設計與自動化能力
+      高階專案需要理解全端架構、容器化部署、測試策略等多層面知識，產出物是真正可執行的完整程式碼庫，適合有開發經驗的工程師
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -760,7 +761,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站立會議摘要機 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="自動週報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">84</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">7/31</span>
+    </div>
+    <h2>自動週報產生器</h2>
+    <div class="tagline">把一週的工作日誌、聊天紀錄丟進去，自動產出格式漂亮的週報</div>
+    <p>每週五最痛苦的事就是寫週報。把你這週的待辦清單、Slack 訊息、會議筆記通通丟給 Claude Code，它會自動歸類成「已完成」「進行中」「下週計畫」三大區塊，產出 Markdown 週報和 HTML 信件版本，直接寄給主管。適合工程師、PM、任何需要定期彙報的上班族。</p>
+    <div class="prompt-box">以下是我這週的工作紀錄 [貼上或拖曳檔案]。請幫我：1. 分析所有內容，歸類成「已完成項目」「進行中項目」「遇到的阻礙」「下週計畫」四個區塊 2. 每個項目用一句話精簡描述，附上完成百分比 3. 自動偵測關鍵成就並加上 ⭐ 標記 4. 產出 weekly_report.md（Markdown 格式）和 weekly_report.html（可直接貼進 email 的美化版本，含表格和顏色標籤） 5. 最後附上一段 3 行的「本週摘要」供主管快速瀏覽</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初學者可體驗 Claude 的文字歸納與多格式輸出能力，成品馬上能用在職場上
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件自動生成站 程式原型">
+    <div class="card-header">
+      <span class="badge">85</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">7/31</span>
+    </div>
+    <h2>API 文件自動生成站</h2>
+    <div class="tagline">掃描程式碼庫，自動產出互動式 API 文件網站，含範例與測試按鈕</div>
+    <p>把你的後端專案資料夾交給 Claude Code，它會掃描所有路由、控制器、型別定義，自動產出一個完整的靜態 API 文件網站。包含每個端點的請求格式、回應範例、錯誤碼說明，還有可直接發送請求的互動式測試面板。適合新創團隊快速建立技術文件、開源專案維護者提升開發者體驗。</p>
+    <div class="prompt-box">請掃描 [拖曳專案資料夾] 這個後端專案，幫我自動產生 API 文件網站：1. 遞迴讀取所有路由檔案（支援 Express/FastAPI/Spring 等框架） 2. 每個端點提取：HTTP 方法、路徑、參數、請求 body 型別、回應格式 3. 為每個端點自動生成 curl 範例和 JavaScript fetch 範例 4. 建立資料夾 api-docs/，用 HTML+CSS+JS 做成單頁互動文件站，左側為端點導覽列，右側顯示詳細說明 5. 加入「Try it」按鈕，使用者填入參數後可直接發送測試請求 6. 頂部加搜尋功能，可即時過濾端點 7. 產出 api-docs/index.html 可直接用瀏覽器開啟</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合檔案系統掃描、程式碼解析、前端生成等多項技能，學會讓 Claude 處理真實程式碼庫
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="生產力" data-searchtext="多語系內容管理管線 生產力">
+    <div class="card-header">
+      <span class="badge">86</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">7/31</span>
+    </div>
+    <h2>多語系內容管理管線</h2>
+    <div class="tagline">一鍵將產品文案翻譯、校審、同步到多個平台的自動化工作流</div>
+    <p>建立一套完整的多語系內容管線：輸入中文原稿，Claude Code 會翻譯成指定語言，產生翻譯記憶庫（TM）避免術語不一致，自動比對舊版翻譯標出差異，最後輸出各平台所需格式（iOS strings、Android XML、Web JSON、CSV）。還會建立一個本地 diff 檢視器，讓你逐條審核修改。適合出海團隊、獨立開發者、需要管理多語系 App 的產品經理。</p>
+    <div class="prompt-box">我要建立一套多語系內容管理系統。請在 i18n-pipeline/ 資料夾中完成以下工作：1. 讀取 source/zh-TW.json 作為原始中文內容（格式為 key-value） 2. 翻譯成英文(en)、日文(ja)、韓文(ko)，存入 translations/ 資料夾 3. 建立 glossary.json 術語表，確保品牌名稱、專有名詞在所有語言中一致 4. 若 translations/ 中已有舊版翻譯，自動比對標出新增、修改、刪除的條目，產出 diff_report.html 以紅綠色標示差異 5. 輸出各平台格式：ios/ 下的 Localizable.strings、android/ 下的 strings.xml、web/ 下的各語言 JSON 6. 建立 review/ 資料夾，產出一個本地 HTML 審核工具，左右對照原文與譯文，可勾選「通過」或「需修改」 7. 產出 stats.md 統計各語言翻譯覆蓋率、字數、與上版差異數量 8. 寫一個 update.sh 腳本，之後只要更新 zh-TW.json 就能重新執行整個流程</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涉及多檔案協作、差異比對演算法、多格式輸出、互動式審核介面，全面考驗架構設計與自動化能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站立會議摘要機 生產力">
     <div class="card-header">
       <span class="badge">81</span>
       <span class="tag level-1">初階</span>
