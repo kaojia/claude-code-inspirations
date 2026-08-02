@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/01</span>
-      <span>📚 累計收錄：<span id="totalCount">89</span> 個專案</span>
+      <span>📅 最後更新：2026/08/02</span>
+      <span>📚 累計收錄：<span id="totalCount">92</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 89 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 92 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/1) ============ -->
+  <!-- ============ 今日新增 (8/2) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/01
+    今日新增 · 2026/08/02
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要機器人 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/1</span>
+      <span class="date-tag">8/2</span>
     </div>
-    <h2>Git 提交訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史紀錄，自動重寫成語意清晰、格式統一的 Conventional Commits</div>
-    <p>很多開發者的 commit message 寫得很隨意，像「fix bug」「update」這種毫無資訊量的訊息。這個工具會讀取你指定的 Git 倉庫最近 N 筆提交紀錄，分析每筆 diff 的實際變更內容，然後產出符合 Conventional Commits 規範的改寫建議清單，並輸出一份 Markdown 格式的對照表和一鍵執行的 git rebase 腳本。</p>
-    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具：1. 讀取當前資料夾的 Git 倉庫，取得最近 30 筆 commit 的 hash、原始訊息和 diff 摘要 2. 根據每筆 diff 的實際變更判斷類型（feat/fix/refactor/docs/chore 等）3. 用 Conventional Commits 格式重寫每條訊息，加上適當的 scope 4. 產出 commit-review.md 對照表（原始→建議）5. 產出 rewrite.sh 腳本，用 git rebase -i 方式批次改寫 6. 在對照表中標記「變更幅度最大的 5 筆提交」提醒特別檢查</div>
+    <h2>每日站會摘要機器人</h2>
+    <div class="tagline">把散落在 Slack／Discord 的訊息自動整理成結構化站會紀錄</div>
+    <p>將團隊聊天頻道的對話紀錄貼給 Claude Code，它會自動辨識每位成員的進度更新、遇到的阻礙、今日計畫，產出格式統一的站會摘要 Markdown 檔。適合遠端團隊、Scrum Master、專案經理，每天省下 15 分鐘整理時間，還能自動追蹤未解決的 blocker 清單。</p>
+    <div class="prompt-box">以下是我們團隊今天在 Slack 頻道的對話紀錄 [貼上文字]。請幫我：1. 辨識每位發言者，歸納他們的「昨日完成」「今日計畫」「遇到阻礙」三欄內容 2. 若對話中沒明確提到某欄就標註『未回報』 3. 彙整所有未解決的阻礙到一個獨立的 blocker 追蹤表 4. 輸出成 standup_YYYYMMDD.md，頂部放日期與出席人數統計 5. 最後附上一段 30 字以內的團隊今日重點一句話總結</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者理解 Claude 分析程式碼差異的能力，同時學到 Git 最佳實踐與 Conventional Commits 規範
+      練習 Claude 的文本分類與資訊萃取能力，完成後可直接融入團隊日常工作流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料儀表板產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/1</span>
+      <span class="date-tag">8/2</span>
     </div>
-    <h2>競品功能矩陣分析器</h2>
-    <div class="tagline">輸入多個競品網址或截圖，自動產出功能比較矩陣、差異化分析與產品策略建議報告</div>
-    <p>產品經理在做競品研究時，常需要手動建立功能比較表格，非常耗時。這個工具讓你提供 3-5 個競品的網站截圖、定價頁面或功能列表文件，Claude 會自動辨識各產品功能、分類歸納，產出一份完整的競品分析報告，包含功能矩陣 HTML 互動表格、SWOT 分析、定價策略比較圖，以及針對你的產品的差異化機會建議。</p>
-    <div class="prompt-box">我要做競品功能分析，請幫我建立一套完整的分析工具：1. 在 /competitor-analysis 資料夾下建立專案結構 2. 讀取我提供的這些競品資料 [拖曳截圖或文件]，每個競品辨識出所有功能點 3. 建立 features-matrix.html：用互動表格呈現所有競品的功能對照（有/無/部分支援），支援篩選和排序 4. 建立 swot-analysis.md：為每個競品做 SWOT 分析 5. 建立 pricing-comparison.html：視覺化比較各家定價方案 6. 建立 opportunities.md：根據功能缺口分析，列出 10 個差異化機會並按「影響力×可行性」排序 7. 最後產出 executive-summary.md 一頁式摘要供主管閱讀</div>
+    <h2>互動式資料儀表板產生器</h2>
+    <div class="tagline">上傳 CSV 資料集，自動生成含圖表篩選器的互動式 HTML 儀表板</div>
+    <p>把任意 CSV 資料檔交給 Claude Code，它會分析欄位型態、偵測數值與類別欄位，自動選擇合適的圖表類型（長條圖、折線圖、圓餅圖），產出一個完整的單頁 HTML 儀表板，內含 Chart.js 圖表、下拉式篩選器、關鍵指標卡片。不需後端伺服器，雙擊 HTML 即可在瀏覽器開啟，適合業務分析師、行銷人員快速做數據簡報。</p>
+    <div class="prompt-box">這是我的資料集 [拖曳 CSV 檔案]。請幫我建立一個互動式儀表板：1. 先分析所有欄位，列出每欄的資料型態、缺失值比例、基本統計量 2. 自動選擇 3-5 個最有洞察價值的圖表組合（例如趨勢折線圖、分類長條圖、佔比圓餅圖） 3. 用 Chart.js 繪製圖表，配色使用商業簡報風格 4. 加入下拉選單讓使用者可依類別欄位篩選資料，圖表即時更新 5. 頂部放 3-4 張 KPI 摘要卡片（總數、平均、最大最小值等） 6. 輸出為 dashboard.html 單一檔案，所有 CSS/JS 內嵌，離線可用 7. 加入 RWD 支援讓手機也能正常瀏覽</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案結合了多來源資訊整合、結構化分析思維，以及 HTML 視覺化輸出，適合有產品或商業分析背景的使用者
+      中階挑戰：需整合資料分析邏輯、前端視覺化、互動篩選功能，學習 Claude 處理多層次程式架構的能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型腳手架引擎 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系文案在地化引擎 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">90 分鐘</span>
-      <span class="date-tag">8/1</span>
+      <span class="date-tag">8/2</span>
     </div>
-    <h2>全端原型腳手架引擎</h2>
-    <div class="tagline">用一段產品需求描述，自動生成包含前後端程式碼、資料庫 schema 與部署設定的完整可運行原型</div>
-    <p>從零開始建一個全端應用原型通常需要數天時間處理各種樣板程式碼。這個專案讓你只需提供一段自然語言的產品需求描述（例如「一個讓團隊投票決定午餐吃什麼的 App」），Claude Code 就會自動生成完整的技術架構文件、React 前端元件、Express/FastAPI 後端 API、SQLite 資料庫 schema 與種子資料、Docker Compose 部署設定，以及端對端測試腳本，讓你在 10 分鐘內就能 docker compose up 看到可運行的原型。</p>
-    <div class="prompt-box">我想快速建立一個全端應用原型，產品需求如下：[在此貼上你的一段話需求描述]。請幫我完成以下所有步驟：1. 在 /prototype 下建立 monorepo 結構，分 frontend/、backend/、database/、docker/ 四個資料夾 2. 建立 ARCHITECTURE.md 說明技術選型（React + Vite 前端、Python FastAPI 後端、SQLite 資料庫）與系統架構圖（ASCII） 3. database/schema.sql：完整的資料表設計含索引和外鍵約束；database/seed.sql：10 筆以上的測試假資料 4. backend/main.py：完整的 RESTful API 含 CRUD 端點、輸入驗證、錯誤處理、CORS 設定 5. frontend/：React 元件含路由、狀態管理、API 串接、響應式 UI（用 Tailwind CSS） 6. docker/docker-compose.yml：一鍵啟動前後端與資料庫 7. tests/：至少 5 個 API 端對端測試用 pytest 撰寫 8. README.md：含啟動指令、API 文件、截圖佔位符 9. Makefile：提供 make setup、make dev、make test、make deploy 四個指令</div>
+    <h2>多語系文案在地化引擎</h2>
+    <div class="tagline">一鍵將整個專案的 UI 文案抽取、翻譯、回寫，支援 i18n 框架整合</div>
+    <p>給 Claude Code 一個前端專案資料夾，它會掃描所有元件檔案中的硬編碼中文字串，自動抽取為 i18n 鍵值、產生多語系 JSON 翻譯檔（繁中、簡中、英、日），並回寫原始碼將硬編碼字串替換為 t() 函式呼叫。還會產出翻譯覆蓋率報告和未翻譯項目清單。適合準備出海的 SaaS 團隊、需要快速國際化的開發者，可省下數天人工作業。</p>
+    <div class="prompt-box">請掃描 [專案資料夾路徑] 中所有 .vue / .tsx / .jsx / .html 檔案，執行以下國際化流程：1. 遞迴掃描所有檔案，用 AST 或正則找出硬編碼的中文字串（含模板、JSX、屬性值） 2. 為每個字串產生語義化的 i18n key（如 common.save、dashboard.title），避免重複 3. 建立 locales/ 資料夾，輸出 zh-TW.json、zh-CN.json、en.json、ja.json 四個翻譯檔 4. 翻譯時注意語境：按鈕文字要簡短、提示訊息要完整、錯誤訊息要友善 5. 回寫原始碼：將硬編碼字串替換為 $t('key') 或 t('key')，根據框架自動判斷 6. 在專案根目錄產出 i18n-report.md，包含：總字串數、各語系翻譯完成率、需要人工審核的模糊翻譯清單、未處理檔案列表 7. 若偵測到專案尚未安裝 vue-i18n 或 react-i18next，提供安裝與初始化設定建議</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案需要理解全端架構、容器化部署、測試策略等多層面知識，產出物是真正可執行的完整程式碼庫，適合有開發經驗的工程師
+      高階挑戰：需要理解 AST 解析、多框架相容、批次檔案讀寫與語境感知翻譯，考驗 Claude 的系統級工程能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -761,7 +762,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="自動週報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">87</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/1</span>
+    </div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動重寫成語意清晰、格式統一的 Conventional Commits</div>
+    <p>很多開發者的 commit message 寫得很隨意，像「fix bug」「update」這種毫無資訊量的訊息。這個工具會讀取你指定的 Git 倉庫最近 N 筆提交紀錄，分析每筆 diff 的實際變更內容，然後產出符合 Conventional Commits 規範的改寫建議清單，並輸出一份 Markdown 格式的對照表和一鍵執行的 git rebase 腳本。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具：1. 讀取當前資料夾的 Git 倉庫，取得最近 30 筆 commit 的 hash、原始訊息和 diff 摘要 2. 根據每筆 diff 的實際變更判斷類型（feat/fix/refactor/docs/chore 等）3. 用 Conventional Commits 格式重寫每條訊息，加上適當的 scope 4. 產出 commit-review.md 對照表（原始→建議）5. 產出 rewrite.sh 腳本，用 git rebase -i 方式批次改寫 6. 在對照表中標記「變更幅度最大的 5 筆提交」提醒特別檢查</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者理解 Claude 分析程式碼差異的能力，同時學到 Git 最佳實踐與 Conventional Commits 規範
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
+    <div class="card-header">
+      <span class="badge">88</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/1</span>
+    </div>
+    <h2>競品功能矩陣分析器</h2>
+    <div class="tagline">輸入多個競品網址或截圖，自動產出功能比較矩陣、差異化分析與產品策略建議報告</div>
+    <p>產品經理在做競品研究時，常需要手動建立功能比較表格，非常耗時。這個工具讓你提供 3-5 個競品的網站截圖、定價頁面或功能列表文件，Claude 會自動辨識各產品功能、分類歸納，產出一份完整的競品分析報告，包含功能矩陣 HTML 互動表格、SWOT 分析、定價策略比較圖，以及針對你的產品的差異化機會建議。</p>
+    <div class="prompt-box">我要做競品功能分析，請幫我建立一套完整的分析工具：1. 在 /competitor-analysis 資料夾下建立專案結構 2. 讀取我提供的這些競品資料 [拖曳截圖或文件]，每個競品辨識出所有功能點 3. 建立 features-matrix.html：用互動表格呈現所有競品的功能對照（有/無/部分支援），支援篩選和排序 4. 建立 swot-analysis.md：為每個競品做 SWOT 分析 5. 建立 pricing-comparison.html：視覺化比較各家定價方案 6. 建立 opportunities.md：根據功能缺口分析，列出 10 個差異化機會並按「影響力×可行性」排序 7. 最後產出 executive-summary.md 一頁式摘要供主管閱讀</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案結合了多來源資訊整合、結構化分析思維，以及 HTML 視覺化輸出，適合有產品或商業分析背景的使用者
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型腳手架引擎 程式原型">
+    <div class="card-header">
+      <span class="badge">89</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">8/1</span>
+    </div>
+    <h2>全端原型腳手架引擎</h2>
+    <div class="tagline">用一段產品需求描述，自動生成包含前後端程式碼、資料庫 schema 與部署設定的完整可運行原型</div>
+    <p>從零開始建一個全端應用原型通常需要數天時間處理各種樣板程式碼。這個專案讓你只需提供一段自然語言的產品需求描述（例如「一個讓團隊投票決定午餐吃什麼的 App」），Claude Code 就會自動生成完整的技術架構文件、React 前端元件、Express/FastAPI 後端 API、SQLite 資料庫 schema 與種子資料、Docker Compose 部署設定，以及端對端測試腳本，讓你在 10 分鐘內就能 docker compose up 看到可運行的原型。</p>
+    <div class="prompt-box">我想快速建立一個全端應用原型，產品需求如下：[在此貼上你的一段話需求描述]。請幫我完成以下所有步驟：1. 在 /prototype 下建立 monorepo 結構，分 frontend/、backend/、database/、docker/ 四個資料夾 2. 建立 ARCHITECTURE.md 說明技術選型（React + Vite 前端、Python FastAPI 後端、SQLite 資料庫）與系統架構圖（ASCII） 3. database/schema.sql：完整的資料表設計含索引和外鍵約束；database/seed.sql：10 筆以上的測試假資料 4. backend/main.py：完整的 RESTful API 含 CRUD 端點、輸入驗證、錯誤處理、CORS 設定 5. frontend/：React 元件含路由、狀態管理、API 串接、響應式 UI（用 Tailwind CSS） 6. docker/docker-compose.yml：一鍵啟動前後端與資料庫 7. tests/：至少 5 個 API 端對端測試用 pytest 撰寫 8. README.md：含啟動指令、API 文件、截圖佔位符 9. Makefile：提供 make setup、make dev、make test、make deploy 四個指令</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案需要理解全端架構、容器化部署、測試策略等多層面知識，產出物是真正可執行的完整程式碼庫，適合有開發經驗的工程師
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="自動週報產生器 生產力">
     <div class="card-header">
       <span class="badge">84</span>
       <span class="tag level-1">初階</span>
