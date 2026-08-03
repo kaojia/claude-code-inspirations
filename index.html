@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/02</span>
-      <span>📚 累計收錄：<span id="totalCount">92</span> 個專案</span>
+      <span>📅 最後更新：2026/08/03</span>
+      <span>📚 累計收錄：<span id="totalCount">95</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 92 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 95 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/2) ============ -->
+  <!-- ============ 今日新增 (8/3) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/02
+    今日新增 · 2026/08/03
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要機器人 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/2</span>
+      <span class="date-tag">8/3</span>
     </div>
-    <h2>每日站會摘要機器人</h2>
-    <div class="tagline">把散落在 Slack／Discord 的訊息自動整理成結構化站會紀錄</div>
-    <p>將團隊聊天頻道的對話紀錄貼給 Claude Code，它會自動辨識每位成員的進度更新、遇到的阻礙、今日計畫，產出格式統一的站會摘要 Markdown 檔。適合遠端團隊、Scrum Master、專案經理，每天省下 15 分鐘整理時間，還能自動追蹤未解決的 blocker 清單。</p>
-    <div class="prompt-box">以下是我們團隊今天在 Slack 頻道的對話紀錄 [貼上文字]。請幫我：1. 辨識每位發言者，歸納他們的「昨日完成」「今日計畫」「遇到阻礙」三欄內容 2. 若對話中沒明確提到某欄就標註『未回報』 3. 彙整所有未解決的阻礙到一個獨立的 blocker 追蹤表 4. 輸出成 standup_YYYYMMDD.md，頂部放日期與出席人數統計 5. 最後附上一段 30 字以內的團隊今日重點一句話總結</div>
+    <h2>會議逐字稿重點萃取器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化會議紀錄與待辦事項清單</div>
+    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿餵給 Claude Code，它會自動辨識發言者、歸納討論主題、列出每個決議事項與負責人，最後產出一份格式漂亮的 Markdown 會議紀錄與可匯入 Notion 的待辦 CSV。適合 PM、主管、或任何每週被會議淹沒的上班族。</p>
+    <div class="prompt-box">這份檔案 [拖曳逐字稿 .txt 或 .srt] 是我們剛開完的會議逐字稿。請幫我：1. 辨識每位發言者並標註他們的主要論點 2. 歸納出 3-5 個討論主題，每個主題用 3 行摘要 3. 列出所有決議事項，格式為「待辦內容｜負責人｜截止日期」 4. 產出 meeting_notes.md（含標題、日期、出席者、摘要、決議）5. 產出 action_items.csv（可匯入 Notion 或 Trello）6. 最後加一段「會議效率評分」，建議哪些議題下次可以改用非同步溝通</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      練習 Claude 的文本分類與資訊萃取能力，完成後可直接融入團隊日常工作流程
+      讓初學者體驗 Claude 的長文理解與結構化輸出能力，完成後立刻能用在日常工作流程中
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料儀表板產生器 資料分析">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/2</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">8/3</span>
     </div>
-    <h2>互動式資料儀表板產生器</h2>
-    <div class="tagline">上傳 CSV 資料集，自動生成含圖表篩選器的互動式 HTML 儀表板</div>
-    <p>把任意 CSV 資料檔交給 Claude Code，它會分析欄位型態、偵測數值與類別欄位，自動選擇合適的圖表類型（長條圖、折線圖、圓餅圖），產出一個完整的單頁 HTML 儀表板，內含 Chart.js 圖表、下拉式篩選器、關鍵指標卡片。不需後端伺服器，雙擊 HTML 即可在瀏覽器開啟，適合業務分析師、行銷人員快速做數據簡報。</p>
-    <div class="prompt-box">這是我的資料集 [拖曳 CSV 檔案]。請幫我建立一個互動式儀表板：1. 先分析所有欄位，列出每欄的資料型態、缺失值比例、基本統計量 2. 自動選擇 3-5 個最有洞察價值的圖表組合（例如趨勢折線圖、分類長條圖、佔比圓餅圖） 3. 用 Chart.js 繪製圖表，配色使用商業簡報風格 4. 加入下拉選單讓使用者可依類別欄位篩選資料，圖表即時更新 5. 頂部放 3-4 張 KPI 摘要卡片（總數、平均、最大最小值等） 6. 輸出為 dashboard.html 單一檔案，所有 CSS/JS 內嵌，離線可用 7. 加入 RWD 支援讓手機也能正常瀏覽</div>
+    <h2>API 文件互動測試台</h2>
+    <div class="tagline">給一份 API 文件或 OpenAPI spec，自動產生可在瀏覽器操作的互動式測試介面</div>
+    <p>把你的 Swagger/OpenAPI JSON 或任何 REST API 文件丟給 Claude Code，它會解析所有端點，產生一個包含表單輸入、即時回應預覽、錯誤處理提示的單頁 HTML 應用程式。後端工程師可以用來快速除錯，前端工程師可以在串接前先熟悉 API 行為，PM 也能自己測試功能不用等工程師。</p>
+    <div class="prompt-box">請讀取這份 API 規格文件 [拖曳 openapi.json 或 API 文件]，幫我建立一個互動式 API 測試台：1. 解析所有端點，依資源分類顯示在左側選單 2. 每個端點顯示方法（GET/POST/PUT/DELETE）、路徑、參數說明 3. 自動產生表單欄位，包含必填標示、型別驗證、範例值預填 4. 加入 Authorization header 設定區（支援 Bearer Token 和 API Key）5. 送出請求後用語法高亮顯示 JSON 回應，並標註 HTTP 狀態碼 6. 錯誤回應時顯示可能原因與修正建議 7. 建立資料夾結構：api-tester/index.html、api-tester/style.css、api-tester/app.js 8. 使用純 HTML+CSS+JS，不依賴框架，可直接開啟使用</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：需整合資料分析邏輯、前端視覺化、互動篩選功能，學習 Claude 處理多層次程式架構的能力
+      中階專案需整合檔案解析、動態 UI 生成與網路請求處理，學會讓 Claude 建構完整前端應用
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系文案在地化引擎 程式原型">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康體檢報告 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">90 分鐘</span>
-      <span class="date-tag">8/2</span>
+      <span class="date-tag">8/3</span>
     </div>
-    <h2>多語系文案在地化引擎</h2>
-    <div class="tagline">一鍵將整個專案的 UI 文案抽取、翻譯、回寫，支援 i18n 框架整合</div>
-    <p>給 Claude Code 一個前端專案資料夾，它會掃描所有元件檔案中的硬編碼中文字串，自動抽取為 i18n 鍵值、產生多語系 JSON 翻譯檔（繁中、簡中、英、日），並回寫原始碼將硬編碼字串替換為 t() 函式呼叫。還會產出翻譯覆蓋率報告和未翻譯項目清單。適合準備出海的 SaaS 團隊、需要快速國際化的開發者，可省下數天人工作業。</p>
-    <div class="prompt-box">請掃描 [專案資料夾路徑] 中所有 .vue / .tsx / .jsx / .html 檔案，執行以下國際化流程：1. 遞迴掃描所有檔案，用 AST 或正則找出硬編碼的中文字串（含模板、JSX、屬性值） 2. 為每個字串產生語義化的 i18n key（如 common.save、dashboard.title），避免重複 3. 建立 locales/ 資料夾，輸出 zh-TW.json、zh-CN.json、en.json、ja.json 四個翻譯檔 4. 翻譯時注意語境：按鈕文字要簡短、提示訊息要完整、錯誤訊息要友善 5. 回寫原始碼：將硬編碼字串替換為 $t('key') 或 t('key')，根據框架自動判斷 6. 在專案根目錄產出 i18n-report.md，包含：總字串數、各語系翻譯完成率、需要人工審核的模糊翻譯清單、未處理檔案列表 7. 若偵測到專案尚未安裝 vue-i18n 或 react-i18next，提供安裝與初始化設定建議</div>
+    <h2>程式碼庫健康體檢報告</h2>
+    <div class="tagline">掃描整個專案資料夾，產出涵蓋架構、品質、安全性的全方位健康診斷報告</div>
+    <p>讓 Claude Code 深度分析你的整個程式碼庫，從資料夾結構、相依套件版本、程式碼重複率、函式複雜度、潛在安全漏洞到測試覆蓋率，全部掃過一遍後產出一份視覺化的 HTML 報告。報告包含嚴重度分級的問題清單、具體重構建議、架構圖、以及優先處理的技術債排序。適合技術主管在接手新專案、進行季度回顧、或準備技術審查時使用。</p>
+    <div class="prompt-box">請掃描這個專案資料夾 [拖曳專案根目錄] 並產出完整的程式碼庫健康體檢報告：1. 架構分析：繪製模組相依關係圖（用 Mermaid 語法）、識別循環相依、評估分層是否清晰 2. 程式碼品質：找出重複程式碼片段（相似度>70%）、計算每個函式的圈複雜度、標記超過 200 行的檔案 3. 安全性掃描：檢查硬編碼的密鑰或密碼、過時的相依套件（對照已知 CVE）、SQL 注入或 XSS 風險 4. 測試健康度：計算測試覆蓋率估計、找出沒有對應測試的核心模組、檢查測試命名規範 5. 技術債評估：依嚴重度（高/中/低）分類所有問題，估算修復工時，產出優先處理排序 6. 產出結構：health-report/index.html（含互動式摺疊面板、嚴重度篩選、Mermaid 圖表渲染）、health-report/data.json（原始分析數據）、health-report/recommendations.md（前 10 項重構建議與具體程式碼範例）7. 報告頂部顯示總分（滿分 100）與雷達圖呈現各維度分數</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰：需要理解 AST 解析、多框架相容、批次檔案讀寫與語境感知翻譯，考驗 Claude 的系統級工程能力
+      高階專案要求 Claude 同時進行多維度分析、跨檔案推理與大量結構化輸出，考驗提示詞的系統性設計能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -762,7 +763,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要機器人 生產力">
+    <div class="card-header">
+      <span class="badge">90</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/2</span>
+    </div>
+    <h2>每日站會摘要機器人</h2>
+    <div class="tagline">把散落在 Slack／Discord 的訊息自動整理成結構化站會紀錄</div>
+    <p>將團隊聊天頻道的對話紀錄貼給 Claude Code，它會自動辨識每位成員的進度更新、遇到的阻礙、今日計畫，產出格式統一的站會摘要 Markdown 檔。適合遠端團隊、Scrum Master、專案經理，每天省下 15 分鐘整理時間，還能自動追蹤未解決的 blocker 清單。</p>
+    <div class="prompt-box">以下是我們團隊今天在 Slack 頻道的對話紀錄 [貼上文字]。請幫我：1. 辨識每位發言者，歸納他們的「昨日完成」「今日計畫」「遇到阻礙」三欄內容 2. 若對話中沒明確提到某欄就標註『未回報』 3. 彙整所有未解決的阻礙到一個獨立的 blocker 追蹤表 4. 輸出成 standup_YYYYMMDD.md，頂部放日期與出席人數統計 5. 最後附上一段 30 字以內的團隊今日重點一句話總結</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      練習 Claude 的文本分類與資訊萃取能力，完成後可直接融入團隊日常工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料儀表板產生器 資料分析">
+    <div class="card-header">
+      <span class="badge">91</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/2</span>
+    </div>
+    <h2>互動式資料儀表板產生器</h2>
+    <div class="tagline">上傳 CSV 資料集，自動生成含圖表篩選器的互動式 HTML 儀表板</div>
+    <p>把任意 CSV 資料檔交給 Claude Code，它會分析欄位型態、偵測數值與類別欄位，自動選擇合適的圖表類型（長條圖、折線圖、圓餅圖），產出一個完整的單頁 HTML 儀表板，內含 Chart.js 圖表、下拉式篩選器、關鍵指標卡片。不需後端伺服器，雙擊 HTML 即可在瀏覽器開啟，適合業務分析師、行銷人員快速做數據簡報。</p>
+    <div class="prompt-box">這是我的資料集 [拖曳 CSV 檔案]。請幫我建立一個互動式儀表板：1. 先分析所有欄位，列出每欄的資料型態、缺失值比例、基本統計量 2. 自動選擇 3-5 個最有洞察價值的圖表組合（例如趨勢折線圖、分類長條圖、佔比圓餅圖） 3. 用 Chart.js 繪製圖表，配色使用商業簡報風格 4. 加入下拉選單讓使用者可依類別欄位篩選資料，圖表即時更新 5. 頂部放 3-4 張 KPI 摘要卡片（總數、平均、最大最小值等） 6. 輸出為 dashboard.html 單一檔案，所有 CSS/JS 內嵌，離線可用 7. 加入 RWD 支援讓手機也能正常瀏覽</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：需整合資料分析邏輯、前端視覺化、互動篩選功能，學習 Claude 處理多層次程式架構的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系文案在地化引擎 程式原型">
+    <div class="card-header">
+      <span class="badge">92</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">8/2</span>
+    </div>
+    <h2>多語系文案在地化引擎</h2>
+    <div class="tagline">一鍵將整個專案的 UI 文案抽取、翻譯、回寫，支援 i18n 框架整合</div>
+    <p>給 Claude Code 一個前端專案資料夾，它會掃描所有元件檔案中的硬編碼中文字串，自動抽取為 i18n 鍵值、產生多語系 JSON 翻譯檔（繁中、簡中、英、日），並回寫原始碼將硬編碼字串替換為 t() 函式呼叫。還會產出翻譯覆蓋率報告和未翻譯項目清單。適合準備出海的 SaaS 團隊、需要快速國際化的開發者，可省下數天人工作業。</p>
+    <div class="prompt-box">請掃描 [專案資料夾路徑] 中所有 .vue / .tsx / .jsx / .html 檔案，執行以下國際化流程：1. 遞迴掃描所有檔案，用 AST 或正則找出硬編碼的中文字串（含模板、JSX、屬性值） 2. 為每個字串產生語義化的 i18n key（如 common.save、dashboard.title），避免重複 3. 建立 locales/ 資料夾，輸出 zh-TW.json、zh-CN.json、en.json、ja.json 四個翻譯檔 4. 翻譯時注意語境：按鈕文字要簡短、提示訊息要完整、錯誤訊息要友善 5. 回寫原始碼：將硬編碼字串替換為 $t('key') 或 t('key')，根據框架自動判斷 6. 在專案根目錄產出 i18n-report.md，包含：總字串數、各語系翻譯完成率、需要人工審核的模糊翻譯清單、未處理檔案列表 7. 若偵測到專案尚未安裝 vue-i18n 或 react-i18next，提供安裝與初始化設定建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰：需要理解 AST 解析、多框架相容、批次檔案讀寫與語境感知翻譯，考驗 Claude 的系統級工程能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">87</span>
       <span class="tag level-1">初階</span>
