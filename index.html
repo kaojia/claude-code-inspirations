@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/03</span>
-      <span>📚 累計收錄：<span id="totalCount">95</span> 個專案</span>
+      <span>📅 最後更新：2026/08/04</span>
+      <span>📚 累計收錄：<span id="totalCount">98</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 95 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 98 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/3) ============ -->
+  <!-- ============ 今日新增 (8/4) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/03
+    今日新增 · 2026/08/04
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/3</span>
+      <span class="date-tag">8/4</span>
     </div>
-    <h2>會議逐字稿重點萃取器</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化會議紀錄與待辦事項清單</div>
-    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿餵給 Claude Code，它會自動辨識發言者、歸納討論主題、列出每個決議事項與負責人，最後產出一份格式漂亮的 Markdown 會議紀錄與可匯入 Notion 的待辦 CSV。適合 PM、主管、或任何每週被會議淹沒的上班族。</p>
-    <div class="prompt-box">這份檔案 [拖曳逐字稿 .txt 或 .srt] 是我們剛開完的會議逐字稿。請幫我：1. 辨識每位發言者並標註他們的主要論點 2. 歸納出 3-5 個討論主題，每個主題用 3 行摘要 3. 列出所有決議事項，格式為「待辦內容｜負責人｜截止日期」 4. 產出 meeting_notes.md（含標題、日期、出席者、摘要、決議）5. 產出 action_items.csv（可匯入 Notion 或 Trello）6. 最後加一段「會議效率評分」，建議哪些議題下次可以改用非同步溝通</div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成規範化的 Conventional Commits 格式</div>
+    <p>許多開發者的 commit message 寫得隨意潦草，事後難以追溯變更原因。這個工具會讀取你指定區間的 Git log，由 Claude 分析每筆變更的程式差異，重新產出符合 Conventional Commits 規範的訊息，並生成一份 CHANGELOG.md。適合想整理開源專案歷史、準備發版紀錄的開發者。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具。步驟如下：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 對每筆提交執行 git diff 分析實際程式碼變更內容 3. 根據變更內容，將訊息改寫為 Conventional Commits 格式（feat/fix/refactor/docs/chore 等前綴＋簡潔中文描述） 4. 產出 improved_commits.md 對照表（原始訊息 → 建議訊息） 5. 額外產出一份按類別分組的 CHANGELOG.md，包含版本號建議。請先確認目前目錄是否為 Git 儲存庫。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude 的長文理解與結構化輸出能力，完成後立刻能用在日常工作流程中
+      初學者可學會 Claude 與 CLI 工具結合的基本模式，馬上改善自己的開發習慣
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系文案同步引擎 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">60 分鐘</span>
-      <span class="date-tag">8/3</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/4</span>
     </div>
-    <h2>API 文件互動測試台</h2>
-    <div class="tagline">給一份 API 文件或 OpenAPI spec，自動產生可在瀏覽器操作的互動式測試介面</div>
-    <p>把你的 Swagger/OpenAPI JSON 或任何 REST API 文件丟給 Claude Code，它會解析所有端點，產生一個包含表單輸入、即時回應預覽、錯誤處理提示的單頁 HTML 應用程式。後端工程師可以用來快速除錯，前端工程師可以在串接前先熟悉 API 行為，PM 也能自己測試功能不用等工程師。</p>
-    <div class="prompt-box">請讀取這份 API 規格文件 [拖曳 openapi.json 或 API 文件]，幫我建立一個互動式 API 測試台：1. 解析所有端點，依資源分類顯示在左側選單 2. 每個端點顯示方法（GET/POST/PUT/DELETE）、路徑、參數說明 3. 自動產生表單欄位，包含必填標示、型別驗證、範例值預填 4. 加入 Authorization header 設定區（支援 Bearer Token 和 API Key）5. 送出請求後用語法高亮顯示 JSON 回應，並標註 HTTP 狀態碼 6. 錯誤回應時顯示可能原因與修正建議 7. 建立資料夾結構：api-tester/index.html、api-tester/style.css、api-tester/app.js 8. 使用純 HTML+CSS+JS，不依賴框架，可直接開啟使用</div>
+    <h2>多語系文案同步引擎</h2>
+    <div class="tagline">偵測 i18n JSON 檔案的缺漏鍵值，自動翻譯補齊並保持語氣風格一致</div>
+    <p>國際化專案最頭痛的問題是語系檔不同步——新功能加了英文卻忘了補日文和中文。這個工具會比對所有語系 JSON 檔，找出缺漏的 key，根據既有翻譯的語氣風格自動補齊，還會產出一份差異報告讓 PM 審閱。支援巢狀 JSON 結構與 ICU 複數語法，適合中型以上的前端團隊。</p>
+    <div class="prompt-box">我的專案使用 i18n 多語系架構，語系檔放在 ./src/locales/ 資料夾下，格式為 en.json、zh-TW.json、ja.json。請幫我：1. 讀取所有語系檔並建立完整的 key 清單 2. 比對每個語系檔，列出缺漏的 key 與多餘的 key 3. 以 en.json 為基準，分析既有 zh-TW 和 ja 翻譯的語氣風格（正式/口語/技術） 4. 自動補齊缺漏的翻譯，保持與既有風格一致 5. 處理巢狀結構與含有 {variable} 的插值語法 6. 產出更新後的各語系 JSON 檔 7. 產出 i18n_sync_report.md 報告，包含變更摘要與建議人工複審的項目</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案需整合檔案解析、動態 UI 生成與網路請求處理，學會讓 Claude 建構完整前端應用
+      中階練習：需要處理複雜 JSON 結構比對邏輯，並學會讓 Claude 維持翻譯風格的一致性
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康體檢報告 資料分析">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">90 分鐘</span>
-      <span class="date-tag">8/3</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/4</span>
     </div>
-    <h2>程式碼庫健康體檢報告</h2>
-    <div class="tagline">掃描整個專案資料夾，產出涵蓋架構、品質、安全性的全方位健康診斷報告</div>
-    <p>讓 Claude Code 深度分析你的整個程式碼庫，從資料夾結構、相依套件版本、程式碼重複率、函式複雜度、潛在安全漏洞到測試覆蓋率，全部掃過一遍後產出一份視覺化的 HTML 報告。報告包含嚴重度分級的問題清單、具體重構建議、架構圖、以及優先處理的技術債排序。適合技術主管在接手新專案、進行季度回顧、或準備技術審查時使用。</p>
-    <div class="prompt-box">請掃描這個專案資料夾 [拖曳專案根目錄] 並產出完整的程式碼庫健康體檢報告：1. 架構分析：繪製模組相依關係圖（用 Mermaid 語法）、識別循環相依、評估分層是否清晰 2. 程式碼品質：找出重複程式碼片段（相似度>70%）、計算每個函式的圈複雜度、標記超過 200 行的檔案 3. 安全性掃描：檢查硬編碼的密鑰或密碼、過時的相依套件（對照已知 CVE）、SQL 注入或 XSS 風險 4. 測試健康度：計算測試覆蓋率估計、找出沒有對應測試的核心模組、檢查測試命名規範 5. 技術債評估：依嚴重度（高/中/低）分類所有問題，估算修復工時，產出優先處理排序 6. 產出結構：health-report/index.html（含互動式摺疊面板、嚴重度篩選、Mermaid 圖表渲染）、health-report/data.json（原始分析數據）、health-report/recommendations.md（前 10 項重構建議與具體程式碼範例）7. 報告頂部顯示總分（滿分 100）與雷達圖呈現各維度分數</div>
+    <h2>全端原型即時腳手架</h2>
+    <div class="tagline">用一段需求描述，產出含前後端、資料庫、Docker 的完整可執行專案骨架</div>
+    <p>從零開始搭專案骨架是最耗時的重複勞動。這個工具讓你用自然語言描述產品需求，Claude Code 會產出完整的全端專案：React 前端含路由與元件庫、Express/FastAPI 後端含 RESTful API、PostgreSQL schema 與 seed data、Docker Compose 一鍵啟動、以及 GitHub Actions CI 設定。產出的不是範本代碼，而是根據你的業務邏輯量身定制的可執行原型。</p>
+    <div class="prompt-box">我要做一個「社區二手物品交換平台」，請幫我產出完整的全端專案骨架。需求：使用者可以 PO 物品（含照片、描述、希望交換的類別）、瀏覽他人物品、發起交換請求、雙方確認後完成交易。技術規格：1. 前端用 React + TypeScript + Tailwind CSS，包含首頁、物品列表、物品詳情、個人中心四個頁面 2. 後端用 Node.js + Express + Prisma ORM 3. 資料庫用 PostgreSQL，設計 users/items/exchange_requests 三張表含關聯 4. 建立 docker-compose.yml 含 frontend/backend/db 三個服務 5. 寫好 .env.example 與 README.md 含啟動步驟 6. 加入 GitHub Actions 做 lint + test 的 CI 7. 後端包含 JWT 驗證中介層與至少 10 支 API endpoint 8. 前端包含 API 呼叫層與基本錯誤處理。請建立 swap-platform/ 根目錄開始產出所有檔案。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案要求 Claude 同時進行多維度分析、跨檔案推理與大量結構化輸出，考驗提示詞的系統性設計能力
+      高階挑戰：涵蓋全端架構設計、容器化部署、CI 流程，考驗 Claude 在大型多檔案專案中的協調產出能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -763,7 +764,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要機器人 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
+    <div class="card-header">
+      <span class="badge">93</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/3</span>
+    </div>
+    <h2>會議逐字稿重點萃取器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化會議紀錄與待辦事項清單</div>
+    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿餵給 Claude Code，它會自動辨識發言者、歸納討論主題、列出每個決議事項與負責人，最後產出一份格式漂亮的 Markdown 會議紀錄與可匯入 Notion 的待辦 CSV。適合 PM、主管、或任何每週被會議淹沒的上班族。</p>
+    <div class="prompt-box">這份檔案 [拖曳逐字稿 .txt 或 .srt] 是我們剛開完的會議逐字稿。請幫我：1. 辨識每位發言者並標註他們的主要論點 2. 歸納出 3-5 個討論主題，每個主題用 3 行摘要 3. 列出所有決議事項，格式為「待辦內容｜負責人｜截止日期」 4. 產出 meeting_notes.md（含標題、日期、出席者、摘要、決議）5. 產出 action_items.csv（可匯入 Notion 或 Trello）6. 最後加一段「會議效率評分」，建議哪些議題下次可以改用非同步溝通</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 的長文理解與結構化輸出能力，完成後立刻能用在日常工作流程中
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
+    <div class="card-header">
+      <span class="badge">94</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">8/3</span>
+    </div>
+    <h2>API 文件互動測試台</h2>
+    <div class="tagline">給一份 API 文件或 OpenAPI spec，自動產生可在瀏覽器操作的互動式測試介面</div>
+    <p>把你的 Swagger/OpenAPI JSON 或任何 REST API 文件丟給 Claude Code，它會解析所有端點，產生一個包含表單輸入、即時回應預覽、錯誤處理提示的單頁 HTML 應用程式。後端工程師可以用來快速除錯，前端工程師可以在串接前先熟悉 API 行為，PM 也能自己測試功能不用等工程師。</p>
+    <div class="prompt-box">請讀取這份 API 規格文件 [拖曳 openapi.json 或 API 文件]，幫我建立一個互動式 API 測試台：1. 解析所有端點，依資源分類顯示在左側選單 2. 每個端點顯示方法（GET/POST/PUT/DELETE）、路徑、參數說明 3. 自動產生表單欄位，包含必填標示、型別驗證、範例值預填 4. 加入 Authorization header 設定區（支援 Bearer Token 和 API Key）5. 送出請求後用語法高亮顯示 JSON 回應，並標註 HTTP 狀態碼 6. 錯誤回應時顯示可能原因與修正建議 7. 建立資料夾結構：api-tester/index.html、api-tester/style.css、api-tester/app.js 8. 使用純 HTML+CSS+JS，不依賴框架，可直接開啟使用</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合檔案解析、動態 UI 生成與網路請求處理，學會讓 Claude 建構完整前端應用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康體檢報告 資料分析">
+    <div class="card-header">
+      <span class="badge">95</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">8/3</span>
+    </div>
+    <h2>程式碼庫健康體檢報告</h2>
+    <div class="tagline">掃描整個專案資料夾，產出涵蓋架構、品質、安全性的全方位健康診斷報告</div>
+    <p>讓 Claude Code 深度分析你的整個程式碼庫，從資料夾結構、相依套件版本、程式碼重複率、函式複雜度、潛在安全漏洞到測試覆蓋率，全部掃過一遍後產出一份視覺化的 HTML 報告。報告包含嚴重度分級的問題清單、具體重構建議、架構圖、以及優先處理的技術債排序。適合技術主管在接手新專案、進行季度回顧、或準備技術審查時使用。</p>
+    <div class="prompt-box">請掃描這個專案資料夾 [拖曳專案根目錄] 並產出完整的程式碼庫健康體檢報告：1. 架構分析：繪製模組相依關係圖（用 Mermaid 語法）、識別循環相依、評估分層是否清晰 2. 程式碼品質：找出重複程式碼片段（相似度>70%）、計算每個函式的圈複雜度、標記超過 200 行的檔案 3. 安全性掃描：檢查硬編碼的密鑰或密碼、過時的相依套件（對照已知 CVE）、SQL 注入或 XSS 風險 4. 測試健康度：計算測試覆蓋率估計、找出沒有對應測試的核心模組、檢查測試命名規範 5. 技術債評估：依嚴重度（高/中/低）分類所有問題，估算修復工時，產出優先處理排序 6. 產出結構：health-report/index.html（含互動式摺疊面板、嚴重度篩選、Mermaid 圖表渲染）、health-report/data.json（原始分析數據）、health-report/recommendations.md（前 10 項重構建議與具體程式碼範例）7. 報告頂部顯示總分（滿分 100）與雷達圖呈現各維度分數</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案要求 Claude 同時進行多維度分析、跨檔案推理與大量結構化輸出，考驗提示詞的系統性設計能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要機器人 生產力">
     <div class="card-header">
       <span class="badge">90</span>
       <span class="tag level-1">初階</span>
