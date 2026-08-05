@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/04</span>
-      <span>📚 累計收錄：<span id="totalCount">98</span> 個專案</span>
+      <span>📅 最後更新：2026/08/05</span>
+      <span>📚 累計收錄：<span id="totalCount">101</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 98 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 101 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/4) ============ -->
+  <!-- ============ 今日新增 (8/5) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/04
+    今日新增 · 2026/08/05
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/4</span>
+      <span class="date-tag">8/5</span>
     </div>
-    <h2>Git 提交訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成規範化的 Conventional Commits 格式</div>
-    <p>許多開發者的 commit message 寫得隨意潦草，事後難以追溯變更原因。這個工具會讀取你指定區間的 Git log，由 Claude 分析每筆變更的程式差異，重新產出符合 Conventional Commits 規範的訊息，並生成一份 CHANGELOG.md。適合想整理開源專案歷史、準備發版紀錄的開發者。</p>
-    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具。步驟如下：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 對每筆提交執行 git diff 分析實際程式碼變更內容 3. 根據變更內容，將訊息改寫為 Conventional Commits 格式（feat/fix/refactor/docs/chore 等前綴＋簡潔中文描述） 4. 產出 improved_commits.md 對照表（原始訊息 → 建議訊息） 5. 額外產出一份按類別分組的 CHANGELOG.md，包含版本號建議。請先確認目前目錄是否為 Git 儲存庫。</div>
+    <h2>每日站會摘要產生器</h2>
+    <div class="tagline">把散亂的 Slack／Teams 訊息整理成結構化站會報告，省去每天早上手動彙整的時間</div>
+    <p>將團隊聊天頻道的訊息紀錄貼給 Claude Code，它會自動辨識每位成員昨日完成事項、今日計畫、遇到的阻礙，產出格式統一的 Markdown 站會摘要與 HTML 信件版本。適合 Scrum Master、PM、或任何需要每天彙報進度的角色，做完馬上可以寄出。</p>
+    <div class="prompt-box">以下是我們團隊 Slack 頻道過去 24 小時的訊息紀錄 [貼上文字]。請幫我：1. 辨識每位成員的名字與發言內容 2. 將每人的訊息分類為「昨日完成」「今日計畫」「阻礙／需協助」三欄 3. 若某人沒有明確提到某欄，標註『未提及』 4. 產出 standup_summary.md（Markdown 表格格式）和 standup_email.html（可直接貼進信件的乾淨 HTML） 5. 最後附上一段三句話的團隊整體進度摘要，供主管快速掃讀</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初學者可學會 Claude 與 CLI 工具結合的基本模式，馬上改善自己的開發習慣
+      讓初學者練習 Claude 的文字分類與格式轉換能力，成品可以直接應用在日常工作流程中
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系文案同步引擎 內容創作">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析台 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/4</span>
+      <span class="date-tag">8/5</span>
     </div>
-    <h2>多語系文案同步引擎</h2>
-    <div class="tagline">偵測 i18n JSON 檔案的缺漏鍵值，自動翻譯補齊並保持語氣風格一致</div>
-    <p>國際化專案最頭痛的問題是語系檔不同步——新功能加了英文卻忘了補日文和中文。這個工具會比對所有語系 JSON 檔，找出缺漏的 key，根據既有翻譯的語氣風格自動補齊，還會產出一份差異報告讓 PM 審閱。支援巢狀 JSON 結構與 ICU 複數語法，適合中型以上的前端團隊。</p>
-    <div class="prompt-box">我的專案使用 i18n 多語系架構，語系檔放在 ./src/locales/ 資料夾下，格式為 en.json、zh-TW.json、ja.json。請幫我：1. 讀取所有語系檔並建立完整的 key 清單 2. 比對每個語系檔，列出缺漏的 key 與多餘的 key 3. 以 en.json 為基準，分析既有 zh-TW 和 ja 翻譯的語氣風格（正式/口語/技術） 4. 自動補齊缺漏的翻譯，保持與既有風格一致 5. 處理巢狀結構與含有 {variable} 的插值語法 6. 產出更新後的各語系 JSON 檔 7. 產出 i18n_sync_report.md 報告，包含變更摘要與建議人工複審的項目</div>
+    <h2>競品功能矩陣分析台</h2>
+    <div class="tagline">輸入多個競品網址或產品文件，自動產出功能比較矩陣與差異化策略建議</div>
+    <p>給 Claude Code 你的產品規格與 2-5 個競品的功能頁面內容或文件，它會建立一張完整的功能比較矩陣表，標出你的優勢與缺口，並根據缺口生成優先開發建議清單。產出包含互動式 HTML 比較表與策略簡報用的 Markdown 文件。適合產品經理做季度規劃、創業者做市場分析、BD 準備提案資料。</p>
+    <div class="prompt-box">我正在做競品分析。以下是我的產品功能清單 [貼上或拖曳檔案]，以及競品資料：競品A [貼上內容]、競品B [貼上內容]、競品C [貼上內容]。請幫我：1. 建立一個資料夾 competitive_analysis/ 2. 解析所有產品的功能，統一歸類為 8-12 個功能面向（如定價、整合、安全性等） 3. 產出 matrix.html：互動式比較表，欄位可排序，我的產品優勢標綠色、缺口標紅色 4. 產出 gaps_report.md：列出我缺少但競品有的功能，依市場重要性排優先級 5. 產出 strategy.md：針對前五大缺口各寫一段差異化策略建議，包含『追趕』或『繞道創新』的判斷 6. 在 matrix.html 中加入篩選器，可按功能面向過濾顯示</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習：需要處理複雜 JSON 結構比對邏輯，並學會讓 Claude 維持翻譯風格的一致性
+      中階專案需要 Claude 同時處理多來源資料比對、邏輯判斷與多檔案產出，練習結構化分析與前端呈現整合
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="本地端程式碼審查助手 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/4</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">8/5</span>
     </div>
-    <h2>全端原型即時腳手架</h2>
-    <div class="tagline">用一段需求描述，產出含前後端、資料庫、Docker 的完整可執行專案骨架</div>
-    <p>從零開始搭專案骨架是最耗時的重複勞動。這個工具讓你用自然語言描述產品需求，Claude Code 會產出完整的全端專案：React 前端含路由與元件庫、Express/FastAPI 後端含 RESTful API、PostgreSQL schema 與 seed data、Docker Compose 一鍵啟動、以及 GitHub Actions CI 設定。產出的不是範本代碼，而是根據你的業務邏輯量身定制的可執行原型。</p>
-    <div class="prompt-box">我要做一個「社區二手物品交換平台」，請幫我產出完整的全端專案骨架。需求：使用者可以 PO 物品（含照片、描述、希望交換的類別）、瀏覽他人物品、發起交換請求、雙方確認後完成交易。技術規格：1. 前端用 React + TypeScript + Tailwind CSS，包含首頁、物品列表、物品詳情、個人中心四個頁面 2. 後端用 Node.js + Express + Prisma ORM 3. 資料庫用 PostgreSQL，設計 users/items/exchange_requests 三張表含關聯 4. 建立 docker-compose.yml 含 frontend/backend/db 三個服務 5. 寫好 .env.example 與 README.md 含啟動步驟 6. 加入 GitHub Actions 做 lint + test 的 CI 7. 後端包含 JWT 驗證中介層與至少 10 支 API endpoint 8. 前端包含 API 呼叫層與基本錯誤處理。請建立 swap-platform/ 根目錄開始產出所有檔案。</div>
+    <h2>本地端程式碼審查助手</h2>
+    <div class="tagline">掃描整個程式碼倉庫，產出安全漏洞報告、效能瓶頸清單與重構建議的互動式儀表板</div>
+    <p>讓 Claude Code 遍歷你的專案目錄，分析每個檔案的程式碼品質，找出潛在安全風險（如 SQL injection、XSS、硬編碼密鑰）、效能瓶頸（如 N+1 查詢、未優化迴圈）、以及違反最佳實踐的寫法。產出包含嚴重程度分級的互動式 HTML 儀表板、可直接套用的修復 diff 檔案、以及團隊 code review 用的 Markdown checklist。適合技術主管做程式碼體檢、接手遺留專案前評估技術債。</p>
+    <div class="prompt-box">請掃描當前專案目錄下所有程式碼檔案，執行全面的程式碼審查。具體步驟：1. 建立 code_review/ 輸出資料夾 2. 遍歷 src/ 下所有 .js/.ts/.py 檔案（忽略 node_modules 和 .git） 3. 安全性分析：找出硬編碼密鑰、未驗證輸入、不安全的依賴呼叫，每項標注嚴重等級（Critical/High/Medium/Low）與 OWASP 分類 4. 效能分析：辨識 N+1 查詢模式、不必要的同步阻塞、過大的記憶體配置、未快取的重複計算 5. 最佳實踐：檢查錯誤處理完整性、型別安全性、命名一致性、函式過長（>50行）等 6. 產出 dashboard.html：含圓餅圖統計各類問題數量、可點擊展開每個問題的檔案位置與程式碼片段、篩選器依嚴重等級過濾 7. 產出 fixes/ 資料夾：每個 Critical 和 High 問題產生對應的 .patch 修復檔 8. 產出 checklist.md：可勾選的團隊審查清單，按模組分組 9. 產出 tech_debt_score.json：量化技術債分數（0-100），含各面向子分數</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰：涵蓋全端架構設計、容器化部署、CI 流程，考驗 Claude 在大型多檔案專案中的協調產出能力
+      高階專案整合檔案系統遍歷、多維度靜態分析、資料視覺化與 patch 生成，考驗 Claude 的系統性工程思維與大量檔案協作能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -764,7 +765,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">96</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/4</span>
+    </div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成規範化的 Conventional Commits 格式</div>
+    <p>許多開發者的 commit message 寫得隨意潦草，事後難以追溯變更原因。這個工具會讀取你指定區間的 Git log，由 Claude 分析每筆變更的程式差異，重新產出符合 Conventional Commits 規範的訊息，並生成一份 CHANGELOG.md。適合想整理開源專案歷史、準備發版紀錄的開發者。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具。步驟如下：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 對每筆提交執行 git diff 分析實際程式碼變更內容 3. 根據變更內容，將訊息改寫為 Conventional Commits 格式（feat/fix/refactor/docs/chore 等前綴＋簡潔中文描述） 4. 產出 improved_commits.md 對照表（原始訊息 → 建議訊息） 5. 額外產出一份按類別分組的 CHANGELOG.md，包含版本號建議。請先確認目前目錄是否為 Git 儲存庫。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初學者可學會 Claude 與 CLI 工具結合的基本模式，馬上改善自己的開發習慣
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系文案同步引擎 內容創作">
+    <div class="card-header">
+      <span class="badge">97</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/4</span>
+    </div>
+    <h2>多語系文案同步引擎</h2>
+    <div class="tagline">偵測 i18n JSON 檔案的缺漏鍵值，自動翻譯補齊並保持語氣風格一致</div>
+    <p>國際化專案最頭痛的問題是語系檔不同步——新功能加了英文卻忘了補日文和中文。這個工具會比對所有語系 JSON 檔，找出缺漏的 key，根據既有翻譯的語氣風格自動補齊，還會產出一份差異報告讓 PM 審閱。支援巢狀 JSON 結構與 ICU 複數語法，適合中型以上的前端團隊。</p>
+    <div class="prompt-box">我的專案使用 i18n 多語系架構，語系檔放在 ./src/locales/ 資料夾下，格式為 en.json、zh-TW.json、ja.json。請幫我：1. 讀取所有語系檔並建立完整的 key 清單 2. 比對每個語系檔，列出缺漏的 key 與多餘的 key 3. 以 en.json 為基準，分析既有 zh-TW 和 ja 翻譯的語氣風格（正式/口語/技術） 4. 自動補齊缺漏的翻譯，保持與既有風格一致 5. 處理巢狀結構與含有 {variable} 的插值語法 6. 產出更新後的各語系 JSON 檔 7. 產出 i18n_sync_report.md 報告，包含變更摘要與建議人工複審的項目</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習：需要處理複雜 JSON 結構比對邏輯，並學會讓 Claude 維持翻譯風格的一致性
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型即時腳手架 程式原型">
+    <div class="card-header">
+      <span class="badge">98</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/4</span>
+    </div>
+    <h2>全端原型即時腳手架</h2>
+    <div class="tagline">用一段需求描述，產出含前後端、資料庫、Docker 的完整可執行專案骨架</div>
+    <p>從零開始搭專案骨架是最耗時的重複勞動。這個工具讓你用自然語言描述產品需求，Claude Code 會產出完整的全端專案：React 前端含路由與元件庫、Express/FastAPI 後端含 RESTful API、PostgreSQL schema 與 seed data、Docker Compose 一鍵啟動、以及 GitHub Actions CI 設定。產出的不是範本代碼，而是根據你的業務邏輯量身定制的可執行原型。</p>
+    <div class="prompt-box">我要做一個「社區二手物品交換平台」，請幫我產出完整的全端專案骨架。需求：使用者可以 PO 物品（含照片、描述、希望交換的類別）、瀏覽他人物品、發起交換請求、雙方確認後完成交易。技術規格：1. 前端用 React + TypeScript + Tailwind CSS，包含首頁、物品列表、物品詳情、個人中心四個頁面 2. 後端用 Node.js + Express + Prisma ORM 3. 資料庫用 PostgreSQL，設計 users/items/exchange_requests 三張表含關聯 4. 建立 docker-compose.yml 含 frontend/backend/db 三個服務 5. 寫好 .env.example 與 README.md 含啟動步驟 6. 加入 GitHub Actions 做 lint + test 的 CI 7. 後端包含 JWT 驗證中介層與至少 10 支 API endpoint 8. 前端包含 API 呼叫層與基本錯誤處理。請建立 swap-platform/ 根目錄開始產出所有檔案。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰：涵蓋全端架構設計、容器化部署、CI 流程，考驗 Claude 在大型多檔案專案中的協調產出能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
     <div class="card-header">
       <span class="badge">93</span>
       <span class="tag level-1">初階</span>
