@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/07</span>
-      <span>📚 累計收錄：<span id="totalCount">107</span> 個專案</span>
+      <span>📅 最後更新：2026/08/08</span>
+      <span>📚 累計收錄：<span id="totalCount">110</span> 個專案</span>
     </div>
   </header>
 
@@ -664,82 +664,92 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 107 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 110 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/7) ============ -->
+  <!-- ============ 今日新增 (8/8) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/07
+    今日新增 · 2026/08/08
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼健康檢查報告器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">8/7</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/8</span>
     </div>
-    <h2>程式碼健康檢查報告器</h2>
-    <div class="tagline">把你的程式碼丟進去，自動產出易讀的品質報告與改善建議清單</div>
-    <p>將任何程式碼檔案或整個資料夾交給 Claude Code，它會像資深工程師一樣逐一檢視命名慣例、重複邏輯、潛在 Bug、安全風險，最後產出一份 Markdown 格式的健康檢查報告，附上嚴重度分級與具體修改建議。適合想快速提升程式碼品質的個人開發者或小團隊在 Code Review 前自我檢查。</p>
-    <div class="prompt-box">請幫我對這個專案資料夾做一次完整的程式碼健康檢查。步驟如下：1. 掃描所有 .js/.ts/.py 檔案 2. 針對每個檔案檢查：命名一致性、函式長度是否超過 30 行、有無重複邏輯、潛在的 null/undefined 風險、硬編碼的密鑰或敏感資訊 3. 每個問題標註嚴重度（🔴 高 / 🟡 中 / 🟢 低）4. 產出 code-health-report.md，包含總覽儀表板（各嚴重度數量統計）、逐檔案問題清單、Top 5 優先修復建議與重構範例程式碼</div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰的 Conventional Commits 格式</div>
+    <p>很多開發者的 commit message 寫得隨意（如「fix bug」「update」），讓日後追蹤困難。這個工具會讀取指定範圍的 Git log，用 Claude 分析每筆 diff 內容，重新產出符合 Conventional Commits 規範的訊息，並輸出一份對照表 CSV 與可直接執行的 git rebase 腳本。適合想整理開源專案歷史或準備 code review 的開發者。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 對每筆提交執行 git show 取得 diff 內容 3. 根據 diff 分析變更類型（feat/fix/refactor/docs/chore/style/test）4. 改寫成 Conventional Commits 格式：type(scope): 簡短描述 5. 產出 commit_rewrite.csv 包含欄位：原始 hash、原始訊息、建議訊息、變更類型 6. 產出 rewrite_guide.md 用表格呈現對照，並附上使用 git rebase -i 套用的步驟教學</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude 的程式碼分析能力，不需寫程式就能立刻獲得專業級的審查回饋
+      初階入門即可體驗 Claude 分析程式碼差異並產出結構化輸出的能力，做完立刻改善自己的專案
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系文案同步工作台 內容創作">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="元件風格指南產生器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/7</span>
+      <span class="date-tag">8/8</span>
     </div>
-    <h2>多語系文案同步工作台</h2>
-    <div class="tagline">一次維護多國語言的產品文案，自動偵測缺漏並保持語氣一致</div>
-    <p>將產品的 i18n JSON 語言檔匯入，Claude Code 會比對各語系的翻譯完整度、找出遺漏的 key、偵測語氣不一致的翻譯，並自動補齊缺少的語系內容。最後產出完整的各語言 JSON 檔與一份差異報告。特別適合同時維護繁中、簡中、英文、日文介面的 SaaS 產品團隊。</p>
-    <div class="prompt-box">我的專案有以下語系檔：locales/zh-TW.json、locales/en.json、locales/ja.json。請幫我執行以下工作：1. 以 zh-TW.json 為基準，比對其他語系檔，列出所有缺漏的 key 2. 檢查已有翻譯的語氣是否一致（例如：zh-TW 用「您」，en 應保持 formal tone）3. 自動補齊所有缺漏的翻譯，保持與既有風格一致 4. 檢查是否有未使用佔位符 {variable} 不匹配的情況 5. 產出更新後的三份 JSON 檔 6. 產出 i18n-sync-report.md，包含：缺漏統計表、語氣修正紀錄、佔位符警告清單</div>
+    <h2>元件風格指南產生器</h2>
+    <div class="tagline">掃描前端專案的 UI 元件，自動產出含互動範例的 Living Style Guide 網站</div>
+    <p>前端團隊常缺乏統一的設計文件。這個工具會遞迴掃描你的 React/Vue 元件資料夾，解析每個元件的 props、slot、樣式變體，自動產出一個靜態 HTML Style Guide 網站，包含元件預覽、Props 表格、使用範例程式碼與色彩/字型 Token 一覽表。設計師與前端工程師可直接用來對齊規範，省下手動維護 Storybook 的時間。</p>
+    <div class="prompt-box">我的前端專案在目前資料夾，使用 React + TypeScript。請幫我：1. 掃描 src/components/ 下所有 .tsx 檔案 2. 解析每個元件的 interface/type 定義，提取所有 props 與預設值 3. 分析 CSS/Tailwind class 找出色彩與間距 token 4. 為每個元件產生：元件名稱、用途說明、Props 表格（名稱/類型/預設值/說明）、3 種使用情境的範例程式碼 5. 建立 style-guide/ 資料夾，產出 index.html 作為首頁含側邊導覽列、每個元件一個分頁 6. 加入 tokens.html 頁面整理所有色彩、字型、間距 7. 使用純 HTML + CSS，不需額外框架，確保可直接開啟瀏覽</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習涉及多檔案比對、格式驗證與跨語言一致性判斷，學會用 Claude 處理結構化資料同步
+      中階挑戰在於需要 Claude 同時理解 AST 解析、設計系統概念與靜態網站產出的跨領域整合
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="資料庫遷移腳本產生器 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/7</span>
+      <span class="date-tag">8/8</span>
     </div>
-    <h2>資料庫遷移腳本產生器</h2>
-    <div class="tagline">分析現有資料庫 Schema，自動生成安全的遷移計畫與可回滾的 Migration 腳本</div>
-    <p>將資料庫的現有 Schema（DDL 或 ORM 模型檔）和目標 Schema 交給 Claude Code，它會分析差異、產生分步驟的遷移腳本（支援 PostgreSQL/MySQL），包含資料轉換邏輯、索引重建策略、回滾腳本，並附上預估的鎖表時間和風險評估報告。適合需要在線上環境安全執行 Schema 變更的後端團隊。</p>
-    <div class="prompt-box">我需要將資料庫從現有 Schema 遷移到新架構。以下是資訊：
-- 現有 Schema：[貼上或拖曳 current_schema.sql]
-- 目標 Schema：[貼上或拖曳 target_schema.sql]
-- 資料庫類型：PostgreSQL 15
-- 預估資料量：users 表 500 萬筆、orders 表 2000 萬筆
+    <h2>全端費用拆帳應用</h2>
+    <div class="tagline">從聊天紀錄或收據照片自動辨識消費，產出含前後端的拆帳 Web App</div>
+    <p>朋友出遊、室友共同生活最頭痛的就是記帳拆帳。這個專案讓 Claude Code 從零建立一個全端拆帳應用：後端用 Node.js + SQLite 管理群組、成員、帳目，前端用 React 顯示即時餘額與最少轉帳路徑圖表。支援貼上 LINE 對話截圖或收據照片，由 Claude 辨識品項與金額自動建帳。最終產出 Docker Compose 一鍵部署的完整應用，包含資料庫 schema、REST API、互動式儀表板與結算最佳化演算法。</p>
+    <div class="prompt-box">請幫我從零建立一個全端拆帳 Web 應用，架構如下：
 
-請執行：1. 差異分析：逐表比對欄位新增/刪除/類型變更/索引變更 2. 產生遷移計畫 migration-plan.md，按風險排序，標註每步驟是否需要鎖表及預估耗時 3. 產生 migrations/ 資料夾，每個步驟一個 .sql 檔，檔名格式 001_add_column_xxx.sql 4. 每個 migration 檔都必須包含 -- UP 和 -- DOWN 區塊（可回滾）5. 對涉及大量資料搬移的步驟，使用 batch update 策略並加入進度輸出 6. 產生 rollback-runbook.md 緊急回滾手冊 7. 產生 pre-migration-checks.sql 前置驗證查詢腳本</div>
+後端（server/）：
+1. Node.js + Express + SQLite，設計 schema 包含 groups、members、expenses、splits 四張表
+2. REST API：POST /groups, POST /expenses（含多人分帳比例）, GET /groups/:id/balance（計算每人淨餘額）, GET /groups/:id/settle（用最少轉帳次數的貪婪演算法算出結算方案）
+3. POST /expenses/parse-text 端點：接收一段文字（如「晚餐 1200 小明付 四人平分」），用正則解析成結構化帳目
+
+前端（client/）：
+1. React + Vite + Tailwind CSS
+2. 頁面：群組列表→群組詳情（成員、帳目清單、餘額圖表）→新增消費表單→結算方案頁
+3. 用長條圖顯示每人目前正負餘額，用箭頭圖顯示最終誰要轉帳給誰
+
+部署：
+1. 根目錄 docker-compose.yml 一鍵啟動前後端
+2. 附 seed.js 塞入範例資料（一個五人旅遊群組、10 筆消費）
+3. README.md 含架構圖、API 文件、啟動步驟</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涉及資料庫底層知識、批次處理策略、鎖表風險評估與可回滾設計，考驗系統架構的綜合能力
+      高階專案整合資料庫設計、演算法實作、全端開發與容器化部署，考驗 Claude Code 處理複雜多檔案專案的能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -773,7 +783,67 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼健康檢查報告器 生產力">
+    <div class="card-header">
+      <span class="badge">105</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/7</span>
+    </div>
+    <h2>程式碼健康檢查報告器</h2>
+    <div class="tagline">把你的程式碼丟進去，自動產出易讀的品質報告與改善建議清單</div>
+    <p>將任何程式碼檔案或整個資料夾交給 Claude Code，它會像資深工程師一樣逐一檢視命名慣例、重複邏輯、潛在 Bug、安全風險，最後產出一份 Markdown 格式的健康檢查報告，附上嚴重度分級與具體修改建議。適合想快速提升程式碼品質的個人開發者或小團隊在 Code Review 前自我檢查。</p>
+    <div class="prompt-box">請幫我對這個專案資料夾做一次完整的程式碼健康檢查。步驟如下：1. 掃描所有 .js/.ts/.py 檔案 2. 針對每個檔案檢查：命名一致性、函式長度是否超過 30 行、有無重複邏輯、潛在的 null/undefined 風險、硬編碼的密鑰或敏感資訊 3. 每個問題標註嚴重度（🔴 高 / 🟡 中 / 🟢 低）4. 產出 code-health-report.md，包含總覽儀表板（各嚴重度數量統計）、逐檔案問題清單、Top 5 優先修復建議與重構範例程式碼</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 的程式碼分析能力，不需寫程式就能立刻獲得專業級的審查回饋
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系文案同步工作台 內容創作">
+    <div class="card-header">
+      <span class="badge">106</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/7</span>
+    </div>
+    <h2>多語系文案同步工作台</h2>
+    <div class="tagline">一次維護多國語言的產品文案，自動偵測缺漏並保持語氣一致</div>
+    <p>將產品的 i18n JSON 語言檔匯入，Claude Code 會比對各語系的翻譯完整度、找出遺漏的 key、偵測語氣不一致的翻譯，並自動補齊缺少的語系內容。最後產出完整的各語言 JSON 檔與一份差異報告。特別適合同時維護繁中、簡中、英文、日文介面的 SaaS 產品團隊。</p>
+    <div class="prompt-box">我的專案有以下語系檔：locales/zh-TW.json、locales/en.json、locales/ja.json。請幫我執行以下工作：1. 以 zh-TW.json 為基準，比對其他語系檔，列出所有缺漏的 key 2. 檢查已有翻譯的語氣是否一致（例如：zh-TW 用「您」，en 應保持 formal tone）3. 自動補齊所有缺漏的翻譯，保持與既有風格一致 4. 檢查是否有未使用佔位符 {variable} 不匹配的情況 5. 產出更新後的三份 JSON 檔 6. 產出 i18n-sync-report.md，包含：缺漏統計表、語氣修正紀錄、佔位符警告清單</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習涉及多檔案比對、格式驗證與跨語言一致性判斷，學會用 Claude 處理結構化資料同步
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="資料庫遷移腳本產生器 程式原型">
+    <div class="card-header">
+      <span class="badge">107</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/7</span>
+    </div>
+    <h2>資料庫遷移腳本產生器</h2>
+    <div class="tagline">分析現有資料庫 Schema，自動生成安全的遷移計畫與可回滾的 Migration 腳本</div>
+    <p>將資料庫的現有 Schema（DDL 或 ORM 模型檔）和目標 Schema 交給 Claude Code，它會分析差異、產生分步驟的遷移腳本（支援 PostgreSQL/MySQL），包含資料轉換邏輯、索引重建策略、回滾腳本，並附上預估的鎖表時間和風險評估報告。適合需要在線上環境安全執行 Schema 變更的後端團隊。</p>
+    <div class="prompt-box">我需要將資料庫從現有 Schema 遷移到新架構。以下是資訊：
+- 現有 Schema：[貼上或拖曳 current_schema.sql]
+- 目標 Schema：[貼上或拖曳 target_schema.sql]
+- 資料庫類型：PostgreSQL 15
+- 預估資料量：users 表 500 萬筆、orders 表 2000 萬筆
+
+請執行：1. 差異分析：逐表比對欄位新增/刪除/類型變更/索引變更 2. 產生遷移計畫 migration-plan.md，按風險排序，標註每步驟是否需要鎖表及預估耗時 3. 產生 migrations/ 資料夾，每個步驟一個 .sql 檔，檔名格式 001_add_column_xxx.sql 4. 每個 migration 檔都必須包含 -- UP 和 -- DOWN 區塊（可回滾）5. 對涉及大量資料搬移的步驟，使用 batch update 策略並加入進度輸出 6. 產生 rollback-runbook.md 緊急回滾手冊 7. 產生 pre-migration-checks.sql 前置驗證查詢腳本</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涉及資料庫底層知識、批次處理策略、鎖表風險評估與可回滾設計，考驗系統架構的綜合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
     <div class="card-header">
       <span class="badge">102</span>
       <span class="tag level-1">初階</span>
