@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/08</span>
-      <span>📚 累計收錄：<span id="totalCount">110</span> 個專案</span>
+      <span>📅 最後更新：2026/08/09</span>
+      <span>📚 累計收錄：<span id="totalCount">113</span> 個專案</span>
     </div>
   </header>
 
@@ -664,91 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 110 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 113 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/8) ============ -->
+  <!-- ============ 今日新增 (8/9) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/08
+    今日新增 · 2026/08/09
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/8</span>
+      <span class="date-tag">8/9</span>
     </div>
-    <h2>Git 提交訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰的 Conventional Commits 格式</div>
-    <p>很多開發者的 commit message 寫得隨意（如「fix bug」「update」），讓日後追蹤困難。這個工具會讀取指定範圍的 Git log，用 Claude 分析每筆 diff 內容，重新產出符合 Conventional Commits 規範的訊息，並輸出一份對照表 CSV 與可直接執行的 git rebase 腳本。適合想整理開源專案歷史或準備 code review 的開發者。</p>
-    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 對每筆提交執行 git show 取得 diff 內容 3. 根據 diff 分析變更類型（feat/fix/refactor/docs/chore/style/test）4. 改寫成 Conventional Commits 格式：type(scope): 簡短描述 5. 產出 commit_rewrite.csv 包含欄位：原始 hash、原始訊息、建議訊息、變更類型 6. 產出 rewrite_guide.md 用表格呈現對照，並附上使用 git rebase -i 套用的步驟教學</div>
+    <h2>會議逐字稿摘要產生器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
+    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿丟給 Claude Code，自動辨識發言者、歸納討論主題、提取決議事項與待辦任務，產出格式漂亮的 Markdown 會議紀錄和可匯入 Notion 的 CSV 待辦清單。每週開會的 PM、主管、秘書必備工具。</p>
+    <div class="prompt-box">這是一份會議逐字稿 [貼上或拖曳 .txt/.srt 檔案]。請幫我做以下處理：1. 自動辨識每位發言者並統一命名 2. 歸納出 3-7 個主要討論議題，每個議題列出摘要與關鍵結論 3. 提取所有待辦事項，格式為「負責人｜任務內容｜截止日期（若有提到）」4. 產出 meeting_notes.md（含議題摘要、決議、出席者）和 action_items.csv（Notion 匯入格式，欄位：負責人、任務、截止日、優先級）5. 最後附上一段 50 字以內的會議一句話總結，方便貼到 Slack 頻道</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門即可體驗 Claude 分析程式碼差異並產出結構化輸出的能力，做完立刻改善自己的專案
+      初階入門練習：體驗 Claude 在長文本摘要與結構化輸出的核心能力，成果可立即用於日常工作
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="元件風格指南產生器 程式原型">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="互動式 API 文件網站 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/8</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">8/9</span>
     </div>
-    <h2>元件風格指南產生器</h2>
-    <div class="tagline">掃描前端專案的 UI 元件，自動產出含互動範例的 Living Style Guide 網站</div>
-    <p>前端團隊常缺乏統一的設計文件。這個工具會遞迴掃描你的 React/Vue 元件資料夾，解析每個元件的 props、slot、樣式變體，自動產出一個靜態 HTML Style Guide 網站，包含元件預覽、Props 表格、使用範例程式碼與色彩/字型 Token 一覽表。設計師與前端工程師可直接用來對齊規範，省下手動維護 Storybook 的時間。</p>
-    <div class="prompt-box">我的前端專案在目前資料夾，使用 React + TypeScript。請幫我：1. 掃描 src/components/ 下所有 .tsx 檔案 2. 解析每個元件的 interface/type 定義，提取所有 props 與預設值 3. 分析 CSS/Tailwind class 找出色彩與間距 token 4. 為每個元件產生：元件名稱、用途說明、Props 表格（名稱/類型/預設值/說明）、3 種使用情境的範例程式碼 5. 建立 style-guide/ 資料夾，產出 index.html 作為首頁含側邊導覽列、每個元件一個分頁 6. 加入 tokens.html 頁面整理所有色彩、字型、間距 7. 使用純 HTML + CSS，不需額外框架，確保可直接開啟瀏覽</div>
+    <h2>互動式 API 文件網站</h2>
+    <div class="tagline">從後端程式碼自動產生可互動測試的 API 文件靜態網站</div>
+    <p>把你的 Express、FastAPI 或任何後端專案資料夾交給 Claude Code，它會掃描所有路由與 handler，自動產出一個類似 Swagger UI 的靜態 HTML 網站，包含每個端點的說明、參數表格、範例請求與回應，還內建「Try It」按鈕可以直接對 localhost 發送測試請求。適合獨立開發者、小團隊快速建立內部文件。</p>
+    <div class="prompt-box">請掃描這個後端專案 [拖曳專案資料夾]，幫我產生一個互動式 API 文件網站：1. 遞迴讀取所有路由定義檔（支援 Express router、FastAPI decorator 等常見框架）2. 對每個端點提取 HTTP method、路徑、參數、請求 body 結構、回應格式 3. 建立 api-docs/ 資料夾，結構為 api-docs/index.html、api-docs/styles.css、api-docs/app.js 4. 頁面需包含：左側端點目錄樹、右側詳細說明區、每個端點附「Try It」互動表單可填入參數並發送真實請求 5. 支援深色/淺色主題切換 6. 在 index.html 頂部顯示專案名稱、端點總數、最後更新時間 7. 請用純 HTML/CSS/JS，不要依賴外部框架</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰在於需要 Claude 同時理解 AST 解析、設計系統概念與靜態網站產出的跨領域整合
+      中階挑戰：需理解多框架路由解析、前端互動設計與檔案結構組織，學會讓 Claude 做跨層分析
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用 程式原型">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="資料庫遷移影響分析器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/8</span>
+      <span class="date-tag">8/9</span>
     </div>
-    <h2>全端費用拆帳應用</h2>
-    <div class="tagline">從聊天紀錄或收據照片自動辨識消費，產出含前後端的拆帳 Web App</div>
-    <p>朋友出遊、室友共同生活最頭痛的就是記帳拆帳。這個專案讓 Claude Code 從零建立一個全端拆帳應用：後端用 Node.js + SQLite 管理群組、成員、帳目，前端用 React 顯示即時餘額與最少轉帳路徑圖表。支援貼上 LINE 對話截圖或收據照片，由 Claude 辨識品項與金額自動建帳。最終產出 Docker Compose 一鍵部署的完整應用，包含資料庫 schema、REST API、互動式儀表板與結算最佳化演算法。</p>
-    <div class="prompt-box">請幫我從零建立一個全端拆帳 Web 應用，架構如下：
-
-後端（server/）：
-1. Node.js + Express + SQLite，設計 schema 包含 groups、members、expenses、splits 四張表
-2. REST API：POST /groups, POST /expenses（含多人分帳比例）, GET /groups/:id/balance（計算每人淨餘額）, GET /groups/:id/settle（用最少轉帳次數的貪婪演算法算出結算方案）
-3. POST /expenses/parse-text 端點：接收一段文字（如「晚餐 1200 小明付 四人平分」），用正則解析成結構化帳目
-
-前端（client/）：
-1. React + Vite + Tailwind CSS
-2. 頁面：群組列表→群組詳情（成員、帳目清單、餘額圖表）→新增消費表單→結算方案頁
-3. 用長條圖顯示每人目前正負餘額，用箭頭圖顯示最終誰要轉帳給誰
-
-部署：
-1. 根目錄 docker-compose.yml 一鍵啟動前後端
-2. 附 seed.js 塞入範例資料（一個五人旅遊群組、10 筆消費）
-3. README.md 含架構圖、API 文件、啟動步驟</div>
+    <h2>資料庫遷移影響分析器</h2>
+    <div class="tagline">在執行 DB migration 前，自動分析所有受影響的程式碼、查詢與服務</div>
+    <p>資料庫 schema 變更是最容易出事的部署環節。這個工具讓你把 migration 檔案與整個後端程式碼庫交給 Claude Code，它會深度掃描所有 SQL 查詢、ORM model、API handler、測試檔案，找出每一處會被 schema 變更影響的程式碼，產出完整的影響分析報告、建議的程式碼修改 patch、以及一份可直接跑的驗證測試腳本。適合中大型團隊在 code review 階段使用。</p>
+    <div class="prompt-box">我準備執行這個資料庫 migration [拖曳 migration 檔案或貼上 SQL]，專案程式碼在 [拖曳專案資料夾]。請進行完整影響分析：1. 解析 migration 內容，列出所有 schema 變更（新增/刪除/修改欄位、索引變更、constraint 變更）2. 遞迴掃描專案中所有檔案，找出直接引用受影響 table/column 的位置，包含：raw SQL 查詢、ORM model 定義、repository/DAO 層、API controller/handler、GraphQL resolver、測試檔案 3. 對每個受影響位置評估風險等級（高/中/低）並說明原因 4. 產出以下檔案：migration_impact_report.md（完整報告含風險矩陣圖表）、suggested_patches/（每個需修改的檔案產出 .patch 差異檔）、verify_migration.test.js（驗證測試腳本，確認修改後所有查詢仍正常）5. 在報告末尾附上建議的部署順序與 rollback 計畫</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案整合資料庫設計、演算法實作、全端開發與容器化部署，考驗 Claude Code 處理複雜多檔案專案的能力
+      高階綜合挑戰：涉及多語言程式碼靜態分析、SQL 解析、風險評估邏輯與 patch 生成，考驗 Claude 的全局推理能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -783,7 +769,76 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼健康檢查報告器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">108</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/8</span>
+    </div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰的 Conventional Commits 格式</div>
+    <p>很多開發者的 commit message 寫得隨意（如「fix bug」「update」），讓日後追蹤困難。這個工具會讀取指定範圍的 Git log，用 Claude 分析每筆 diff 內容，重新產出符合 Conventional Commits 規範的訊息，並輸出一份對照表 CSV 與可直接執行的 git rebase 腳本。適合想整理開源專案歷史或準備 code review 的開發者。</p>
+    <div class="prompt-box">請幫我建立一個 Git 提交訊息美化工具：1. 執行 git log --oneline -30 讀取最近 30 筆提交 2. 對每筆提交執行 git show 取得 diff 內容 3. 根據 diff 分析變更類型（feat/fix/refactor/docs/chore/style/test）4. 改寫成 Conventional Commits 格式：type(scope): 簡短描述 5. 產出 commit_rewrite.csv 包含欄位：原始 hash、原始訊息、建議訊息、變更類型 6. 產出 rewrite_guide.md 用表格呈現對照，並附上使用 git rebase -i 套用的步驟教學</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門即可體驗 Claude 分析程式碼差異並產出結構化輸出的能力，做完立刻改善自己的專案
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="元件風格指南產生器 程式原型">
+    <div class="card-header">
+      <span class="badge">109</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/8</span>
+    </div>
+    <h2>元件風格指南產生器</h2>
+    <div class="tagline">掃描前端專案的 UI 元件，自動產出含互動範例的 Living Style Guide 網站</div>
+    <p>前端團隊常缺乏統一的設計文件。這個工具會遞迴掃描你的 React/Vue 元件資料夾，解析每個元件的 props、slot、樣式變體，自動產出一個靜態 HTML Style Guide 網站，包含元件預覽、Props 表格、使用範例程式碼與色彩/字型 Token 一覽表。設計師與前端工程師可直接用來對齊規範，省下手動維護 Storybook 的時間。</p>
+    <div class="prompt-box">我的前端專案在目前資料夾，使用 React + TypeScript。請幫我：1. 掃描 src/components/ 下所有 .tsx 檔案 2. 解析每個元件的 interface/type 定義，提取所有 props 與預設值 3. 分析 CSS/Tailwind class 找出色彩與間距 token 4. 為每個元件產生：元件名稱、用途說明、Props 表格（名稱/類型/預設值/說明）、3 種使用情境的範例程式碼 5. 建立 style-guide/ 資料夾，產出 index.html 作為首頁含側邊導覽列、每個元件一個分頁 6. 加入 tokens.html 頁面整理所有色彩、字型、間距 7. 使用純 HTML + CSS，不需額外框架，確保可直接開啟瀏覽</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰在於需要 Claude 同時理解 AST 解析、設計系統概念與靜態網站產出的跨領域整合
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用 程式原型">
+    <div class="card-header">
+      <span class="badge">110</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/8</span>
+    </div>
+    <h2>全端費用拆帳應用</h2>
+    <div class="tagline">從聊天紀錄或收據照片自動辨識消費，產出含前後端的拆帳 Web App</div>
+    <p>朋友出遊、室友共同生活最頭痛的就是記帳拆帳。這個專案讓 Claude Code 從零建立一個全端拆帳應用：後端用 Node.js + SQLite 管理群組、成員、帳目，前端用 React 顯示即時餘額與最少轉帳路徑圖表。支援貼上 LINE 對話截圖或收據照片，由 Claude 辨識品項與金額自動建帳。最終產出 Docker Compose 一鍵部署的完整應用，包含資料庫 schema、REST API、互動式儀表板與結算最佳化演算法。</p>
+    <div class="prompt-box">請幫我從零建立一個全端拆帳 Web 應用，架構如下：
+
+後端（server/）：
+1. Node.js + Express + SQLite，設計 schema 包含 groups、members、expenses、splits 四張表
+2. REST API：POST /groups, POST /expenses（含多人分帳比例）, GET /groups/:id/balance（計算每人淨餘額）, GET /groups/:id/settle（用最少轉帳次數的貪婪演算法算出結算方案）
+3. POST /expenses/parse-text 端點：接收一段文字（如「晚餐 1200 小明付 四人平分」），用正則解析成結構化帳目
+
+前端（client/）：
+1. React + Vite + Tailwind CSS
+2. 頁面：群組列表→群組詳情（成員、帳目清單、餘額圖表）→新增消費表單→結算方案頁
+3. 用長條圖顯示每人目前正負餘額，用箭頭圖顯示最終誰要轉帳給誰
+
+部署：
+1. 根目錄 docker-compose.yml 一鍵啟動前後端
+2. 附 seed.js 塞入範例資料（一個五人旅遊群組、10 筆消費）
+3. README.md 含架構圖、API 文件、啟動步驟</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合資料庫設計、演算法實作、全端開發與容器化部署，考驗 Claude Code 處理複雜多檔案專案的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="程式碼健康檢查報告器 生產力">
     <div class="card-header">
       <span class="badge">105</span>
       <span class="tag level-1">初階</span>
