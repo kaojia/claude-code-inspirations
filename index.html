@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/10</span>
-      <span>📚 累計收錄：<span id="totalCount">116</span> 個專案</span>
+      <span>📅 最後更新：2026/08/11</span>
+      <span>📚 累計收錄：<span id="totalCount">119</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,128 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 116 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 119 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/10) ============ -->
+  <!-- ============ 今日新增 (8/11) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/10
+    今日新增 · 2026/08/11
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會報告產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/10</span>
+      <span class="date-tag">8/11</span>
     </div>
-    <h2>每日站會報告產生器</h2>
-    <div class="tagline">從散亂的工作筆記自動整理出結構化的每日站會報告，省去每天早上的煩惱</div>
-    <p>把你一整天隨手記的工作筆記、Slack 訊息、待辦清單丟給 Claude Code，它會自動分類成「昨日完成」「今日計畫」「遇到的阻礙」三大區塊，並產出 Markdown 格式的站會報告。適合遠端工作者、Scrum 團隊成員，每天早上花不到一分鐘就能準備好站會內容。</p>
-    <div class="prompt-box">以下是我昨天的工作筆記和今天的待辦事項 [貼上筆記]。請幫我：1. 分析筆記內容，歸類成「昨日完成事項」「今日預計工作」「目前遇到的阻礙或需要協助的地方」三個區塊 2. 每個區塊列出 3-5 個重點，用簡潔的一句話描述 3. 如果筆記中有提到時間、百分比等數據，請保留在報告中 4. 產出 standup_report.md 檔案，格式要清楚易讀 5. 最後加上一行「預估今日工作量」的簡短評估</div>
+    <h2>個人週報自動美化器</h2>
+    <div class="tagline">把零散的工作筆記丟進去，自動產出格式精美、重點分明的週報</div>
+    <p>每週五花 30 分鐘整理週報太痛苦？把你一週隨手記的待辦事項、Slack 訊息、commit 紀錄丟給 Claude Code，它會自動歸類成「本週完成」「進行中」「下週計畫」三大區塊，產出 Markdown 週報和 HTML 精美版本，直接貼進 Email 或 Notion 就能用。適合工程師、PM、遠端工作者。</p>
+    <div class="prompt-box">我要把這週的零散工作筆記整理成週報。以下是我的原始筆記：
+[貼上你的筆記]
+
+請幫我：
+1. 自動分類成「✅ 本週完成」「🔄 進行中」「📋 下週計畫」「⚠️ 需要協助」四個區塊
+2. 每個項目精簡成一句話，標註相關專案名稱
+3. 自動產生一段 3 行的「本週摘要」放在最上方
+4. 輸出兩個檔案：weekly-report.md（純文字版）和 weekly-report.html（含 CSS 美化、公司風格配色藍白灰）
+5. HTML 版本要可以直接貼進 Email 且排版不跑掉</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者學會用 Claude Code 做文字整理與格式化輸出，完成後馬上能用在工作中
+      初階入門最佳練習：體驗 Claude 的文字整理與格式轉換能力，完成後馬上能用在真實工作中
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="多語系翻譯同步檢查器 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能比較矩陣產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/10</span>
+      <span class="date-tag">8/11</span>
     </div>
-    <h2>多語系翻譯同步檢查器</h2>
-    <div class="tagline">自動比對專案中各語系 JSON 檔案，找出缺漏、不一致與過時的翻譯鍵值</div>
-    <p>前端專案常有 en.json、zh-TW.json、ja.json 等多個語系檔，隨著開發迭代容易出現某語系漏翻、鍵值不對齊、翻譯內容過時等問題。這個工具會掃描所有語系檔，產出差異報告，並自動補上缺漏翻譯的建議內容，最後輸出修正後的完整語系檔案與 HTML 視覺化比對報告。</p>
-    <div class="prompt-box">請掃描我的專案資料夾 [拖曳資料夾或指定路徑] 中所有的 i18n/locales 語系 JSON 檔案，幫我執行以下工作：1. 以英文語系檔（en.json）為基準，列出每個語系檔缺少的鍵值 2. 找出各語系中值仍為英文原文、疑似未翻譯的項目 3. 檢查是否有某語系存在但英文基準檔已刪除的廢棄鍵值 4. 對所有缺漏項目產生翻譯建議，直接寫入對應的語系檔 5. 產出 translation_report.html 視覺化報告，用紅黃綠三色標示各語系的完成度 6. 產出 translation_diff.md 列出所有變更的摘要</div>
+    <h2>競品功能比較矩陣產生器</h2>
+    <div class="tagline">輸入幾個競品網址，自動爬取資訊並產出視覺化功能比較表</div>
+    <p>PM 做競品分析最花時間的就是整理功能比較表。給 Claude Code 幾個競品的官網或文件連結，它會自動擷取各家的功能清單、定價方案、技術規格，整理成結構化的比較矩陣，產出互動式 HTML 表格（可篩選排序）和簡報用的 SVG 圖表。做產品規劃、投資簡報、技術選型時特別實用。</p>
+    <div class="prompt-box">我要做競品功能分析。以下是要比較的產品：
+1. [產品A名稱] - [官網URL]
+2. [產品B名稱] - [官網URL]
+3. [產品C名稱] - [官網URL]
+
+請幫我建立一個完整的競品分析專案：
+
+資料夾結構：
+competitor-analysis/
+├── data/（各競品原始資料 JSON）
+├── comparison-matrix.html（互動式比較表，含篩選、排序、標記功能）
+├── executive-summary.md（一頁式摘要，含優劣勢雷達圖描述）
+└── presentation-charts.svg（簡報用的比較圖表）
+
+比較維度請涵蓋：核心功能（至少 15 項）、定價方案、目標用戶、技術架構、整合生態系、優缺點。
+HTML 表格要支援：✅❌⚠️ 圖示標記、滑鼠懸停顯示詳細說明、按欄位排序、深色/淺色模式切換。
+最後請給出「我方產品的差異化建議」三點。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習涉及多檔案掃描、JSON 解析比對與 HTML 報告生成，學會讓 Claude Code 處理跨檔案分析任務
+      中階練習整合多來源資訊、結構化輸出與互動式前端，學會用 Claude 做複雜的資料整理與視覺化
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼技術債評估儀表板 資料分析">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時投票系統原型 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/10</span>
+      <span class="date-tag">8/11</span>
     </div>
-    <h2>程式碼技術債評估儀表板</h2>
-    <div class="tagline">深度掃描整個程式庫，量化技術債嚴重程度並產出互動式優先修復儀表板</div>
-    <p>這個專案讓 Claude Code 扮演資深架構師，對整個程式庫進行全方位體檢：偵測重複程式碼、過長函式、循環依賴、缺乏測試覆蓋的關鍵模組、過時的依賴套件、不一致的命名風格等。最終產出一個互動式 HTML 儀表板，包含技術債評分、風險熱力圖、依模組分類的修復建議與預估工時，讓團隊能做出數據驅動的重構決策。</p>
-    <div class="prompt-box">請對我的專案 [拖曳資料夾] 進行全面的技術債評估，執行以下分析：1. 掃描所有原始碼檔案，識別重複程式碼片段（相似度 > 70%）並列出位置 2. 找出超過 100 行的函式或超過 500 行的檔案，標記為複雜度過高 3. 分析模組間的 import/require 關係，繪製依賴圖並偵測循環依賴 4. 檢查 package.json 中過時超過一年的依賴套件，標記安全風險等級 5. 統計測試覆蓋率，找出完全沒有測試的核心業務邏輯模組 6. 檢查命名風格一致性（camelCase vs snake_case 混用等） 7. 對每個問題評估嚴重度（高/中/低）和預估修復工時 8. 產出 tech_debt_dashboard.html 互動式儀表板：含總分雷達圖、模組熱力圖、可展開的問題清單 9. 產出 tech_debt_report.md 詳細報告，包含建議的重構優先順序與分階段執行計畫 10. 產出 refactor_tickets.csv 可匯入 Jira 的修復任務清單</div>
+    <h2>全端即時投票系統原型</h2>
+    <div class="tagline">從零打造支援即時更新、動態圖表的線上投票應用，含前後端完整架構</div>
+    <p>用 Claude Code 一次建出完整的即時投票 Web App：後端用 Node.js + WebSocket 處理即時票數同步，前端用原生 JavaScript + Chart.js 呈現動態長條圖與圓餅圖，支援建立投票、分享連結、即時看票數變化、自動截止與結果匯出。適合團隊決策、課堂互動、社群活動。含防重複投票機制、RWD 手機版面、管理後台。這是一個完整的全端專案，涵蓋 API 設計、狀態管理、即時通訊等核心技能。</p>
+    <div class="prompt-box">請幫我從零建立一個即時線上投票系統，完整的全端應用：
+
+專案結構：
+realtime-poll/
+├── server/
+│   ├── index.js（Express + WebSocket 伺服器）
+│   ├── routes/polls.js（RESTful API：建立/取得/關閉投票）
+│   ├── middleware/rateLimiter.js（防灌票：IP + Cookie 雙重驗證）
+│   └── store.js（記憶體資料儲存，含持久化到 JSON 檔案）
+├── public/
+│   ├── index.html（首頁：建立投票表單）
+│   ├── vote.html（投票頁：選項按鈕 + 即時結果圖表）
+│   ├── admin.html（管理頁：所有投票列表、手動開關、匯出 CSV）
+│   ├── css/style.css（RWD 設計，支援手機平板桌機）
+│   └── js/
+│       ├── chart.js（Chart.js 動態圖表：長條圖+圓餅圖即時切換）
+│       └── websocket.js（WebSocket 客戶端，含斷線自動重連）
+├── package.json
+└── README.md（含部署說明與 API 文件）
+
+功能需求：
+1. 建立投票時可設定標題、選項（2-10個）、截止時間、是否匿名
+2. 每次投票即時透過 WebSocket 推送給所有觀看者，圖表動態更新
+3. 分享用短連結（如 /poll/abc123）
+4. 投票結束後自動鎖定並顯示最終結果
+5. 管理後台可看所有投票的參與率與時間分佈
+
+請先建好所有檔案，確保 npm start 就能跑起來。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案需要 Claude Code 同時執行靜態分析、跨檔案依賴追蹤、量化評分與複雜視覺化，考驗全方位的程式理解與產出能力
+      高階全端挑戰：涵蓋 WebSocket 即時通訊、RESTful API 設計、前端圖表動態渲染、防作弊機制等進階技能
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -770,7 +822,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會報告產生器 生產力">
+    <div class="card-header">
+      <span class="badge">114</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/10</span>
+    </div>
+    <h2>每日站會報告產生器</h2>
+    <div class="tagline">從散亂的工作筆記自動整理出結構化的每日站會報告，省去每天早上的煩惱</div>
+    <p>把你一整天隨手記的工作筆記、Slack 訊息、待辦清單丟給 Claude Code，它會自動分類成「昨日完成」「今日計畫」「遇到的阻礙」三大區塊，並產出 Markdown 格式的站會報告。適合遠端工作者、Scrum 團隊成員，每天早上花不到一分鐘就能準備好站會內容。</p>
+    <div class="prompt-box">以下是我昨天的工作筆記和今天的待辦事項 [貼上筆記]。請幫我：1. 分析筆記內容，歸類成「昨日完成事項」「今日預計工作」「目前遇到的阻礙或需要協助的地方」三個區塊 2. 每個區塊列出 3-5 個重點，用簡潔的一句話描述 3. 如果筆記中有提到時間、百分比等數據，請保留在報告中 4. 產出 standup_report.md 檔案，格式要清楚易讀 5. 最後加上一行「預估今日工作量」的簡短評估</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者學會用 Claude Code 做文字整理與格式化輸出，完成後馬上能用在工作中
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="多語系翻譯同步檢查器 程式原型">
+    <div class="card-header">
+      <span class="badge">115</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/10</span>
+    </div>
+    <h2>多語系翻譯同步檢查器</h2>
+    <div class="tagline">自動比對專案中各語系 JSON 檔案，找出缺漏、不一致與過時的翻譯鍵值</div>
+    <p>前端專案常有 en.json、zh-TW.json、ja.json 等多個語系檔，隨著開發迭代容易出現某語系漏翻、鍵值不對齊、翻譯內容過時等問題。這個工具會掃描所有語系檔，產出差異報告，並自動補上缺漏翻譯的建議內容，最後輸出修正後的完整語系檔案與 HTML 視覺化比對報告。</p>
+    <div class="prompt-box">請掃描我的專案資料夾 [拖曳資料夾或指定路徑] 中所有的 i18n/locales 語系 JSON 檔案，幫我執行以下工作：1. 以英文語系檔（en.json）為基準，列出每個語系檔缺少的鍵值 2. 找出各語系中值仍為英文原文、疑似未翻譯的項目 3. 檢查是否有某語系存在但英文基準檔已刪除的廢棄鍵值 4. 對所有缺漏項目產生翻譯建議，直接寫入對應的語系檔 5. 產出 translation_report.html 視覺化報告，用紅黃綠三色標示各語系的完成度 6. 產出 translation_diff.md 列出所有變更的摘要</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習涉及多檔案掃描、JSON 解析比對與 HTML 報告生成，學會讓 Claude Code 處理跨檔案分析任務
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼技術債評估儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">116</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/10</span>
+    </div>
+    <h2>程式碼技術債評估儀表板</h2>
+    <div class="tagline">深度掃描整個程式庫，量化技術債嚴重程度並產出互動式優先修復儀表板</div>
+    <p>這個專案讓 Claude Code 扮演資深架構師，對整個程式庫進行全方位體檢：偵測重複程式碼、過長函式、循環依賴、缺乏測試覆蓋的關鍵模組、過時的依賴套件、不一致的命名風格等。最終產出一個互動式 HTML 儀表板，包含技術債評分、風險熱力圖、依模組分類的修復建議與預估工時，讓團隊能做出數據驅動的重構決策。</p>
+    <div class="prompt-box">請對我的專案 [拖曳資料夾] 進行全面的技術債評估，執行以下分析：1. 掃描所有原始碼檔案，識別重複程式碼片段（相似度 > 70%）並列出位置 2. 找出超過 100 行的函式或超過 500 行的檔案，標記為複雜度過高 3. 分析模組間的 import/require 關係，繪製依賴圖並偵測循環依賴 4. 檢查 package.json 中過時超過一年的依賴套件，標記安全風險等級 5. 統計測試覆蓋率，找出完全沒有測試的核心業務邏輯模組 6. 檢查命名風格一致性（camelCase vs snake_case 混用等） 7. 對每個問題評估嚴重度（高/中/低）和預估修復工時 8. 產出 tech_debt_dashboard.html 互動式儀表板：含總分雷達圖、模組熱力圖、可展開的問題清單 9. 產出 tech_debt_report.md 詳細報告，包含建議的重構優先順序與分階段執行計畫 10. 產出 refactor_tickets.csv 可匯入 Jira 的修復任務清單</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案需要 Claude Code 同時執行靜態分析、跨檔案依賴追蹤、量化評分與複雜視覺化，考驗全方位的程式理解與產出能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
     <div class="card-header">
       <span class="badge">111</span>
       <span class="tag level-1">初階</span>
