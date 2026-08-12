@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/11</span>
-      <span>📚 累計收錄：<span id="totalCount">119</span> 個專案</span>
+      <span>📅 最後更新：2026/08/12</span>
+      <span>📚 累計收錄：<span id="totalCount">122</span> 個專案</span>
     </div>
   </header>
 
@@ -664,23 +664,132 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 119 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 122 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/11) ============ -->
+  <!-- ============ 今日新增 (8/12) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/11
+    今日新增 · 2026/08/12
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/12</span>
+    </div>
+    <h2>會議逐字稿摘要精靈</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
+    <p>將 Zoom、Teams 或 Google Meet 匯出的逐字稿丟給 Claude Code，自動整理成「會議摘要→關鍵決議→各人待辦事項→下次會議議題」的結構化紀錄，輸出 Markdown 與可直接貼進 Notion 的格式。每天開會卻沒人願意寫紀錄的團隊必備工具。</p>
+    <div class="prompt-box">這是今天的會議逐字稿 [貼上或拖曳 .txt 檔]。請幫我：1. 用三句話寫出會議摘要 2. 列出所有被提到的決議事項，標明提案人 3. 整理每位與會者的待辦事項（Action Items），格式為「□ 負責人｜事項｜截止日」 4. 列出下次會議需追蹤的議題 5. 輸出兩個檔案：meeting_notes.md（Markdown 格式）和 meeting_notes_notion.md（含 Notion toggle block 語法） 6. 如果逐字稿中有模糊的部分，用 ⚠️ 標記並附上原文讓我確認</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初學者可立即感受 Claude 的文本摘要與結構化整理能力，產出物當天就能用在工作流程中
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格排程引擎 內容創作">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/12</span>
+    </div>
+    <h2>技術部落格排程引擎</h2>
+    <div class="tagline">輸入技術主題清單，自動產出一個月份的部落格文章草稿與社群貼文</div>
+    <p>給 Claude Code 一份你想寫的技術主題清單與目標讀者描述，它會幫你規劃四週的發文排程、為每篇文章產出含程式碼範例的完整草稿（Markdown）、搭配的 Twitter/LinkedIn 社群摘要貼文，以及 SEO 關鍵字建議。適合想經營技術品牌但苦於沒時間持續產出的工程師。</p>
+    <div class="prompt-box">我想經營一個技術部落格，目標讀者是 [初中階前端工程師]。以下是我想寫的主題清單：[貼上 8-10 個主題]。請幫我：1. 規劃四週發文排程（每週 2 篇），考慮主題難度交錯排列 2. 建立資料夾結構 blog/week-1/ ~ blog/week-4/，每篇文章一個 .md 檔 3. 每篇文章包含：吸引人的標題、300-500 字正文、至少一段程式碼範例、三個延伸閱讀連結預留位置 4. 產出 social_posts.md，每篇文章對應一則 280 字內的 Twitter 貼文和一則 LinkedIn 貼文 5. 產出 seo_keywords.csv 列出每篇文章建議的主要關鍵字與長尾關鍵字 6. 在 README.md 中放上整月排程總覽表格</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階使用者將練習多檔案批次產出、資料夾結構規劃，以及如何用一個 prompt 串起內容策略的完整工作流
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="API 健康監控儀表板 程式原型">
+    <div class="card-header">
+      <span class="badge">＋</span>
+      <span class="tag new">今日新增</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/12</span>
+    </div>
+    <h2>API 健康監控儀表板</h2>
+    <div class="tagline">自動建立一個即時監控多組 API 端點健康狀態的全端儀表板應用</div>
+    <p>用 Claude Code 從零搭建一個 Node.js + React 的 API 監控系統：後端定時對你設定的 API 端點發送請求並記錄回應時間、狀態碼與錯誤訊息，存入 SQLite；前端用圖表即時顯示各端點的延遲趨勢、可用率百分比與異常告警。支援 Webhook 通知（Slack/Discord），當端點連續失敗時自動發送警報。適合管理多個微服務或第三方 API 整合的後端團隊。</p>
+    <div class="prompt-box">請幫我建立一個完整的 API 健康監控儀表板專案。需求如下：
+
+後端（Node.js + Express）：
+1. 建立 config/endpoints.json，讓我定義要監控的 API 清單（URL、預期狀態碼、檢查間隔秒數、名稱）
+2. 用 node-cron 定時對每個端點發送 HTTP 請求，記錄回應時間（ms）、狀態碼、是否成功
+3. 用 better-sqlite3 建立 health_checks 資料表儲存所有檢查紀錄
+4. 提供 REST API：GET /api/status（所有端點最新狀態）、GET /api/history/:endpointId（過去 24 小時紀錄）、GET /api/stats（各端點可用率）
+5. 當某端點連續失敗 3 次，透過 Webhook URL 發送告警 JSON
+
+前端（React + Recharts）：
+1. 儀表板首頁顯示所有端點卡片：名稱、當前狀態燈號（綠/黃/紅）、最近回應時間、24 小時可用率
+2. 點擊端點卡片展開詳情，顯示過去 24 小時回應時間折線圖
+3. 頂部顯示整體系統健康分數
+4. 每 30 秒自動刷新資料
+
+請建立完整資料夾結構，包含 package.json、README 安裝說明、.env.example，並確保 npm start 就能同時啟動前後端</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋全端開發、排程任務、資料庫設計、即時資料視覺化與 Webhook 整合，全面考驗 Claude Code 的工程架構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        <h3 class="section-title archive">
+          <span class="dot"></span>
+    歷史收錄
+    <span class="count">8 個專案</span>
+  </h3>
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動美化器 生產力">
+    <div class="card-header">
+      <span class="badge">117</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
@@ -706,8 +815,7 @@
   </article>
   <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能比較矩陣產生器 資料分析">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">118</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
@@ -741,8 +849,7 @@ HTML 表格要支援：✅❌⚠️ 圖示標記、滑鼠懸停顯示詳細說�
   </article>
   <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時投票系統原型 程式原型">
     <div class="card-header">
-      <span class="badge">＋</span>
-      <span class="tag new">今日新增</span>
+      <span class="badge">119</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
@@ -785,44 +892,7 @@ realtime-poll/
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-        <h3 class="section-title archive">
-          <span class="dot"></span>
-    歷史收錄
-    <span class="count">8 個專案</span>
-  </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會報告產生器 生產力">
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會報告產生器 生產力">
     <div class="card-header">
       <span class="badge">114</span>
       <span class="tag level-1">初階</span>
