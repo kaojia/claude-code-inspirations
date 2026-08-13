@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/12</span>
-      <span>📚 累計收錄：<span id="totalCount">122</span> 個專案</span>
+      <span>📅 最後更新：2026/08/13</span>
+      <span>📚 累計收錄：<span id="totalCount">125</span> 個專案</span>
     </div>
   </header>
 
@@ -664,91 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 122 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 125 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/12) ============ -->
+  <!-- ============ 今日新增 (8/13) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/12
+    今日新增 · 2026/08/13
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養追蹤表 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/12</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/13</span>
     </div>
-    <h2>會議逐字稿摘要精靈</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
-    <p>將 Zoom、Teams 或 Google Meet 匯出的逐字稿丟給 Claude Code，自動整理成「會議摘要→關鍵決議→各人待辦事項→下次會議議題」的結構化紀錄，輸出 Markdown 與可直接貼進 Notion 的格式。每天開會卻沒人願意寫紀錄的團隊必備工具。</p>
-    <div class="prompt-box">這是今天的會議逐字稿 [貼上或拖曳 .txt 檔]。請幫我：1. 用三句話寫出會議摘要 2. 列出所有被提到的決議事項，標明提案人 3. 整理每位與會者的待辦事項（Action Items），格式為「□ 負責人｜事項｜截止日」 4. 列出下次會議需追蹤的議題 5. 輸出兩個檔案：meeting_notes.md（Markdown 格式）和 meeting_notes_notion.md（含 Notion toggle block 語法） 6. 如果逐字稿中有模糊的部分，用 ⚠️ 標記並附上原文讓我確認</div>
+    <h2>每日飲食營養追蹤表</h2>
+    <div class="tagline">拍照或輸入今天吃了什麼，自動算出熱量與營養素並產出週報</div>
+    <p>把每天的三餐內容用文字描述丟給 Claude Code，它會根據常見食物營養資料庫估算熱量、蛋白質、碳水、脂肪等巨量營養素，產出每日摘要表格與一週趨勢折線圖的 HTML 頁面。適合健身族、減重計畫執行者，或單純想了解自己飲食習慣的人。</p>
+    <div class="prompt-box">我想建立一個每日飲食追蹤系統。請幫我：1. 建立 meals/ 資料夾，裡面放 day1.txt ~ day7.txt 作為七天飲食紀錄範本 2. 寫一個 Python 腳本 nutrition_tracker.py，讀取每日飲食文字描述，用內建營養資料庫估算每餐的熱量、蛋白質(g)、碳水(g)、脂肪(g) 3. 產出 report.html，包含每日營養素表格＋七天趨勢折線圖（用 Chart.js）4. 在頁面底部給出飲食建議，例如蛋白質不足或碳水過高的提醒 5. 先用這筆範例資料測試：早餐-燕麥牛奶香蕉、午餐-雞腿便當、晚餐-滷肉飯加燙青菜</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初學者可立即感受 Claude 的文本摘要與結構化整理能力，產出物當天就能用在工作流程中
+      初學者可體驗 Claude 整合資料處理與前端視覺化的能力，成品立刻能用於日常生活
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格排程引擎 內容創作">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 儲存庫文件健檢師 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/12</span>
+      <span class="date-tag">8/13</span>
     </div>
-    <h2>技術部落格排程引擎</h2>
-    <div class="tagline">輸入技術主題清單，自動產出一個月份的部落格文章草稿與社群貼文</div>
-    <p>給 Claude Code 一份你想寫的技術主題清單與目標讀者描述，它會幫你規劃四週的發文排程、為每篇文章產出含程式碼範例的完整草稿（Markdown）、搭配的 Twitter/LinkedIn 社群摘要貼文，以及 SEO 關鍵字建議。適合想經營技術品牌但苦於沒時間持續產出的工程師。</p>
-    <div class="prompt-box">我想經營一個技術部落格，目標讀者是 [初中階前端工程師]。以下是我想寫的主題清單：[貼上 8-10 個主題]。請幫我：1. 規劃四週發文排程（每週 2 篇），考慮主題難度交錯排列 2. 建立資料夾結構 blog/week-1/ ~ blog/week-4/，每篇文章一個 .md 檔 3. 每篇文章包含：吸引人的標題、300-500 字正文、至少一段程式碼範例、三個延伸閱讀連結預留位置 4. 產出 social_posts.md，每篇文章對應一則 280 字內的 Twitter 貼文和一則 LinkedIn 貼文 5. 產出 seo_keywords.csv 列出每篇文章建議的主要關鍵字與長尾關鍵字 6. 在 README.md 中放上整月排程總覽表格</div>
+    <h2>GitHub 儲存庫文件健檢師</h2>
+    <div class="tagline">掃描任何 GitHub 專案，自動產出文件完整度報告與改善建議</div>
+    <p>將本地 Git 專案路徑指定給 Claude Code，它會掃描 README、CONTRIBUTING、CHANGELOG、LICENSE、docstring 覆蓋率、API 文件等，依照開源社群最佳實踐評分，產出一份互動式 HTML 健檢報告。報告包含各項目紅黃綠燈評級、缺失文件的範本自動生成、以及具體改善建議。適合開源維護者、準備發布新套件的團隊。</p>
+    <div class="prompt-box">請幫我建立一個 GitHub 儲存庫文件健檢工具：1. 建立 doc_auditor/ 資料夾，主程式為 audit.py 2. 掃描指定路徑下的專案結構，檢查以下項目並各給 0-100 分：README.md 完整度（是否有安裝步驟、使用範例、授權聲明）、CONTRIBUTING.md 是否存在、CHANGELOG.md 格式是否符合 Keep a Changelog、LICENSE 檔案是否存在、Python 檔案的 docstring 覆蓋率、是否有 .github/ISSUE_TEMPLATE 和 PR template 3. 產出 audit_report.html 互動式報告，用儀表板風格呈現各項分數與整體等級(A~F) 4. 對於缺失或不及格的項目，自動在 generated_templates/ 產出建議範本檔案 5. 先用目前這個工作目錄作為測試對象執行一次</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階使用者將練習多檔案批次產出、資料夾結構規劃，以及如何用一個 prompt 串起內容策略的完整工作流
+      中階專案需整合檔案系統掃描、文字分析與模板生成，學會用 Claude Code 做靜態分析工具
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="API 健康監控儀表板 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系翻譯同步管理平台 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/12</span>
+      <span class="date-tag">8/13</span>
     </div>
-    <h2>API 健康監控儀表板</h2>
-    <div class="tagline">自動建立一個即時監控多組 API 端點健康狀態的全端儀表板應用</div>
-    <p>用 Claude Code 從零搭建一個 Node.js + React 的 API 監控系統：後端定時對你設定的 API 端點發送請求並記錄回應時間、狀態碼與錯誤訊息，存入 SQLite；前端用圖表即時顯示各端點的延遲趨勢、可用率百分比與異常告警。支援 Webhook 通知（Slack/Discord），當端點連續失敗時自動發送警報。適合管理多個微服務或第三方 API 整合的後端團隊。</p>
-    <div class="prompt-box">請幫我建立一個完整的 API 健康監控儀表板專案。需求如下：
-
-後端（Node.js + Express）：
-1. 建立 config/endpoints.json，讓我定義要監控的 API 清單（URL、預期狀態碼、檢查間隔秒數、名稱）
-2. 用 node-cron 定時對每個端點發送 HTTP 請求，記錄回應時間（ms）、狀態碼、是否成功
-3. 用 better-sqlite3 建立 health_checks 資料表儲存所有檢查紀錄
-4. 提供 REST API：GET /api/status（所有端點最新狀態）、GET /api/history/:endpointId（過去 24 小時紀錄）、GET /api/stats（各端點可用率）
-5. 當某端點連續失敗 3 次，透過 Webhook URL 發送告警 JSON
-
-前端（React + Recharts）：
-1. 儀表板首頁顯示所有端點卡片：名稱、當前狀態燈號（綠/黃/紅）、最近回應時間、24 小時可用率
-2. 點擊端點卡片展開詳情，顯示過去 24 小時回應時間折線圖
-3. 頂部顯示整體系統健康分數
-4. 每 30 秒自動刷新資料
-
-請建立完整資料夾結構，包含 package.json、README 安裝說明、.env.example，並確保 npm start 就能同時啟動前後端</div>
+    <h2>多語系翻譯同步管理平台</h2>
+    <div class="tagline">偵測 i18n JSON 翻譯檔缺漏，自動補翻並產出差異審核介面</div>
+    <p>針對前端專案常見的多語系 JSON 翻譯檔（如 en.json、zh-TW.json、ja.json），Claude Code 會自動比對所有語系檔的 key 結構，找出遺漏或過時的翻譯條目，利用上下文語意自動補翻缺失項目，並生成一個完整的 Web 審核介面讓翻譯人員逐條確認、修改、批准。支援巢狀 JSON 結構、複數形式偵測、插值變數保護。適合有多語系需求的產品團隊與獨立開發者。</p>
+    <div class="prompt-box">請幫我打造一個完整的多語系翻譯同步管理系統：1. 建立 i18n_manager/ 專案，結構為 src/（核心邏輯）、locales/（測試用翻譯檔）、web/（審核介面）2. 在 locales/ 建立 en.json（60 個 key，含巢狀結構如 pages.home.title）、zh-TW.json（故意少 15 個 key）、ja.json（故意少 25 個 key）作為測試資料 3. 寫 src/analyzer.py 比對所有語系檔，產出差異報告：缺失 key、多餘 key、疑似過時翻譯 4. 寫 src/auto_translate.py 對缺失項目根據 en.json 原文與既有翻譯風格自動產生翻譯建議，並標註信心分數 5. 建立 web/ 下的審核介面（用 Flask + vanilla JS）：左側樹狀結構瀏覽所有 key，右側並排顯示各語系翻譯，缺失項用黃色標記並顯示 AI 建議翻譯，可一鍵採用或手動修改 6. 支援匯出修正後的各語系 JSON 檔，保持原始排序與縮排 7. 加入 CLI 模式：python manage.py --check 只檢查、--auto-fix 自動補翻並寫入檔案</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涵蓋全端開發、排程任務、資料庫設計、即時資料視覺化與 Webhook 整合，全面考驗 Claude Code 的工程架構能力
+      高階專案整合多檔案比對演算法、自動翻譯邏輯、Flask 後端與互動前端，考驗系統架構設計能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -787,7 +773,76 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+    <div class="card-header">
+      <span class="badge">120</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/12</span>
+    </div>
+    <h2>會議逐字稿摘要精靈</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
+    <p>將 Zoom、Teams 或 Google Meet 匯出的逐字稿丟給 Claude Code，自動整理成「會議摘要→關鍵決議→各人待辦事項→下次會議議題」的結構化紀錄，輸出 Markdown 與可直接貼進 Notion 的格式。每天開會卻沒人願意寫紀錄的團隊必備工具。</p>
+    <div class="prompt-box">這是今天的會議逐字稿 [貼上或拖曳 .txt 檔]。請幫我：1. 用三句話寫出會議摘要 2. 列出所有被提到的決議事項，標明提案人 3. 整理每位與會者的待辦事項（Action Items），格式為「□ 負責人｜事項｜截止日」 4. 列出下次會議需追蹤的議題 5. 輸出兩個檔案：meeting_notes.md（Markdown 格式）和 meeting_notes_notion.md（含 Notion toggle block 語法） 6. 如果逐字稿中有模糊的部分，用 ⚠️ 標記並附上原文讓我確認</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初學者可立即感受 Claude 的文本摘要與結構化整理能力，產出物當天就能用在工作流程中
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格排程引擎 內容創作">
+    <div class="card-header">
+      <span class="badge">121</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/12</span>
+    </div>
+    <h2>技術部落格排程引擎</h2>
+    <div class="tagline">輸入技術主題清單，自動產出一個月份的部落格文章草稿與社群貼文</div>
+    <p>給 Claude Code 一份你想寫的技術主題清單與目標讀者描述，它會幫你規劃四週的發文排程、為每篇文章產出含程式碼範例的完整草稿（Markdown）、搭配的 Twitter/LinkedIn 社群摘要貼文，以及 SEO 關鍵字建議。適合想經營技術品牌但苦於沒時間持續產出的工程師。</p>
+    <div class="prompt-box">我想經營一個技術部落格，目標讀者是 [初中階前端工程師]。以下是我想寫的主題清單：[貼上 8-10 個主題]。請幫我：1. 規劃四週發文排程（每週 2 篇），考慮主題難度交錯排列 2. 建立資料夾結構 blog/week-1/ ~ blog/week-4/，每篇文章一個 .md 檔 3. 每篇文章包含：吸引人的標題、300-500 字正文、至少一段程式碼範例、三個延伸閱讀連結預留位置 4. 產出 social_posts.md，每篇文章對應一則 280 字內的 Twitter 貼文和一則 LinkedIn 貼文 5. 產出 seo_keywords.csv 列出每篇文章建議的主要關鍵字與長尾關鍵字 6. 在 README.md 中放上整月排程總覽表格</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階使用者將練習多檔案批次產出、資料夾結構規劃，以及如何用一個 prompt 串起內容策略的完整工作流
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="API 健康監控儀表板 程式原型">
+    <div class="card-header">
+      <span class="badge">122</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/12</span>
+    </div>
+    <h2>API 健康監控儀表板</h2>
+    <div class="tagline">自動建立一個即時監控多組 API 端點健康狀態的全端儀表板應用</div>
+    <p>用 Claude Code 從零搭建一個 Node.js + React 的 API 監控系統：後端定時對你設定的 API 端點發送請求並記錄回應時間、狀態碼與錯誤訊息，存入 SQLite；前端用圖表即時顯示各端點的延遲趨勢、可用率百分比與異常告警。支援 Webhook 通知（Slack/Discord），當端點連續失敗時自動發送警報。適合管理多個微服務或第三方 API 整合的後端團隊。</p>
+    <div class="prompt-box">請幫我建立一個完整的 API 健康監控儀表板專案。需求如下：
+
+後端（Node.js + Express）：
+1. 建立 config/endpoints.json，讓我定義要監控的 API 清單（URL、預期狀態碼、檢查間隔秒數、名稱）
+2. 用 node-cron 定時對每個端點發送 HTTP 請求，記錄回應時間（ms）、狀態碼、是否成功
+3. 用 better-sqlite3 建立 health_checks 資料表儲存所有檢查紀錄
+4. 提供 REST API：GET /api/status（所有端點最新狀態）、GET /api/history/:endpointId（過去 24 小時紀錄）、GET /api/stats（各端點可用率）
+5. 當某端點連續失敗 3 次，透過 Webhook URL 發送告警 JSON
+
+前端（React + Recharts）：
+1. 儀表板首頁顯示所有端點卡片：名稱、當前狀態燈號（綠/黃/紅）、最近回應時間、24 小時可用率
+2. 點擊端點卡片展開詳情，顯示過去 24 小時回應時間折線圖
+3. 頂部顯示整體系統健康分數
+4. 每 30 秒自動刷新資料
+
+請建立完整資料夾結構，包含 package.json、README 安裝說明、.env.example，並確保 npm start 就能同時啟動前後端</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋全端開發、排程任務、資料庫設計、即時資料視覺化與 Webhook 整合，全面考驗 Claude Code 的工程架構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動美化器 生產力">
     <div class="card-header">
       <span class="badge">117</span>
       <span class="tag level-1">初階</span>
