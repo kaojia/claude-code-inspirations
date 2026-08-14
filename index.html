@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/13</span>
-      <span>📚 累計收錄：<span id="totalCount">125</span> 個專案</span>
+      <span>📅 最後更新：2026/08/14</span>
+      <span>📚 累計收錄：<span id="totalCount">128</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,94 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 125 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 128 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/13) ============ -->
+  <!-- ============ 今日新增 (8/14) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/13
+    今日新增 · 2026/08/14
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養追蹤表 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人履歷亮點改寫器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">8/13</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/14</span>
     </div>
-    <h2>每日飲食營養追蹤表</h2>
-    <div class="tagline">拍照或輸入今天吃了什麼，自動算出熱量與營養素並產出週報</div>
-    <p>把每天的三餐內容用文字描述丟給 Claude Code，它會根據常見食物營養資料庫估算熱量、蛋白質、碳水、脂肪等巨量營養素，產出每日摘要表格與一週趨勢折線圖的 HTML 頁面。適合健身族、減重計畫執行者，或單純想了解自己飲食習慣的人。</p>
-    <div class="prompt-box">我想建立一個每日飲食追蹤系統。請幫我：1. 建立 meals/ 資料夾，裡面放 day1.txt ~ day7.txt 作為七天飲食紀錄範本 2. 寫一個 Python 腳本 nutrition_tracker.py，讀取每日飲食文字描述，用內建營養資料庫估算每餐的熱量、蛋白質(g)、碳水(g)、脂肪(g) 3. 產出 report.html，包含每日營養素表格＋七天趨勢折線圖（用 Chart.js）4. 在頁面底部給出飲食建議，例如蛋白質不足或碳水過高的提醒 5. 先用這筆範例資料測試：早餐-燕麥牛奶香蕉、午餐-雞腿便當、晚餐-滷肉飯加燙青菜</div>
+    <h2>個人履歷亮點改寫器</h2>
+    <div class="tagline">貼上你的舊履歷，自動改寫成量化成果導向的專業版本</div>
+    <p>把現有履歷內容丟給 Claude Code，它會幫你把模糊的工作描述改寫成「動詞＋量化成果＋影響力」的 STAR 格式，並針對不同職缺產出客製版本。最後輸出 Markdown 履歷檔和一份改寫前後對照表，讓你清楚看到每一條怎麼變強的。</p>
+    <div class="prompt-box">這是我目前的履歷內容：[貼上文字]。我想應徵的職位是 [職位名稱]。請幫我：1. 逐條分析原本的工作經歷描述，標出「缺乏量化」「動詞太弱」「沒講影響力」等問題 2. 每條改寫成 STAR 格式（情境-任務-行動-結果），盡量補上合理的數據範圍 3. 產出 resume_improved.md（完整新履歷）和 comparison.md（改寫前後對照表，用表格呈現） 4. 額外給我 5 個面試時可以延伸說明的故事點</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初學者可體驗 Claude 整合資料處理與前端視覺化的能力，成品立刻能用於日常生活
+      初階入門最適合：只需貼上文字就能體驗 Claude 的文字改寫與結構化輸出能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 儲存庫文件健檢師 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析儀 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/13</span>
+      <span class="date-tag">8/14</span>
     </div>
-    <h2>GitHub 儲存庫文件健檢師</h2>
-    <div class="tagline">掃描任何 GitHub 專案，自動產出文件完整度報告與改善建議</div>
-    <p>將本地 Git 專案路徑指定給 Claude Code，它會掃描 README、CONTRIBUTING、CHANGELOG、LICENSE、docstring 覆蓋率、API 文件等，依照開源社群最佳實踐評分，產出一份互動式 HTML 健檢報告。報告包含各項目紅黃綠燈評級、缺失文件的範本自動生成、以及具體改善建議。適合開源維護者、準備發布新套件的團隊。</p>
-    <div class="prompt-box">請幫我建立一個 GitHub 儲存庫文件健檢工具：1. 建立 doc_auditor/ 資料夾，主程式為 audit.py 2. 掃描指定路徑下的專案結構，檢查以下項目並各給 0-100 分：README.md 完整度（是否有安裝步驟、使用範例、授權聲明）、CONTRIBUTING.md 是否存在、CHANGELOG.md 格式是否符合 Keep a Changelog、LICENSE 檔案是否存在、Python 檔案的 docstring 覆蓋率、是否有 .github/ISSUE_TEMPLATE 和 PR template 3. 產出 audit_report.html 互動式報告，用儀表板風格呈現各項分數與整體等級(A~F) 4. 對於缺失或不及格的項目，自動在 generated_templates/ 產出建議範本檔案 5. 先用目前這個工作目錄作為測試對象執行一次</div>
+    <h2>競品功能矩陣分析儀</h2>
+    <div class="tagline">輸入幾個競品網址，自動爬取特色並產出功能比較矩陣與策略建議</div>
+    <p>給 Claude Code 三到五個競品的官網或產品頁面連結，它會擷取各產品的核心功能、定價方案、目標客群等資訊，整理成一份結構化的功能比較矩陣表。接著根據市場缺口分析，產出你的產品差異化策略建議書，包含 SWOT 圖表和建議的功能優先序路線圖，輸出為完整的 HTML 報告。</p>
+    <div class="prompt-box">我正在做競品分析，以下是我的競品清單：[列出 3-5 個產品名稱與網址]。我自己的產品是 [簡述你的產品]。請幫我：1. 建立資料夾 /competitor-analysis，裡面放 data/、output/ 兩個子資料夾 2. 針對每個競品，整理出：核心功能列表、定價模式、目標受眾、獨特賣點（USP） 3. 產出 feature_matrix.html，用互動式表格呈現功能比較矩陣，支援排序和篩選 4. 產出 gap_analysis.md，包含市場缺口分析、SWOT 表格 5. 產出 strategy.md，給出 3 個差異化方向，每個方向附上可執行的前三步行動項目 6. 最後產出 index.html 整合所有報告，可在瀏覽器直接開啟瀏覽</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案需整合檔案系統掃描、文字分析與模板生成，學會用 Claude Code 做靜態分析工具
+      中階挑戰：需要結合資料擷取、多檔案結構組織、HTML 視覺化報告產出等綜合能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系翻譯同步管理平台 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端待辦事項微服務 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/13</span>
+      <span class="date-tag">8/14</span>
     </div>
-    <h2>多語系翻譯同步管理平台</h2>
-    <div class="tagline">偵測 i18n JSON 翻譯檔缺漏，自動補翻並產出差異審核介面</div>
-    <p>針對前端專案常見的多語系 JSON 翻譯檔（如 en.json、zh-TW.json、ja.json），Claude Code 會自動比對所有語系檔的 key 結構，找出遺漏或過時的翻譯條目，利用上下文語意自動補翻缺失項目，並生成一個完整的 Web 審核介面讓翻譯人員逐條確認、修改、批准。支援巢狀 JSON 結構、複數形式偵測、插值變數保護。適合有多語系需求的產品團隊與獨立開發者。</p>
-    <div class="prompt-box">請幫我打造一個完整的多語系翻譯同步管理系統：1. 建立 i18n_manager/ 專案，結構為 src/（核心邏輯）、locales/（測試用翻譯檔）、web/（審核介面）2. 在 locales/ 建立 en.json（60 個 key，含巢狀結構如 pages.home.title）、zh-TW.json（故意少 15 個 key）、ja.json（故意少 25 個 key）作為測試資料 3. 寫 src/analyzer.py 比對所有語系檔，產出差異報告：缺失 key、多餘 key、疑似過時翻譯 4. 寫 src/auto_translate.py 對缺失項目根據 en.json 原文與既有翻譯風格自動產生翻譯建議，並標註信心分數 5. 建立 web/ 下的審核介面（用 Flask + vanilla JS）：左側樹狀結構瀏覽所有 key，右側並排顯示各語系翻譯，缺失項用黃色標記並顯示 AI 建議翻譯，可一鍵採用或手動修改 6. 支援匯出修正後的各語系 JSON 檔，保持原始排序與縮排 7. 加入 CLI 模式：python manage.py --check 只檢查、--auto-fix 自動補翻並寫入檔案</div>
+    <h2>全端待辦事項微服務</h2>
+    <div class="tagline">從零搭建含 REST API、SQLite 資料庫與 React 前端的完整待辦事項應用</div>
+    <p>讓 Claude Code 一步步幫你建出一個生產級的待辦事項應用：後端用 Node.js + Express 建立 RESTful API，SQLite 做持久化儲存，前端用 React + Tailwind CSS 打造現代介面，支援新增、編輯、刪除、標記完成、依標籤篩選、拖曳排序等功能。包含完整的錯誤處理、API 文件與單元測試，是學習全端開發流程的最佳實戰專案。</p>
+    <div class="prompt-box">請幫我從零建立一個全端待辦事項應用，專案名稱 todo-fullstack。請依以下結構執行：
+
+【資料夾結構】
+todo-fullstack/
+├── server/（Express + SQLite）
+│   ├── index.js、routes/、models/、middleware/
+│   └── tests/
+├── client/（React + Tailwind）
+│   ├── src/components/、hooks/、utils/
+│   └── public/
+├── package.json（含 dev script 同時啟動前後端）
+└── README.md
+
+【後端需求】1. RESTful API：GET/POST/PUT/DELETE /api/todos 2. SQLite 資料表含 id、title、description、tags（JSON）、priority、completed、created_at、updated_at 3. 支援查詢參數篩選（?tag=工作&completed=false&sort=priority） 4. 錯誤處理中間件與輸入驗證 5. 用 Jest 寫至少 8 個 API 測試
+
+【前端需求】1. 主介面顯示所有待辦，支援即時搜尋和標籤篩選 2. 新增/編輯用 Modal 表單，含優先級選擇（高/中/低用顏色區分）3. 拖曳排序功能 4. 響應式設計，手機也能用 5. 深色模式切換
+
+【最後】產出完整 README.md 含架構圖、啟動方式、API 文件表格</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案整合多檔案比對演算法、自動翻譯邏輯、Flask 後端與互動前端，考驗系統架構設計能力
+      高階綜合挑戰：涵蓋全端架構設計、資料庫建模、API 設計、前端互動、測試撰寫等完整軟體工程流程
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -773,7 +791,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日飲食營養追蹤表 生產力">
+    <div class="card-header">
+      <span class="badge">123</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/13</span>
+    </div>
+    <h2>每日飲食營養追蹤表</h2>
+    <div class="tagline">拍照或輸入今天吃了什麼，自動算出熱量與營養素並產出週報</div>
+    <p>把每天的三餐內容用文字描述丟給 Claude Code，它會根據常見食物營養資料庫估算熱量、蛋白質、碳水、脂肪等巨量營養素，產出每日摘要表格與一週趨勢折線圖的 HTML 頁面。適合健身族、減重計畫執行者，或單純想了解自己飲食習慣的人。</p>
+    <div class="prompt-box">我想建立一個每日飲食追蹤系統。請幫我：1. 建立 meals/ 資料夾，裡面放 day1.txt ~ day7.txt 作為七天飲食紀錄範本 2. 寫一個 Python 腳本 nutrition_tracker.py，讀取每日飲食文字描述，用內建營養資料庫估算每餐的熱量、蛋白質(g)、碳水(g)、脂肪(g) 3. 產出 report.html，包含每日營養素表格＋七天趨勢折線圖（用 Chart.js）4. 在頁面底部給出飲食建議，例如蛋白質不足或碳水過高的提醒 5. 先用這筆範例資料測試：早餐-燕麥牛奶香蕉、午餐-雞腿便當、晚餐-滷肉飯加燙青菜</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初學者可體驗 Claude 整合資料處理與前端視覺化的能力，成品立刻能用於日常生活
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 儲存庫文件健檢師 程式原型">
+    <div class="card-header">
+      <span class="badge">124</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/13</span>
+    </div>
+    <h2>GitHub 儲存庫文件健檢師</h2>
+    <div class="tagline">掃描任何 GitHub 專案，自動產出文件完整度報告與改善建議</div>
+    <p>將本地 Git 專案路徑指定給 Claude Code，它會掃描 README、CONTRIBUTING、CHANGELOG、LICENSE、docstring 覆蓋率、API 文件等，依照開源社群最佳實踐評分，產出一份互動式 HTML 健檢報告。報告包含各項目紅黃綠燈評級、缺失文件的範本自動生成、以及具體改善建議。適合開源維護者、準備發布新套件的團隊。</p>
+    <div class="prompt-box">請幫我建立一個 GitHub 儲存庫文件健檢工具：1. 建立 doc_auditor/ 資料夾，主程式為 audit.py 2. 掃描指定路徑下的專案結構，檢查以下項目並各給 0-100 分：README.md 完整度（是否有安裝步驟、使用範例、授權聲明）、CONTRIBUTING.md 是否存在、CHANGELOG.md 格式是否符合 Keep a Changelog、LICENSE 檔案是否存在、Python 檔案的 docstring 覆蓋率、是否有 .github/ISSUE_TEMPLATE 和 PR template 3. 產出 audit_report.html 互動式報告，用儀表板風格呈現各項分數與整體等級(A~F) 4. 對於缺失或不及格的項目，自動在 generated_templates/ 產出建議範本檔案 5. 先用目前這個工作目錄作為測試對象執行一次</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合檔案系統掃描、文字分析與模板生成，學會用 Claude Code 做靜態分析工具
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多語系翻譯同步管理平台 程式原型">
+    <div class="card-header">
+      <span class="badge">125</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/13</span>
+    </div>
+    <h2>多語系翻譯同步管理平台</h2>
+    <div class="tagline">偵測 i18n JSON 翻譯檔缺漏，自動補翻並產出差異審核介面</div>
+    <p>針對前端專案常見的多語系 JSON 翻譯檔（如 en.json、zh-TW.json、ja.json），Claude Code 會自動比對所有語系檔的 key 結構，找出遺漏或過時的翻譯條目，利用上下文語意自動補翻缺失項目，並生成一個完整的 Web 審核介面讓翻譯人員逐條確認、修改、批准。支援巢狀 JSON 結構、複數形式偵測、插值變數保護。適合有多語系需求的產品團隊與獨立開發者。</p>
+    <div class="prompt-box">請幫我打造一個完整的多語系翻譯同步管理系統：1. 建立 i18n_manager/ 專案，結構為 src/（核心邏輯）、locales/（測試用翻譯檔）、web/（審核介面）2. 在 locales/ 建立 en.json（60 個 key，含巢狀結構如 pages.home.title）、zh-TW.json（故意少 15 個 key）、ja.json（故意少 25 個 key）作為測試資料 3. 寫 src/analyzer.py 比對所有語系檔，產出差異報告：缺失 key、多餘 key、疑似過時翻譯 4. 寫 src/auto_translate.py 對缺失項目根據 en.json 原文與既有翻譯風格自動產生翻譯建議，並標註信心分數 5. 建立 web/ 下的審核介面（用 Flask + vanilla JS）：左側樹狀結構瀏覽所有 key，右側並排顯示各語系翻譯，缺失項用黃色標記並顯示 AI 建議翻譯，可一鍵採用或手動修改 6. 支援匯出修正後的各語系 JSON 檔，保持原始排序與縮排 7. 加入 CLI 模式：python manage.py --check 只檢查、--auto-fix 自動補翻並寫入檔案</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合多檔案比對演算法、自動翻譯邏輯、Flask 後端與互動前端，考驗系統架構設計能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">120</span>
       <span class="tag level-1">初階</span>
