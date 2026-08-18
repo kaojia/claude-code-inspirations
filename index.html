@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/17</span>
-      <span>📚 累計收錄：<span id="totalCount">137</span> 個專案</span>
+      <span>📅 最後更新：2026/08/18</span>
+      <span>📚 累計收錄：<span id="totalCount">140</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,106 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 137 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 140 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/17) ============ -->
+  <!-- ============ 今日新增 (8/18) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/17
+    今日新增 · 2026/08/18
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人履歷健檢助手 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">8/17</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/18</span>
     </div>
-    <h2>個人履歷健檢助手</h2>
-    <div class="tagline">把你的履歷丟進來，自動找出弱點並產出針對目標職缺的優化版本</div>
-    <p>將現有履歷（PDF 或純文字）與目標職缺描述一起交給 Claude Code，它會幫你分析關鍵字匹配度、量化成就不足處、語氣專業度，並產出一份優化後的 Markdown 履歷與改善建議報告。適合正在轉職、投遞外商、或想讓履歷通過 ATS 系統篩選的求職者。</p>
-    <div class="prompt-box">這是我的履歷 [貼上或拖曳檔案]，這是我想應徵的職缺描述 [貼上 JD]。請幫我：1. 比對履歷與職缺的關鍵字匹配率，列出缺少的重要關鍵字 2. 找出所有可以加入數字量化的成就描述，給出改寫建議 3. 檢查每段經歷是否符合 STAR 法則，不符合的請重寫 4. 產出 optimized_resume.md（優化後完整履歷）和 review_report.md（逐段改善建議與匹配分數） 5. 額外給出一段 50 字以內的 LinkedIn headline 建議</div>
+    <h2>會議逐字稿摘要精靈</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化行動清單與決策摘要</div>
+    <p>將 Zoom、Teams 或 Google Meet 匯出的會議逐字稿丟給 Claude Code，自動萃取關鍵討論點、決策結論、待辦事項與負責人，產出一份精美的 Markdown 會議紀要與可匯入 Notion 的 CSV 待辦清單。適合專案經理、團隊主管每天都要消化大量會議的情境。</p>
+    <div class="prompt-box">這份文字檔 [拖曳逐字稿] 是今天的團隊會議紀錄。請幫我：1. 辨識所有發言者並標記角色（如有提及） 2. 整理出 5-10 個關鍵討論主題，每個主題附上結論 3. 抽出所有待辦事項，列出負責人與截止日期 4. 標記任何未決議題或需要後續追蹤的風險 5. 輸出 meeting_summary.md（含主題、決策、待辦三大區塊）和 action_items.csv（欄位：任務、負責人、截止日、優先級）6. 最後附一段 50 字以內的會議一句話總結，方便貼到 Slack</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude 的文本分析與結構化輸出能力，成品可直接用於真實求職場景
+      初階使用者能快速體驗 Claude 的文本摘要與結構化輸出能力，成果立即可用於工作流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品情報雷達儀表板 資料分析">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工坊 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">75 分鐘</span>
-      <span class="date-tag">8/17</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/18</span>
     </div>
-    <h2>競品情報雷達儀表板</h2>
-    <div class="tagline">輸入競品網址與關鍵字，自動爬取公開資訊並生成視覺化分析報告</div>
-    <p>給 Claude Code 三到五個競品的官網網址、社群帳號與產業關鍵字，它會幫你建立一個 Python 爬蟲腳本，擷取產品定價、功能比較、社群聲量等公開資訊，再用 Plotly 生成互動式儀表板 HTML 頁面。適合產品經理、行銷策略師在季度規劃前快速掌握市場全貌，產出可直接嵌入簡報或分享給團隊。</p>
-    <div class="prompt-box">我想分析以下競品：[列出 3-5 個競品名稱與官網網址]。我的產品是 [簡述你的產品]。請幫我：1. 建立專案資料夾 competitor_radar/，包含 scraper.py、analyzer.py、dashboard.html 2. scraper.py 用 requests + BeautifulSoup 爬取各競品的定價頁面、功能列表頁、最新部落格標題 3. analyzer.py 整理成結構化 JSON，包含：功能矩陣比較、定價級距對照、各家核心訴求關鍵字詞頻 4. dashboard.html 用 Plotly.js 產出三張圖表：功能覆蓋雷達圖、價格帶分布長條圖、訴求關鍵字文字雲 5. 最後生成 insights.md 列出五個策略洞察與建議行動方案</div>
+    <h2>多語系行銷文案工坊</h2>
+    <div class="tagline">輸入產品資訊，一次產出五種語言、三種平台的行銷文案組合包</div>
+    <p>給 Claude Code 你的產品名稱、賣點、目標客群資料，它會自動幫你生成繁中、簡中、英文、日文、韓文五種語言版本的行銷文案，並針對 Instagram、LinkedIn、電子報三種平台調整語氣與字數。最終輸出一個結構清晰的資料夾，每個平台一個子目錄，內含所有語系的文案檔案，還附上一份 A/B 測試建議文件。</p>
+    <div class="prompt-box">我的產品資訊如下：
+產品名稱：[填入]
+核心賣點：[填入三個]
+目標客群：[填入年齡、職業、痛點]
+品牌語調：[專業/親切/幽默 擇一]
+
+請幫我：1. 建立資料夾結構 marketing_copy/instagram、marketing_copy/linkedin、marketing_copy/newsletter 2. 每個平台資料夾內產出 zh-TW.md、zh-CN.md、en.md、ja.md、ko.md 五個檔案 3. Instagram 版本控制在 150 字內含 hashtag 建議；LinkedIn 版本 300 字含專業 CTA；電子報版本含主旨行與 500 字正文 4. 產出 ab_test_suggestions.md，針對每個平台建議兩組標題變體與測試假設 5. 產出 review_checklist.md 列出各語系需要母語者確認的文化敏感點</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案結合爬蟲、資料處理、視覺化三種技能，學會讓 Claude 協調多個腳本協同運作
+      中階專案需整合多語系生成、資料夾結構規劃與平台適配邏輯，訓練系統化思維與提示詞工程能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="即時協作程式碼審查平台 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用追蹤儀表板 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">150 分鐘</span>
-      <span class="date-tag">8/17</span>
+      <span class="tag time">180 分鐘</span>
+      <span class="date-tag">8/18</span>
     </div>
-    <h2>即時協作程式碼審查平台</h2>
-    <div class="tagline">一鍵部署本地 Code Review 工具，自動分析 Git diff 並產出安全性與效能建議</div>
-    <p>讓 Claude Code 幫你從零搭建一個本地端的程式碼審查 Web 應用：前端用 React 呈現 diff 視圖與審查意見，後端用 FastAPI 串接 Git 倉庫解析與 Claude API 進行自動化審查。系統會針對每個 Pull Request 的變更自動產出安全漏洞掃描、效能瓶頸偵測、程式風格建議三類報告，並支援團隊成員在介面上留言討論。適合中小型開發團隊建立內部品質把關流程。</p>
-    <div class="prompt-box">請幫我建立一個本地端程式碼審查平台，專案結構如下：code-review-platform/├── backend/（FastAPI）│ ├── main.py — API 路由：接收 repo 路徑與 branch，回傳 diff 與審查結果│ ├── git_parser.py — 用 GitPython 解析 commit diff，產出檔案變更清單│ ├── reviewer.py — 呼叫 Claude API 分析 diff，產出三類報告（安全性/效能/風格）│ └── models.py — Pydantic schema 定義├── frontend/（React + Vite）│ ├── DiffViewer 元件 — 左右並排 diff 顯示，行內標註審查意見│ ├── ReportPanel 元件 — 三分頁顯示安全/效能/風格報告，嚴重度標籤│ └── CommentThread 元件 — 針對特定行號的討論串，存入 SQLite├── docker-compose.yml — 一鍵啟動前後端與 SQLite└── README.md — 安裝步驟與使用教學。請逐檔案產出完整程式碼，確保 docker-compose up 即可運行，並在 reviewer.py 中設計 prompt template 讓審查結果結構化為 JSON。</div>
+    <h2>全端費用追蹤儀表板</h2>
+    <div class="tagline">從零搭建一個可上傳收據、自動分類並視覺化月度支出的網頁應用</div>
+    <p>用 Claude Code 一步步建構一個完整的費用追蹤 Web App：前端用 React + Tailwind 呈現互動式圖表儀表板，後端用 Node.js + SQLite 處理資料儲存，支援拖曳上傳收據圖片由 Claude 辨識金額與類別，自動歸類到餐飲、交通、娛樂等分類，並產出月度趨勢折線圖、類別佔比圓餅圖與預算警示功能。適合想學全端開發流程又想做出實用工具的開發者。</p>
+    <div class="prompt-box">請幫我從零建構一個個人費用追蹤 Web App，完整步驟如下：
+
+1. 初始化專案結構：
+   expense-tracker/
+   ├── client/（React + Vite + Tailwind CSS）
+   ├── server/（Node.js + Express + SQLite）
+   └── README.md
+
+2. 後端 API 設計：
+   - POST /api/expenses：新增費用（金額、類別、日期、備註、收據圖片路徑）
+   - GET /api/expenses?month=YYYY-MM：查詢月度費用
+   - GET /api/summary?month=YYYY-MM：取得分類統計
+   - PUT /api/budget：設定每月預算上限
+   - SQLite schema 含 expenses 和 budgets 兩張表
+
+3. 前端頁面：
+   - 儀表板首頁：本月總支出卡片、類別圓餅圖（用 Recharts）、近六個月趨勢折線圖
+   - 新增費用表單：支援手動輸入或拖曳上傳收據圖片
+   - 費用清單頁：可篩選、排序、刪除
+   - 預算設定頁：設定月預算，超支時顯示紅色警示
+
+4. 收據辨識功能：上傳圖片後呼叫解析邏輯，自動填入金額與建議分類
+5. 加入深色模式切換與 RWD 響應式設計
+6. 撰寫完整 README 含安裝步驟與截圖說明</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涵蓋全端開發、Docker 部署、API 整合與 prompt engineering，考驗讓 Claude 管理複雜多檔案架構的能力
+      高階專案涵蓋全端架構設計、資料庫建模、圖表視覺化、圖片處理與響應式 UI，全面考驗系統整合能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/computer-use" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -777,7 +807,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站立會議紀錄器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人履歷健檢助手 生產力">
+    <div class="card-header">
+      <span class="badge">135</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/17</span>
+    </div>
+    <h2>個人履歷健檢助手</h2>
+    <div class="tagline">把你的履歷丟進來，自動找出弱點並產出針對目標職缺的優化版本</div>
+    <p>將現有履歷（PDF 或純文字）與目標職缺描述一起交給 Claude Code，它會幫你分析關鍵字匹配度、量化成就不足處、語氣專業度，並產出一份優化後的 Markdown 履歷與改善建議報告。適合正在轉職、投遞外商、或想讓履歷通過 ATS 系統篩選的求職者。</p>
+    <div class="prompt-box">這是我的履歷 [貼上或拖曳檔案]，這是我想應徵的職缺描述 [貼上 JD]。請幫我：1. 比對履歷與職缺的關鍵字匹配率，列出缺少的重要關鍵字 2. 找出所有可以加入數字量化的成就描述，給出改寫建議 3. 檢查每段經歷是否符合 STAR 法則，不符合的請重寫 4. 產出 optimized_resume.md（優化後完整履歷）和 review_report.md（逐段改善建議與匹配分數） 5. 額外給出一段 50 字以內的 LinkedIn headline 建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 的文本分析與結構化輸出能力，成品可直接用於真實求職場景
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品情報雷達儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">136</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">8/17</span>
+    </div>
+    <h2>競品情報雷達儀表板</h2>
+    <div class="tagline">輸入競品網址與關鍵字，自動爬取公開資訊並生成視覺化分析報告</div>
+    <p>給 Claude Code 三到五個競品的官網網址、社群帳號與產業關鍵字，它會幫你建立一個 Python 爬蟲腳本，擷取產品定價、功能比較、社群聲量等公開資訊，再用 Plotly 生成互動式儀表板 HTML 頁面。適合產品經理、行銷策略師在季度規劃前快速掌握市場全貌，產出可直接嵌入簡報或分享給團隊。</p>
+    <div class="prompt-box">我想分析以下競品：[列出 3-5 個競品名稱與官網網址]。我的產品是 [簡述你的產品]。請幫我：1. 建立專案資料夾 competitor_radar/，包含 scraper.py、analyzer.py、dashboard.html 2. scraper.py 用 requests + BeautifulSoup 爬取各競品的定價頁面、功能列表頁、最新部落格標題 3. analyzer.py 整理成結構化 JSON，包含：功能矩陣比較、定價級距對照、各家核心訴求關鍵字詞頻 4. dashboard.html 用 Plotly.js 產出三張圖表：功能覆蓋雷達圖、價格帶分布長條圖、訴求關鍵字文字雲 5. 最後生成 insights.md 列出五個策略洞察與建議行動方案</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案結合爬蟲、資料處理、視覺化三種技能，學會讓 Claude 協調多個腳本協同運作
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/tool-use" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="即時協作程式碼審查平台 程式原型">
+    <div class="card-header">
+      <span class="badge">137</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">8/17</span>
+    </div>
+    <h2>即時協作程式碼審查平台</h2>
+    <div class="tagline">一鍵部署本地 Code Review 工具，自動分析 Git diff 並產出安全性與效能建議</div>
+    <p>讓 Claude Code 幫你從零搭建一個本地端的程式碼審查 Web 應用：前端用 React 呈現 diff 視圖與審查意見，後端用 FastAPI 串接 Git 倉庫解析與 Claude API 進行自動化審查。系統會針對每個 Pull Request 的變更自動產出安全漏洞掃描、效能瓶頸偵測、程式風格建議三類報告，並支援團隊成員在介面上留言討論。適合中小型開發團隊建立內部品質把關流程。</p>
+    <div class="prompt-box">請幫我建立一個本地端程式碼審查平台，專案結構如下：code-review-platform/├── backend/（FastAPI）│ ├── main.py — API 路由：接收 repo 路徑與 branch，回傳 diff 與審查結果│ ├── git_parser.py — 用 GitPython 解析 commit diff，產出檔案變更清單│ ├── reviewer.py — 呼叫 Claude API 分析 diff，產出三類報告（安全性/效能/風格）│ └── models.py — Pydantic schema 定義├── frontend/（React + Vite）│ ├── DiffViewer 元件 — 左右並排 diff 顯示，行內標註審查意見│ ├── ReportPanel 元件 — 三分頁顯示安全/效能/風格報告，嚴重度標籤│ └── CommentThread 元件 — 針對特定行號的討論串，存入 SQLite├── docker-compose.yml — 一鍵啟動前後端與 SQLite└── README.md — 安裝步驟與使用教學。請逐檔案產出完整程式碼，確保 docker-compose up 即可運行，並在 reviewer.py 中設計 prompt template 讓審查結果結構化為 JSON。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋全端開發、Docker 部署、API 整合與 prompt engineering，考驗讓 Claude 管理複雜多檔案架構的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/computer-use" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站立會議紀錄器 生產力">
     <div class="card-header">
       <span class="badge">132</span>
       <span class="tag level-1">初階</span>
