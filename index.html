@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/19</span>
-      <span>📚 累計收錄：<span id="totalCount">143</span> 個專案</span>
+      <span>📅 最後更新：2026/08/20</span>
+      <span>📚 累計收錄：<span id="totalCount">146</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 143 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 146 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/19) ============ -->
+  <!-- ============ 今日新增 (8/20) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/19
+    今日新增 · 2026/08/20
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人週報自動彙整器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">8/19</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/20</span>
     </div>
-    <h2>每日晨間簡報產生器</h2>
-    <div class="tagline">自動彙整 RSS、天氣、待辦事項，產出一頁個人化晨間摘要</div>
-    <p>提供你關注的新聞來源清單、所在城市、今日行事曆，Claude Code 會幫你生成一份精美的 HTML 單頁晨間簡報，包含產業頭條摘要、天氣穿搭建議、今日待辦優先排序。每天早上花 30 秒掃一眼就掌握全局，適合忙碌的上班族與自由工作者。</p>
-    <div class="prompt-box">我想建立一個每日晨間簡報產生器。請幫我：1. 建立 morning_briefing/ 資料夾，裡面有 config.json（放我的 RSS 來源、城市、行事曆連結）2. 寫一個 Python 腳本 generate.py，能抓取 RSS 前 5 則標題並各寫 2 句摘要、用 OpenWeatherMap API 拿天氣資料、讀取 today_tasks.txt 裡的待辦清單 3. 產出 briefing.html，用乾淨的排版呈現三個區塊：📰 今日頭條、🌤 天氣與建議、✅ 優先待辦 4. 加入 CSS 讓它在手機瀏覽器上也好看 5. 附上 README 說明如何設定 cron job 每天早上七點自動執行</div>
+    <h2>個人週報自動彙整器</h2>
+    <div class="tagline">把散落在各處的工作紀錄整合成一份漂亮的週報，省去每週五的痛苦</div>
+    <p>將你一週內的 Git commit 訊息、待辦清單、聊天紀錄或隨手筆記丟給 Claude Code，它會自動分類、歸納重點，產出一份結構清晰的週報，包含「本週完成事項」「進行中任務」「下週計畫」三大區塊，輸出 Markdown 與 HTML 兩種格式，直接貼進 Slack 或寄信給主管。</p>
+    <div class="prompt-box">我要製作本週的工作週報。以下是我這週的各種工作紀錄 [貼上 commit log / 待辦清單 / 筆記]。請幫我：1. 將所有紀錄按專案或主題分類 2. 每個類別摘要成 2-3 個重點，用完成式語氣撰寫 3. 自動判斷哪些是「已完成」、「進行中」、「待處理」 4. 產出 weekly_report.md（含日期標題與分類段落）和 weekly_report.html（可直接寄信的排版）5. 最後附上一段 50 字以內的「本週一句話總結」給主管快速瀏覽</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階者能體驗 API 串接與 HTML 模板輸出，完成後馬上融入每日生活流程
+      初階入門最佳練習：體驗 Claude 的文字歸納與格式轉換能力，產出立刻實用
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="程式碼審查報告引擎 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能比較矩陣產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">75 分鐘</span>
-      <span class="date-tag">8/19</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/20</span>
     </div>
-    <h2>程式碼審查報告引擎</h2>
-    <div class="tagline">掃描整個 Git 倉庫，自動產出程式碼品質審查報告與重構建議</div>
-    <p>將任何 GitHub 專案 clone 下來交給 Claude Code 分析，它會逐檔掃描程式碼風格、潛在 bug、安全漏洞、重複邏輯，最終產出一份結構化的 Markdown 審查報告，包含嚴重度分級、具體修改建議與重構前後對照。適合 Tech Lead 做 code review、接手遺留專案前快速評估技術債。</p>
-    <div class="prompt-box">請幫我建立一個程式碼審查報告系統：1. 建立 code_reviewer/ 專案，包含 reviewer.py 主程式與 templates/ 資料夾 2. 讓腳本接受一個資料夾路徑參數，遞迴掃描所有 .py / .js / .ts 檔案 3. 對每個檔案分析以下維度：(a) 命名規範一致性 (b) 函式長度與複雜度 (c) 未處理的例外 (d) 硬編碼密鑰或敏感資訊 (e) 重複程式碼片段 4. 每個問題標記嚴重度（🔴 高 🟡 中 🟢 低）並給出具體重構建議與修改後程式碼範例 5. 彙整成 review_report.md，開頭有總覽儀表板（各嚴重度數量統計圖用 ASCII art 呈現）6. 另外產出 fixes.patch 讓使用者可直接 git apply 修復高嚴重度問題</div>
+    <h2>競品功能比較矩陣產生器</h2>
+    <div class="tagline">輸入幾個競品網址或文件，自動產出視覺化的功能比較表與策略建議</div>
+    <p>做產品規劃或市場調查時，把競品的官網介紹、功能頁面或規格文件交給 Claude Code，它會自動擷取各產品的核心功能、定價方案、目標客群，產出一份結構化的比較矩陣表（CSV 與 HTML），並附上競爭優劣勢分析與差異化策略建議。適合 PM、行銷人員、創業團隊在提案或策略會議前快速準備素材。</p>
+    <div class="prompt-box">我正在做競品分析。以下是 3-5 個競爭產品的資料 [貼上各產品的功能介紹文字或截圖文字]。請幫我：1. 從每個產品中擷取「核心功能」「定價」「目標用戶」「獨特賣點」「缺點或用戶常見抱怨」五個維度 2. 產出 comparison_matrix.csv 比較矩陣，欄位為產品名 × 維度 3. 產出 comparison_matrix.html 含有顏色標記的視覺化表格（綠色=優勢、紅色=劣勢、黃色=持平）4. 撰寫 500 字的「競爭態勢分析」包含三個段落：市場共同趨勢、各產品定位差異、我方可切入的差異化機會 5. 最後給出 3 條具體可執行的產品策略建議</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習：需理解 AST 解析、檔案系統遞迴、多維度分析邏輯，學會讓 AI 做系統性工程判斷
+      中階挑戰：需引導 Claude 做多維度資訊擷取、交叉比對與策略推理，訓練結構化思維
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="智慧資料管線建構師 資料分析">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型腳手架建構器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/19</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">8/20</span>
     </div>
-    <h2>智慧資料管線建構師</h2>
-    <div class="tagline">用自然語言描述資料流需求，自動生成完整 ETL 管線與視覺化儀表板</div>
-    <p>告訴 Claude Code 你的資料來源（CSV、API、資料庫）、想要的轉換邏輯與最終報表需求，它會幫你生成完整的 ETL pipeline：包含資料擷取腳本、清洗與轉換邏輯、SQLite 儲存層、以及用 Streamlit 搭建的互動式儀表板。支援排程執行與異常告警。特別適合資料分析師快速原型化報表系統、新創團隊建立第一版數據基礎設施。</p>
-    <div class="prompt-box">我要建立一套完整的資料管線系統，請按以下架構實作：1. 建立 data_pipeline/ 專案結構：├── extractors/（每個資料來源一個模組）├── transformers/（清洗與轉換邏輯）├── loaders/（寫入 SQLite）├── dashboard/（Streamlit 應用）├── scheduler.py ├── config.yaml └── tests/ 2. 在 config.yaml 定義三個示範資料來源：(a) 一個 CSV 銷售資料 (b) 一個 REST API 回傳的匯率資料 (c) 一個 JSON 格式的使用者行為日誌 3. transformers 要包含：缺失值填補、欄位型別轉換、跨來源 join、衍生指標計算（如月營收成長率、用戶留存率）4. 建立 SQLite schema 並寫入轉換後資料 5. dashboard/ 用 Streamlit 做四個頁面：總覽 KPI 卡片、銷售趨勢折線圖、匯率影響分析、用戶漏斗圖 6. scheduler.py 用 APScheduler 實現每小時執行一次，失敗時寫入 error_log.json 並可接 webhook 告警 7. tests/ 裡為每個 transformer 寫單元測試 8. 附完整 README 含架構圖（ASCII）與部署步驟</div>
+    <h2>全端原型腳手架建構器</h2>
+    <div class="tagline">用自然語言描述你的 App 想法，一鍵產出前後端完整可執行的專案骨架</div>
+    <p>告訴 Claude Code 你想做什麼應用（例如「一個讓團隊投票午餐地點的 App」），它會幫你產出完整的專案結構：React 前端含路由與元件、Express/FastAPI 後端含 API 端點、SQLite 資料庫 schema、Docker Compose 設定檔、README 使用說明，以及基本的 CRUD 功能實作。產出的程式碼可直接 npm start 或 docker-compose up 跑起來，讓你在幾分鐘內從零到可展示的原型。</p>
+    <div class="prompt-box">我想快速建立一個全端 Web 應用原型。App 概念：[描述你的應用想法，例如：一個讓小團隊匿名投票選午餐餐廳的工具，支援新增餐廳、發起投票、即時看結果]。請幫我：1. 設計資料庫 schema（使用 SQLite），產出 db/schema.sql 2. 建立後端 API（用 Node.js + Express）：包含所有 CRUD 端點，放在 server/ 資料夾，含 server/routes/、server/models/、server/index.js 3. 建立前端（用 React + Vite）：包含首頁、列表頁、投票頁三個頁面，放在 client/ 資料夾，使用簡潔的 CSS 4. 撰寫 docker-compose.yml 讓前後端可一鍵啟動 5. 撰寫 README.md 含安裝步驟、API 文件、專案架構圖（用 ASCII）6. 加入 .env.example 與基本錯誤處理 7. 確保所有程式碼可直接執行，不需額外修改</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰：涵蓋軟體架構設計、多模組協作、資料庫建模、前端視覺化與排程系統，全面考驗工程整合能力
+      高階綜合挑戰：涵蓋全端架構設計、多檔案協作產出、DevOps 設定，考驗對 Claude Code 的多步驟指令編排能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -779,7 +780,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">141</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/19</span>
+    </div>
+    <h2>每日晨間簡報產生器</h2>
+    <div class="tagline">自動彙整 RSS、天氣、待辦事項，產出一頁個人化晨間摘要</div>
+    <p>提供你關注的新聞來源清單、所在城市、今日行事曆，Claude Code 會幫你生成一份精美的 HTML 單頁晨間簡報，包含產業頭條摘要、天氣穿搭建議、今日待辦優先排序。每天早上花 30 秒掃一眼就掌握全局，適合忙碌的上班族與自由工作者。</p>
+    <div class="prompt-box">我想建立一個每日晨間簡報產生器。請幫我：1. 建立 morning_briefing/ 資料夾，裡面有 config.json（放我的 RSS 來源、城市、行事曆連結）2. 寫一個 Python 腳本 generate.py，能抓取 RSS 前 5 則標題並各寫 2 句摘要、用 OpenWeatherMap API 拿天氣資料、讀取 today_tasks.txt 裡的待辦清單 3. 產出 briefing.html，用乾淨的排版呈現三個區塊：📰 今日頭條、🌤 天氣與建議、✅ 優先待辦 4. 加入 CSS 讓它在手機瀏覽器上也好看 5. 附上 README 說明如何設定 cron job 每天早上七點自動執行</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階者能體驗 API 串接與 HTML 模板輸出，完成後馬上融入每日生活流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="程式碼審查報告引擎 程式原型">
+    <div class="card-header">
+      <span class="badge">142</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">8/19</span>
+    </div>
+    <h2>程式碼審查報告引擎</h2>
+    <div class="tagline">掃描整個 Git 倉庫，自動產出程式碼品質審查報告與重構建議</div>
+    <p>將任何 GitHub 專案 clone 下來交給 Claude Code 分析，它會逐檔掃描程式碼風格、潛在 bug、安全漏洞、重複邏輯，最終產出一份結構化的 Markdown 審查報告，包含嚴重度分級、具體修改建議與重構前後對照。適合 Tech Lead 做 code review、接手遺留專案前快速評估技術債。</p>
+    <div class="prompt-box">請幫我建立一個程式碼審查報告系統：1. 建立 code_reviewer/ 專案，包含 reviewer.py 主程式與 templates/ 資料夾 2. 讓腳本接受一個資料夾路徑參數，遞迴掃描所有 .py / .js / .ts 檔案 3. 對每個檔案分析以下維度：(a) 命名規範一致性 (b) 函式長度與複雜度 (c) 未處理的例外 (d) 硬編碼密鑰或敏感資訊 (e) 重複程式碼片段 4. 每個問題標記嚴重度（🔴 高 🟡 中 🟢 低）並給出具體重構建議與修改後程式碼範例 5. 彙整成 review_report.md，開頭有總覽儀表板（各嚴重度數量統計圖用 ASCII art 呈現）6. 另外產出 fixes.patch 讓使用者可直接 git apply 修復高嚴重度問題</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習：需理解 AST 解析、檔案系統遞迴、多維度分析邏輯，學會讓 AI 做系統性工程判斷
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="智慧資料管線建構師 資料分析">
+    <div class="card-header">
+      <span class="badge">143</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/19</span>
+    </div>
+    <h2>智慧資料管線建構師</h2>
+    <div class="tagline">用自然語言描述資料流需求，自動生成完整 ETL 管線與視覺化儀表板</div>
+    <p>告訴 Claude Code 你的資料來源（CSV、API、資料庫）、想要的轉換邏輯與最終報表需求，它會幫你生成完整的 ETL pipeline：包含資料擷取腳本、清洗與轉換邏輯、SQLite 儲存層、以及用 Streamlit 搭建的互動式儀表板。支援排程執行與異常告警。特別適合資料分析師快速原型化報表系統、新創團隊建立第一版數據基礎設施。</p>
+    <div class="prompt-box">我要建立一套完整的資料管線系統，請按以下架構實作：1. 建立 data_pipeline/ 專案結構：├── extractors/（每個資料來源一個模組）├── transformers/（清洗與轉換邏輯）├── loaders/（寫入 SQLite）├── dashboard/（Streamlit 應用）├── scheduler.py ├── config.yaml └── tests/ 2. 在 config.yaml 定義三個示範資料來源：(a) 一個 CSV 銷售資料 (b) 一個 REST API 回傳的匯率資料 (c) 一個 JSON 格式的使用者行為日誌 3. transformers 要包含：缺失值填補、欄位型別轉換、跨來源 join、衍生指標計算（如月營收成長率、用戶留存率）4. 建立 SQLite schema 並寫入轉換後資料 5. dashboard/ 用 Streamlit 做四個頁面：總覽 KPI 卡片、銷售趨勢折線圖、匯率影響分析、用戶漏斗圖 6. scheduler.py 用 APScheduler 實現每小時執行一次，失敗時寫入 error_log.json 並可接 webhook 告警 7. tests/ 裡為每個 transformer 寫單元測試 8. 附完整 README 含架構圖（ASCII）與部署步驟</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰：涵蓋軟體架構設計、多模組協作、資料庫建模、前端視覺化與排程系統，全面考驗工程整合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/best-practices" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">138</span>
       <span class="tag level-1">初階</span>
