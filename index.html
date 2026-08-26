@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/25</span>
-      <span>📚 累計收錄：<span id="totalCount">161</span> 個專案</span>
+      <span>📅 最後更新：2026/08/26</span>
+      <span>📚 累計收錄：<span id="totalCount">164</span> 個專案</span>
     </div>
   </header>
 
@@ -664,82 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 161 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 164 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/25) ============ -->
+  <!-- ============ 今日新增 (8/26) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/25
+    今日新增 · 2026/08/26
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="個人財務週報分析器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
-      <span class="tag">生產力</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">30 分鐘</span>
-      <span class="date-tag">8/25</span>
+      <span class="date-tag">8/26</span>
     </div>
-    <h2>每日晨間簡報產生器</h2>
-    <div class="tagline">自動彙整多個 RSS 來源與備忘錄，產出個人化的每日晨間摘要電子報</div>
-    <p>把你關注的新聞 RSS 連結、昨日待辦清單、行事曆摘要丟給 Claude Code，它會自動抓取內容、分類整理，產出一份排版精美的 HTML 晨間簡報。適合主管、創業者、或任何想在早餐時快速掌握資訊全貌的人，產出可直接用瀏覽器開啟或寄信給自己。</p>
-    <div class="prompt-box">我想做一個每日晨間簡報產生器。請幫我：1. 建立 morning_briefing/ 資料夾，裡面放 config.json（讓我填入 RSS 網址清單與個人備忘錄）2. 寫一支 Python 腳本 generate.py，讀取 config.json 中的 RSS feed（用 feedparser），抓取每個來源最新 3 則標題與摘要 3. 把所有內容分成「科技」「商業」「生活」三大區塊，加上我在 config.json 寫的今日待辦事項區 4. 輸出成 briefing.html，用乾淨的電子報排版風格（淺色背景、卡片式佈局、響應式設計）5. 在終端顯示純文字版摘要。請先產出範例 config.json 讓我能快速修改填入自己的來源。</div>
+    <h2>個人財務週報分析器</h2>
+    <div class="tagline">把銀行帳單 CSV 丟進去，自動產出圖文並茂的每週花費分析報告</div>
+    <p>將銀行或信用卡匯出的 CSV 帳單交給 Claude Code，它會自動分類消費（飲食、交通、娛樂等），計算各類佔比，產出含圓餅圖與趨勢折線圖的 HTML 週報，還會附上省錢建議。適合想掌握開銷卻懶得記帳的上班族。</p>
+    <div class="prompt-box">這份 CSV [拖曳檔案] 是我這個月的信用卡帳單。請幫我：1. 自動辨識每筆消費並歸類為「飲食/交通/娛樂/購物/訂閱/其他」六大類 2. 按週切分，計算每週各類消費金額與佔比 3. 產出 report.html，包含：(a) 每週消費圓餅圖 (b) 四週趨勢折線圖 (c) 前五大單筆消費清單 (d) 三條具體省錢建議 4. 另存 summary.csv 方便我追蹤歷史紀錄。請用 Chart.js 畫圖，HTML 要支援手機瀏覽。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者學會用 Claude Code 串接外部資料源與產出格式化 HTML，立刻能融入日常流程
+      初階即可完成，體驗 Claude 解析結構化資料與產出視覺化報表的能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料故事儀表板 資料分析">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件自動產生站 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">60 分鐘</span>
-      <span class="date-tag">8/25</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">8/26</span>
     </div>
-    <h2>互動式資料故事儀表板</h2>
-    <div class="tagline">上傳 CSV 資料集，自動產出有敘事脈絡的互動式網頁圖表儀表板</div>
-    <p>給 Claude Code 一份 CSV（銷售數據、問卷結果、運動紀錄等），它會自動分析欄位關係、找出趨勢與異常值，產出一個包含多張互動圖表的單頁網頁儀表板。每張圖表附帶自動撰寫的洞察文字，像資料記者一樣說故事。適合行銷人員做月報、研究生呈現實驗結果、PM 向老闆匯報 KPI。</p>
-    <div class="prompt-box">這份 CSV [拖曳檔案] 是我的資料集。請幫我做一個互動式資料故事儀表板：1. 先分析所有欄位，列出資料概覽（筆數、欄位型態、缺值比例）2. 自動辨識數值欄與分類欄，選擇最適合的 3-5 張圖表類型（折線圖、長條圖、散佈圖、圓餅圖等）3. 用 HTML + Chart.js 建立單一 dashboard.html 檔案，包含：頂部摘要卡片（關鍵數字）、中間互動圖表區（可 hover 看數值）、每張圖下方自動產生 2-3 句洞察分析文字 4. 加入篩選器：至少一個下拉選單可切換不同分類維度的檢視 5. 設計風格請用深色主題、卡片圓角、適當間距，要能直接截圖放進簡報 6. 另外產出 insights.md 整理所有發現的趨勢與建議行動。</div>
+    <h2>API 文件自動產生站</h2>
+    <div class="tagline">掃描專案原始碼，自動產出美觀可搜尋的 API 參考文件靜態網站</div>
+    <p>指定一個包含 Python、TypeScript 或 Go 原始碼的資料夾，Claude Code 會解析所有函式、類別、型別定義與註解，自動產出結構完整的 API 參考文件。產出物是一個可部署的靜態網站，支援全文搜尋、深色模式切換、依模組分類瀏覽，並自動標記缺少 docstring 的函式供開發者補齊。適合中小型團隊快速建立內部文件。</p>
+    <div class="prompt-box">請掃描 ./src 資料夾中所有原始碼檔案，幫我建立完整的 API 文件網站：1. 解析每個模組的所有公開函式、類別、方法，擷取參數型別、回傳值與 docstring 2. 建立以下資料夾結構：docs/index.html（首頁含模組總覽）、docs/modules/[模組名].html（各模組詳細頁）、docs/search.html（全文搜尋頁）3. 使用 Tailwind CSS 做排版，支援深色/淺色模式切換 4. 每個函式區塊包含：函式簽名、參數表格、回傳值說明、使用範例 5. 產出 docs/missing.md 列出所有缺少文件註解的函式清單 6. 加入 lunr.js 實作客戶端全文搜尋功能</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰在於讓 Claude 同時處理資料分析邏輯與前端互動設計，學會多步驟工作流程的提示技巧
+      中階挑戰：需理解 AST 解析概念、多頁靜態網站架構與前端互動功能整合
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時協作看板系統 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="智慧合約審計報告器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/25</span>
+      <span class="date-tag">8/26</span>
     </div>
-    <h2>全端即時協作看板系統</h2>
-    <div class="tagline">從零搭建支援多人即時同步、拖曳排序與標籤篩選的 Kanban 專案管理看板</div>
-    <p>請 Claude Code 建立一個完整的 Kanban 看板應用：後端用 Node.js + Express + Socket.IO 處理即時同步，前端用 React + dnd-kit 實現拖曳卡片在不同欄位間移動，資料存在 SQLite。支援建立多個看板、新增／編輯／刪除任務卡、指派標籤與顏色、到期日提醒、以及多人同時操作時的即時畫面更新。適合小團隊取代 Trello，或作為學習全端即時應用架構的練手專案。</p>
-    <div class="prompt-box">請幫我從零建立一個即時協作 Kanban 看板系統，完整專案結構如下：
-
-後端（server/）：1. 用 Node.js + Express 建 REST API：POST /boards、GET /boards/:id、POST /cards、PATCH /cards/:id（更新欄位位置與排序）、DELETE /cards/:id 2. 整合 Socket.IO，當任何使用者移動或編輯卡片時，廣播更新給同一看板的所有連線者 3. 用 better-sqlite3 存資料，schema 包含 boards、columns、cards、labels 四張表 4. cards 表要有 title、description、column_id、position（排序用浮點數）、due_date、color 欄位
-
-前端（client/）：1. React + Vite，用 @dnd-kit/core 和 @dnd-kit/sortable 實現跨欄拖曳 2. 左側邊欄顯示看板列表，主區域顯示目前看板的欄位與卡片 3. 點擊卡片彈出 Modal 可編輯標題、描述、標籤、到期日 4. 頂部工具列有標籤篩選下拉與搜尋框 5. 用 CSS Modules 做樣式，配色參考 Linear 的簡約風格 6. 整合 socket.io-client，收到廣播時即時更新畫面不需重整
-
-請建好 package.json、提供 npm run dev 一鍵啟動前後端的設定，並在 README.md 寫清楚安裝與啟動步驟。</div>
+    <h2>智慧合約審計報告器</h2>
+    <div class="tagline">上傳 Solidity 智慧合約，自動掃描漏洞並產出專業級安全審計報告</div>
+    <p>將 Solidity 智慧合約原始碼交給 Claude Code，它會逐行分析潛在安全風險，包括重入攻擊、整數溢位、權限控管缺失、Gas 優化問題等，依嚴重程度分級（Critical/High/Medium/Low/Informational），產出一份包含漏洞說明、攻擊情境模擬、修復建議與修正後程式碼的完整 PDF 審計報告。同時產生一個互動式 HTML 儀表板，可視覺化檢視合約的函式呼叫關係圖與風險熱點圖。適合 Web3 開發團隊在部署前做內部安全審查。</p>
+    <div class="prompt-box">請審計 ./contracts 資料夾中所有 .sol 檔案，執行完整安全分析：1. 建立合約繼承關係圖與函式呼叫流程圖（用 Mermaid 語法）2. 逐一檢查以下漏洞類型：(a) 重入攻擊 (b) 整數溢位/下溢 (c) 未檢查外部呼叫回傳值 (d) tx.origin 濫用 (e) 權限控管缺失 (f) 前端運行攻擊風險 (g) Gas 優化問題 (h) 未鎖定編譯器版本 3. 每個發現包含：風險等級、影響範圍、攻擊腳本範例（用 Hardhat 測試格式）、修復前後程式碼對比 4. 產出結構：audit/report.html（互動式儀表板含風險熱點圖）、audit/report.md（完整文字報告）、audit/fixes/ 資料夾放所有建議修正後的合約檔案、audit/tests/ 放驗證攻擊的測試腳本 5. 儀表板用 D3.js 畫合約函式關係圖，節點依風險程度著色 6. 最終摘要包含整體安全評分（0-100）與是否建議部署的結論</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰涵蓋全端架構設計、WebSocket 即時通訊、拖曳排序演算法與狀態同步，是綜合能力的最佳試煉
+      高階挑戰：需整合智慧合約安全知識、複雜程式碼分析邏輯、測試腳本生成與多格式專業報告產出
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/security" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -791,7 +786,67 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議紀錄摘要轉換器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">159</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/25</span>
+    </div>
+    <h2>每日晨間簡報產生器</h2>
+    <div class="tagline">自動彙整多個 RSS 來源與備忘錄，產出個人化的每日晨間摘要電子報</div>
+    <p>把你關注的新聞 RSS 連結、昨日待辦清單、行事曆摘要丟給 Claude Code，它會自動抓取內容、分類整理，產出一份排版精美的 HTML 晨間簡報。適合主管、創業者、或任何想在早餐時快速掌握資訊全貌的人，產出可直接用瀏覽器開啟或寄信給自己。</p>
+    <div class="prompt-box">我想做一個每日晨間簡報產生器。請幫我：1. 建立 morning_briefing/ 資料夾，裡面放 config.json（讓我填入 RSS 網址清單與個人備忘錄）2. 寫一支 Python 腳本 generate.py，讀取 config.json 中的 RSS feed（用 feedparser），抓取每個來源最新 3 則標題與摘要 3. 把所有內容分成「科技」「商業」「生活」三大區塊，加上我在 config.json 寫的今日待辦事項區 4. 輸出成 briefing.html，用乾淨的電子報排版風格（淺色背景、卡片式佈局、響應式設計）5. 在終端顯示純文字版摘要。請先產出範例 config.json 讓我能快速修改填入自己的來源。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者學會用 Claude Code 串接外部資料源與產出格式化 HTML，立刻能融入日常流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料故事儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">160</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">8/25</span>
+    </div>
+    <h2>互動式資料故事儀表板</h2>
+    <div class="tagline">上傳 CSV 資料集，自動產出有敘事脈絡的互動式網頁圖表儀表板</div>
+    <p>給 Claude Code 一份 CSV（銷售數據、問卷結果、運動紀錄等），它會自動分析欄位關係、找出趨勢與異常值，產出一個包含多張互動圖表的單頁網頁儀表板。每張圖表附帶自動撰寫的洞察文字，像資料記者一樣說故事。適合行銷人員做月報、研究生呈現實驗結果、PM 向老闆匯報 KPI。</p>
+    <div class="prompt-box">這份 CSV [拖曳檔案] 是我的資料集。請幫我做一個互動式資料故事儀表板：1. 先分析所有欄位，列出資料概覽（筆數、欄位型態、缺值比例）2. 自動辨識數值欄與分類欄，選擇最適合的 3-5 張圖表類型（折線圖、長條圖、散佈圖、圓餅圖等）3. 用 HTML + Chart.js 建立單一 dashboard.html 檔案，包含：頂部摘要卡片（關鍵數字）、中間互動圖表區（可 hover 看數值）、每張圖下方自動產生 2-3 句洞察分析文字 4. 加入篩選器：至少一個下拉選單可切換不同分類維度的檢視 5. 設計風格請用深色主題、卡片圓角、適當間距，要能直接截圖放進簡報 6. 另外產出 insights.md 整理所有發現的趨勢與建議行動。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰在於讓 Claude 同時處理資料分析邏輯與前端互動設計，學會多步驟工作流程的提示技巧
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時協作看板系統 程式原型">
+    <div class="card-header">
+      <span class="badge">161</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/25</span>
+    </div>
+    <h2>全端即時協作看板系統</h2>
+    <div class="tagline">從零搭建支援多人即時同步、拖曳排序與標籤篩選的 Kanban 專案管理看板</div>
+    <p>請 Claude Code 建立一個完整的 Kanban 看板應用：後端用 Node.js + Express + Socket.IO 處理即時同步，前端用 React + dnd-kit 實現拖曳卡片在不同欄位間移動，資料存在 SQLite。支援建立多個看板、新增／編輯／刪除任務卡、指派標籤與顏色、到期日提醒、以及多人同時操作時的即時畫面更新。適合小團隊取代 Trello，或作為學習全端即時應用架構的練手專案。</p>
+    <div class="prompt-box">請幫我從零建立一個即時協作 Kanban 看板系統，完整專案結構如下：
+
+後端（server/）：1. 用 Node.js + Express 建 REST API：POST /boards、GET /boards/:id、POST /cards、PATCH /cards/:id（更新欄位位置與排序）、DELETE /cards/:id 2. 整合 Socket.IO，當任何使用者移動或編輯卡片時，廣播更新給同一看板的所有連線者 3. 用 better-sqlite3 存資料，schema 包含 boards、columns、cards、labels 四張表 4. cards 表要有 title、description、column_id、position（排序用浮點數）、due_date、color 欄位
+
+前端（client/）：1. React + Vite，用 @dnd-kit/core 和 @dnd-kit/sortable 實現跨欄拖曳 2. 左側邊欄顯示看板列表，主區域顯示目前看板的欄位與卡片 3. 點擊卡片彈出 Modal 可編輯標題、描述、標籤、到期日 4. 頂部工具列有標籤篩選下拉與搜尋框 5. 用 CSS Modules 做樣式，配色參考 Linear 的簡約風格 6. 整合 socket.io-client，收到廣播時即時更新畫面不需重整
+
+請建好 package.json、提供 npm run dev 一鍵啟動前後端的設定，並在 README.md 寫清楚安裝與啟動步驟。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰涵蓋全端架構設計、WebSocket 即時通訊、拖曳排序演算法與狀態同步，是綜合能力的最佳試煉
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議紀錄摘要轉換器 生產力">
     <div class="card-header">
       <span class="badge">156</span>
       <span class="tag level-1">初階</span>
