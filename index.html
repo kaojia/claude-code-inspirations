@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/27</span>
-      <span>📚 累計收錄：<span id="totalCount">167</span> 個專案</span>
+      <span>📅 最後更新：2026/08/28</span>
+      <span>📚 累計收錄：<span id="totalCount">170</span> 個專案</span>
     </div>
   </header>
 
@@ -664,103 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 167 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 170 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/27) ============ -->
+  <!-- ============ 今日新增 (8/28) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/27
+    今日新增 · 2026/08/28
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="讀書筆記結構化整理器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日站會摘要產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">8/27</span>
+      <span class="date-tag">8/28</span>
     </div>
-    <h2>讀書筆記結構化整理器</h2>
-    <div class="tagline">把零散的讀書筆記自動整理成系統化的知識樹與重點摘要</div>
-    <p>把你散落在各處的讀書筆記、課堂隨手記、螢幕截圖文字丟給 Claude Code，它會自動辨識主題、歸類分群，產出一份漂亮的 Markdown 知識樹大綱，加上每個主題的三句話精華摘要。最後輸出一個可以直接放進 Obsidian 或 Notion 的 .md 檔案，適合學期末整理、寫論文前的資料彙整。</p>
-    <div class="prompt-box">我有以下讀書筆記 [貼上筆記或拖曳 .txt 檔案]。請幫我：1. 辨識出所有獨立主題並建立階層式知識樹（最多三層）2. 每個葉節點附上三句話摘要與一個關鍵例子 3. 標記筆記中互相矛盾或重複的段落 4. 輸出 knowledge_tree.md（含目錄連結，適合 Obsidian 使用）5. 額外產出 summary_table.csv 表格，欄位為：主題、核心概念、頁碼來源、重要程度（高中低）</div>
+    <h2>每日站會摘要產生器</h2>
+    <div class="tagline">把散亂的 Slack／Teams 訊息整理成結構化站會報告，省去每天早上手動彙整的麻煩</div>
+    <p>將團隊聊天紀錄或昨日工作日誌丟給 Claude Code，自動產出「昨日完成／今日計畫／阻礙事項」三欄式站會摘要，並輸出 Markdown 與 HTML 兩種格式。適合 Scrum Master、小組長、遠端團隊每天開會前快速準備。</p>
+    <div class="prompt-box">以下是我們團隊昨天在 Slack 的聊天紀錄 [貼上文字或拖曳 .txt]。請幫我：1. 辨識每位成員提到的工作項目，按人分類 2. 每人整理成三欄：✅ 昨日完成、📋 今日計畫、🚧 阻礙事項 3. 如果訊息中有提到 deadline 或風險，額外標註在「⚠️ 注意事項」區塊 4. 輸出 standup_summary.md（Markdown 表格格式）和 standup_summary.html（可直接在瀏覽器開啟的美化版本） 5. 最後附上一段 30 字以內的「今日團隊重點」總結句</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最適合：只需貼上文字就能體驗 Claude 的分類歸納與格式化輸出能力
+      初階入門：體驗 Claude 的文本分類與結構化輸出能力，完成後可直接用於真實工作流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工作台 內容創作">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析台 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">8/27</span>
+      <span class="date-tag">8/28</span>
     </div>
-    <h2>多語系行銷文案工作台</h2>
-    <div class="tagline">輸入一個產品資訊，同時產出五種語言、三種風格的行銷素材</div>
-    <p>給 Claude Code 你的產品名稱、功能列表與目標受眾，它會一次產出繁中、簡中、英文、日文、韓文五種語言版本的行銷文案，每種語言各有正式版、活潑版、極簡版三種風格。輸出包含一個 HTML 預覽頁面可以直接比較各版本，還有分開的 .txt 檔方便直接複製到社群媒體。特別適合跨境電商、SaaS 產品出海的團隊。</p>
-    <div class="prompt-box">我的產品資訊如下：
-- 產品名稱：[填入]
-- 核心功能：[列出 3-5 點]
-- 目標客群：[描述]
-- 品牌調性：[填入]
-
-請幫我建立 marketing_copy/ 資料夾，結構如下：
-├── preview.html（所有版本並列比較的響應式網頁）
-├── zh-tw/（formal.txt, casual.txt, minimal.txt）
-├── zh-cn/
-├── en/
-├── ja/
-├── ko/
-
-每份文案包含：標題（15 字內）、副標題（30 字內）、三段賣點描述、一個 CTA 按鈕文字。preview.html 要有語言切換 tab 和風格切換按鈕，使用 Tailwind CSS。</div>
+    <h2>競品功能矩陣分析台</h2>
+    <div class="tagline">輸入多個競品網址或產品文件，自動產出功能比較矩陣與策略建議報告</div>
+    <p>把 3-5 個競品的官網介紹、定價頁或產品文件丟給 Claude Code，它會爬取內容並交叉比對，產出功能矩陣表格、定價比較圖表資料、SWOT 分析以及策略建議。PM、行銷人員、創業者在做市場調研時特別實用，省下數天手動整理的時間。</p>
+    <div class="prompt-box">我正在做競品分析，以下是 4 個競爭產品的資料：[貼上各產品的功能頁文字或拖曳 PDF]。請幫我完成以下任務：1. 建立資料夾結構：competitor_analysis/data/、competitor_analysis/output/ 2. 從每份資料中抽取：核心功能列表、目標客群、定價方案、獨特賣點 3. 產出 feature_matrix.csv（橫軸為產品、縱軸為功能，用 ✅❌🔶 標示支援程度） 4. 產出 pricing_comparison.md（含表格與價格帶分析） 5. 為每個競品寫 SWOT 分析，存成 swot_{產品名}.md 6. 最後產出 strategy_report.md：包含市場缺口分析、我方產品的差異化建議、建議優先開發的 3 個功能 7. 所有檔案使用繁體中文</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習：涉及多檔案結構管理、HTML 前端產出與多語系一致性控制，學會批量內容生成
+      中階練習：涉及多文件交叉比對、結構化分析與策略推理，學會讓 Claude 處理複雜的多來源資訊整合
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="Git 倉庫健康度掃描儀 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端部落格引擎腳手架 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/27</span>
+      <span class="date-tag">8/28</span>
     </div>
-    <h2>Git 倉庫健康度掃描儀</h2>
-    <div class="tagline">自動分析整個 Git 專案的程式碼品質、依賴風險與技術債，產出視覺化報告</div>
-    <p>將 Claude Code 指向任何一個本地 Git 倉庫，它會深度掃描提交歷史、分支策略、程式碼複雜度、過期依賴套件、未處理的 TODO/FIXME、測試覆蓋率缺口，並產出一份包含互動圖表的 HTML 儀表板報告。報告涵蓋六大維度的健康評分雷達圖、熱點檔案排行、貢獻者活躍度時間軸，以及具體的改善行動清單。適合技術主管做季度程式碼審查或接手新專案時快速掌握全貌。</p>
-    <div class="prompt-box">請分析這個 Git 倉庫 [拖曳資料夾或輸入路徑]，執行以下完整掃描並建立 repo_health_report/ 資料夾：
-
-1. **提交分析**：用 git log 統計提交頻率趨勢、各貢獻者的活躍度、平均 PR 大小
-2. **程式碼品質**：掃描所有原始碼計算圈複雜度、找出超過 200 行的函式、重複程式碼片段
-3. **依賴風險**：解析 package.json / requirements.txt / go.mod 等，標記超過一年未更新的套件
-4. **技術債標記**：搜尋所有 TODO、FIXME、HACK 註解並依嚴重度分類
-5. **分支衛生**：列出已合併但未刪除的分支、超過 90 天未更新的分支
-6. **產出報告**：
-   ├── index.html（互動式儀表板，含 Chart.js 雷達圖、折線圖、排行榜）
-   ├── detailed_findings.md（完整發現與改善建議）
-   ├── action_items.csv（優先級、負責人建議、預估工時）
-   └── scripts/scan.sh（可重複執行的掃描腳本）
-
-雷達圖六軸為：提交活躍度、程式碼複雜度、依賴新鮮度、技術債密度、分支衛生、文件完整度，各項 0-100 分。</div>
+    <h2>全端部落格引擎腳手架</h2>
+    <div class="tagline">一句指令搭建含前後端、Markdown 編輯器、SEO 最佳化的完整部落格系統原型</div>
+    <p>讓 Claude Code 從零建立一個完整的靜態部落格引擎：前端用 Astro 框架渲染頁面，支援 Markdown 撰文與即時預覽，自動產生 sitemap.xml 與 Open Graph 標籤做 SEO，內建深色模式切換、文章分類標籤系統、RSS 訂閱。產出可直接部署到 Netlify 或 Vercel 的生產級專案。</p>
+    <div class="prompt-box">請幫我用 Astro 框架從零建立一個個人部落格系統，要求如下：1. 初始化 Astro 專案，安裝必要依賴（@astrojs/mdx, @astrojs/sitemap, astro-icon） 2. 建立頁面結構：首頁（文章列表+分頁）、文章頁（Markdown 渲染+目錄側欄+預估閱讀時間）、關於頁、標籤頁（按 tag 篩選） 3. 建立 src/content/blog/ 資料夾並放入 3 篇範例 .mdx 文章，含 frontmatter（title, date, tags, description, coverImage） 4. 實作共用元件：Header（含導覽列+深色模式切換）、Footer、ArticleCard、TagBadge、TableOfContents 5. 加入 SEO：每頁動態產生 <title>、meta description、Open Graph 標籤；自動生成 sitemap.xml 與 rss.xml 6. 樣式用 Tailwind CSS，支援 dark mode，響應式設計（手機/平板/桌面） 7. 加入 astro.config.mjs 的完整設定，包含 site URL 設定說明 8. 寫一份 README.md 包含：本地開發指令、資料夾結構說明、如何新增文章、部署到 Vercel 的步驟 9. 確保 npm run build 可以成功執行無錯誤</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰：需整合 Git CLI 操作、多語言程式碼解析、資料視覺化與 Shell 腳本生成，考驗系統級整合能力
+      高階挑戰：涵蓋框架設定、元件設計、內容管理、SEO 實作與部署流程，綜合考驗 Claude Code 的全端工程能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.astro.build/en/getting-started" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -814,7 +788,88 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="個人財務週報分析器 資料分析">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="讀書筆記結構化整理器 生產力">
+    <div class="card-header">
+      <span class="badge">165</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">8/27</span>
+    </div>
+    <h2>讀書筆記結構化整理器</h2>
+    <div class="tagline">把零散的讀書筆記自動整理成系統化的知識樹與重點摘要</div>
+    <p>把你散落在各處的讀書筆記、課堂隨手記、螢幕截圖文字丟給 Claude Code，它會自動辨識主題、歸類分群，產出一份漂亮的 Markdown 知識樹大綱，加上每個主題的三句話精華摘要。最後輸出一個可以直接放進 Obsidian 或 Notion 的 .md 檔案，適合學期末整理、寫論文前的資料彙整。</p>
+    <div class="prompt-box">我有以下讀書筆記 [貼上筆記或拖曳 .txt 檔案]。請幫我：1. 辨識出所有獨立主題並建立階層式知識樹（最多三層）2. 每個葉節點附上三句話摘要與一個關鍵例子 3. 標記筆記中互相矛盾或重複的段落 4. 輸出 knowledge_tree.md（含目錄連結，適合 Obsidian 使用）5. 額外產出 summary_table.csv 表格，欄位為：主題、核心概念、頁碼來源、重要程度（高中低）</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最適合：只需貼上文字就能體驗 Claude 的分類歸納與格式化輸出能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工作台 內容創作">
+    <div class="card-header">
+      <span class="badge">166</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">8/27</span>
+    </div>
+    <h2>多語系行銷文案工作台</h2>
+    <div class="tagline">輸入一個產品資訊，同時產出五種語言、三種風格的行銷素材</div>
+    <p>給 Claude Code 你的產品名稱、功能列表與目標受眾，它會一次產出繁中、簡中、英文、日文、韓文五種語言版本的行銷文案，每種語言各有正式版、活潑版、極簡版三種風格。輸出包含一個 HTML 預覽頁面可以直接比較各版本，還有分開的 .txt 檔方便直接複製到社群媒體。特別適合跨境電商、SaaS 產品出海的團隊。</p>
+    <div class="prompt-box">我的產品資訊如下：
+- 產品名稱：[填入]
+- 核心功能：[列出 3-5 點]
+- 目標客群：[描述]
+- 品牌調性：[填入]
+
+請幫我建立 marketing_copy/ 資料夾，結構如下：
+├── preview.html（所有版本並列比較的響應式網頁）
+├── zh-tw/（formal.txt, casual.txt, minimal.txt）
+├── zh-cn/
+├── en/
+├── ja/
+├── ko/
+
+每份文案包含：標題（15 字內）、副標題（30 字內）、三段賣點描述、一個 CTA 按鈕文字。preview.html 要有語言切換 tab 和風格切換按鈕，使用 Tailwind CSS。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習：涉及多檔案結構管理、HTML 前端產出與多語系一致性控制，學會批量內容生成
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="Git 倉庫健康度掃描儀 程式原型">
+    <div class="card-header">
+      <span class="badge">167</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/27</span>
+    </div>
+    <h2>Git 倉庫健康度掃描儀</h2>
+    <div class="tagline">自動分析整個 Git 專案的程式碼品質、依賴風險與技術債，產出視覺化報告</div>
+    <p>將 Claude Code 指向任何一個本地 Git 倉庫，它會深度掃描提交歷史、分支策略、程式碼複雜度、過期依賴套件、未處理的 TODO/FIXME、測試覆蓋率缺口，並產出一份包含互動圖表的 HTML 儀表板報告。報告涵蓋六大維度的健康評分雷達圖、熱點檔案排行、貢獻者活躍度時間軸，以及具體的改善行動清單。適合技術主管做季度程式碼審查或接手新專案時快速掌握全貌。</p>
+    <div class="prompt-box">請分析這個 Git 倉庫 [拖曳資料夾或輸入路徑]，執行以下完整掃描並建立 repo_health_report/ 資料夾：
+
+1. **提交分析**：用 git log 統計提交頻率趨勢、各貢獻者的活躍度、平均 PR 大小
+2. **程式碼品質**：掃描所有原始碼計算圈複雜度、找出超過 200 行的函式、重複程式碼片段
+3. **依賴風險**：解析 package.json / requirements.txt / go.mod 等，標記超過一年未更新的套件
+4. **技術債標記**：搜尋所有 TODO、FIXME、HACK 註解並依嚴重度分類
+5. **分支衛生**：列出已合併但未刪除的分支、超過 90 天未更新的分支
+6. **產出報告**：
+   ├── index.html（互動式儀表板，含 Chart.js 雷達圖、折線圖、排行榜）
+   ├── detailed_findings.md（完整發現與改善建議）
+   ├── action_items.csv（優先級、負責人建議、預估工時）
+   └── scripts/scan.sh（可重複執行的掃描腳本）
+
+雷達圖六軸為：提交活躍度、程式碼複雜度、依賴新鮮度、技術債密度、分支衛生、文件完整度，各項 0-100 分。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰：需整合 Git CLI 操作、多語言程式碼解析、資料視覺化與 Shell 腳本生成，考驗系統級整合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code-overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="個人財務週報分析器 資料分析">
     <div class="card-header">
       <span class="badge">162</span>
       <span class="tag level-1">初階</span>
