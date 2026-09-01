@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/08/31</span>
-      <span>📚 累計收錄：<span id="totalCount">179</span> 個專案</span>
+      <span>📅 最後更新：2026/09/01</span>
+      <span>📚 累計收錄：<span id="totalCount">182</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 179 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 182 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (8/31) ============ -->
+  <!-- ============ 今日新增 (9/1) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/08/31
+    今日新增 · 2026/09/01
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="日常開銷語音記帳器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人履歷健檢優化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">30 分鐘</span>
-      <span class="date-tag">8/31</span>
+      <span class="date-tag">9/1</span>
     </div>
-    <h2>日常開銷語音記帳器</h2>
-    <div class="tagline">用一句自然語言描述花費，自動歸類並生成月度支出分析報表</div>
-    <p>把每天的消費用口語化方式輸入（例如「中午跟同事吃拉麵 280 元」），Claude Code 會自動解析金額、分類（餐飲/交通/娛樂等）、日期，存成結構化 JSON，並產出月度圓餅圖 HTML 報表和 CSV 帳本。適合懶得開記帳 App 但想掌握花費的人。</p>
-    <div class="prompt-box">請幫我建立一個本地記帳系統。需求如下：1. 建立 expenses/ 資料夾，內含 ledger.json 作為資料庫 2. 寫一個 add.py 腳本，接受自然語言輸入如「昨天搭捷運去信義區花了 35 元，晚上跟朋友吃燒肉 1200 元」，自動解析出日期、品項、金額、分類（餐飲/交通/娛樂/日用/醫療/其他）3. 寫一個 report.py 腳本，讀取 ledger.json 產出 report.html，包含本月總支出、各分類圓餅圖（用 Chart.js）、每日花費折線圖、前五大支出排行 4. 同時輸出 monthly_export.csv 方便匯入 Excel。請先幫我加入這五筆測試資料並產出範例報表。</div>
+    <h2>個人履歷健檢優化器</h2>
+    <div class="tagline">丟入你的履歷與目標職缺，自動產出改善建議與重寫版本</div>
+    <p>把現有履歷（PDF 或純文字）和想應徵的職缺描述一起丟給 Claude Code，它會逐段分析用詞強度、量化成果比例、關鍵字匹配度，產出一份詳細的健檢報告和針對該職缺優化後的新版履歷。正在轉職、準備面試季的人馬上能用。</p>
+    <div class="prompt-box">這是我的履歷 [貼上或拖曳檔案]，這是我想應徵的職缺描述 [貼上 JD]。請幫我：1. 逐段分析原始履歷的優缺點，標出弱動詞、缺乏量化的句子 2. 計算與職缺關鍵字的匹配率並列出遺漏的重要關鍵字 3. 重寫一份針對此職缺優化的新版履歷，強化 STAR 法則與數據佐證 4. 產出 resume_report.md（健檢報告）和 resume_optimized.md（新版履歷）兩個檔案</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習，體驗 Claude Code 同時處理檔案讀寫、資料解析與前端視覺化的整合能力
+      初階使用者可體驗 Claude 的文本分析與改寫能力，產出立刻可用於求職
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品社群輿情儀表板 資料分析">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="GitHub 倉庫文件產生器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">60 分鐘</span>
-      <span class="date-tag">8/31</span>
+      <span class="date-tag">9/1</span>
     </div>
-    <h2>競品社群輿情儀表板</h2>
-    <div class="tagline">爬取多個品牌的社群評論，用情緒分析產出視覺化競品比較報告</div>
-    <p>指定 2-3 個競品品牌名稱，Claude Code 會建立一套爬蟲＋分析管線：抓取 PTT、Dcard 等平台的相關討論文，進行情緒分析（正面/中性/負面）、關鍵字詞頻統計、話題熱度趨勢，最終產出一頁式互動儀表板 HTML。適合行銷人員、PM 做市場調查與競品分析簡報。</p>
-    <div class="prompt-box">請幫我建立一個競品社群輿情分析系統，目標資料夾結構為 competitor-monitor/。步驟：1. 建立 scraper.py，能接受品牌關鍵字清單（如 ["品牌A", "品牌B", "品牌C"]），模擬爬取社群貼文（先用模擬資料產生 100 筆含標題、內文、日期、來源平台的 JSON）2. 建立 analyzer.py，對每筆貼文做情緒評分（-1 到 1），萃取前 20 高頻關鍵字，計算每週討論聲量 3. 建立 dashboard.html 互動儀表板，使用 Chart.js 呈現：各品牌情緒分佈長條圖、聲量趨勢折線圖、關鍵字文字雲（用 canvas 繪製）、負面評論精選列表 4. 加入篩選器可切換品牌與時間區間 5. 提供 executive_summary.md 自動產出三段式摘要報告。請用模擬資料先跑一次完整流程並產出所有檔案。</div>
+    <h2>GitHub 倉庫文件產生器</h2>
+    <div class="tagline">掃描整個程式碼庫，自動產出完整的 README、API 文件與架構圖</div>
+    <p>將 Claude Code 指向一個本地或 clone 下來的 GitHub 專案，它會遞迴掃描資料夾結構、解析程式碼中的函式簽名與註解，自動產出專業級 README.md、API 參考文件、Mermaid 架構流程圖以及 CONTRIBUTING.md。適合開源維護者、接手他人專案需要快速理解架構的工程師。</p>
+    <div class="prompt-box">請掃描目前目錄下的整個程式碼庫，幫我完成以下工作：1. 分析資料夾結構並產出 tree 目錄圖 2. 讀取所有原始碼檔案，辨識主要模組、類別、公開函式及其參數與回傳值 3. 產出 README.md：含專案簡介、安裝步驟、使用範例、架構概覽（用 Mermaid 畫流程圖）4. 產出 docs/API.md：列出每個公開函式的用途、參數、範例呼叫 5. 產出 CONTRIBUTING.md：根據專案語言與工具鏈寫出貢獻指南 6. 如果發現缺少測試的函式，在 docs/TODO.md 列出建議補測試的清單</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：結合資料管線設計、情緒分析邏輯與前端互動視覺化，學會用 Claude Code 搭建完整的資料分析工作流
+      中階練習讓 Claude 進行多檔案讀取與跨模組分析，學會大規模程式碼理解與文件結構化產出
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="即時協作白板應用程式 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用程式 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">8/31</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">9/1</span>
     </div>
-    <h2>即時協作白板應用程式</h2>
-    <div class="tagline">支援多人同時繪圖、便利貼與投票的全端即時協作白板系統</div>
-    <p>用 Claude Code 從零搭建一套支援 WebSocket 即時同步的線上白板應用。功能包含：自由繪圖（多色畫筆/橡皮擦）、拖曳便利貼（可編輯文字與顏色）、圖形工具（矩形/圓形/箭頭）、便利貼投票機制、房間系統（產生分享連結邀請他人加入）、歷史回放功能。前端用 Canvas API + vanilla JS，後端用 Node.js + WebSocket，適合遠端團隊腦力激盪、設計思考工作坊、回顧會議使用。</p>
-    <div class="prompt-box">請幫我建立一個即時協作白板應用程式，專案名稱 collab-board/。完整需求：【後端】1. 用 Node.js + ws 套件建立 WebSocket 伺服器 2. 實作房間系統：POST /api/room 建立房間回傳 roomId，使用者用 roomId 加入 3. 所有繪圖操作（畫線、新增便利貼、移動物件）廣播給同房間其他人 4. 維護每個房間的完整操作歷史陣列，支援新加入者載入現有畫布狀態 5. 提供 GET /api/room/:id/replay 回傳操作歷史 JSON【前端】6. HTML5 Canvas 繪圖層：支援畫筆（可選 8 色 + 3 種粗細）、橡皮擦、矩形、圓形、箭頭工具 7. 便利貼層：雙擊新增便利貼，可拖曳、編輯文字、選擇 6 種顏色、刪除 8. 便利貼投票：每人對每張便利貼可投一票，顯示票數 9. 工具列 UI 含房間分享連結按鈕、目前在線人數顯示、匯出 PNG 按鈕 10. 歷史回放模式：滑桿控制播放速度重現繪圖過程【部署】11. 寫好 Dockerfile 與 docker-compose.yml 12. 附 README.md 含架構圖（用 ASCII art）和啟動指令。請先實作完整功能並確保本地可啟動測試。</div>
+    <h2>全端費用拆帳應用程式</h2>
+    <div class="tagline">多人出遊旅費自動拆帳，含前後端與即時結算最佳化演算法</div>
+    <p>用 Claude Code 從零建構一個全端拆帳 Web App：React 前端讓使用者建立群組、新增消費紀錄並標註分攤方式（均分、比例、指定金額），Node.js 後端處理計算邏輯並使用最小交易次數演算法算出最佳還款路徑，SQLite 儲存資料。最終部署為可分享連結，適合朋友聚餐、團體旅遊、室友共同開銷。</p>
+    <div class="prompt-box">請幫我從零建構一個多人拆帳 Web 應用程式，完整步驟如下：1. 建立專案資料夾 splitwise-clone/，前端用 React + Vite + TailwindCSS，後端用 Express.js + SQLite 2. 資料庫設計：groups、members、expenses、splits 四張表，含 schema.sql 3. 後端 API：POST /groups 建群組、POST /expenses 新增消費（支援均分/比例/自訂金額三種模式）、GET /groups/:id/balance 取得每人餘額、GET /groups/:id/settlements 用最小交易次數演算法算出最佳還款方案 4. 前端頁面：首頁建立/加入群組、群組明細頁顯示所有消費與即時餘額圖表（用 Recharts）、結算頁用箭頭圖顯示誰該付誰多少 5. 加入 PWA manifest 讓手機可加到主畫面 6. 寫 docker-compose.yml 方便一鍵部署 7. 附上 README 含截圖位置預留與使用說明</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階全端挑戰：涵蓋 WebSocket 即時通訊、Canvas 繪圖引擎、房間狀態管理與容器化部署，考驗 Claude Code 處理複雜多檔案架構的能力
+      高階專案整合前後端開發、資料庫設計、圖論演算法與部署配置，全面考驗架構能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -791,7 +792,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="日常開銷語音記帳器 生產力">
+    <div class="card-header">
+      <span class="badge">177</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">8/31</span>
+    </div>
+    <h2>日常開銷語音記帳器</h2>
+    <div class="tagline">用一句自然語言描述花費，自動歸類並生成月度支出分析報表</div>
+    <p>把每天的消費用口語化方式輸入（例如「中午跟同事吃拉麵 280 元」），Claude Code 會自動解析金額、分類（餐飲/交通/娛樂等）、日期，存成結構化 JSON，並產出月度圓餅圖 HTML 報表和 CSV 帳本。適合懶得開記帳 App 但想掌握花費的人。</p>
+    <div class="prompt-box">請幫我建立一個本地記帳系統。需求如下：1. 建立 expenses/ 資料夾，內含 ledger.json 作為資料庫 2. 寫一個 add.py 腳本，接受自然語言輸入如「昨天搭捷運去信義區花了 35 元，晚上跟朋友吃燒肉 1200 元」，自動解析出日期、品項、金額、分類（餐飲/交通/娛樂/日用/醫療/其他）3. 寫一個 report.py 腳本，讀取 ledger.json 產出 report.html，包含本月總支出、各分類圓餅圖（用 Chart.js）、每日花費折線圖、前五大支出排行 4. 同時輸出 monthly_export.csv 方便匯入 Excel。請先幫我加入這五筆測試資料並產出範例報表。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習，體驗 Claude Code 同時處理檔案讀寫、資料解析與前端視覺化的整合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品社群輿情儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">178</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">8/31</span>
+    </div>
+    <h2>競品社群輿情儀表板</h2>
+    <div class="tagline">爬取多個品牌的社群評論，用情緒分析產出視覺化競品比較報告</div>
+    <p>指定 2-3 個競品品牌名稱，Claude Code 會建立一套爬蟲＋分析管線：抓取 PTT、Dcard 等平台的相關討論文，進行情緒分析（正面/中性/負面）、關鍵字詞頻統計、話題熱度趨勢，最終產出一頁式互動儀表板 HTML。適合行銷人員、PM 做市場調查與競品分析簡報。</p>
+    <div class="prompt-box">請幫我建立一個競品社群輿情分析系統，目標資料夾結構為 competitor-monitor/。步驟：1. 建立 scraper.py，能接受品牌關鍵字清單（如 ["品牌A", "品牌B", "品牌C"]），模擬爬取社群貼文（先用模擬資料產生 100 筆含標題、內文、日期、來源平台的 JSON）2. 建立 analyzer.py，對每筆貼文做情緒評分（-1 到 1），萃取前 20 高頻關鍵字，計算每週討論聲量 3. 建立 dashboard.html 互動儀表板，使用 Chart.js 呈現：各品牌情緒分佈長條圖、聲量趨勢折線圖、關鍵字文字雲（用 canvas 繪製）、負面評論精選列表 4. 加入篩選器可切換品牌與時間區間 5. 提供 executive_summary.md 自動產出三段式摘要報告。請用模擬資料先跑一次完整流程並產出所有檔案。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：結合資料管線設計、情緒分析邏輯與前端互動視覺化，學會用 Claude Code 搭建完整的資料分析工作流
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="即時協作白板應用程式 程式原型">
+    <div class="card-header">
+      <span class="badge">179</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">8/31</span>
+    </div>
+    <h2>即時協作白板應用程式</h2>
+    <div class="tagline">支援多人同時繪圖、便利貼與投票的全端即時協作白板系統</div>
+    <p>用 Claude Code 從零搭建一套支援 WebSocket 即時同步的線上白板應用。功能包含：自由繪圖（多色畫筆/橡皮擦）、拖曳便利貼（可編輯文字與顏色）、圖形工具（矩形/圓形/箭頭）、便利貼投票機制、房間系統（產生分享連結邀請他人加入）、歷史回放功能。前端用 Canvas API + vanilla JS，後端用 Node.js + WebSocket，適合遠端團隊腦力激盪、設計思考工作坊、回顧會議使用。</p>
+    <div class="prompt-box">請幫我建立一個即時協作白板應用程式，專案名稱 collab-board/。完整需求：【後端】1. 用 Node.js + ws 套件建立 WebSocket 伺服器 2. 實作房間系統：POST /api/room 建立房間回傳 roomId，使用者用 roomId 加入 3. 所有繪圖操作（畫線、新增便利貼、移動物件）廣播給同房間其他人 4. 維護每個房間的完整操作歷史陣列，支援新加入者載入現有畫布狀態 5. 提供 GET /api/room/:id/replay 回傳操作歷史 JSON【前端】6. HTML5 Canvas 繪圖層：支援畫筆（可選 8 色 + 3 種粗細）、橡皮擦、矩形、圓形、箭頭工具 7. 便利貼層：雙擊新增便利貼，可拖曳、編輯文字、選擇 6 種顏色、刪除 8. 便利貼投票：每人對每張便利貼可投一票，顯示票數 9. 工具列 UI 含房間分享連結按鈕、目前在線人數顯示、匯出 PNG 按鈕 10. 歷史回放模式：滑桿控制播放速度重現繪圖過程【部署】11. 寫好 Dockerfile 與 docker-compose.yml 12. 附 README.md 含架構圖（用 ASCII art）和啟動指令。請先實作完整功能並確保本地可啟動測試。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階全端挑戰：涵蓋 WebSocket 即時通訊、Canvas 繪圖引擎、房間狀態管理與容器化部署，考驗 Claude Code 處理複雜多檔案架構的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿重點萃取器 生產力">
     <div class="card-header">
       <span class="badge">174</span>
       <span class="tag level-1">初階</span>
