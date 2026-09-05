@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/04</span>
-      <span>📚 累計收錄：<span id="totalCount">191</span> 個專案</span>
+      <span>📅 最後更新：2026/09/05</span>
+      <span>📚 累計收錄：<span id="totalCount">194</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,93 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 191 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 194 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/4) ============ -->
+  <!-- ============ 今日新增 (9/5) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/04
+    今日新增 · 2026/09/05
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="日記情緒週報分析師 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
-      <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/4</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/5</span>
     </div>
-    <h2>Git 提交訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰的 Conventional Commits 格式</div>
-    <p>把你雜亂的 git log 丟給 Claude Code，它會分析每筆 commit 的 diff 內容，重新撰寫符合 Conventional Commits 規範的提交訊息，並產出一份 CHANGELOG.md。適合想整理開源專案歷史、準備 code review、或學習良好提交習慣的開發者。</p>
-    <div class="prompt-box">請幫我分析目前專案的 Git 歷史紀錄並美化提交訊息：1. 讀取最近 30 筆 commit 的 diff 與原始訊息 2. 根據變更內容分類為 feat / fix / refactor / docs / chore 等類型 3. 改寫成 Conventional Commits 格式，每筆包含 scope 與簡明描述 4. 產出 improved-commits.md 對照表（原始 → 改寫）5. 自動生成 CHANGELOG.md，按版本與類型分組 6. 如果偵測到可以合併的 squash 候選，請額外標註建議</div>
+    <h2>日記情緒週報分析師</h2>
+    <div class="tagline">把一週的日記或隨筆丟進去，自動產出情緒趨勢圖表與自我覺察報告</div>
+    <p>將你一週內寫的日記、碎碎念、語音轉文字筆記交給 Claude Code，它會分析每天的情緒分佈（正面／中性／負面）、找出反覆出現的壓力源與快樂來源，最終產出一份含有 Chart.js 互動圖表的 HTML 週報，以及一段溫暖的自我覺察建議。適合想養成寫日記習慣、追蹤心理健康的人。</p>
+    <div class="prompt-box">我會提供一週的日記內容（每天一段文字）。請幫我：1. 為每天的內容標註情緒分數（-5 到 +5）與主要情緒標籤（如焦慮、感恩、疲憊、興奮等）2. 找出本週前三大情緒觸發因子（人事物）3. 產出 weekly_mood_report.html，包含：(a) 用 Chart.js 畫的七天情緒折線圖 (b) 情緒標籤的圓餅圖 (c) 每天一句話摘要 (d) 底部放一段 200 字以內的溫暖覺察建議與下週小挑戰 4. 整體風格用柔和的莫蘭迪色系，RWD 手機也能看。以下是我的日記：[貼上七天內容]</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者理解 Claude 如何解析程式碼差異並產出結構化文件，立即改善開發流程
+      讓初學者體驗 Claude 的文本情感分析與 HTML 視覺化產出能力，成品立刻可用來回顧自己的一週
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動沙盒 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣雷達圖 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/4</span>
+      <span class="date-tag">9/5</span>
     </div>
-    <h2>API 文件互動沙盒</h2>
-    <div class="tagline">貼上任何 REST API 規格，自動產生可互動測試的網頁沙盒與範例程式碼</div>
-    <p>將 OpenAPI/Swagger JSON 或任意 API 文件交給 Claude Code，它會解析所有端點，生成一個含有互動式表單的單頁網頁應用，讓你直接在瀏覽器填參數、送請求、看回應。同時為每個端點產出 Python、JavaScript、cURL 三種語言的範例程式碼。適合後端工程師做內部文件、前端串接前先行測試。</p>
-    <div class="prompt-box">請根據這份 API 規格文件 [貼上 OpenAPI JSON 或 API 文件內容] 建立互動式測試沙盒：1. 建立資料夾結構 api-sandbox/index.html、api-sandbox/style.css、api-sandbox/app.js 2. 解析所有端點，左側生成可收合的導覽列，按資源分組 3. 每個端點頁面包含：方法標籤（GET 綠/POST 藍/DELETE 紅）、參數表單（含型別驗證）、Headers 編輯器、Send 按鈕與回應預覽區 4. 右側 tab 切換顯示 Python requests / JavaScript fetch / cURL 範例程式碼，參數會跟著表單即時更新 5. 支援 Bearer Token 全域設定 6. 加入深色模式切換</div>
+    <h2>競品功能矩陣雷達圖</h2>
+    <div class="tagline">輸入幾個競品網址或描述，自動產出功能比較矩陣與視覺化雷達圖網頁</div>
+    <p>做產品規劃或創業提案時，最耗時的就是競品分析。把 3-5 個競品的官網連結、功能介紹貼給 Claude Code，它會自動歸納出共同的比較維度（如定價、功能數、易用性、整合能力等），建立評分矩陣，並產出一個包含互動式雷達圖、特色比較表格、SWOT 總結的單頁 HTML 報告，可直接嵌入簡報或分享給團隊。</p>
+    <div class="prompt-box">我正在做競品分析，以下是我要比較的產品資訊：
+
+產品A：[名稱與功能描述或網址]
+產品B：[名稱與功能描述或網址]
+產品C：[名稱與功能描述或網址]
+
+請幫我：1. 歸納出 6-8 個關鍵比較維度（如價格、功能完整度、UX、社群生態、API 開放度等）2. 為每個產品在每個維度給出 1-10 分評分並附一句話理由 3. 產出 competitor_analysis/ 資料夾，包含：(a) index.html — 用 Chart.js 畫每個產品的雷達圖疊在一起比較，加上可切換顯示的比較表格 (b) data.json — 結構化的原始評分資料 (c) summary.md — 每個產品的 SWOT 分析與整體建議 4. HTML 要有篩選按鈕可單獨顯示或隱藏某產品的雷達線條，配色專業商務風格</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習涵蓋 API 規格解析、動態前端生成、多語言程式碼模板，學會讓 Claude 處理複雜結構化輸入
+      中階專案結合了資訊擷取、多維度評分邏輯與前端互動圖表，學習如何讓 Claude 做結構化的多檔案專案
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="數據敘事簡報產生器 資料分析">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用分帳應用程式 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">90 分鐘</span>
-      <span class="date-tag">9/4</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/5</span>
     </div>
-    <h2>數據敘事簡報產生器</h2>
-    <div class="tagline">上傳 CSV 資料集，全自動產出含圖表動畫的網頁簡報與講稿</div>
-    <p>將任何 CSV 資料集交給 Claude Code，它會自動進行探索性分析、找出關鍵洞察、設計敘事架構，然後產出一份含有互動式 D3.js 圖表與過場動畫的 Reveal.js 網頁簡報，每頁附帶講者備註。最終輸出可直接用瀏覽器全螢幕展示，也能匯出 PDF。適合資料分析師快速準備月報、季度簡報或客戶提案。</p>
-    <div class="prompt-box">請根據這份資料集 [拖曳 CSV 檔案] 產出完整的數據敘事簡報：1. 先執行探索性分析：列出欄位統計摘要、偵測趨勢/異常/相關性，選出 5-7 個最有故事性的洞察 2. 設計簡報敘事結構：開場（大數字震撼）→ 背景脈絡 → 3-4 個核心發現 → 結論與建議行動 3. 建立專案資料夾 data-story/，使用 Reveal.js 框架 4. 每張投影片用 D3.js 繪製對應圖表（折線圖、長條圖、散佈圖、熱力圖等），加入淡入與數字跳動動畫 5. 圖表配色使用專業商務調色盤，支援深色與淺色主題切換 6. 每頁 speaker notes 寫 3-4 句中文講稿，語氣專業但易懂 7. 加入鍵盤快捷鍵提示與進度列 8. 產出 export.js 腳本可將簡報截圖輸出為 PDF</div>
+    <h2>全端費用分帳應用程式</h2>
+    <div class="tagline">自動建立一個支援多人分帳、匯率轉換與最少轉帳演算法的完整網頁應用</div>
+    <p>出國旅行或合租最頭痛的就是分帳。請 Claude Code 從零建立一個全端分帳應用：前端用 React + TailwindCSS 打造美觀的帳目輸入介面與視覺化欠款關係圖，後端用 Node.js + SQLite 儲存群組、成員與消費記錄，核心演算法會計算「最少轉帳次數」的結清方案。支援多幣別自動換算、AA 制與自訂比例分帳、匯出結算報告 PDF。適合想體驗 Claude Code 一次搭建完整應用架構的開發者。</p>
+    <div class="prompt-box">請幫我建立一個全端分帳 Web App，專案名稱 SplitEase，需求如下：
+
+技術架構：前端 React 18 + Vite + TailwindCSS，後端 Express.js + SQLite（用 better-sqlite3），整合在同一個 monorepo
+
+資料夾結構：splitease/├── client/（React 前端）├── server/（Express API）├── shared/（共用型別定義）└── package.json（workspaces）
+
+核心功能：1. 建立群組、新增成員（含頭像顏色）2. 新增消費紀錄：付款人、金額、幣別（TWD/USD/JPY/EUR，用固定匯率表）、參與者、分攤方式（均分／自訂比例／自訂金額）3. 總覽頁面：每人目前淨欠款、用 D3.js 或 vis.js 畫欠款關係有向圖 4. 結算功能：實作最少轉帳次數演算法（貪心法配對最大債權人與最大債務人）5. 匯出結算報告為可列印 HTML
+
+API 設計：RESTful，至少包含 /groups, /groups/:id/expenses, /groups/:id/settle
+
+請一步步建立所有檔案，確保 npm install && npm run dev 即可同時啟動前後端，前端 proxy 到後端 API。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案整合資料分析、視覺化設計、前端動畫與敘事邏輯，考驗 Claude 端到端產出完整應用的能力
+      高階專案涵蓋全端架構設計、資料庫建模、圖論演算法與複雜 UI 互動，全面考驗 Claude Code 的多檔案協作與系統整合能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -795,7 +812,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議紀錄行動清單萃取器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">189</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/4</span>
+    </div>
+    <h2>Git 提交訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰的 Conventional Commits 格式</div>
+    <p>把你雜亂的 git log 丟給 Claude Code，它會分析每筆 commit 的 diff 內容，重新撰寫符合 Conventional Commits 規範的提交訊息，並產出一份 CHANGELOG.md。適合想整理開源專案歷史、準備 code review、或學習良好提交習慣的開發者。</p>
+    <div class="prompt-box">請幫我分析目前專案的 Git 歷史紀錄並美化提交訊息：1. 讀取最近 30 筆 commit 的 diff 與原始訊息 2. 根據變更內容分類為 feat / fix / refactor / docs / chore 等類型 3. 改寫成 Conventional Commits 格式，每筆包含 scope 與簡明描述 4. 產出 improved-commits.md 對照表（原始 → 改寫）5. 自動生成 CHANGELOG.md，按版本與類型分組 6. 如果偵測到可以合併的 squash 候選，請額外標註建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者理解 Claude 如何解析程式碼差異並產出結構化文件，立即改善開發流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動沙盒 程式原型">
+    <div class="card-header">
+      <span class="badge">190</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/4</span>
+    </div>
+    <h2>API 文件互動沙盒</h2>
+    <div class="tagline">貼上任何 REST API 規格，自動產生可互動測試的網頁沙盒與範例程式碼</div>
+    <p>將 OpenAPI/Swagger JSON 或任意 API 文件交給 Claude Code，它會解析所有端點，生成一個含有互動式表單的單頁網頁應用，讓你直接在瀏覽器填參數、送請求、看回應。同時為每個端點產出 Python、JavaScript、cURL 三種語言的範例程式碼。適合後端工程師做內部文件、前端串接前先行測試。</p>
+    <div class="prompt-box">請根據這份 API 規格文件 [貼上 OpenAPI JSON 或 API 文件內容] 建立互動式測試沙盒：1. 建立資料夾結構 api-sandbox/index.html、api-sandbox/style.css、api-sandbox/app.js 2. 解析所有端點，左側生成可收合的導覽列，按資源分組 3. 每個端點頁面包含：方法標籤（GET 綠/POST 藍/DELETE 紅）、參數表單（含型別驗證）、Headers 編輯器、Send 按鈕與回應預覽區 4. 右側 tab 切換顯示 Python requests / JavaScript fetch / cURL 範例程式碼，參數會跟著表單即時更新 5. 支援 Bearer Token 全域設定 6. 加入深色模式切換</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習涵蓋 API 規格解析、動態前端生成、多語言程式碼模板，學會讓 Claude 處理複雜結構化輸入
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="數據敘事簡報產生器 資料分析">
+    <div class="card-header">
+      <span class="badge">191</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">9/4</span>
+    </div>
+    <h2>數據敘事簡報產生器</h2>
+    <div class="tagline">上傳 CSV 資料集，全自動產出含圖表動畫的網頁簡報與講稿</div>
+    <p>將任何 CSV 資料集交給 Claude Code，它會自動進行探索性分析、找出關鍵洞察、設計敘事架構，然後產出一份含有互動式 D3.js 圖表與過場動畫的 Reveal.js 網頁簡報，每頁附帶講者備註。最終輸出可直接用瀏覽器全螢幕展示，也能匯出 PDF。適合資料分析師快速準備月報、季度簡報或客戶提案。</p>
+    <div class="prompt-box">請根據這份資料集 [拖曳 CSV 檔案] 產出完整的數據敘事簡報：1. 先執行探索性分析：列出欄位統計摘要、偵測趨勢/異常/相關性，選出 5-7 個最有故事性的洞察 2. 設計簡報敘事結構：開場（大數字震撼）→ 背景脈絡 → 3-4 個核心發現 → 結論與建議行動 3. 建立專案資料夾 data-story/，使用 Reveal.js 框架 4. 每張投影片用 D3.js 繪製對應圖表（折線圖、長條圖、散佈圖、熱力圖等），加入淡入與數字跳動動畫 5. 圖表配色使用專業商務調色盤，支援深色與淺色主題切換 6. 每頁 speaker notes 寫 3-4 句中文講稿，語氣專業但易懂 7. 加入鍵盤快捷鍵提示與進度列 8. 產出 export.js 腳本可將簡報截圖輸出為 PDF</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合資料分析、視覺化設計、前端動畫與敘事邏輯，考驗 Claude 端到端產出完整應用的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議紀錄行動清單萃取器 生產力">
     <div class="card-header">
       <span class="badge">186</span>
       <span class="tag level-1">初階</span>
