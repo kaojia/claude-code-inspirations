@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/05</span>
-      <span>📚 累計收錄：<span id="totalCount">194</span> 個專案</span>
+      <span>📅 最後更新：2026/09/06</span>
+      <span>📚 累計收錄：<span id="totalCount">197</span> 個專案</span>
     </div>
   </header>
 
@@ -664,92 +664,108 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 194 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 197 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/5) ============ -->
+  <!-- ============ 今日新增 (9/6) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/05
+    今日新增 · 2026/09/06
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="日記情緒週報分析師 資料分析">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要神器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">9/5</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/6</span>
     </div>
-    <h2>日記情緒週報分析師</h2>
-    <div class="tagline">把一週的日記或隨筆丟進去，自動產出情緒趨勢圖表與自我覺察報告</div>
-    <p>將你一週內寫的日記、碎碎念、語音轉文字筆記交給 Claude Code，它會分析每天的情緒分佈（正面／中性／負面）、找出反覆出現的壓力源與快樂來源，最終產出一份含有 Chart.js 互動圖表的 HTML 週報，以及一段溫暖的自我覺察建議。適合想養成寫日記習慣、追蹤心理健康的人。</p>
-    <div class="prompt-box">我會提供一週的日記內容（每天一段文字）。請幫我：1. 為每天的內容標註情緒分數（-5 到 +5）與主要情緒標籤（如焦慮、感恩、疲憊、興奮等）2. 找出本週前三大情緒觸發因子（人事物）3. 產出 weekly_mood_report.html，包含：(a) 用 Chart.js 畫的七天情緒折線圖 (b) 情緒標籤的圓餅圖 (c) 每天一句話摘要 (d) 底部放一段 200 字以內的溫暖覺察建議與下週小挑戰 4. 整體風格用柔和的莫蘭迪色系，RWD 手機也能看。以下是我的日記：[貼上七天內容]</div>
+    <h2>會議逐字稿摘要神器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿濃縮成結構化的重點摘要與待辦清單</div>
+    <p>將 Zoom、Google Meet 等工具匯出的會議逐字稿丟進 Claude Code，自動產出三層摘要：一句話結論、五點核心決議、完整待辦事項（含負責人與期限）。輸出 Markdown 筆記與可貼進 Slack 的格式化訊息，讓沒參加會議的人三分鐘掌握全貌。</p>
+    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳 .txt 檔]。請幫我做以下處理：1. 用一句話（30 字內）總結這場會議的最終結論 2. 列出 5 項核心討論決議，每項附上支持理由 3. 整理所有待辦事項，格式為表格：任務｜負責人｜截止日期｜優先級（高/中/低）4. 產出兩個檔案：meeting_summary.md（完整摘要筆記）和 slack_message.txt（可直接貼到 Slack 頻道的精簡版）5. 如果逐字稿中有模糊或矛盾的地方，請標註提醒我確認</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude 的文本情感分析與 HTML 視覺化產出能力，成品立刻可用來回顧自己的一週
+      初階入門最佳練習：體驗 Claude 的長文閱讀理解與結構化輸出能力，成果立刻可用於工作
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣雷達圖 資料分析">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工坊 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
+      <span class="tag">內容創作</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/5</span>
+      <span class="date-tag">9/6</span>
     </div>
-    <h2>競品功能矩陣雷達圖</h2>
-    <div class="tagline">輸入幾個競品網址或描述，自動產出功能比較矩陣與視覺化雷達圖網頁</div>
-    <p>做產品規劃或創業提案時，最耗時的就是競品分析。把 3-5 個競品的官網連結、功能介紹貼給 Claude Code，它會自動歸納出共同的比較維度（如定價、功能數、易用性、整合能力等），建立評分矩陣，並產出一個包含互動式雷達圖、特色比較表格、SWOT 總結的單頁 HTML 報告，可直接嵌入簡報或分享給團隊。</p>
-    <div class="prompt-box">我正在做競品分析，以下是我要比較的產品資訊：
+    <h2>多語系行銷文案工坊</h2>
+    <div class="tagline">輸入一個產品賣點，批量生成多平台、多語系的社群行銷文案與 A/B 測試版本</div>
+    <p>給 Claude Code 產品名稱、三個核心賣點和目標受眾，它會自動生成 Instagram、Facebook、LinkedIn、X 四個平台各兩版 A/B 測試文案，同時翻譯成繁中、英文、日文三語版本。每則文案附上建議 Hashtag、最佳發文時段與 CTA 用語，最終輸出成一份完整的行銷排程 Excel 檔。</p>
+    <div class="prompt-box">我要為以下產品做社群行銷：
+產品名稱：[填入]
+核心賣點：1. [填入] 2. [填入] 3. [填入]
+目標受眾：[填入年齡層、興趣、痛點]
+品牌語調：[專業/親切/幽默 擇一]
 
-產品A：[名稱與功能描述或網址]
-產品B：[名稱與功能描述或網址]
-產品C：[名稱與功能描述或網址]
-
-請幫我：1. 歸納出 6-8 個關鍵比較維度（如價格、功能完整度、UX、社群生態、API 開放度等）2. 為每個產品在每個維度給出 1-10 分評分並附一句話理由 3. 產出 competitor_analysis/ 資料夾，包含：(a) index.html — 用 Chart.js 畫每個產品的雷達圖疊在一起比較，加上可切換顯示的比較表格 (b) data.json — 結構化的原始評分資料 (c) summary.md — 每個產品的 SWOT 分析與整體建議 4. HTML 要有篩選按鈕可單獨顯示或隱藏某產品的雷達線條，配色專業商務風格</div>
+請執行以下步驟：
+1. 針對 Instagram、Facebook、LinkedIn、X 四個平台，各產出 A/B 兩版文案，符合各平台字數限制與風格
+2. 每則文案包含：正文、CTA 按鈕文字、5 個 Hashtag、建議發文時段
+3. 將所有文案翻譯成繁體中文、英文、日文三個語系版本
+4. 建立資料夾結構：marketing_copy/[平台]/[語系]/version_a.md
+5. 產出 campaign_schedule.csv 彙整所有文案的排程總表
+6. 附上一份 copywriting_notes.md 說明每版文案的策略差異</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案結合了資訊擷取、多維度評分邏輯與前端互動圖表，學習如何讓 Claude 做結構化的多檔案專案
+      中階練習多檔案輸出與資料夾管理，學會用 Claude Code 建立批量內容生產的工作流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用分帳應用程式 程式原型">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="即時資料儀表板產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/5</span>
+      <span class="date-tag">9/6</span>
     </div>
-    <h2>全端費用分帳應用程式</h2>
-    <div class="tagline">自動建立一個支援多人分帳、匯率轉換與最少轉帳演算法的完整網頁應用</div>
-    <p>出國旅行或合租最頭痛的就是分帳。請 Claude Code 從零建立一個全端分帳應用：前端用 React + TailwindCSS 打造美觀的帳目輸入介面與視覺化欠款關係圖，後端用 Node.js + SQLite 儲存群組、成員與消費記錄，核心演算法會計算「最少轉帳次數」的結清方案。支援多幣別自動換算、AA 制與自訂比例分帳、匯出結算報告 PDF。適合想體驗 Claude Code 一次搭建完整應用架構的開發者。</p>
-    <div class="prompt-box">請幫我建立一個全端分帳 Web App，專案名稱 SplitEase，需求如下：
+    <h2>即時資料儀表板產生器</h2>
+    <div class="tagline">上傳 CSV 資料集，自動生成含互動圖表與篩選器的全功能 Web 儀表板應用</div>
+    <p>將任何 CSV 資料集交給 Claude Code，它會自動分析欄位類型與資料分布，用 Python Flask 後端搭配 Chart.js 前端，生成一個可在本機運行的互動式儀表板。包含自動偵測的 KPI 卡片、可切換的長條圖/折線圖/圓餅圖、日期範圍篩選器、欄位交叉分析功能，以及一鍵匯出 PNG 報表的按鈕。整套應用含 Docker 部署設定，可直接上線。</p>
+    <div class="prompt-box">我有一份資料集 [拖曳 CSV 檔案]，請幫我建立一個完整的互動式資料儀表板：
 
-技術架構：前端 React 18 + Vite + TailwindCSS，後端 Express.js + SQLite（用 better-sqlite3），整合在同一個 monorepo
-
-資料夾結構：splitease/├── client/（React 前端）├── server/（Express API）├── shared/（共用型別定義）└── package.json（workspaces）
-
-核心功能：1. 建立群組、新增成員（含頭像顏色）2. 新增消費紀錄：付款人、金額、幣別（TWD/USD/JPY/EUR，用固定匯率表）、參與者、分攤方式（均分／自訂比例／自訂金額）3. 總覽頁面：每人目前淨欠款、用 D3.js 或 vis.js 畫欠款關係有向圖 4. 結算功能：實作最少轉帳次數演算法（貪心法配對最大債權人與最大債務人）5. 匯出結算報告為可列印 HTML
-
-API 設計：RESTful，至少包含 /groups, /groups/:id/expenses, /groups/:id/settle
-
-請一步步建立所有檔案，確保 npm install && npm run dev 即可同時啟動前後端，前端 proxy 到後端 API。</div>
+1. 先分析 CSV 的所有欄位，自動判斷資料類型（數值/類別/日期/文字），產出 data_profile.md 摘要報告
+2. 建立以下專案結構：
+   dashboard/
+   ├── app.py（Flask 後端，含 API 路由）
+   ├── templates/index.html（儀表板主頁面）
+   ├── static/css/style.css（深色主題響應式設計）
+   ├── static/js/charts.js（Chart.js 互動圖表邏輯）
+   ├── utils/data_processor.py（資料清洗與聚合）
+   ├── Dockerfile + docker-compose.yml
+   └── requirements.txt
+3. 儀表板功能需求：
+   - 頂部 4 張 KPI 卡片（自動選取最重要的數值指標）
+   - 左側篩選面板：日期區間選擇器、類別欄位下拉多選
+   - 主區域：2x2 格線佈局放四張圖表，可點擊切換圖表類型
+   - 圖表支援 hover 顯示數值、點擊 drill-down 明細
+   - 右上角匯出按鈕：將當前畫面存成 PNG
+4. 確保所有 API 回傳 JSON 格式，前端用 fetch 非同步載入
+5. 加入 README.md 說明如何啟動與部署</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涵蓋全端架構設計、資料庫建模、圖論演算法與複雜 UI 互動，全面考驗 Claude Code 的多檔案協作與系統整合能力
+      高階全端挑戰：涵蓋資料分析、後端 API、前端互動、容器化部署，考驗 Claude Code 的多技術棧協作能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -812,7 +828,77 @@ API 設計：RESTful，至少包含 /groups, /groups/:id/expenses, /groups/:id/s
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="日記情緒週報分析師 資料分析">
+    <div class="card-header">
+      <span class="badge">192</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/5</span>
+    </div>
+    <h2>日記情緒週報分析師</h2>
+    <div class="tagline">把一週的日記或隨筆丟進去，自動產出情緒趨勢圖表與自我覺察報告</div>
+    <p>將你一週內寫的日記、碎碎念、語音轉文字筆記交給 Claude Code，它會分析每天的情緒分佈（正面／中性／負面）、找出反覆出現的壓力源與快樂來源，最終產出一份含有 Chart.js 互動圖表的 HTML 週報，以及一段溫暖的自我覺察建議。適合想養成寫日記習慣、追蹤心理健康的人。</p>
+    <div class="prompt-box">我會提供一週的日記內容（每天一段文字）。請幫我：1. 為每天的內容標註情緒分數（-5 到 +5）與主要情緒標籤（如焦慮、感恩、疲憊、興奮等）2. 找出本週前三大情緒觸發因子（人事物）3. 產出 weekly_mood_report.html，包含：(a) 用 Chart.js 畫的七天情緒折線圖 (b) 情緒標籤的圓餅圖 (c) 每天一句話摘要 (d) 底部放一段 200 字以內的溫暖覺察建議與下週小挑戰 4. 整體風格用柔和的莫蘭迪色系，RWD 手機也能看。以下是我的日記：[貼上七天內容]</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 的文本情感分析與 HTML 視覺化產出能力，成品立刻可用來回顧自己的一週
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣雷達圖 資料分析">
+    <div class="card-header">
+      <span class="badge">193</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/5</span>
+    </div>
+    <h2>競品功能矩陣雷達圖</h2>
+    <div class="tagline">輸入幾個競品網址或描述，自動產出功能比較矩陣與視覺化雷達圖網頁</div>
+    <p>做產品規劃或創業提案時，最耗時的就是競品分析。把 3-5 個競品的官網連結、功能介紹貼給 Claude Code，它會自動歸納出共同的比較維度（如定價、功能數、易用性、整合能力等），建立評分矩陣，並產出一個包含互動式雷達圖、特色比較表格、SWOT 總結的單頁 HTML 報告，可直接嵌入簡報或分享給團隊。</p>
+    <div class="prompt-box">我正在做競品分析，以下是我要比較的產品資訊：
+
+產品A：[名稱與功能描述或網址]
+產品B：[名稱與功能描述或網址]
+產品C：[名稱與功能描述或網址]
+
+請幫我：1. 歸納出 6-8 個關鍵比較維度（如價格、功能完整度、UX、社群生態、API 開放度等）2. 為每個產品在每個維度給出 1-10 分評分並附一句話理由 3. 產出 competitor_analysis/ 資料夾，包含：(a) index.html — 用 Chart.js 畫每個產品的雷達圖疊在一起比較，加上可切換顯示的比較表格 (b) data.json — 結構化的原始評分資料 (c) summary.md — 每個產品的 SWOT 分析與整體建議 4. HTML 要有篩選按鈕可單獨顯示或隱藏某產品的雷達線條，配色專業商務風格</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案結合了資訊擷取、多維度評分邏輯與前端互動圖表，學習如何讓 Claude 做結構化的多檔案專案
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-prompts" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用分帳應用程式 程式原型">
+    <div class="card-header">
+      <span class="badge">194</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/5</span>
+    </div>
+    <h2>全端費用分帳應用程式</h2>
+    <div class="tagline">自動建立一個支援多人分帳、匯率轉換與最少轉帳演算法的完整網頁應用</div>
+    <p>出國旅行或合租最頭痛的就是分帳。請 Claude Code 從零建立一個全端分帳應用：前端用 React + TailwindCSS 打造美觀的帳目輸入介面與視覺化欠款關係圖，後端用 Node.js + SQLite 儲存群組、成員與消費記錄，核心演算法會計算「最少轉帳次數」的結清方案。支援多幣別自動換算、AA 制與自訂比例分帳、匯出結算報告 PDF。適合想體驗 Claude Code 一次搭建完整應用架構的開發者。</p>
+    <div class="prompt-box">請幫我建立一個全端分帳 Web App，專案名稱 SplitEase，需求如下：
+
+技術架構：前端 React 18 + Vite + TailwindCSS，後端 Express.js + SQLite（用 better-sqlite3），整合在同一個 monorepo
+
+資料夾結構：splitease/├── client/（React 前端）├── server/（Express API）├── shared/（共用型別定義）└── package.json（workspaces）
+
+核心功能：1. 建立群組、新增成員（含頭像顏色）2. 新增消費紀錄：付款人、金額、幣別（TWD/USD/JPY/EUR，用固定匯率表）、參與者、分攤方式（均分／自訂比例／自訂金額）3. 總覽頁面：每人目前淨欠款、用 D3.js 或 vis.js 畫欠款關係有向圖 4. 結算功能：實作最少轉帳次數演算法（貪心法配對最大債權人與最大債務人）5. 匯出結算報告為可列印 HTML
+
+API 設計：RESTful，至少包含 /groups, /groups/:id/expenses, /groups/:id/settle
+
+請一步步建立所有檔案，確保 npm install && npm run dev 即可同時啟動前後端，前端 proxy 到後端 API。</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋全端架構設計、資料庫建模、圖論演算法與複雜 UI 互動，全面考驗 Claude Code 的多檔案協作與系統整合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git 提交訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">189</span>
       <span class="tag level-1">初階</span>
