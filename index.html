@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/06</span>
-      <span>📚 累計收錄：<span id="totalCount">197</span> 個專案</span>
+      <span>📅 最後更新：2026/09/07</span>
+      <span>📚 累計收錄：<span id="totalCount">200</span> 個專案</span>
     </div>
   </header>
 
@@ -664,107 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 197 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 200 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/6) ============ -->
+  <!-- ============ 今日新增 (9/7) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/06
+    今日新增 · 2026/09/07
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要神器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git Commit 訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/6</span>
+      <span class="date-tag">9/7</span>
     </div>
-    <h2>會議逐字稿摘要神器</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿濃縮成結構化的重點摘要與待辦清單</div>
-    <p>將 Zoom、Google Meet 等工具匯出的會議逐字稿丟進 Claude Code，自動產出三層摘要：一句話結論、五點核心決議、完整待辦事項（含負責人與期限）。輸出 Markdown 筆記與可貼進 Slack 的格式化訊息，讓沒參加會議的人三分鐘掌握全貌。</p>
-    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳 .txt 檔]。請幫我做以下處理：1. 用一句話（30 字內）總結這場會議的最終結論 2. 列出 5 項核心討論決議，每項附上支持理由 3. 整理所有待辦事項，格式為表格：任務｜負責人｜截止日期｜優先級（高/中/低）4. 產出兩個檔案：meeting_summary.md（完整摘要筆記）和 slack_message.txt（可直接貼到 Slack 頻道的精簡版）5. 如果逐字稿中有模糊或矛盾的地方，請標註提醒我確認</div>
+    <h2>Git Commit 訊息美化器</h2>
+    <div class="tagline">分析你的 Git 歷史紀錄，自動重寫成語意清晰、格式統一的 Conventional Commits</div>
+    <p>把你的專案資料夾丟給 Claude Code，它會讀取 git log，找出訊息模糊的 commit（例如『fix bug』『update』），幫你產出符合 Conventional Commits 規範的改寫建議清單，並生成一份可直接執行的 git rebase 腳本。適合想整理開源專案歷史、準備 code review、或養成好習慣的開發者。</p>
+    <div class="prompt-box">請分析這個專案資料夾 [拖曳資料夾] 的 git log（最近 50 筆 commit）。幫我：1. 列出所有訊息不符合 Conventional Commits 規範的 commit（標出 hash 和原始訊息）2. 每一筆提供改寫建議，格式為 type(scope): description，並附上為什麼這樣改的一句話理由 3. 產出 rewrite-commits.md 整理表格 4. 產出 rewrite-guide.sh 腳本，裡面用註解說明如何搭配 interactive rebase 使用（不要自動執行）</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習：體驗 Claude 的長文閱讀理解與結構化輸出能力，成果立刻可用於工作
+      讓初學者體驗 Claude Code 讀取本地檔案與 Git 紀錄的能力，學會結合開發工具鏈
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工坊 內容創作">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試站 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/6</span>
+      <span class="date-tag">9/7</span>
     </div>
-    <h2>多語系行銷文案工坊</h2>
-    <div class="tagline">輸入一個產品賣點，批量生成多平台、多語系的社群行銷文案與 A/B 測試版本</div>
-    <p>給 Claude Code 產品名稱、三個核心賣點和目標受眾，它會自動生成 Instagram、Facebook、LinkedIn、X 四個平台各兩版 A/B 測試文案，同時翻譯成繁中、英文、日文三語版本。每則文案附上建議 Hashtag、最佳發文時段與 CTA 用語，最終輸出成一份完整的行銷排程 Excel 檔。</p>
-    <div class="prompt-box">我要為以下產品做社群行銷：
-產品名稱：[填入]
-核心賣點：1. [填入] 2. [填入] 3. [填入]
-目標受眾：[填入年齡層、興趣、痛點]
-品牌語調：[專業/親切/幽默 擇一]
-
-請執行以下步驟：
-1. 針對 Instagram、Facebook、LinkedIn、X 四個平台，各產出 A/B 兩版文案，符合各平台字數限制與風格
-2. 每則文案包含：正文、CTA 按鈕文字、5 個 Hashtag、建議發文時段
-3. 將所有文案翻譯成繁體中文、英文、日文三個語系版本
-4. 建立資料夾結構：marketing_copy/[平台]/[語系]/version_a.md
-5. 產出 campaign_schedule.csv 彙整所有文案的排程總表
-6. 附上一份 copywriting_notes.md 說明每版文案的策略差異</div>
+    <h2>API 文件互動測試站</h2>
+    <div class="tagline">給一份 OpenAPI/Swagger JSON，自動生成可在瀏覽器操作的 API 測試網頁</div>
+    <p>把後端的 OpenAPI 規格檔交給 Claude Code，它會解析所有端點、參數與回傳格式，產出一個純前端的互動式測試頁面（HTML + Vanilla JS）。每個 API 端點會變成一張卡片，內含可填寫的參數表單、送出按鈕、即時顯示回應的區塊，還有自動產生的 cURL 指令複製鈕。適合前後端協作、QA 驗收、或寫技術文件時附上可操作的範例。</p>
+    <div class="prompt-box">這是我的 API 規格檔 [拖曳 openapi.json 或 swagger.yaml]。請幫我：1. 解析所有端點，依 tag 分組 2. 為每個端點產生一張互動卡片，包含：HTTP method 標籤、路徑、參數輸入表單（區分 path/query/body 參數並標示必填）、送出按鈕、回應顯示區（JSON 語法高亮）、一鍵複製 cURL 指令 3. 頂部加一個 Base URL 輸入欄位，可切換環境 4. 加入深色模式切換 5. 所有程式碼放在單一 index.html，不依賴外部框架，CSS 用現代風格 6. 在檔案開頭加上使用說明註解</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習多檔案輸出與資料夾管理，學會用 Claude Code 建立批量內容生產的工作流程
+      練習讓 Claude Code 解析結構化資料並產出完整前端應用，學會處理複雜檔案解析與 UI 生成
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="即時資料儀表板產生器 資料分析">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康報告產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">資料分析</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/6</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">9/7</span>
     </div>
-    <h2>即時資料儀表板產生器</h2>
-    <div class="tagline">上傳 CSV 資料集，自動生成含互動圖表與篩選器的全功能 Web 儀表板應用</div>
-    <p>將任何 CSV 資料集交給 Claude Code，它會自動分析欄位類型與資料分布，用 Python Flask 後端搭配 Chart.js 前端，生成一個可在本機運行的互動式儀表板。包含自動偵測的 KPI 卡片、可切換的長條圖/折線圖/圓餅圖、日期範圍篩選器、欄位交叉分析功能，以及一鍵匯出 PNG 報表的按鈕。整套應用含 Docker 部署設定，可直接上線。</p>
-    <div class="prompt-box">我有一份資料集 [拖曳 CSV 檔案]，請幫我建立一個完整的互動式資料儀表板：
-
-1. 先分析 CSV 的所有欄位，自動判斷資料類型（數值/類別/日期/文字），產出 data_profile.md 摘要報告
-2. 建立以下專案結構：
-   dashboard/
-   ├── app.py（Flask 後端，含 API 路由）
-   ├── templates/index.html（儀表板主頁面）
-   ├── static/css/style.css（深色主題響應式設計）
-   ├── static/js/charts.js（Chart.js 互動圖表邏輯）
-   ├── utils/data_processor.py（資料清洗與聚合）
-   ├── Dockerfile + docker-compose.yml
-   └── requirements.txt
-3. 儀表板功能需求：
-   - 頂部 4 張 KPI 卡片（自動選取最重要的數值指標）
-   - 左側篩選面板：日期區間選擇器、類別欄位下拉多選
-   - 主區域：2x2 格線佈局放四張圖表，可點擊切換圖表類型
-   - 圖表支援 hover 顯示數值、點擊 drill-down 明細
-   - 右上角匯出按鈕：將當前畫面存成 PNG
-4. 確保所有 API 回傳 JSON 格式，前端用 fetch 非同步載入
-5. 加入 README.md 說明如何啟動與部署</div>
+    <h2>程式碼庫健康報告產生器</h2>
+    <div class="tagline">深度掃描整個程式碼庫，產出涵蓋複雜度、重複率、依賴風險的視覺化健康報告</div>
+    <p>讓 Claude Code 掃描你的整個專案，分析程式碼複雜度（圈複雜度）、重複程式碼區塊、過長函式、未使用的 import/export、package.json 中有已知漏洞或過時的依賴套件，最後產出一份包含互動式圖表的 HTML 報告。報告內含總體健康評分（A-F 等級）、各模組熱點地圖、優先重構建議清單，以及可匯出的 JSON 資料供 CI/CD 流程使用。適合技術主管做季度程式碼審查、接手舊專案前的評估、或準備技術債清理計畫。</p>
+    <div class="prompt-box">請對這個程式碼庫 [拖曳專案根目錄] 做一次完整健康檢查。執行以下分析：1. 掃描所有 .js/.ts/.py 檔案，計算每個函式的圈複雜度，標記超過 10 的為高風險 2. 用文字相似度比對找出重複超過 15 行的程式碼區塊，列出檔案路徑與行號 3. 找出超過 100 行的函式並建議拆分策略 4. 分析 package.json 或 requirements.txt 中每個依賴的最新版本，標記大版本落後的套件 5. 統計每個資料夾的檔案數、總行數、註解比例 6. 產出 health-report.html：包含總評分（加權計算）、圈複雜度分布直方圖（用 Chart.js CDN）、重複碼熱點表格、依賴風險矩陣、前 10 項優先重構建議（附預估工時）7. 同時產出 health-data.json 供程式讀取 8. 在報告底部附上方法論說明，讓非技術利害關係人也能看懂</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階全端挑戰：涵蓋資料分析、後端 API、前端互動、容器化部署，考驗 Claude Code 的多技術棧協作能力
+      挑戰 Claude Code 的多維度分析與大量檔案處理能力，學會編排複雜的多步驟自動化工作流與視覺化呈現
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -828,7 +798,92 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="日記情緒週報分析師 資料分析">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要神器 生產力">
+    <div class="card-header">
+      <span class="badge">195</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/6</span>
+    </div>
+    <h2>會議逐字稿摘要神器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿濃縮成結構化的重點摘要與待辦清單</div>
+    <p>將 Zoom、Google Meet 等工具匯出的會議逐字稿丟進 Claude Code，自動產出三層摘要：一句話結論、五點核心決議、完整待辦事項（含負責人與期限）。輸出 Markdown 筆記與可貼進 Slack 的格式化訊息，讓沒參加會議的人三分鐘掌握全貌。</p>
+    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳 .txt 檔]。請幫我做以下處理：1. 用一句話（30 字內）總結這場會議的最終結論 2. 列出 5 項核心討論決議，每項附上支持理由 3. 整理所有待辦事項，格式為表格：任務｜負責人｜截止日期｜優先級（高/中/低）4. 產出兩個檔案：meeting_summary.md（完整摘要筆記）和 slack_message.txt（可直接貼到 Slack 頻道的精簡版）5. 如果逐字稿中有模糊或矛盾的地方，請標註提醒我確認</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：體驗 Claude 的長文閱讀理解與結構化輸出能力，成果立刻可用於工作
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="多語系行銷文案工坊 內容創作">
+    <div class="card-header">
+      <span class="badge">196</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/6</span>
+    </div>
+    <h2>多語系行銷文案工坊</h2>
+    <div class="tagline">輸入一個產品賣點，批量生成多平台、多語系的社群行銷文案與 A/B 測試版本</div>
+    <p>給 Claude Code 產品名稱、三個核心賣點和目標受眾，它會自動生成 Instagram、Facebook、LinkedIn、X 四個平台各兩版 A/B 測試文案，同時翻譯成繁中、英文、日文三語版本。每則文案附上建議 Hashtag、最佳發文時段與 CTA 用語，最終輸出成一份完整的行銷排程 Excel 檔。</p>
+    <div class="prompt-box">我要為以下產品做社群行銷：
+產品名稱：[填入]
+核心賣點：1. [填入] 2. [填入] 3. [填入]
+目標受眾：[填入年齡層、興趣、痛點]
+品牌語調：[專業/親切/幽默 擇一]
+
+請執行以下步驟：
+1. 針對 Instagram、Facebook、LinkedIn、X 四個平台，各產出 A/B 兩版文案，符合各平台字數限制與風格
+2. 每則文案包含：正文、CTA 按鈕文字、5 個 Hashtag、建議發文時段
+3. 將所有文案翻譯成繁體中文、英文、日文三個語系版本
+4. 建立資料夾結構：marketing_copy/[平台]/[語系]/version_a.md
+5. 產出 campaign_schedule.csv 彙整所有文案的排程總表
+6. 附上一份 copywriting_notes.md 說明每版文案的策略差異</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習多檔案輸出與資料夾管理，學會用 Claude Code 建立批量內容生產的工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="即時資料儀表板產生器 資料分析">
+    <div class="card-header">
+      <span class="badge">197</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/6</span>
+    </div>
+    <h2>即時資料儀表板產生器</h2>
+    <div class="tagline">上傳 CSV 資料集，自動生成含互動圖表與篩選器的全功能 Web 儀表板應用</div>
+    <p>將任何 CSV 資料集交給 Claude Code，它會自動分析欄位類型與資料分布，用 Python Flask 後端搭配 Chart.js 前端，生成一個可在本機運行的互動式儀表板。包含自動偵測的 KPI 卡片、可切換的長條圖/折線圖/圓餅圖、日期範圍篩選器、欄位交叉分析功能，以及一鍵匯出 PNG 報表的按鈕。整套應用含 Docker 部署設定，可直接上線。</p>
+    <div class="prompt-box">我有一份資料集 [拖曳 CSV 檔案]，請幫我建立一個完整的互動式資料儀表板：
+
+1. 先分析 CSV 的所有欄位，自動判斷資料類型（數值/類別/日期/文字），產出 data_profile.md 摘要報告
+2. 建立以下專案結構：
+   dashboard/
+   ├── app.py（Flask 後端，含 API 路由）
+   ├── templates/index.html（儀表板主頁面）
+   ├── static/css/style.css（深色主題響應式設計）
+   ├── static/js/charts.js（Chart.js 互動圖表邏輯）
+   ├── utils/data_processor.py（資料清洗與聚合）
+   ├── Dockerfile + docker-compose.yml
+   └── requirements.txt
+3. 儀表板功能需求：
+   - 頂部 4 張 KPI 卡片（自動選取最重要的數值指標）
+   - 左側篩選面板：日期區間選擇器、類別欄位下拉多選
+   - 主區域：2x2 格線佈局放四張圖表，可點擊切換圖表類型
+   - 圖表支援 hover 顯示數值、點擊 drill-down 明細
+   - 右上角匯出按鈕：將當前畫面存成 PNG
+4. 確保所有 API 回傳 JSON 格式，前端用 fetch 非同步載入
+5. 加入 README.md 說明如何啟動與部署</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階全端挑戰：涵蓋資料分析、後端 API、前端互動、容器化部署，考驗 Claude Code 的多技術棧協作能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="日記情緒週報分析師 資料分析">
     <div class="card-header">
       <span class="badge">192</span>
       <span class="tag level-1">初階</span>
