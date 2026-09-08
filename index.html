@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/07</span>
-      <span>📚 累計收錄：<span id="totalCount">200</span> 個專案</span>
+      <span>📅 最後更新：2026/09/08</span>
+      <span>📚 累計收錄：<span id="totalCount">203</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 200 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 203 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/7) ============ -->
+  <!-- ============ 今日新增 (9/8) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/07
+    今日新增 · 2026/09/08
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git Commit 訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="終端機每日儀表板 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/7</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/8</span>
     </div>
-    <h2>Git Commit 訊息美化器</h2>
-    <div class="tagline">分析你的 Git 歷史紀錄，自動重寫成語意清晰、格式統一的 Conventional Commits</div>
-    <p>把你的專案資料夾丟給 Claude Code，它會讀取 git log，找出訊息模糊的 commit（例如『fix bug』『update』），幫你產出符合 Conventional Commits 規範的改寫建議清單，並生成一份可直接執行的 git rebase 腳本。適合想整理開源專案歷史、準備 code review、或養成好習慣的開發者。</p>
-    <div class="prompt-box">請分析這個專案資料夾 [拖曳資料夾] 的 git log（最近 50 筆 commit）。幫我：1. 列出所有訊息不符合 Conventional Commits 規範的 commit（標出 hash 和原始訊息）2. 每一筆提供改寫建議，格式為 type(scope): description，並附上為什麼這樣改的一句話理由 3. 產出 rewrite-commits.md 整理表格 4. 產出 rewrite-guide.sh 腳本，裡面用註解說明如何搭配 interactive rebase 使用（不要自動執行）</div>
+    <h2>終端機每日儀表板</h2>
+    <div class="tagline">打開終端機就看到天氣、待辦、行事曆與勵志語錄的個人化早安頁面</div>
+    <p>用 Claude Code 寫一支 Shell 腳本，每次開啟終端機自動顯示今日天氣摘要、從本地 JSON 讀取待辦事項、倒數重要日期，還附上一句隨機勵志語錄。產出是一支可加進 .zshrc/.bashrc 的腳本，讓工程師每天開工都有儀式感。</p>
+    <div class="prompt-box">請幫我用 Bash 建立一個終端機每日儀表板腳本 daily-dashboard.sh，功能如下：1. 用 curl 從 wttr.in 抓取所在城市的今日天氣摘要（單行格式）2. 讀取 ~/todos.json 中的待辦清單，列出未完成項目並標示優先度 3. 從 ~/countdowns.json 讀取重要日期，計算距今天數並顯示倒數 4. 內建 30 句中文勵志語錄陣列，每次隨機挑一句顯示 5. 用 ANSI 色碼美化排版，加上方框與分隔線 6. 附上 todos.json 和 countdowns.json 的範例檔案 7. 產出安裝說明，教使用者加進 .zshrc 開機自動執行</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude Code 讀取本地檔案與 Git 紀錄的能力，學會結合開發工具鏈
+      初學者能體驗 Claude Code 產出可立即執行的腳本，學會檔案讀取與終端機美化技巧
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試站 程式原型">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品社群聲量雷達圖 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/7</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">9/8</span>
     </div>
-    <h2>API 文件互動測試站</h2>
-    <div class="tagline">給一份 OpenAPI/Swagger JSON，自動生成可在瀏覽器操作的 API 測試網頁</div>
-    <p>把後端的 OpenAPI 規格檔交給 Claude Code，它會解析所有端點、參數與回傳格式，產出一個純前端的互動式測試頁面（HTML + Vanilla JS）。每個 API 端點會變成一張卡片，內含可填寫的參數表單、送出按鈕、即時顯示回應的區塊，還有自動產生的 cURL 指令複製鈕。適合前後端協作、QA 驗收、或寫技術文件時附上可操作的範例。</p>
-    <div class="prompt-box">這是我的 API 規格檔 [拖曳 openapi.json 或 swagger.yaml]。請幫我：1. 解析所有端點，依 tag 分組 2. 為每個端點產生一張互動卡片，包含：HTTP method 標籤、路徑、參數輸入表單（區分 path/query/body 參數並標示必填）、送出按鈕、回應顯示區（JSON 語法高亮）、一鍵複製 cURL 指令 3. 頂部加一個 Base URL 輸入欄位，可切換環境 4. 加入深色模式切換 5. 所有程式碼放在單一 index.html，不依賴外部框架，CSS 用現代風格 6. 在檔案開頭加上使用說明註解</div>
+    <h2>競品社群聲量雷達圖</h2>
+    <div class="tagline">輸入品牌關鍵字，自動爬取社群數據並產出視覺化競品分析報告</div>
+    <p>給 Claude Code 三到五個競品品牌名稱，它會建立一個 Python 專案，透過 RSS Feed 與公開 API 蒐集各品牌近期社群聲量數據，計算情緒分數、發文頻率、熱門關鍵字，最後用 Matplotlib 產出雷達圖、趨勢折線圖，並彙整成一份 HTML 報告。行銷人員和產品經理每週跑一次就能掌握市場動態。</p>
+    <div class="prompt-box">請建立一個 Python 競品分析專案，資料夾結構：competitor-radar/├── main.py├── scraper.py（用 feedparser 抓取品牌相關 RSS）├── analyzer.py（用 jieba 斷詞 + 簡易情緒詞典計算聲量分數）├── visualizer.py（Matplotlib 雷達圖 + 折線圖）├── report_template.html（Jinja2 模板）├── config.yaml（品牌關鍵字設定）└── output/（產出報告目錄）。流程：1. 從 config.yaml 讀取 5 個品牌及其關鍵字 2. 透過 Google News RSS 和 Reddit JSON API 蒐集近 7 天資料 3. 對每個品牌計算：提及次數、正負面比例、Top 10 關聯詞 4. 產出雷達圖比較五品牌六維度指標 5. 生成 HTML 報告含圖表與摘要文字 6. 請附 requirements.txt 和執行說明</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      練習讓 Claude Code 解析結構化資料並產出完整前端應用，學會處理複雜檔案解析與 UI 生成
+      中階練習涉及多模組架構、資料爬取、NLP 分析與視覺化整合，培養端到端專案能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康報告產生器 資料分析">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時協作看板系統 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">90 分鐘</span>
-      <span class="date-tag">9/7</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">9/8</span>
     </div>
-    <h2>程式碼庫健康報告產生器</h2>
-    <div class="tagline">深度掃描整個程式碼庫，產出涵蓋複雜度、重複率、依賴風險的視覺化健康報告</div>
-    <p>讓 Claude Code 掃描你的整個專案，分析程式碼複雜度（圈複雜度）、重複程式碼區塊、過長函式、未使用的 import/export、package.json 中有已知漏洞或過時的依賴套件，最後產出一份包含互動式圖表的 HTML 報告。報告內含總體健康評分（A-F 等級）、各模組熱點地圖、優先重構建議清單，以及可匯出的 JSON 資料供 CI/CD 流程使用。適合技術主管做季度程式碼審查、接手舊專案前的評估、或準備技術債清理計畫。</p>
-    <div class="prompt-box">請對這個程式碼庫 [拖曳專案根目錄] 做一次完整健康檢查。執行以下分析：1. 掃描所有 .js/.ts/.py 檔案，計算每個函式的圈複雜度，標記超過 10 的為高風險 2. 用文字相似度比對找出重複超過 15 行的程式碼區塊，列出檔案路徑與行號 3. 找出超過 100 行的函式並建議拆分策略 4. 分析 package.json 或 requirements.txt 中每個依賴的最新版本，標記大版本落後的套件 5. 統計每個資料夾的檔案數、總行數、註解比例 6. 產出 health-report.html：包含總評分（加權計算）、圈複雜度分布直方圖（用 Chart.js CDN）、重複碼熱點表格、依賴風險矩陣、前 10 項優先重構建議（附預估工時）7. 同時產出 health-data.json 供程式讀取 8. 在報告底部附上方法論說明，讓非技術利害關係人也能看懂</div>
+    <h2>全端即時協作看板系統</h2>
+    <div class="tagline">從零搭建支援多人即時拖拉、標籤篩選與進度統計的專案管理看板</div>
+    <p>請 Claude Code 打造一個完整的 Kanban 看板應用，前端用 React + TypeScript 實作拖拉排序、標籤篩選、截止日提醒；後端用 Node.js + Express + Socket.IO 實現多人即時同步；資料庫用 SQLite 持久化。支援建立多專案、自定義欄位、匯出 CSV 進度報告，部署腳本一鍵啟動。適合小團隊取代 Trello 的自架方案。</p>
+    <div class="prompt-box">請建立全端看板系統 kanban-flow/，完整架構如下：前端（kanban-flow/client/）：1. React 18 + TypeScript + Vite 2. 用 @dnd-kit 實作卡片與欄位拖拉排序 3. 支援建立多個 Board，每 Board 可自訂欄位名稱（如待辦/進行中/已完成/封存）4. 卡片包含：標題、描述（Markdown）、指派人、標籤（多選色彩標籤）、截止日、優先度 5. 頂部篩選列：按標籤、指派人、截止日範圍篩選 6. 側邊欄顯示統計：各欄位卡片數長條圖、逾期卡片數、本週完成率。後端（kanban-flow/server/）：1. Express + Socket.IO，拖拉與新增操作即時廣播給所有連線用戶 2. SQLite + better-sqlite3 持久化，設計 boards/columns/cards/labels 資料表 3. RESTful API：CRUD boards、columns、cards、labels 4. GET /api/export/:boardId 匯出 CSV。根目錄：docker-compose.yml 一鍵啟動前後端、README.md 含架構圖 ASCII Art 與使用說明。請從資料庫 schema 開始，逐步建立每個檔案。</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      挑戰 Claude Code 的多維度分析與大量檔案處理能力，學會編排複雜的多步驟自動化工作流與視覺化呈現
+      高階挑戰涵蓋全端架構、WebSocket 即時通訊、拖拉互動與資料庫設計，考驗 Claude Code 處理複雜多檔案專案的能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -798,7 +799,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要神器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git Commit 訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">198</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/7</span>
+    </div>
+    <h2>Git Commit 訊息美化器</h2>
+    <div class="tagline">分析你的 Git 歷史紀錄，自動重寫成語意清晰、格式統一的 Conventional Commits</div>
+    <p>把你的專案資料夾丟給 Claude Code，它會讀取 git log，找出訊息模糊的 commit（例如『fix bug』『update』），幫你產出符合 Conventional Commits 規範的改寫建議清單，並生成一份可直接執行的 git rebase 腳本。適合想整理開源專案歷史、準備 code review、或養成好習慣的開發者。</p>
+    <div class="prompt-box">請分析這個專案資料夾 [拖曳資料夾] 的 git log（最近 50 筆 commit）。幫我：1. 列出所有訊息不符合 Conventional Commits 規範的 commit（標出 hash 和原始訊息）2. 每一筆提供改寫建議，格式為 type(scope): description，並附上為什麼這樣改的一句話理由 3. 產出 rewrite-commits.md 整理表格 4. 產出 rewrite-guide.sh 腳本，裡面用註解說明如何搭配 interactive rebase 使用（不要自動執行）</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude Code 讀取本地檔案與 Git 紀錄的能力，學會結合開發工具鏈
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試站 程式原型">
+    <div class="card-header">
+      <span class="badge">199</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/7</span>
+    </div>
+    <h2>API 文件互動測試站</h2>
+    <div class="tagline">給一份 OpenAPI/Swagger JSON，自動生成可在瀏覽器操作的 API 測試網頁</div>
+    <p>把後端的 OpenAPI 規格檔交給 Claude Code，它會解析所有端點、參數與回傳格式，產出一個純前端的互動式測試頁面（HTML + Vanilla JS）。每個 API 端點會變成一張卡片，內含可填寫的參數表單、送出按鈕、即時顯示回應的區塊，還有自動產生的 cURL 指令複製鈕。適合前後端協作、QA 驗收、或寫技術文件時附上可操作的範例。</p>
+    <div class="prompt-box">這是我的 API 規格檔 [拖曳 openapi.json 或 swagger.yaml]。請幫我：1. 解析所有端點，依 tag 分組 2. 為每個端點產生一張互動卡片，包含：HTTP method 標籤、路徑、參數輸入表單（區分 path/query/body 參數並標示必填）、送出按鈕、回應顯示區（JSON 語法高亮）、一鍵複製 cURL 指令 3. 頂部加一個 Base URL 輸入欄位，可切換環境 4. 加入深色模式切換 5. 所有程式碼放在單一 index.html，不依賴外部框架，CSS 用現代風格 6. 在檔案開頭加上使用說明註解</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      練習讓 Claude Code 解析結構化資料並產出完整前端應用，學會處理複雜檔案解析與 UI 生成
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="程式碼庫健康報告產生器 資料分析">
+    <div class="card-header">
+      <span class="badge">200</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">9/7</span>
+    </div>
+    <h2>程式碼庫健康報告產生器</h2>
+    <div class="tagline">深度掃描整個程式碼庫，產出涵蓋複雜度、重複率、依賴風險的視覺化健康報告</div>
+    <p>讓 Claude Code 掃描你的整個專案，分析程式碼複雜度（圈複雜度）、重複程式碼區塊、過長函式、未使用的 import/export、package.json 中有已知漏洞或過時的依賴套件，最後產出一份包含互動式圖表的 HTML 報告。報告內含總體健康評分（A-F 等級）、各模組熱點地圖、優先重構建議清單，以及可匯出的 JSON 資料供 CI/CD 流程使用。適合技術主管做季度程式碼審查、接手舊專案前的評估、或準備技術債清理計畫。</p>
+    <div class="prompt-box">請對這個程式碼庫 [拖曳專案根目錄] 做一次完整健康檢查。執行以下分析：1. 掃描所有 .js/.ts/.py 檔案，計算每個函式的圈複雜度，標記超過 10 的為高風險 2. 用文字相似度比對找出重複超過 15 行的程式碼區塊，列出檔案路徑與行號 3. 找出超過 100 行的函式並建議拆分策略 4. 分析 package.json 或 requirements.txt 中每個依賴的最新版本，標記大版本落後的套件 5. 統計每個資料夾的檔案數、總行數、註解比例 6. 產出 health-report.html：包含總評分（加權計算）、圈複雜度分布直方圖（用 Chart.js CDN）、重複碼熱點表格、依賴風險矩陣、前 10 項優先重構建議（附預估工時）7. 同時產出 health-data.json 供程式讀取 8. 在報告底部附上方法論說明，讓非技術利害關係人也能看懂</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      挑戰 Claude Code 的多維度分析與大量檔案處理能力，學會編排複雜的多步驟自動化工作流與視覺化呈現
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要神器 生產力">
     <div class="card-header">
       <span class="badge">195</span>
       <span class="tag level-1">初階</span>
