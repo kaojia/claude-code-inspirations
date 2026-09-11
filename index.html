@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/10</span>
-      <span>📚 累計收錄：<span id="totalCount">209</span> 個專案</span>
+      <span>📅 最後更新：2026/09/11</span>
+      <span>📚 累計收錄：<span id="totalCount">212</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,92 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 209 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 212 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/10) ============ -->
+  <!-- ============ 今日新增 (9/11) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/10
+    今日新增 · 2026/09/11
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git Commit 訊息美化器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/10</span>
+      <span class="date-tag">9/11</span>
     </div>
-    <h2>會議逐字稿摘要精靈</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化會議紀錄與待辦事項</div>
-    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿交給 Claude Code，它會自動辨識發言者、歸納討論主題、列出決議事項與每個人的待辦任務，最後產出一份格式漂亮的 Markdown 會議紀錄和可匯入 Notion 的 CSV 待辦清單。適合 PM、主管、行政助理每週整理多場會議。</p>
-    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳 .txt/.srt 檔案]。請幫我：1. 辨識每位發言者並統計各自發言比例 2. 將討論內容歸納為 3-5 個主題段落，每段附上關鍵引述 3. 列出所有決議事項，標明負責人與截止日期 4. 產出 meeting_notes.md（含日期、與會者、主題摘要、決議表格）5. 產出 action_items.csv（欄位：任務、負責人、截止日、優先級）讓我可以直接匯入 Notion 資料庫</div>
+    <h2>Git Commit 訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰、風格一致的 Conventional Commits</div>
+    <p>很多開發者的 commit message 寫得隨意（如「fix bug」「update」），日後回溯很痛苦。這個工具讓 Claude Code 讀取你的 git log，逐條改寫成符合 Conventional Commits 規範的訊息，並產出一份 CHANGELOG.md。適合準備開源專案、整理個人作品集、或團隊想統一 commit 風格時使用。</p>
+    <div class="prompt-box">請在這個 Git 專案資料夾中執行以下步驟：1. 用 git log --oneline -50 讀取最近 50 筆 commit 訊息 2. 將每筆改寫為 Conventional Commits 格式（feat / fix / docs / refactor / chore），保留原意但讓描述更精確，附上繁體中文說明 3. 產出 improved-commits.md 對照表（原始 → 改寫） 4. 根據改寫結果自動生成 CHANGELOG.md，按版本與類型分組 5. 額外給出 3 條團隊 commit 撰寫規範建議</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階使用者能快速體驗 Claude 的文本摘要與結構化輸出能力，成果可直接用於日常工作流程
+      初階入門練習：體驗 Claude Code 讀取本地 Git 資訊並批次處理文字的能力，無需寫程式
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://www.conventionalcommits.org" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="互動式色彩系統產生器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">75 分鐘</span>
-      <span class="date-tag">9/10</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/11</span>
     </div>
-    <h2>API 文件互動測試台</h2>
-    <div class="tagline">給一份 API 規格文件，自動產生可在瀏覽器操作的互動式測試介面</div>
-    <p>將 OpenAPI/Swagger JSON 或任何 REST API 文件丟給 Claude Code，讓它解析所有端點，自動產生一個帶有表單輸入、請求預覽、回應格式化顯示的單頁 HTML 測試介面。前端工程師、後端開發者、QA 測試人員都能直接在瀏覽器中填參數發送請求，不用再切換 Postman。支援 Bearer Token 驗證與歷史請求記錄。</p>
-    <div class="prompt-box">這是我們的 API 規格文件 [拖曳 swagger.json 或 openapi.yaml]。請幫我建立一個專案，結構如下：api-tester/index.html、api-tester/style.css、api-tester/app.js。功能需求：1. 解析所有 API 端點，左側顯示分類導覽列（依 tag 分組）2. 點擊端點後右側顯示：HTTP 方法、路徑、參數表單（區分 path/query/body 參數，自動依 schema 產生輸入欄位）3. 頂部設定區可填入 Base URL 和 Authorization Token 4. 送出請求後顯示 HTTP 狀態碼、回應時間、格式化的 JSON 回應（可折疊展開）5. 用 localStorage 記錄最近 20 筆請求歷史 6. 介面使用深色主題，RWD 支援手機瀏覽</div>
+    <h2>互動式色彩系統產生器</h2>
+    <div class="tagline">輸入品牌主色，自動產出完整設計系統的色票、對比度報告與 CSS/Tailwind 變數檔</div>
+    <p>設計師或前端工程師常需要從一個品牌色展開完整色彩系統。這個專案讓 Claude Code 根據你給的 1-3 個主色，運用色彩理論計算出語意色（success、warning、error）、5 級明暗階梯、深色模式配色，並檢查所有組合的 WCAG 對比度。最終產出可直接使用的 CSS custom properties 檔、Tailwind 設定檔、以及一個 HTML 預覽頁面展示所有色票。</p>
+    <div class="prompt-box">我的品牌主色是 #2563EB（藍）和 #F59E0B（橙）。請幫我：1. 建立資料夾 color-system/ 2. 用色彩理論為每個主色生成 50~950 共 10 級明暗色階 3. 自動推導 success（綠系）、warning（黃系）、error（紅系）、neutral（灰系）語意色及其色階 4. 產出 tokens.css（CSS 變數含深色模式）與 tailwind.colors.js 5. 建立 preview.html：用純 HTML+CSS 展示所有色票卡片，每張標示色碼與 WCAG AA/AAA 對比度結果 6. 產出 contrast-report.md 列出所有「文字色＋背景色」不及格的組合並建議替代色</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案需整合檔案解析、動態 DOM 生成與 fetch API 串接，學會用 Claude Code 搭建完整前端工具
+      中階挑戰：需整合色彩演算邏輯、多檔案輸出與 WCAG 無障礙標準，學會讓 Claude 做系統性設計
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://tailwindcss.com/docs/customizing-colors" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="資料集異常偵測儀表板 資料分析">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用分帳應用原型 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
+      <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/10</span>
+      <span class="date-tag">9/11</span>
     </div>
-    <h2>資料集異常偵測儀表板</h2>
-    <div class="tagline">上傳 CSV 資料集，自動偵測離群值與異常模式，產出互動式視覺化報告</div>
-    <p>建立一個完整的資料異常偵測工具：使用者上傳 CSV 後，系統自動進行資料概覽（欄位型別、缺值比例、分佈統計）、以多種演算法（Z-score、IQR、Isolation Forest 邏輯）偵測數值與類別異常，並產出含有互動圖表的 HTML 儀表板。適合資料分析師、BI 人員、稽核團隊快速檢視大量資料中的可疑記錄。支援時間序列趨勢異常與跨欄位關聯異常偵測。</p>
-    <div class="prompt-box">請幫我建立一個資料異常偵測專案，結構：anomaly-detector/index.html、anomaly-detector/analyzer.js、anomaly-detector/charts.js、anomaly-detector/style.css。完整功能：1. 拖曳上傳 CSV，用 PapaParse 解析，自動辨識數值欄/類別欄/日期欄 2. 資料概覽面板：每欄顯示型別、缺值率、基本統計量（mean/median/std/min/max），類別欄顯示 top 10 值域分佈 3. 數值異常偵測：實作 Z-score（閾值±3）和 IQR 法，標記離群值並用 Chart.js 畫箱型圖與散佈圖，異常點用紅色高亮 4. 時序異常：若偵測到日期欄，自動畫趨勢線並用移動平均法標出突變點 5. 跨欄位關聯：計算數值欄兩兩相關係數，用熱力圖顯示，相關係數驟變的記錄標為可疑 6. 匯出功能：一鍵下載異常記錄 CSV 和完整分析報告 PDF（用 html2canvas + jsPDF）7. 所有圖表支援 hover 顯示細節、點擊篩選、縮放操作</div>
+    <h2>全端費用分帳應用原型</h2>
+    <div class="tagline">從零搭建一個多人旅行分帳 Web App，含債務簡化演算法與即時結算儀表板</div>
+    <p>出遊分帳是經典痛點：誰先墊了多少、該找誰要錢、最少幾筆轉帳能清算？這個專案讓 Claude Code 產出完整的全端原型——前端用 HTML + Alpine.js 做互動介面，後端用 Node.js + SQLite 儲存帳目，核心是一個最小現金流（min-cash-flow）演算法，把 N 人之間的複雜債務關係簡化成最少轉帳筆數。最終部署為可本地運行的單一服務，附有儀表板顯示每人餘額與建議轉帳路徑圖。</p>
+    <div class="prompt-box">請幫我建立一個多人旅行分帳 Web 應用，資料夾名稱 splitwise-lite/：
+
+【後端】
+1. 用 Node.js + Express 建立 REST API
+2. SQLite 資料庫，資料表：trips、members、expenses（含付款人、分攤人清單、金額）
+3. 實作 /api/settle 端點，使用最小現金流演算法計算最佳結算方案
+
+【前端】
+4. 單頁 HTML + Alpine.js + Tailwind CDN
+5. 功能頁面：建立旅程 → 加入成員 → 新增消費（可選均分或自訂比例） → 結算儀表板
+6. 結算頁顯示：每人目前餘額長條圖、最少轉帳方案清單、簡易債務關係箭頭圖（用 SVG 畫）
+
+【額外】
+7. 加入匯出功能：一鍵下載該旅程所有明細與結算結果的 PDF
+8. 寫 README.md 含安裝步驟與螢幕截圖位置預留區塊
+9. 加入 3 筆範例旅程種子資料，啟動後即可體驗</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案整合資料解析、統計演算法實作、多種圖表繪製與匯出功能，全面鍛鍊用 Claude Code 建構複雜資料應用的能力
+      高階綜合挑戰：涵蓋全端架構設計、圖論演算法實作、資料庫建模與互動式資料視覺化，考驗系統整合能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -801,7 +817,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Markdown 週報自動產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+    <div class="card-header">
+      <span class="badge">207</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/10</span>
+    </div>
+    <h2>會議逐字稿摘要精靈</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化會議紀錄與待辦事項</div>
+    <p>將 Zoom、Google Meet 或 Teams 匯出的逐字稿交給 Claude Code，它會自動辨識發言者、歸納討論主題、列出決議事項與每個人的待辦任務，最後產出一份格式漂亮的 Markdown 會議紀錄和可匯入 Notion 的 CSV 待辦清單。適合 PM、主管、行政助理每週整理多場會議。</p>
+    <div class="prompt-box">這是我們今天的會議逐字稿 [貼上或拖曳 .txt/.srt 檔案]。請幫我：1. 辨識每位發言者並統計各自發言比例 2. 將討論內容歸納為 3-5 個主題段落，每段附上關鍵引述 3. 列出所有決議事項，標明負責人與截止日期 4. 產出 meeting_notes.md（含日期、與會者、主題摘要、決議表格）5. 產出 action_items.csv（欄位：任務、負責人、截止日、優先級）讓我可以直接匯入 Notion 資料庫</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階使用者能快速體驗 Claude 的文本摘要與結構化輸出能力，成果可直接用於日常工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API 文件互動測試台 程式原型">
+    <div class="card-header">
+      <span class="badge">208</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">9/10</span>
+    </div>
+    <h2>API 文件互動測試台</h2>
+    <div class="tagline">給一份 API 規格文件，自動產生可在瀏覽器操作的互動式測試介面</div>
+    <p>將 OpenAPI/Swagger JSON 或任何 REST API 文件丟給 Claude Code，讓它解析所有端點，自動產生一個帶有表單輸入、請求預覽、回應格式化顯示的單頁 HTML 測試介面。前端工程師、後端開發者、QA 測試人員都能直接在瀏覽器中填參數發送請求，不用再切換 Postman。支援 Bearer Token 驗證與歷史請求記錄。</p>
+    <div class="prompt-box">這是我們的 API 規格文件 [拖曳 swagger.json 或 openapi.yaml]。請幫我建立一個專案，結構如下：api-tester/index.html、api-tester/style.css、api-tester/app.js。功能需求：1. 解析所有 API 端點，左側顯示分類導覽列（依 tag 分組）2. 點擊端點後右側顯示：HTTP 方法、路徑、參數表單（區分 path/query/body 參數，自動依 schema 產生輸入欄位）3. 頂部設定區可填入 Base URL 和 Authorization Token 4. 送出請求後顯示 HTTP 狀態碼、回應時間、格式化的 JSON 回應（可折疊展開）5. 用 localStorage 記錄最近 20 筆請求歷史 6. 介面使用深色主題，RWD 支援手機瀏覽</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合檔案解析、動態 DOM 生成與 fetch API 串接，學會用 Claude Code 搭建完整前端工具
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="資料集異常偵測儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">209</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/10</span>
+    </div>
+    <h2>資料集異常偵測儀表板</h2>
+    <div class="tagline">上傳 CSV 資料集，自動偵測離群值與異常模式，產出互動式視覺化報告</div>
+    <p>建立一個完整的資料異常偵測工具：使用者上傳 CSV 後，系統自動進行資料概覽（欄位型別、缺值比例、分佈統計）、以多種演算法（Z-score、IQR、Isolation Forest 邏輯）偵測數值與類別異常，並產出含有互動圖表的 HTML 儀表板。適合資料分析師、BI 人員、稽核團隊快速檢視大量資料中的可疑記錄。支援時間序列趨勢異常與跨欄位關聯異常偵測。</p>
+    <div class="prompt-box">請幫我建立一個資料異常偵測專案，結構：anomaly-detector/index.html、anomaly-detector/analyzer.js、anomaly-detector/charts.js、anomaly-detector/style.css。完整功能：1. 拖曳上傳 CSV，用 PapaParse 解析，自動辨識數值欄/類別欄/日期欄 2. 資料概覽面板：每欄顯示型別、缺值率、基本統計量（mean/median/std/min/max），類別欄顯示 top 10 值域分佈 3. 數值異常偵測：實作 Z-score（閾值±3）和 IQR 法，標記離群值並用 Chart.js 畫箱型圖與散佈圖，異常點用紅色高亮 4. 時序異常：若偵測到日期欄，自動畫趨勢線並用移動平均法標出突變點 5. 跨欄位關聯：計算數值欄兩兩相關係數，用熱力圖顯示，相關係數驟變的記錄標為可疑 6. 匯出功能：一鍵下載異常記錄 CSV 和完整分析報告 PDF（用 html2canvas + jsPDF）7. 所有圖表支援 hover 顯示細節、點擊篩選、縮放操作</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案整合資料解析、統計演算法實作、多種圖表繪製與匯出功能，全面鍛鍊用 Claude Code 建構複雜資料應用的能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Markdown 週報自動產生器 生產力">
     <div class="card-header">
       <span class="badge">204</span>
       <span class="tag level-1">初階</span>
