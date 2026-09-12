@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/11</span>
-      <span>📚 累計收錄：<span id="totalCount">212</span> 個專案</span>
+      <span>📅 最後更新：2026/09/12</span>
+      <span>📚 累計收錄：<span id="totalCount">215</span> 個專案</span>
     </div>
   </header>
 
@@ -664,91 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 212 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 215 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/11) ============ -->
+  <!-- ============ 今日新增 (9/12) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/11
+    今日新增 · 2026/09/12
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git Commit 訊息美化器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議機器人 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/11</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/12</span>
     </div>
-    <h2>Git Commit 訊息美化器</h2>
-    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰、風格一致的 Conventional Commits</div>
-    <p>很多開發者的 commit message 寫得隨意（如「fix bug」「update」），日後回溯很痛苦。這個工具讓 Claude Code 讀取你的 git log，逐條改寫成符合 Conventional Commits 規範的訊息，並產出一份 CHANGELOG.md。適合準備開源專案、整理個人作品集、或團隊想統一 commit 風格時使用。</p>
-    <div class="prompt-box">請在這個 Git 專案資料夾中執行以下步驟：1. 用 git log --oneline -50 讀取最近 50 筆 commit 訊息 2. 將每筆改寫為 Conventional Commits 格式（feat / fix / docs / refactor / chore），保留原意但讓描述更精確，附上繁體中文說明 3. 產出 improved-commits.md 對照表（原始 → 改寫） 4. 根據改寫結果自動生成 CHANGELOG.md，按版本與類型分組 5. 額外給出 3 條團隊 commit 撰寫規範建議</div>
+    <h2>每日天氣穿搭建議機器人</h2>
+    <div class="tagline">輸入你的所在城市與衣櫃清單，自動產出今日穿搭建議與出門提醒</div>
+    <p>把你的衣櫃品項清單（上衣、褲子、外套、配件等）整理成一份文字檔，搭配指定城市的天氣條件，讓 Claude Code 幫你產出每日穿搭推薦。產出包含一個互動式 HTML 頁面，顯示天氣概覽、推薦穿搭組合、以及是否需帶傘或防曬的貼心提醒。適合每天早上不知道穿什麼的人。</p>
+    <div class="prompt-box">我住在台北，這是我的衣櫃清單 [貼上清單，格式：類別/品名/顏色/適合溫度]。請幫我：1. 建立 wardrobe.json 儲存所有衣物資料 2. 寫一個 Python 腳本 daily_outfit.py，接收溫度、降雨機率、UV 指數作為參數 3. 根據天氣從衣櫃中挑選上衣+下身+外套+配件的最佳組合，考慮色彩搭配 4. 產出 outfit.html 單頁，上方顯示天氣摘要，中間顯示推薦穿搭，下方顯示出門提醒（帶傘、防曬、多喝水等） 5. 加入隨機驚喜元素，偶爾推薦平常少穿的單品</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門練習：體驗 Claude Code 讀取本地 Git 資訊並批次處理文字的能力，無需寫程式
+      初階入門最適合：只需基本 Python 與 HTML，做完馬上融入日常生活流程
     </div>
-    <a class="source-link" href="https://www.conventionalcommits.org" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="互動式色彩系統產生器 程式原型">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章產線系統 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/11</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">9/12</span>
     </div>
-    <h2>互動式色彩系統產生器</h2>
-    <div class="tagline">輸入品牌主色，自動產出完整設計系統的色票、對比度報告與 CSS/Tailwind 變數檔</div>
-    <p>設計師或前端工程師常需要從一個品牌色展開完整色彩系統。這個專案讓 Claude Code 根據你給的 1-3 個主色，運用色彩理論計算出語意色（success、warning、error）、5 級明暗階梯、深色模式配色，並檢查所有組合的 WCAG 對比度。最終產出可直接使用的 CSS custom properties 檔、Tailwind 設定檔、以及一個 HTML 預覽頁面展示所有色票。</p>
-    <div class="prompt-box">我的品牌主色是 #2563EB（藍）和 #F59E0B（橙）。請幫我：1. 建立資料夾 color-system/ 2. 用色彩理論為每個主色生成 50~950 共 10 級明暗色階 3. 自動推導 success（綠系）、warning（黃系）、error（紅系）、neutral（灰系）語意色及其色階 4. 產出 tokens.css（CSS 變數含深色模式）與 tailwind.colors.js 5. 建立 preview.html：用純 HTML+CSS 展示所有色票卡片，每張標示色碼與 WCAG AA/AAA 對比度結果 6. 產出 contrast-report.md 列出所有「文字色＋背景色」不及格的組合並建議替代色</div>
+    <h2>技術部落格文章產線系統</h2>
+    <div class="tagline">從草稿大綱到完整部落格文章，自動產出含程式碼高亮、目錄、SEO 的靜態網頁</div>
+    <p>給 Claude Code 一份技術主題的大綱筆記或零散想法，它會幫你擴寫成結構完整的技術部落格文章，包含程式碼範例、圖表說明區塊、自動生成的目錄導覽列，最終輸出成可直接部署的靜態 HTML 頁面。支援 Markdown 原始檔匯出，方便同步發到 Medium 或 Dev.to。特別適合想建立技術品牌但苦於寫作效率的工程師。</p>
+    <div class="prompt-box">這是我的技術文章大綱 [貼上大綱，包含主題、目標讀者、3-5 個重點段落標題、想附的程式碼語言]。請幫我建立以下結構：blog-generator/ ├── input/ │ └── draft.md（我的原始大綱）├── output/ │ ├── article.md（完整 Markdown 文章）│ └── index.html（靜態網頁版本）├── templates/ │ └── blog-template.html └── generate.py 具體要求：1. 每個段落要有引言過渡句，語氣專業但平易近人 2. 程式碼區塊要用 Prism.js 做語法高亮 3. 自動掃描 h2/h3 產生側邊目錄 4. 頂部生成 meta description 與 Open Graph 標籤 5. 底部加入預估閱讀時間和相關延伸閱讀建議 6. RWD 排版，手機也好讀</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：需整合色彩演算邏輯、多檔案輸出與 WCAG 無障礙標準，學會讓 Claude 做系統性設計
+      中階挑戰：整合模板引擎、前端框架、Markdown 解析，學會建立可重複使用的內容產線
     </div>
-    <a class="source-link" href="https://tailwindcss.com/docs/customizing-colors" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用分帳應用原型 程式原型">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="多資料源智慧儀表板引擎 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/11</span>
+      <span class="date-tag">9/12</span>
     </div>
-    <h2>全端費用分帳應用原型</h2>
-    <div class="tagline">從零搭建一個多人旅行分帳 Web App，含債務簡化演算法與即時結算儀表板</div>
-    <p>出遊分帳是經典痛點：誰先墊了多少、該找誰要錢、最少幾筆轉帳能清算？這個專案讓 Claude Code 產出完整的全端原型——前端用 HTML + Alpine.js 做互動介面，後端用 Node.js + SQLite 儲存帳目，核心是一個最小現金流（min-cash-flow）演算法，把 N 人之間的複雜債務關係簡化成最少轉帳筆數。最終部署為可本地運行的單一服務，附有儀表板顯示每人餘額與建議轉帳路徑圖。</p>
-    <div class="prompt-box">請幫我建立一個多人旅行分帳 Web 應用，資料夾名稱 splitwise-lite/：
-
-【後端】
-1. 用 Node.js + Express 建立 REST API
-2. SQLite 資料庫，資料表：trips、members、expenses（含付款人、分攤人清單、金額）
-3. 實作 /api/settle 端點，使用最小現金流演算法計算最佳結算方案
-
-【前端】
-4. 單頁 HTML + Alpine.js + Tailwind CDN
-5. 功能頁面：建立旅程 → 加入成員 → 新增消費（可選均分或自訂比例） → 結算儀表板
-6. 結算頁顯示：每人目前餘額長條圖、最少轉帳方案清單、簡易債務關係箭頭圖（用 SVG 畫）
-
-【額外】
-7. 加入匯出功能：一鍵下載該旅程所有明細與結算結果的 PDF
-8. 寫 README.md 含安裝步驟與螢幕截圖位置預留區塊
-9. 加入 3 筆範例旅程種子資料，啟動後即可體驗</div>
+    <h2>多資料源智慧儀表板引擎</h2>
+    <div class="tagline">上傳 CSV、接 Google Sheets、串 API，一鍵生成可互動篩選的資料分析儀表板</div>
+    <p>打造一個通用型儀表板產生引擎：支援多種資料來源輸入（CSV 檔案、Google Sheets 連結、REST API endpoint），自動偵測欄位型別與資料分佈，智慧推薦最適合的圖表類型（折線圖、長條圖、圓餅圖、散佈圖、熱力圖），最終產出一個具備即時篩選、日期區間選擇、匯出 PNG 功能的互動式儀表板網頁。可用於業務週報、行銷數據追蹤、個人記帳分析等多種場景。</p>
+    <div class="prompt-box">請幫我建立一個完整的儀表板引擎專案，結構如下：dashboard-engine/ ├── server/ │ ├── app.py（Flask 後端）│ ├── data_loader.py（支援 CSV、JSON、Google Sheets URL 三種輸入）│ ├── analyzer.py（自動偵測資料類型：時間序列/類別/數值，計算基礎統計量）│ └── chart_recommender.py（根據欄位組合推薦最佳圖表類型）├── frontend/ │ ├── index.html │ ├── dashboard.js（用 Chart.js 或 D3.js 繪圖）│ └── filters.js（動態篩選器：下拉選單、日期範圍、數值滑桿）├── sample_data/（放三組示範 CSV）└── requirements.txt 功能要求：1. 拖曳上傳 CSV 或貼上 Google Sheets 公開連結即可載入 2. 自動分析每個欄位的型別與缺失值比率，產生資料品質報告 3. 智慧推薦 3-5 個最有洞察價值的圖表，使用者可一鍵加入儀表板 4. 每個圖表支援點擊展開看明細數據 5. 全局篩選器連動所有圖表 6. 右上角匯出整個儀表板為 PNG 截圖 7. 深色/淺色主題切換</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階綜合挑戰：涵蓋全端架構設計、圖論演算法實作、資料庫建模與互動式資料視覺化，考驗系統整合能力
+      高階綜合挑戰：涵蓋全端開發、資料分析邏輯、動態視覺化、檔案處理，考驗系統架構設計能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -817,7 +803,76 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="Git Commit 訊息美化器 生產力">
+    <div class="card-header">
+      <span class="badge">210</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/11</span>
+    </div>
+    <h2>Git Commit 訊息美化器</h2>
+    <div class="tagline">掃描你的 Git 歷史紀錄，自動改寫成語意清晰、風格一致的 Conventional Commits</div>
+    <p>很多開發者的 commit message 寫得隨意（如「fix bug」「update」），日後回溯很痛苦。這個工具讓 Claude Code 讀取你的 git log，逐條改寫成符合 Conventional Commits 規範的訊息，並產出一份 CHANGELOG.md。適合準備開源專案、整理個人作品集、或團隊想統一 commit 風格時使用。</p>
+    <div class="prompt-box">請在這個 Git 專案資料夾中執行以下步驟：1. 用 git log --oneline -50 讀取最近 50 筆 commit 訊息 2. 將每筆改寫為 Conventional Commits 格式（feat / fix / docs / refactor / chore），保留原意但讓描述更精確，附上繁體中文說明 3. 產出 improved-commits.md 對照表（原始 → 改寫） 4. 根據改寫結果自動生成 CHANGELOG.md，按版本與類型分組 5. 額外給出 3 條團隊 commit 撰寫規範建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門練習：體驗 Claude Code 讀取本地 Git 資訊並批次處理文字的能力，無需寫程式
+    </div>
+    <a class="source-link" href="https://www.conventionalcommits.org" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="互動式色彩系統產生器 程式原型">
+    <div class="card-header">
+      <span class="badge">211</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/11</span>
+    </div>
+    <h2>互動式色彩系統產生器</h2>
+    <div class="tagline">輸入品牌主色，自動產出完整設計系統的色票、對比度報告與 CSS/Tailwind 變數檔</div>
+    <p>設計師或前端工程師常需要從一個品牌色展開完整色彩系統。這個專案讓 Claude Code 根據你給的 1-3 個主色，運用色彩理論計算出語意色（success、warning、error）、5 級明暗階梯、深色模式配色，並檢查所有組合的 WCAG 對比度。最終產出可直接使用的 CSS custom properties 檔、Tailwind 設定檔、以及一個 HTML 預覽頁面展示所有色票。</p>
+    <div class="prompt-box">我的品牌主色是 #2563EB（藍）和 #F59E0B（橙）。請幫我：1. 建立資料夾 color-system/ 2. 用色彩理論為每個主色生成 50~950 共 10 級明暗色階 3. 自動推導 success（綠系）、warning（黃系）、error（紅系）、neutral（灰系）語意色及其色階 4. 產出 tokens.css（CSS 變數含深色模式）與 tailwind.colors.js 5. 建立 preview.html：用純 HTML+CSS 展示所有色票卡片，每張標示色碼與 WCAG AA/AAA 對比度結果 6. 產出 contrast-report.md 列出所有「文字色＋背景色」不及格的組合並建議替代色</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：需整合色彩演算邏輯、多檔案輸出與 WCAG 無障礙標準，學會讓 Claude 做系統性設計
+    </div>
+    <a class="source-link" href="https://tailwindcss.com/docs/customizing-colors" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用分帳應用原型 程式原型">
+    <div class="card-header">
+      <span class="badge">212</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/11</span>
+    </div>
+    <h2>全端費用分帳應用原型</h2>
+    <div class="tagline">從零搭建一個多人旅行分帳 Web App，含債務簡化演算法與即時結算儀表板</div>
+    <p>出遊分帳是經典痛點：誰先墊了多少、該找誰要錢、最少幾筆轉帳能清算？這個專案讓 Claude Code 產出完整的全端原型——前端用 HTML + Alpine.js 做互動介面，後端用 Node.js + SQLite 儲存帳目，核心是一個最小現金流（min-cash-flow）演算法，把 N 人之間的複雜債務關係簡化成最少轉帳筆數。最終部署為可本地運行的單一服務，附有儀表板顯示每人餘額與建議轉帳路徑圖。</p>
+    <div class="prompt-box">請幫我建立一個多人旅行分帳 Web 應用，資料夾名稱 splitwise-lite/：
+
+【後端】
+1. 用 Node.js + Express 建立 REST API
+2. SQLite 資料庫，資料表：trips、members、expenses（含付款人、分攤人清單、金額）
+3. 實作 /api/settle 端點，使用最小現金流演算法計算最佳結算方案
+
+【前端】
+4. 單頁 HTML + Alpine.js + Tailwind CDN
+5. 功能頁面：建立旅程 → 加入成員 → 新增消費（可選均分或自訂比例） → 結算儀表板
+6. 結算頁顯示：每人目前餘額長條圖、最少轉帳方案清單、簡易債務關係箭頭圖（用 SVG 畫）
+
+【額外】
+7. 加入匯出功能：一鍵下載該旅程所有明細與結算結果的 PDF
+8. 寫 README.md 含安裝步驟與螢幕截圖位置預留區塊
+9. 加入 3 筆範例旅程種子資料，啟動後即可體驗</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：涵蓋全端架構設計、圖論演算法實作、資料庫建模與互動式資料視覺化，考驗系統整合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">207</span>
       <span class="tag level-1">初階</span>
