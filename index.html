@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/14</span>
-      <span>📚 累計收錄：<span id="totalCount">221</span> 個專案</span>
+      <span>📅 最後更新：2026/09/15</span>
+      <span>📚 累計收錄：<span id="totalCount">224</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,99 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 221 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 224 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/14) ============ -->
+  <!-- ============ 今日新增 (9/15) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/14
+    今日新增 · 2026/09/15
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/14</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/15</span>
     </div>
-    <h2>電子郵件批次回覆草稿機</h2>
-    <div class="tagline">把收件匣未讀信件整理成表格，一鍵產出每封的專業回覆草稿</div>
-    <p>將多封待回覆的電子郵件內容貼給 Claude Code，它會先幫你分類（緊急／一般／可略過），再針對每封信產出得體的回覆草稿，最後輸出一份 Markdown 表格和可直接複製的純文字檔。適合每天被信件淹沒的主管、業務、專案經理。</p>
-    <div class="prompt-box">以下是我收件匣中 [數量] 封待回覆的信件，我會用 === 分隔每封信。請幫我：1. 將每封信分類為「緊急需立即回」「一般 24 小時內回」「僅需已讀或可略過」三級 2. 針對需要回覆的信件，各產出一份 80-150 字的專業中文回覆草稿，語氣維持禮貌但簡潔 3. 整理成 email_drafts.md 表格，欄位為：寄件人、主旨、分類、建議回覆 4. 另外產出 replies.txt，每封回覆用分隔線隔開方便我直接複製貼上</div>
+    <h2>每日晨間簡報產生器</h2>
+    <div class="tagline">自動彙整 RSS、天氣、行事曆，產出一頁個人化晨間摘要 PDF</div>
+    <p>給 Claude Code 你關注的新聞來源清單、所在城市和 Google 日曆 ICS 連結，它會幫你寫一個 Python 腳本，每天早上抓取最新資訊，濃縮成一頁精美的晨間簡報 PDF。適合想用五分鐘掌握當日重點的忙碌上班族，產出物包含腳本原始碼與範例 PDF。</p>
+    <div class="prompt-box">請幫我建立一個每日晨間簡報產生器專案：
+1. 建立資料夾 morning-briefing/，包含 src/、output/、config/
+2. 在 config/sources.yaml 放入以下 RSS 來源：[科技新報、Inside 硬塞]，城市設為「台北」
+3. 寫一個 Python 腳本 src/main.py，功能：a) 用 feedparser 抓最新 5 篇文章標題+摘要 b) 用 requests 抓 OpenWeatherMap 天氣（請預留 API key 欄位）c) 讀取 config 裡的待辦事項清單
+4. 用 reportlab 產出 A4 單頁 PDF 到 output/briefing_YYYY-MM-DD.pdf
+5. 版面分三區塊：今日天氣、新聞摘要（每篇不超過兩行）、待辦提醒
+6. 附上 requirements.txt 和 README.md 說明如何設定與執行</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體會 Claude 的文本分類與改寫能力，完成後立刻能應用在日常工作流程中
+      初階入門最佳練習：學會讓 Claude 搭建完整專案結構並串接外部 API，馬上能跑
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="開源專案健康度儀表板 資料分析">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="短影音腳本工作坊 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/14</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">9/15</span>
     </div>
-    <h2>開源專案健康度儀表板</h2>
-    <div class="tagline">輸入 GitHub Repo 網址，自動分析程式碼品質、社群活躍度並產出視覺化報告</div>
-    <p>給 Claude Code 一個公開 GitHub 儲存庫的資訊（star 數、commit 頻率、issue 關閉率、PR 合併速度、貢獻者分布等），它會計算一個綜合健康分數，產出含 Chart.js 圖表的單頁 HTML 儀表板。適合技術主管評估是否採用某個開源套件，或開源維護者檢視自己專案的體質。</p>
-    <div class="prompt-box">我想分析這個 GitHub 開源專案的健康狀態。以下是我從 GitHub API 取得的資料 [貼上 JSON 或請 Claude 用 fetch 抓取]。請幫我：1. 建立資料夾 repo-health-dashboard/ 2. 分析以下五個維度並各給 0-100 分：程式碼活躍度（近 90 天 commit 頻率）、社群參與（issue 回應中位數時間）、文件完整度、依賴更新狀態、貢獻者多樣性 3. 計算加權總分並給出文字評語 4. 產出 index.html 單頁儀表板，使用 Chart.js 畫雷達圖和趨勢折線圖，配色用深色主題 5. 附上 analysis.md 詳細分析報告含改善建議</div>
+    <h2>短影音腳本工作坊</h2>
+    <div class="tagline">輸入主題與平台，批量產出含分鏡、口白、字卡的短影音拍攝腳本</div>
+    <p>針對 YouTube Shorts、TikTok 或 Instagram Reels 創作者設計。給定一個主題關鍵字與目標平台，Claude Code 會建立一個 Node.js 工具，一次產出五支影片的完整拍攝腳本，包含秒級分鏡表、口白逐字稿、字卡文案與建議配樂風格，最終輸出結構化 JSON 與可列印 Markdown 檔。適合需要批量規劃內容的自媒體經營者。</p>
+    <div class="prompt-box">請建立一個短影音腳本批量產生工具：
+1. 初始化 Node.js 專案 short-video-scripts/，安裝 commander、marked、fs-extra
+2. 建立 CLI 工具 cli.js，接收參數：--topic 主題 --platform 平台(youtube/tiktok/ig) --count 數量(預設5) --tone 語氣(幽默/專業/溫暖)
+3. 建立 src/generator.js：根據平台限制（YouTube Shorts 60秒、TikTok 90秒、IG Reels 90秒）產出每支影片的結構化腳本
+4. 每支腳本 JSON 包含：title、hook（前3秒吸睛句）、scenes 陣列（每場含 timestamp、visual_description、voiceover、text_overlay）、cta（結尾行動呼籲）、suggested_music_mood、hashtags
+5. 建立 src/exporter.js，將 JSON 轉成排版精美的 Markdown 分鏡表，每支影片一個 .md 檔
+6. 建立 templates/ 資料夾放各平台的提示詞模板，方便日後調整風格
+7. 輸出到 output/[topic]_[date]/ 目錄，含 scripts.json 與個別 .md 檔
+8. 附完整 README 含使用範例與產出截圖說明</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案結合 API 資料處理、數據計算與前端視覺化，學會讓 Claude 同時扮演分析師與前端工程師
+      中階挑戰：涉及 CLI 設計、模板系統、多格式輸出，學會用 Claude 建構可擴展的內容工具
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用程式 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="程式碼庫智慧遷移助手 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/14</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">9/15</span>
     </div>
-    <h2>全端費用拆帳應用程式</h2>
-    <div class="tagline">多人旅行或合租記帳，自動計算最少轉帳次數的拆帳方案並產出完整 Web App</div>
-    <p>請 Claude Code 從零打造一個含前後端的費用分攤應用：前端用 React + Tailwind 做多頁面 SPA，後端用 Node.js + SQLite 儲存群組、成員、帳目資料，核心演算法使用最小現金流（Minimum Cash Flow）來計算最佳還款路徑。支援多幣別、不均等分攤、匯出 PDF 對帳單。適合室友合租、出國旅遊、社團活動等場景。</p>
-    <div class="prompt-box">請幫我建立一個全端費用拆帳 Web App，專案名稱 splitwise-lite/。技術棧：React 18 + Tailwind CSS 前端、Express.js 後端、SQLite（用 better-sqlite3）資料庫。請按以下步驟進行：1. 先建立資料夾結構 splitwise-lite/client 與 splitwise-lite/server 2. 設計資料庫 schema：groups、members、expenses、settlements 四張表 3. 後端建立 RESTful API：CRUD 群組與成員、新增支出（支援均分／自訂比例／指定人）、GET /api/groups/:id/settle 回傳最少轉帳次數的結算方案（實作 Minimum Cash Flow 演算法） 4. 前端頁面：首頁群組列表、群組詳情含支出時間軸、新增支出表單（支援多幣別用固定匯率換算）、結算頁面用箭頭圖示顯示誰付誰多少 5. 加入匯出功能：點擊按鈕產出該群組的 PDF 對帳單 6. 加入 package.json 的 dev script 可一鍵啟動前後端 7. 寫一份 README.md 含架構圖與使用說明</div>
+    <h2>程式碼庫智慧遷移助手</h2>
+    <div class="tagline">分析舊版框架程式碼，自動產出遷移計畫、重構程式碼與測試覆蓋報告</div>
+    <p>專為需要將大型專案從舊框架遷移到新框架的團隊設計（如 Vue 2 → Vue 3、React Class → Hooks、Express → Fastify）。Claude Code 會掃描整個程式碼庫，辨識需遷移的模式與相依性，產出優先順序排列的遷移計畫、自動重構後的程式碼、相容性測試套件，以及一份風險評估報告。產出物包括可直接提交的 PR 分支與完整的 HTML 遷移儀表板。</p>
+    <div class="prompt-box">請幫我建立一個程式碼庫遷移助手工具 migration-pilot/：
+1. 專案結構：src/analyzer/、src/transformer/、src/reporter/、src/tests-generator/、templates/、output/
+2. src/analyzer/scanner.ts：遞迴掃描目標資料夾，用 AST（@babel/parser 或 ts-morph）解析所有 .ts/.js/.vue 檔案，辨識以下模式：a) 已棄用 API 呼叫 b) 舊版語法模式（如 Options API、Class Components）c) 第三方套件相容性問題，輸出 analysis.json
+3. src/analyzer/dependency-graph.ts：建立檔案間相依圖譜，計算每個模組的「遷移影響半徑」分數
+4. src/transformer/migrator.ts：根據 templates/ 中的遷移規則 YAML，對每個檔案產出重構後版本，保留原始檔為 .backup，重構檔標記所有變更處加上 // MIGRATION: 註解
+5. src/tests-generator/index.ts：為每個被遷移的檔案自動產生 Vitest 測試，驗證 a) 匯出介面不變 b) 關鍵函數輸入輸出一致 c) 邊界情況處理
+6. src/reporter/dashboard.ts：產出 HTML 單頁儀表板含：遷移進度甜甜圈圖、風險熱力圖（依影響半徑著色）、逐檔變更差異對照、預估工時
+7. 主程式 CLI 支援：--source 來源目錄 --from 原框架 --to 目標框架 --dry-run 預覽模式
+8. 附上 tsconfig.json、package.json、完整 README 含架構圖 ASCII art 與使用教學</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涵蓋全端架構設計、演算法實作、資料庫建模與多功能整合，挑戰 Claude Code 的大型專案協作極限
+      高階綜合挑戰：涉及 AST 分析、程式碼轉換、測試自動生成、視覺化報告，全面鍛鍊架構設計能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -805,7 +828,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
+    <div class="card-header">
+      <span class="badge">219</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/14</span>
+    </div>
+    <h2>電子郵件批次回覆草稿機</h2>
+    <div class="tagline">把收件匣未讀信件整理成表格，一鍵產出每封的專業回覆草稿</div>
+    <p>將多封待回覆的電子郵件內容貼給 Claude Code，它會先幫你分類（緊急／一般／可略過），再針對每封信產出得體的回覆草稿，最後輸出一份 Markdown 表格和可直接複製的純文字檔。適合每天被信件淹沒的主管、業務、專案經理。</p>
+    <div class="prompt-box">以下是我收件匣中 [數量] 封待回覆的信件，我會用 === 分隔每封信。請幫我：1. 將每封信分類為「緊急需立即回」「一般 24 小時內回」「僅需已讀或可略過」三級 2. 針對需要回覆的信件，各產出一份 80-150 字的專業中文回覆草稿，語氣維持禮貌但簡潔 3. 整理成 email_drafts.md 表格，欄位為：寄件人、主旨、分類、建議回覆 4. 另外產出 replies.txt，每封回覆用分隔線隔開方便我直接複製貼上</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體會 Claude 的文本分類與改寫能力，完成後立刻能應用在日常工作流程中
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="開源專案健康度儀表板 資料分析">
+    <div class="card-header">
+      <span class="badge">220</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/14</span>
+    </div>
+    <h2>開源專案健康度儀表板</h2>
+    <div class="tagline">輸入 GitHub Repo 網址，自動分析程式碼品質、社群活躍度並產出視覺化報告</div>
+    <p>給 Claude Code 一個公開 GitHub 儲存庫的資訊（star 數、commit 頻率、issue 關閉率、PR 合併速度、貢獻者分布等），它會計算一個綜合健康分數，產出含 Chart.js 圖表的單頁 HTML 儀表板。適合技術主管評估是否採用某個開源套件，或開源維護者檢視自己專案的體質。</p>
+    <div class="prompt-box">我想分析這個 GitHub 開源專案的健康狀態。以下是我從 GitHub API 取得的資料 [貼上 JSON 或請 Claude 用 fetch 抓取]。請幫我：1. 建立資料夾 repo-health-dashboard/ 2. 分析以下五個維度並各給 0-100 分：程式碼活躍度（近 90 天 commit 頻率）、社群參與（issue 回應中位數時間）、文件完整度、依賴更新狀態、貢獻者多樣性 3. 計算加權總分並給出文字評語 4. 產出 index.html 單頁儀表板，使用 Chart.js 畫雷達圖和趨勢折線圖，配色用深色主題 5. 附上 analysis.md 詳細分析報告含改善建議</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案結合 API 資料處理、數據計算與前端視覺化，學會讓 Claude 同時扮演分析師與前端工程師
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端費用拆帳應用程式 程式原型">
+    <div class="card-header">
+      <span class="badge">221</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/14</span>
+    </div>
+    <h2>全端費用拆帳應用程式</h2>
+    <div class="tagline">多人旅行或合租記帳，自動計算最少轉帳次數的拆帳方案並產出完整 Web App</div>
+    <p>請 Claude Code 從零打造一個含前後端的費用分攤應用：前端用 React + Tailwind 做多頁面 SPA，後端用 Node.js + SQLite 儲存群組、成員、帳目資料，核心演算法使用最小現金流（Minimum Cash Flow）來計算最佳還款路徑。支援多幣別、不均等分攤、匯出 PDF 對帳單。適合室友合租、出國旅遊、社團活動等場景。</p>
+    <div class="prompt-box">請幫我建立一個全端費用拆帳 Web App，專案名稱 splitwise-lite/。技術棧：React 18 + Tailwind CSS 前端、Express.js 後端、SQLite（用 better-sqlite3）資料庫。請按以下步驟進行：1. 先建立資料夾結構 splitwise-lite/client 與 splitwise-lite/server 2. 設計資料庫 schema：groups、members、expenses、settlements 四張表 3. 後端建立 RESTful API：CRUD 群組與成員、新增支出（支援均分／自訂比例／指定人）、GET /api/groups/:id/settle 回傳最少轉帳次數的結算方案（實作 Minimum Cash Flow 演算法） 4. 前端頁面：首頁群組列表、群組詳情含支出時間軸、新增支出表單（支援多幣別用固定匯率換算）、結算頁面用箭頭圖示顯示誰付誰多少 5. 加入匯出功能：點擊按鈕產出該群組的 PDF 對帳單 6. 加入 package.json 的 dev script 可一鍵啟動前後端 7. 寫一份 README.md 含架構圖與使用說明</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋全端架構設計、演算法實作、資料庫建模與多功能整合，挑戰 Claude Code 的大型專案協作極限
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要精靈 生產力">
     <div class="card-header">
       <span class="badge">216</span>
       <span class="tag level-1">初階</span>
