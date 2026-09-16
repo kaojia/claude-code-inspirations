@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/15</span>
-      <span>📚 累計收錄：<span id="totalCount">224</span> 個專案</span>
+      <span>📅 最後更新：2026/09/16</span>
+      <span>📚 累計收錄：<span id="totalCount">227</span> 個專案</span>
     </div>
   </header>
 
@@ -664,98 +664,100 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 224 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 227 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/15) ============ -->
+  <!-- ============ 今日新增 (9/16) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/15
+    今日新增 · 2026/09/16
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要整理器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">9/15</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/16</span>
     </div>
-    <h2>每日晨間簡報產生器</h2>
-    <div class="tagline">自動彙整 RSS、天氣、行事曆，產出一頁個人化晨間摘要 PDF</div>
-    <p>給 Claude Code 你關注的新聞來源清單、所在城市和 Google 日曆 ICS 連結，它會幫你寫一個 Python 腳本，每天早上抓取最新資訊，濃縮成一頁精美的晨間簡報 PDF。適合想用五分鐘掌握當日重點的忙碌上班族，產出物包含腳本原始碼與範例 PDF。</p>
-    <div class="prompt-box">請幫我建立一個每日晨間簡報產生器專案：
-1. 建立資料夾 morning-briefing/，包含 src/、output/、config/
-2. 在 config/sources.yaml 放入以下 RSS 來源：[科技新報、Inside 硬塞]，城市設為「台北」
-3. 寫一個 Python 腳本 src/main.py，功能：a) 用 feedparser 抓最新 5 篇文章標題+摘要 b) 用 requests 抓 OpenWeatherMap 天氣（請預留 API key 欄位）c) 讀取 config 裡的待辦事項清單
-4. 用 reportlab 產出 A4 單頁 PDF 到 output/briefing_YYYY-MM-DD.pdf
-5. 版面分三區塊：今日天氣、新聞摘要（每篇不超過兩行）、待辦提醒
-6. 附上 requirements.txt 和 README.md 說明如何設定與執行</div>
+    <h2>會議逐字稿摘要整理器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
+    <p>將 Zoom、Google Meet 或任何會議工具匯出的逐字稿丟給 Claude Code，它會自動辨識發言者、歸納討論主題、列出決議事項與每人的待辦任務，最終產出一份格式精美的 Markdown 會議紀錄與可匯入 Notion 的 CSV 待辦清單。適合 PM、主管、行政助理每週例會後快速歸檔。</p>
+    <div class="prompt-box">這份檔案 [拖曳逐字稿.txt] 是我們今天的會議逐字稿。請幫我：1. 辨識每位發言者並統計各自發言時長佔比 2. 歸納出 3-5 個主要討論議題，每個議題列出摘要與關鍵結論 3. 整理出所有待辦事項，格式為「負責人｜任務內容｜截止日期」 4. 輸出 meeting_notes.md（含完整會議紀錄）和 action_items.csv（可匯入 Notion 資料庫） 5. 在最後附上一段 50 字以內的會議一句話總結，方便貼到 Slack 頻道通知團隊</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習：學會讓 Claude 搭建完整專案結構並串接外部 API，馬上能跑
+      初階入門最佳練習：體驗 Claude 文本理解與結構化輸出能力，完成後立刻可用於真實工作流程
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="短影音腳本工作坊 內容創作">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
-      <span class="tag time">60 分鐘</span>
-      <span class="date-tag">9/15</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/16</span>
     </div>
-    <h2>短影音腳本工作坊</h2>
-    <div class="tagline">輸入主題與平台，批量產出含分鏡、口白、字卡的短影音拍攝腳本</div>
-    <p>針對 YouTube Shorts、TikTok 或 Instagram Reels 創作者設計。給定一個主題關鍵字與目標平台，Claude Code 會建立一個 Node.js 工具，一次產出五支影片的完整拍攝腳本，包含秒級分鏡表、口白逐字稿、字卡文案與建議配樂風格，最終輸出結構化 JSON 與可列印 Markdown 檔。適合需要批量規劃內容的自媒體經營者。</p>
-    <div class="prompt-box">請建立一個短影音腳本批量產生工具：
-1. 初始化 Node.js 專案 short-video-scripts/，安裝 commander、marked、fs-extra
-2. 建立 CLI 工具 cli.js，接收參數：--topic 主題 --platform 平台(youtube/tiktok/ig) --count 數量(預設5) --tone 語氣(幽默/專業/溫暖)
-3. 建立 src/generator.js：根據平台限制（YouTube Shorts 60秒、TikTok 90秒、IG Reels 90秒）產出每支影片的結構化腳本
-4. 每支腳本 JSON 包含：title、hook（前3秒吸睛句）、scenes 陣列（每場含 timestamp、visual_description、voiceover、text_overlay）、cta（結尾行動呼籲）、suggested_music_mood、hashtags
-5. 建立 src/exporter.js，將 JSON 轉成排版精美的 Markdown 分鏡表，每支影片一個 .md 檔
-6. 建立 templates/ 資料夾放各平台的提示詞模板，方便日後調整風格
-7. 輸出到 output/[topic]_[date]/ 目錄，含 scripts.json 與個別 .md 檔
-8. 附完整 README 含使用範例與產出截圖說明</div>
+    <h2>競品功能矩陣分析器</h2>
+    <div class="tagline">輸入多個競品網址或文件，自動產出功能比較矩陣與策略建議報告</div>
+    <p>給 Claude Code 你的產品規格與 3-5 個競品的資料（網頁內容、截圖、規格文件），它會自動建立功能比較矩陣表、標示你的產品優劣勢、計算功能覆蓋率，並產出一份含視覺化圖表的 HTML 報告與策略建議簡報大綱。產品經理、創業者在做市場調研或投資人簡報時特別實用。</p>
+    <div class="prompt-box">我正在做競品分析。以下是資料：
+- 我的產品規格：[拖曳 product_spec.md]
+- 競品資料：[拖曳 competitor_1.md, competitor_2.md, competitor_3.md]
+
+請幫我：
+1. 定義 15-20 個關鍵功能維度（含核心功能、定價、整合能力、使用者體驗等）
+2. 建立功能矩陣表，用 ✅❌🔶 標示各產品的支援程度
+3. 計算每個產品的功能覆蓋率百分比
+4. 找出我的產品的 3 個最大優勢與 3 個最需補強的缺口
+5. 產出 competitive_analysis.html（含互動式表格與雷達圖，使用 Chart.js）
+6. 另外產出 strategy_outline.md，包含建議的產品路線圖優先順序</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：涉及 CLI 設計、模板系統、多格式輸出，學會用 Claude 建構可擴展的內容工具
+      中階挑戰：需要引導 Claude 處理多份文件交叉比對、產出含 JavaScript 圖表的互動式報告，學習多步驟工作流編排
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="程式碼庫智慧遷移助手 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型快速產生引擎 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">150 分鐘</span>
-      <span class="date-tag">9/15</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/16</span>
     </div>
-    <h2>程式碼庫智慧遷移助手</h2>
-    <div class="tagline">分析舊版框架程式碼，自動產出遷移計畫、重構程式碼與測試覆蓋報告</div>
-    <p>專為需要將大型專案從舊框架遷移到新框架的團隊設計（如 Vue 2 → Vue 3、React Class → Hooks、Express → Fastify）。Claude Code 會掃描整個程式碼庫，辨識需遷移的模式與相依性，產出優先順序排列的遷移計畫、自動重構後的程式碼、相容性測試套件，以及一份風險評估報告。產出物包括可直接提交的 PR 分支與完整的 HTML 遷移儀表板。</p>
-    <div class="prompt-box">請幫我建立一個程式碼庫遷移助手工具 migration-pilot/：
-1. 專案結構：src/analyzer/、src/transformer/、src/reporter/、src/tests-generator/、templates/、output/
-2. src/analyzer/scanner.ts：遞迴掃描目標資料夾，用 AST（@babel/parser 或 ts-morph）解析所有 .ts/.js/.vue 檔案，辨識以下模式：a) 已棄用 API 呼叫 b) 舊版語法模式（如 Options API、Class Components）c) 第三方套件相容性問題，輸出 analysis.json
-3. src/analyzer/dependency-graph.ts：建立檔案間相依圖譜，計算每個模組的「遷移影響半徑」分數
-4. src/transformer/migrator.ts：根據 templates/ 中的遷移規則 YAML，對每個檔案產出重構後版本，保留原始檔為 .backup，重構檔標記所有變更處加上 // MIGRATION: 註解
-5. src/tests-generator/index.ts：為每個被遷移的檔案自動產生 Vitest 測試，驗證 a) 匯出介面不變 b) 關鍵函數輸入輸出一致 c) 邊界情況處理
-6. src/reporter/dashboard.ts：產出 HTML 單頁儀表板含：遷移進度甜甜圈圖、風險熱力圖（依影響半徑著色）、逐檔變更差異對照、預估工時
-7. 主程式 CLI 支援：--source 來源目錄 --from 原框架 --to 目標框架 --dry-run 預覽模式
-8. 附上 tsconfig.json、package.json、完整 README 含架構圖 ASCII art 與使用教學</div>
+    <h2>全端原型快速產生引擎</h2>
+    <div class="tagline">用一段產品需求描述，自動生成含前後端與資料庫的完整可運行原型</div>
+    <p>只需提供一段自然語言的產品需求描述，Claude Code 就會幫你從零建立一個完整的全端 Web 應用原型：包含 React 前端頁面、Node.js API 後端、SQLite 資料庫 schema、種子資料、以及 Docker Compose 一鍵啟動配置。產出的程式碼含完整的 README 說明與 API 文件，適合黑客松、產品 Demo、技術驗證場景。</p>
+    <div class="prompt-box">我要做一個「社區二手物品交換平台」的 MVP 原型。需求如下：
+- 使用者可以註冊登入（JWT 驗證）
+- 可以上架物品（標題、描述、照片 URL、物品類別、期望交換物）
+- 可以瀏覽所有物品並依類別篩選
+- 可以對感興趣的物品發起交換請求
+- 雙方都同意後標記為「交換成功」
+
+請幫我建立完整專案：
+1. 資料夾結構：/client（React + Tailwind CSS）、/server（Express.js）、/database（SQLite + migrations）
+2. 建立完整的 REST API（至少 10 個端點），含輸入驗證與錯誤處理
+3. 前端至少 5 個頁面：首頁、物品列表、物品詳情、我的物品、交換請求管理
+4. 撰寫 docker-compose.yml 讓專案一鍵啟動
+5. 產出 README.md 含架構圖（Mermaid）、API 文件表格、環境建置步驟
+6. 加入 20 筆種子資料讓 Demo 看起來有內容</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階綜合挑戰：涉及 AST 分析、程式碼轉換、測試自動生成、視覺化報告，全面鍛鍊架構設計能力
+      高階綜合挑戰：涵蓋前後端架構設計、資料庫建模、API 設計、容器化部署，全面考驗 Claude Code 的多檔案協作與系統級程式產出能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -828,7 +830,83 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+    <div class="card-header">
+      <span class="badge">222</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/15</span>
+    </div>
+    <h2>每日晨間簡報產生器</h2>
+    <div class="tagline">自動彙整 RSS、天氣、行事曆，產出一頁個人化晨間摘要 PDF</div>
+    <p>給 Claude Code 你關注的新聞來源清單、所在城市和 Google 日曆 ICS 連結，它會幫你寫一個 Python 腳本，每天早上抓取最新資訊，濃縮成一頁精美的晨間簡報 PDF。適合想用五分鐘掌握當日重點的忙碌上班族，產出物包含腳本原始碼與範例 PDF。</p>
+    <div class="prompt-box">請幫我建立一個每日晨間簡報產生器專案：
+1. 建立資料夾 morning-briefing/，包含 src/、output/、config/
+2. 在 config/sources.yaml 放入以下 RSS 來源：[科技新報、Inside 硬塞]，城市設為「台北」
+3. 寫一個 Python 腳本 src/main.py，功能：a) 用 feedparser 抓最新 5 篇文章標題+摘要 b) 用 requests 抓 OpenWeatherMap 天氣（請預留 API key 欄位）c) 讀取 config 裡的待辦事項清單
+4. 用 reportlab 產出 A4 單頁 PDF 到 output/briefing_YYYY-MM-DD.pdf
+5. 版面分三區塊：今日天氣、新聞摘要（每篇不超過兩行）、待辦提醒
+6. 附上 requirements.txt 和 README.md 說明如何設定與執行</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：學會讓 Claude 搭建完整專案結構並串接外部 API，馬上能跑
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="短影音腳本工作坊 內容創作">
+    <div class="card-header">
+      <span class="badge">223</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">9/15</span>
+    </div>
+    <h2>短影音腳本工作坊</h2>
+    <div class="tagline">輸入主題與平台，批量產出含分鏡、口白、字卡的短影音拍攝腳本</div>
+    <p>針對 YouTube Shorts、TikTok 或 Instagram Reels 創作者設計。給定一個主題關鍵字與目標平台，Claude Code 會建立一個 Node.js 工具，一次產出五支影片的完整拍攝腳本，包含秒級分鏡表、口白逐字稿、字卡文案與建議配樂風格，最終輸出結構化 JSON 與可列印 Markdown 檔。適合需要批量規劃內容的自媒體經營者。</p>
+    <div class="prompt-box">請建立一個短影音腳本批量產生工具：
+1. 初始化 Node.js 專案 short-video-scripts/，安裝 commander、marked、fs-extra
+2. 建立 CLI 工具 cli.js，接收參數：--topic 主題 --platform 平台(youtube/tiktok/ig) --count 數量(預設5) --tone 語氣(幽默/專業/溫暖)
+3. 建立 src/generator.js：根據平台限制（YouTube Shorts 60秒、TikTok 90秒、IG Reels 90秒）產出每支影片的結構化腳本
+4. 每支腳本 JSON 包含：title、hook（前3秒吸睛句）、scenes 陣列（每場含 timestamp、visual_description、voiceover、text_overlay）、cta（結尾行動呼籲）、suggested_music_mood、hashtags
+5. 建立 src/exporter.js，將 JSON 轉成排版精美的 Markdown 分鏡表，每支影片一個 .md 檔
+6. 建立 templates/ 資料夾放各平台的提示詞模板，方便日後調整風格
+7. 輸出到 output/[topic]_[date]/ 目錄，含 scripts.json 與個別 .md 檔
+8. 附完整 README 含使用範例與產出截圖說明</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：涉及 CLI 設計、模板系統、多格式輸出，學會用 Claude 建構可擴展的內容工具
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="程式碼庫智慧遷移助手 程式原型">
+    <div class="card-header">
+      <span class="badge">224</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">9/15</span>
+    </div>
+    <h2>程式碼庫智慧遷移助手</h2>
+    <div class="tagline">分析舊版框架程式碼，自動產出遷移計畫、重構程式碼與測試覆蓋報告</div>
+    <p>專為需要將大型專案從舊框架遷移到新框架的團隊設計（如 Vue 2 → Vue 3、React Class → Hooks、Express → Fastify）。Claude Code 會掃描整個程式碼庫，辨識需遷移的模式與相依性，產出優先順序排列的遷移計畫、自動重構後的程式碼、相容性測試套件，以及一份風險評估報告。產出物包括可直接提交的 PR 分支與完整的 HTML 遷移儀表板。</p>
+    <div class="prompt-box">請幫我建立一個程式碼庫遷移助手工具 migration-pilot/：
+1. 專案結構：src/analyzer/、src/transformer/、src/reporter/、src/tests-generator/、templates/、output/
+2. src/analyzer/scanner.ts：遞迴掃描目標資料夾，用 AST（@babel/parser 或 ts-morph）解析所有 .ts/.js/.vue 檔案，辨識以下模式：a) 已棄用 API 呼叫 b) 舊版語法模式（如 Options API、Class Components）c) 第三方套件相容性問題，輸出 analysis.json
+3. src/analyzer/dependency-graph.ts：建立檔案間相依圖譜，計算每個模組的「遷移影響半徑」分數
+4. src/transformer/migrator.ts：根據 templates/ 中的遷移規則 YAML，對每個檔案產出重構後版本，保留原始檔為 .backup，重構檔標記所有變更處加上 // MIGRATION: 註解
+5. src/tests-generator/index.ts：為每個被遷移的檔案自動產生 Vitest 測試，驗證 a) 匯出介面不變 b) 關鍵函數輸入輸出一致 c) 邊界情況處理
+6. src/reporter/dashboard.ts：產出 HTML 單頁儀表板含：遷移進度甜甜圈圖、風險熱力圖（依影響半徑著色）、逐檔變更差異對照、預估工時
+7. 主程式 CLI 支援：--source 來源目錄 --from 原框架 --to 目標框架 --dry-run 預覽模式
+8. 附上 tsconfig.json、package.json、完整 README 含架構圖 ASCII art 與使用教學</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：涉及 AST 分析、程式碼轉換、測試自動生成、視覺化報告，全面鍛鍊架構設計能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
     <div class="card-header">
       <span class="badge">219</span>
       <span class="tag level-1">初階</span>
