@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/16</span>
-      <span>📚 累計收錄：<span id="totalCount">227</span> 個專案</span>
+      <span>📅 最後更新：2026/09/17</span>
+      <span>📚 累計收錄：<span id="totalCount">230</span> 個專案</span>
     </div>
   </header>
 
@@ -664,99 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 227 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 230 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/16) ============ -->
+  <!-- ============ 今日新增 (9/17) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/16
+    今日新增 · 2026/09/17
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要整理器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/16</span>
+      <span class="date-tag">9/17</span>
     </div>
-    <h2>會議逐字稿摘要整理器</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
-    <p>將 Zoom、Google Meet 或任何會議工具匯出的逐字稿丟給 Claude Code，它會自動辨識發言者、歸納討論主題、列出決議事項與每人的待辦任務，最終產出一份格式精美的 Markdown 會議紀錄與可匯入 Notion 的 CSV 待辦清單。適合 PM、主管、行政助理每週例會後快速歸檔。</p>
-    <div class="prompt-box">這份檔案 [拖曳逐字稿.txt] 是我們今天的會議逐字稿。請幫我：1. 辨識每位發言者並統計各自發言時長佔比 2. 歸納出 3-5 個主要討論議題，每個議題列出摘要與關鍵結論 3. 整理出所有待辦事項，格式為「負責人｜任務內容｜截止日期」 4. 輸出 meeting_notes.md（含完整會議紀錄）和 action_items.csv（可匯入 Notion 資料庫） 5. 在最後附上一段 50 字以內的會議一句話總結，方便貼到 Slack 頻道通知團隊</div>
+    <h2>電子郵件批次回覆草稿機</h2>
+    <div class="tagline">貼上多封待回信件，一次產出所有回覆草稿，省下每天最痛苦的郵件時間</div>
+    <p>把收件匣裡累積的 5-10 封待回信件全部貼給 Claude Code，指定你的身份與回覆風格（正式／友善／簡潔），它會逐封分析來信意圖，產出對應的回覆草稿，並標註哪些信需要你補充資訊才能回。最終輸出一份 Markdown 檔，每封信的原文摘要＋建議回覆＋急迫程度標記一目了然。適合每天被郵件淹沒的 PM、業務、主管。</p>
+    <div class="prompt-box">以下是我收件匣裡 [數量] 封待回覆的信件，我的身份是 [你的職稱]，偏好回覆風格為 [正式/友善/簡潔]。請幫我：1. 每封信用一句話摘要來信重點與對方意圖 2. 標註急迫程度（🔴立即回／🟡今天內／🟢本週內）3. 撰寫回覆草稿，語氣符合我的風格偏好，長度控制在 150 字內 4. 若某封信需要我補充資訊才能回覆，請用 [待確認：___] 標示 5. 全部整理成 email_drafts.md，用分隔線區隔每封信</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習：體驗 Claude 文本理解與結構化輸出能力，完成後立刻可用於真實工作流程
+      讓初學者感受 Claude 批次處理與語氣調整能力，完成後可直接複製貼上到郵件客戶端使用
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章產線系統 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">資料分析</span>
+      <span class="tag">內容創作</span>
       <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/16</span>
+      <span class="date-tag">9/17</span>
     </div>
-    <h2>競品功能矩陣分析器</h2>
-    <div class="tagline">輸入多個競品網址或文件，自動產出功能比較矩陣與策略建議報告</div>
-    <p>給 Claude Code 你的產品規格與 3-5 個競品的資料（網頁內容、截圖、規格文件），它會自動建立功能比較矩陣表、標示你的產品優劣勢、計算功能覆蓋率，並產出一份含視覺化圖表的 HTML 報告與策略建議簡報大綱。產品經理、創業者在做市場調研或投資人簡報時特別實用。</p>
-    <div class="prompt-box">我正在做競品分析。以下是資料：
-- 我的產品規格：[拖曳 product_spec.md]
-- 競品資料：[拖曳 competitor_1.md, competitor_2.md, competitor_3.md]
-
-請幫我：
-1. 定義 15-20 個關鍵功能維度（含核心功能、定價、整合能力、使用者體驗等）
-2. 建立功能矩陣表，用 ✅❌🔶 標示各產品的支援程度
-3. 計算每個產品的功能覆蓋率百分比
-4. 找出我的產品的 3 個最大優勢與 3 個最需補強的缺口
-5. 產出 competitive_analysis.html（含互動式表格與雷達圖，使用 Chart.js）
-6. 另外產出 strategy_outline.md，包含建議的產品路線圖優先順序</div>
+    <h2>技術部落格文章產線系統</h2>
+    <div class="tagline">輸入一個技術主題，自動產出完整部落格文章含程式碼範例、SEO 元資料與社群宣傳文</div>
+    <p>給 Claude Code 一個技術主題或你剛解決的技術難題，它會幫你建立完整的部落格文章專案資料夾：包含 Markdown 格式的長文（含程式碼區塊、架構圖的 Mermaid 語法）、frontmatter SEO 元資料（title/description/keywords）、三個社群平台的宣傳短文（Twitter/LinkedIn/Threads），以及一份 outline.md 讓你快速審閱結構再微調。特別適合想建立技術個人品牌但總是卡在「從零開始寫」的工程師。</p>
+    <div class="prompt-box">我想寫一篇技術部落格文章，主題是：[你的技術主題，例如：用 React Server Components 優化首屏載入速度]。我的目標讀者是 [初階/中階/資深] 工程師。請幫我：1. 建立資料夾結構 blog-post/ 底下包含 outline.md、article.md、social-posts.md 2. 先產出 outline.md 列出文章大綱（5-7 個段落），每段標註預估字數 3. 撰寫 article.md 完整文章（1500-2500 字），包含：引言故事hook、問題描述、解決方案含程式碼範例、效能數據比較表、結論與延伸閱讀 4. 在 frontmatter 加入 title、description（155字內）、keywords（5-8個）5. 產出 social-posts.md 包含 Twitter（280字內含 emoji）、LinkedIn（專業語氣300字）、Threads（口語化200字）三版宣傳文</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：需要引導 Claude 處理多份文件交叉比對、產出含 JavaScript 圖表的互動式報告，學習多步驟工作流編排
+      中階練習多檔案輸出與結構化內容產出，學習如何讓 Claude 同時處理長文撰寫、SEO 優化與跨平台改寫
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型快速產生引擎 程式原型">
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="全自動資料儀表板產生器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/16</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">9/17</span>
     </div>
-    <h2>全端原型快速產生引擎</h2>
-    <div class="tagline">用一段產品需求描述，自動生成含前後端與資料庫的完整可運行原型</div>
-    <p>只需提供一段自然語言的產品需求描述，Claude Code 就會幫你從零建立一個完整的全端 Web 應用原型：包含 React 前端頁面、Node.js API 後端、SQLite 資料庫 schema、種子資料、以及 Docker Compose 一鍵啟動配置。產出的程式碼含完整的 README 說明與 API 文件，適合黑客松、產品 Demo、技術驗證場景。</p>
-    <div class="prompt-box">我要做一個「社區二手物品交換平台」的 MVP 原型。需求如下：
-- 使用者可以註冊登入（JWT 驗證）
-- 可以上架物品（標題、描述、照片 URL、物品類別、期望交換物）
-- 可以瀏覽所有物品並依類別篩選
-- 可以對感興趣的物品發起交換請求
-- 雙方都同意後標記為「交換成功」
-
-請幫我建立完整專案：
-1. 資料夾結構：/client（React + Tailwind CSS）、/server（Express.js）、/database（SQLite + migrations）
-2. 建立完整的 REST API（至少 10 個端點），含輸入驗證與錯誤處理
-3. 前端至少 5 個頁面：首頁、物品列表、物品詳情、我的物品、交換請求管理
-4. 撰寫 docker-compose.yml 讓專案一鍵啟動
-5. 產出 README.md 含架構圖（Mermaid）、API 文件表格、環境建置步驟
-6. 加入 20 筆種子資料讓 Demo 看起來有內容</div>
+    <h2>全自動資料儀表板產生器</h2>
+    <div class="tagline">丟入 CSV 原始資料，自動分析、清洗並產出可互動的 HTML 數據儀表板</div>
+    <p>將任何 CSV 資料集交給 Claude Code，它會自動偵測欄位類型、處理缺失值與異常值、進行統計摘要分析，然後產出一個完整的單頁互動式 HTML 儀表板——內含 Chart.js 圖表（長條圖、折線圖、圓餅圖）、篩選器、關鍵指標卡片與資料洞察摘要。同時產出 analysis_report.md 詳述資料品質問題與發現。適合需要快速向主管展示數據成果的分析師、PM，或想把 Excel 報表升級為互動網頁的任何人。</p>
+    <div class="prompt-box">這份 CSV [拖曳檔案] 是我的原始資料。請幫我建立完整的資料儀表板專案：1. 建立 dashboard/ 資料夾，包含 index.html、style.css、app.js、analysis_report.md 2. 先分析 CSV：偵測每個欄位的資料型態、缺失率、唯一值數量，將結果寫入 analysis_report.md 3. 資料清洗：處理缺失值（數值用中位數填補、分類用眾數）、標記異常值、日期格式統一 4. 在 index.html 建立響應式儀表板，頂部放 3-5 張 KPI 摘要卡片（自動挑選最重要的數值指標）5. 使用 Chart.js（CDN 引入）產出至少 4 張圖表：數值欄位的趨勢折線圖、分類欄位的長條圖、佔比圓餅圖、相關性散佈圖 6. 加入下拉式篩選器，可依分類欄位動態過濾所有圖表 7. 底部加入「AI 數據洞察」區塊，用 3-5 個 bullet points 寫出你從資料中發現的趨勢與建議 8. 確保 CSS 使用現代設計（深色主題、卡片圓角陰影、漸層色彩），手機也能正常瀏覽</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階綜合挑戰：涵蓋前後端架構設計、資料庫建模、API 設計、容器化部署，全面考驗 Claude Code 的多檔案協作與系統級程式產出能力
+      高階挑戰整合資料分析邏輯、前端視覺化與完整專案架構，訓練 Claude 同時扮演資料科學家與前端工程師的綜合能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -830,7 +808,84 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要整理器 生產力">
+    <div class="card-header">
+      <span class="badge">225</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/16</span>
+    </div>
+    <h2>會議逐字稿摘要整理器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的會議紀錄與待辦清單</div>
+    <p>將 Zoom、Google Meet 或任何會議工具匯出的逐字稿丟給 Claude Code，它會自動辨識發言者、歸納討論主題、列出決議事項與每人的待辦任務，最終產出一份格式精美的 Markdown 會議紀錄與可匯入 Notion 的 CSV 待辦清單。適合 PM、主管、行政助理每週例會後快速歸檔。</p>
+    <div class="prompt-box">這份檔案 [拖曳逐字稿.txt] 是我們今天的會議逐字稿。請幫我：1. 辨識每位發言者並統計各自發言時長佔比 2. 歸納出 3-5 個主要討論議題，每個議題列出摘要與關鍵結論 3. 整理出所有待辦事項，格式為「負責人｜任務內容｜截止日期」 4. 輸出 meeting_notes.md（含完整會議紀錄）和 action_items.csv（可匯入 Notion 資料庫） 5. 在最後附上一段 50 字以內的會議一句話總結，方便貼到 Slack 頻道通知團隊</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習：體驗 Claude 文本理解與結構化輸出能力，完成後立刻可用於真實工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析器 資料分析">
+    <div class="card-header">
+      <span class="badge">226</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/16</span>
+    </div>
+    <h2>競品功能矩陣分析器</h2>
+    <div class="tagline">輸入多個競品網址或文件，自動產出功能比較矩陣與策略建議報告</div>
+    <p>給 Claude Code 你的產品規格與 3-5 個競品的資料（網頁內容、截圖、規格文件），它會自動建立功能比較矩陣表、標示你的產品優劣勢、計算功能覆蓋率，並產出一份含視覺化圖表的 HTML 報告與策略建議簡報大綱。產品經理、創業者在做市場調研或投資人簡報時特別實用。</p>
+    <div class="prompt-box">我正在做競品分析。以下是資料：
+- 我的產品規格：[拖曳 product_spec.md]
+- 競品資料：[拖曳 competitor_1.md, competitor_2.md, competitor_3.md]
+
+請幫我：
+1. 定義 15-20 個關鍵功能維度（含核心功能、定價、整合能力、使用者體驗等）
+2. 建立功能矩陣表，用 ✅❌🔶 標示各產品的支援程度
+3. 計算每個產品的功能覆蓋率百分比
+4. 找出我的產品的 3 個最大優勢與 3 個最需補強的缺口
+5. 產出 competitive_analysis.html（含互動式表格與雷達圖，使用 Chart.js）
+6. 另外產出 strategy_outline.md，包含建議的產品路線圖優先順序</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：需要引導 Claude 處理多份文件交叉比對、產出含 JavaScript 圖表的互動式報告，學習多步驟工作流編排
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端原型快速產生引擎 程式原型">
+    <div class="card-header">
+      <span class="badge">227</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/16</span>
+    </div>
+    <h2>全端原型快速產生引擎</h2>
+    <div class="tagline">用一段產品需求描述，自動生成含前後端與資料庫的完整可運行原型</div>
+    <p>只需提供一段自然語言的產品需求描述，Claude Code 就會幫你從零建立一個完整的全端 Web 應用原型：包含 React 前端頁面、Node.js API 後端、SQLite 資料庫 schema、種子資料、以及 Docker Compose 一鍵啟動配置。產出的程式碼含完整的 README 說明與 API 文件，適合黑客松、產品 Demo、技術驗證場景。</p>
+    <div class="prompt-box">我要做一個「社區二手物品交換平台」的 MVP 原型。需求如下：
+- 使用者可以註冊登入（JWT 驗證）
+- 可以上架物品（標題、描述、照片 URL、物品類別、期望交換物）
+- 可以瀏覽所有物品並依類別篩選
+- 可以對感興趣的物品發起交換請求
+- 雙方都同意後標記為「交換成功」
+
+請幫我建立完整專案：
+1. 資料夾結構：/client（React + Tailwind CSS）、/server（Express.js）、/database（SQLite + migrations）
+2. 建立完整的 REST API（至少 10 個端點），含輸入驗證與錯誤處理
+3. 前端至少 5 個頁面：首頁、物品列表、物品詳情、我的物品、交換請求管理
+4. 撰寫 docker-compose.yml 讓專案一鍵啟動
+5. 產出 README.md 含架構圖（Mermaid）、API 文件表格、環境建置步驟
+6. 加入 20 筆種子資料讓 Demo 看起來有內容</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：涵蓋前後端架構設計、資料庫建模、API 設計、容器化部署，全面考驗 Claude Code 的多檔案協作與系統級程式產出能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日晨間簡報產生器 生產力">
     <div class="card-header">
       <span class="badge">222</span>
       <span class="tag level-1">初階</span>
