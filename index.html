@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/17</span>
-      <span>📚 累計收錄：<span id="totalCount">230</span> 個專案</span>
+      <span>📅 最後更新：2026/09/18</span>
+      <span>📚 累計收錄：<span id="totalCount">233</span> 個專案</span>
     </div>
   </header>
 
@@ -664,76 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 230 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 233 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/17) ============ -->
+  <!-- ============ 今日新增 (9/18) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/17
+    今日新增 · 2026/09/18
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
+  <article class="card searchable" data-level="初階" data-category="資料分析" data-searchtext="日記情緒趨勢追蹤器 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
-      <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/17</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/18</span>
     </div>
-    <h2>電子郵件批次回覆草稿機</h2>
-    <div class="tagline">貼上多封待回信件，一次產出所有回覆草稿，省下每天最痛苦的郵件時間</div>
-    <p>把收件匣裡累積的 5-10 封待回信件全部貼給 Claude Code，指定你的身份與回覆風格（正式／友善／簡潔），它會逐封分析來信意圖，產出對應的回覆草稿，並標註哪些信需要你補充資訊才能回。最終輸出一份 Markdown 檔，每封信的原文摘要＋建議回覆＋急迫程度標記一目了然。適合每天被郵件淹沒的 PM、業務、主管。</p>
-    <div class="prompt-box">以下是我收件匣裡 [數量] 封待回覆的信件，我的身份是 [你的職稱]，偏好回覆風格為 [正式/友善/簡潔]。請幫我：1. 每封信用一句話摘要來信重點與對方意圖 2. 標註急迫程度（🔴立即回／🟡今天內／🟢本週內）3. 撰寫回覆草稿，語氣符合我的風格偏好，長度控制在 150 字內 4. 若某封信需要我補充資訊才能回覆，請用 [待確認：___] 標示 5. 全部整理成 email_drafts.md，用分隔線區隔每封信</div>
+    <h2>日記情緒趨勢追蹤器</h2>
+    <div class="tagline">把你的日記文字丟進去，自動分析情緒波動並產出視覺化週報</div>
+    <p>將一週的日記或隨手筆記交給 Claude Code，它會逐篇進行情緒分析（正面／中性／負面＋細分情緒標籤如焦慮、感恩、興奮等），算出每日情緒分數，再用 Python matplotlib 畫出情緒趨勢折線圖，最後附上一段溫暖的自我照顧建議。適合想養成反思習慣、追蹤心理狀態的人。</p>
+    <div class="prompt-box">我有一週的日記內容如下 [貼上或拖曳 .txt 檔案]。請幫我：1. 逐篇分析情緒，標註主要情緒標籤（如焦慮、平靜、喜悅、沮喪等）與 1-10 的情緒正面分數 2. 整理成 mood_data.csv，欄位為日期、情緒標籤、分數、關鍵句摘錄 3. 用 Python 產生 mood_chart.png 情緒趨勢折線圖，標註最高與最低點 4. 撰寫一段 200 字的週報摘要，包含情緒模式觀察與一條具體的自我照顧建議 5. 全部整合到 weekly_mood_report.html 單一網頁中</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者感受 Claude 批次處理與語氣調整能力，完成後可直接複製貼上到郵件客戶端使用
+      初階入門練習：體驗 Claude 文字分析＋程式碼生成＋檔案輸出的完整流程
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章產線系統 內容創作">
+  <article class="card searchable" data-level="中階" data-category="程式原型" data-searchtext="API文件互動沙盒產生器 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
-      <span class="tag time">50 分鐘</span>
-      <span class="date-tag">9/17</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">9/18</span>
     </div>
-    <h2>技術部落格文章產線系統</h2>
-    <div class="tagline">輸入一個技術主題，自動產出完整部落格文章含程式碼範例、SEO 元資料與社群宣傳文</div>
-    <p>給 Claude Code 一個技術主題或你剛解決的技術難題，它會幫你建立完整的部落格文章專案資料夾：包含 Markdown 格式的長文（含程式碼區塊、架構圖的 Mermaid 語法）、frontmatter SEO 元資料（title/description/keywords）、三個社群平台的宣傳短文（Twitter/LinkedIn/Threads），以及一份 outline.md 讓你快速審閱結構再微調。特別適合想建立技術個人品牌但總是卡在「從零開始寫」的工程師。</p>
-    <div class="prompt-box">我想寫一篇技術部落格文章，主題是：[你的技術主題，例如：用 React Server Components 優化首屏載入速度]。我的目標讀者是 [初階/中階/資深] 工程師。請幫我：1. 建立資料夾結構 blog-post/ 底下包含 outline.md、article.md、social-posts.md 2. 先產出 outline.md 列出文章大綱（5-7 個段落），每段標註預估字數 3. 撰寫 article.md 完整文章（1500-2500 字），包含：引言故事hook、問題描述、解決方案含程式碼範例、效能數據比較表、結論與延伸閱讀 4. 在 frontmatter 加入 title、description（155字內）、keywords（5-8個）5. 產出 social-posts.md 包含 Twitter（280字內含 emoji）、LinkedIn（專業語氣300字）、Threads（口語化200字）三版宣傳文</div>
+    <h2>API文件互動沙盒產生器</h2>
+    <div class="tagline">給一份 API 規格文件，自動建出可即時測試的互動式文件網站</div>
+    <p>把 OpenAPI/Swagger JSON 或任何 API 說明文件交給 Claude Code，它會解析所有端點，產生一個美觀的互動式文件網站：每個端點有說明、參數表格、範例請求，還附帶一個可以直接填參數送出真實請求的測試面板。前端用 React + TailwindCSS，後端用輕量 proxy 解決 CORS。適合小型團隊快速建立內部 API 文件門戶。</p>
+    <div class="prompt-box">這是我們的 API 規格文件 [拖曳 openapi.json 或貼上 API 說明]。請幫我建立一個互動式 API 文件網站：1. 解析所有端點，依資源分類（如 /users, /orders）建立側邊導航 2. 每個端點頁面包含：HTTP 方法標籤、路徑、說明、參數表格（名稱/型別/必填/說明）、請求與回應的 JSON 範例 3. 加入「Try it」互動面板，使用者可填入參數與 headers 後送出請求，回應即時顯示並格式化 4. 用 React + TailwindCSS 建前端，Express.js 做 proxy server 5. 支援深色模式切換 6. 資料夾結構：api-docs-sandbox/client/ 與 api-docs-sandbox/server/ 7. 附上 README.md 含啟動指令</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習多檔案輸出與結構化內容產出，學習如何讓 Claude 同時處理長文撰寫、SEO 優化與跨平台改寫
+      中階挑戰：需要處理前後端整合、動態 UI 渲染與網路請求代理，學會用 Claude 搭建完整全端應用
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="全自動資料儀表板產生器 資料分析">
+  <article class="card searchable" data-level="高階" data-category="內容創作" data-searchtext="多語系行銷素材工廠 內容創作">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
-      <span class="tag">資料分析</span>
-      <span class="tag time">90 分鐘</span>
-      <span class="date-tag">9/17</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/18</span>
     </div>
-    <h2>全自動資料儀表板產生器</h2>
-    <div class="tagline">丟入 CSV 原始資料，自動分析、清洗並產出可互動的 HTML 數據儀表板</div>
-    <p>將任何 CSV 資料集交給 Claude Code，它會自動偵測欄位類型、處理缺失值與異常值、進行統計摘要分析，然後產出一個完整的單頁互動式 HTML 儀表板——內含 Chart.js 圖表（長條圖、折線圖、圓餅圖）、篩選器、關鍵指標卡片與資料洞察摘要。同時產出 analysis_report.md 詳述資料品質問題與發現。適合需要快速向主管展示數據成果的分析師、PM，或想把 Excel 報表升級為互動網頁的任何人。</p>
-    <div class="prompt-box">這份 CSV [拖曳檔案] 是我的原始資料。請幫我建立完整的資料儀表板專案：1. 建立 dashboard/ 資料夾，包含 index.html、style.css、app.js、analysis_report.md 2. 先分析 CSV：偵測每個欄位的資料型態、缺失率、唯一值數量，將結果寫入 analysis_report.md 3. 資料清洗：處理缺失值（數值用中位數填補、分類用眾數）、標記異常值、日期格式統一 4. 在 index.html 建立響應式儀表板，頂部放 3-5 張 KPI 摘要卡片（自動挑選最重要的數值指標）5. 使用 Chart.js（CDN 引入）產出至少 4 張圖表：數值欄位的趨勢折線圖、分類欄位的長條圖、佔比圓餅圖、相關性散佈圖 6. 加入下拉式篩選器，可依分類欄位動態過濾所有圖表 7. 底部加入「AI 數據洞察」區塊，用 3-5 個 bullet points 寫出你從資料中發現的趨勢與建議 8. 確保 CSS 使用現代設計（深色主題、卡片圓角陰影、漸層色彩），手機也能正常瀏覽</div>
+    <h2>多語系行銷素材工廠</h2>
+    <div class="tagline">輸入產品資料與品牌指南，一鍵批量產出多語系、多平台的完整行銷素材包</div>
+    <p>給 Claude Code 你的產品說明、品牌風格指南與目標市場清單，它會自動產出一整套行銷素材：包含繁中／英文／日文三語版本的社群貼文（Facebook、Instagram、LinkedIn 各 3 則）、EDM 電子報 HTML、Landing Page 單頁 HTML、Google Ads 文案組合、SEO meta 描述，以及一份素材使用手冊。所有輸出遵循品牌語調一致性，並依平台特性調整文案長度與 CTA 策略。適合新創團隊產品上線前的行銷準備。</p>
+    <div class="prompt-box">以下是我的產品資料與品牌指南 [貼上或拖曳檔案]。目標市場：台灣、美國、日本。請幫我建立完整行銷素材包：1. 建立 marketing-kit/ 資料夾，子目錄按語系分 zh-TW/ en/ ja/ 2. 每個語系產出：social_posts.md（FB、IG、LinkedIn 各 3 則貼文，含建議 hashtag 與發布時間）、edm_template.html（響應式電子報，含 hero 圖區塊佔位、CTA 按鈕）、landing_page.html（含 hero、功能亮點、客戶見證區塊、CTA，用 TailwindCSS CDN）3. 根目錄產出 google_ads.csv（標題 15 組 x 說明 4 組 x 三語）與 seo_meta.json（title、description、keywords 三語版）4. 產出 brand_consistency_checklist.md 品牌一致性檢核表 5. 產出 content_calendar.csv 建議三週發布排程 6. 附 README.md 說明每個檔案用途與客製化方式</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰整合資料分析邏輯、前端視覺化與完整專案架構，訓練 Claude 同時扮演資料科學家與前端工程師的綜合能力
+      高階綜合挑戰：結合多語系內容生成、HTML/CSS 開發、結構化資料輸出與品牌策略思維，考驗 prompt 拆解與品質控管能力
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -808,7 +809,61 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要整理器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件批次回覆草稿機 生產力">
+    <div class="card-header">
+      <span class="badge">228</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/17</span>
+    </div>
+    <h2>電子郵件批次回覆草稿機</h2>
+    <div class="tagline">貼上多封待回信件，一次產出所有回覆草稿，省下每天最痛苦的郵件時間</div>
+    <p>把收件匣裡累積的 5-10 封待回信件全部貼給 Claude Code，指定你的身份與回覆風格（正式／友善／簡潔），它會逐封分析來信意圖，產出對應的回覆草稿，並標註哪些信需要你補充資訊才能回。最終輸出一份 Markdown 檔，每封信的原文摘要＋建議回覆＋急迫程度標記一目了然。適合每天被郵件淹沒的 PM、業務、主管。</p>
+    <div class="prompt-box">以下是我收件匣裡 [數量] 封待回覆的信件，我的身份是 [你的職稱]，偏好回覆風格為 [正式/友善/簡潔]。請幫我：1. 每封信用一句話摘要來信重點與對方意圖 2. 標註急迫程度（🔴立即回／🟡今天內／🟢本週內）3. 撰寫回覆草稿，語氣符合我的風格偏好，長度控制在 150 字內 4. 若某封信需要我補充資訊才能回覆，請用 [待確認：___] 標示 5. 全部整理成 email_drafts.md，用分隔線區隔每封信</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者感受 Claude 批次處理與語氣調整能力，完成後可直接複製貼上到郵件客戶端使用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="技術部落格文章產線系統 內容創作">
+    <div class="card-header">
+      <span class="badge">229</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">50 分鐘</span>
+      <span class="date-tag">9/17</span>
+    </div>
+    <h2>技術部落格文章產線系統</h2>
+    <div class="tagline">輸入一個技術主題，自動產出完整部落格文章含程式碼範例、SEO 元資料與社群宣傳文</div>
+    <p>給 Claude Code 一個技術主題或你剛解決的技術難題，它會幫你建立完整的部落格文章專案資料夾：包含 Markdown 格式的長文（含程式碼區塊、架構圖的 Mermaid 語法）、frontmatter SEO 元資料（title/description/keywords）、三個社群平台的宣傳短文（Twitter/LinkedIn/Threads），以及一份 outline.md 讓你快速審閱結構再微調。特別適合想建立技術個人品牌但總是卡在「從零開始寫」的工程師。</p>
+    <div class="prompt-box">我想寫一篇技術部落格文章，主題是：[你的技術主題，例如：用 React Server Components 優化首屏載入速度]。我的目標讀者是 [初階/中階/資深] 工程師。請幫我：1. 建立資料夾結構 blog-post/ 底下包含 outline.md、article.md、social-posts.md 2. 先產出 outline.md 列出文章大綱（5-7 個段落），每段標註預估字數 3. 撰寫 article.md 完整文章（1500-2500 字），包含：引言故事hook、問題描述、解決方案含程式碼範例、效能數據比較表、結論與延伸閱讀 4. 在 frontmatter 加入 title、description（155字內）、keywords（5-8個）5. 產出 social-posts.md 包含 Twitter（280字內含 emoji）、LinkedIn（專業語氣300字）、Threads（口語化200字）三版宣傳文</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習多檔案輸出與結構化內容產出，學習如何讓 Claude 同時處理長文撰寫、SEO 優化與跨平台改寫
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="資料分析" data-searchtext="全自動資料儀表板產生器 資料分析">
+    <div class="card-header">
+      <span class="badge">230</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">90 分鐘</span>
+      <span class="date-tag">9/17</span>
+    </div>
+    <h2>全自動資料儀表板產生器</h2>
+    <div class="tagline">丟入 CSV 原始資料，自動分析、清洗並產出可互動的 HTML 數據儀表板</div>
+    <p>將任何 CSV 資料集交給 Claude Code，它會自動偵測欄位類型、處理缺失值與異常值、進行統計摘要分析，然後產出一個完整的單頁互動式 HTML 儀表板——內含 Chart.js 圖表（長條圖、折線圖、圓餅圖）、篩選器、關鍵指標卡片與資料洞察摘要。同時產出 analysis_report.md 詳述資料品質問題與發現。適合需要快速向主管展示數據成果的分析師、PM，或想把 Excel 報表升級為互動網頁的任何人。</p>
+    <div class="prompt-box">這份 CSV [拖曳檔案] 是我的原始資料。請幫我建立完整的資料儀表板專案：1. 建立 dashboard/ 資料夾，包含 index.html、style.css、app.js、analysis_report.md 2. 先分析 CSV：偵測每個欄位的資料型態、缺失率、唯一值數量，將結果寫入 analysis_report.md 3. 資料清洗：處理缺失值（數值用中位數填補、分類用眾數）、標記異常值、日期格式統一 4. 在 index.html 建立響應式儀表板，頂部放 3-5 張 KPI 摘要卡片（自動挑選最重要的數值指標）5. 使用 Chart.js（CDN 引入）產出至少 4 張圖表：數值欄位的趨勢折線圖、分類欄位的長條圖、佔比圓餅圖、相關性散佈圖 6. 加入下拉式篩選器，可依分類欄位動態過濾所有圖表 7. 底部加入「AI 數據洞察」區塊，用 3-5 個 bullet points 寫出你從資料中發現的趨勢與建議 8. 確保 CSS 使用現代設計（深色主題、卡片圓角陰影、漸層色彩），手機也能正常瀏覽</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰整合資料分析邏輯、前端視覺化與完整專案架構，訓練 Claude 同時扮演資料科學家與前端工程師的綜合能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要整理器 生產力">
     <div class="card-header">
       <span class="badge">225</span>
       <span class="tag level-1">初階</span>
