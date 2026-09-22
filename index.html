@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/21</span>
-      <span>📚 累計收錄：<span id="totalCount">242</span> 個專案</span>
+      <span>📅 最後更新：2026/09/22</span>
+      <span>📚 累計收錄：<span id="totalCount">245</span> 個專案</span>
     </div>
   </header>
 
@@ -664,116 +664,79 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 242 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 245 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/21) ============ -->
+  <!-- ============ 今日新增 (9/22) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/21
+    今日新增 · 2026/09/22
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件語氣改寫器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
       <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/21</span>
+      <span class="date-tag">9/22</span>
     </div>
-    <h2>電子郵件語氣改寫器</h2>
-    <div class="tagline">把生硬的工作信件一鍵轉換成不同語氣版本，從正式到友善任你選</div>
-    <p>將你寫好的 Email 草稿丟給 Claude Code，它會幫你產出三種語氣版本：正式商務、友善專業、簡潔直接。每個版本都附上語氣分析說明，並輸出成 Markdown 檔案方便比較挑選。適合常寫跨部門溝通信、客戶回覆、或對語氣拿捏沒把握的職場工作者。</p>
-    <div class="prompt-box">我要寄一封工作信件，以下是草稿內容：
-[貼上你的 Email 草稿]
-
-請幫我：
-1. 分析原始草稿的語氣（正式程度 1-10 分、友善程度 1-10 分）
-2. 改寫成三個版本：(A) 正式商務版：適合對外客戶或高階主管 (B) 友善專業版：適合同事或合作夥伴 (C) 簡潔直接版：適合內部快速溝通
-3. 每個版本標註修改了哪些詞句、為什麼這樣改
-4. 輸出成 email_versions.md，用表格對比三個版本的差異
-5. 最後給一段「寄出前檢查清單」確認收件人、附件、主旨是否完整</div>
+    <h2>會議逐字稿摘要產生器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化摘要與待辦事項清單</div>
+    <p>將會議逐字稿或筆記交給 Claude Code，它會自動辨識討論主題、各方立場、最終決議，並產出一頁式摘要（含時間軸）以及可匯入 Notion 或 Todoist 的待辦事項 JSON。適合每週開大量會議的 PM、主管、或需要追蹤跨部門決議的團隊成員。</p>
+    <div class="prompt-box">這份文字檔 [拖曳檔案] 是今天的會議逐字稿。請幫我：1. 辨識所有討論議題並依時間順序列出 2. 每個議題摘要成 3 句話：背景、討論要點、最終決議 3. 抽出所有待辦事項，格式為：負責人 / 任務內容 / 截止日 4. 輸出 meeting_summary.md（Markdown 格式一頁摘要）和 action_items.json（可匯入專案管理工具）5. 最後附上「本次會議 3 大重點」供轉發給未出席同事</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階入門最佳練習，體驗 Claude 的文字改寫與語氣調控能力，成果馬上能用在日常工作
+      讓初學者體驗 Claude 的文本摘要與結構化輸出能力，成果立刻可用於日常工作流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="產品評論情感雷達圖 資料分析">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析儀 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
       <span class="tag time">55 分鐘</span>
-      <span class="date-tag">9/21</span>
+      <span class="date-tag">9/22</span>
     </div>
-    <h2>產品評論情感雷達圖</h2>
-    <div class="tagline">爬取電商產品評論，自動分析情感維度並生成視覺化雷達圖報告</div>
-    <p>給 Claude Code 一組產品評論資料（CSV 或直接貼文字），它會從「品質、價格、外觀、功能、客服」五個維度進行情感分析，計算每個維度的正負評分數與比例，最終產出 Python 腳本生成雷達圖 PNG 以及完整的分析報告 HTML 頁面。適合電商賣家、PM 做產品改善決策參考。</p>
-    <div class="prompt-box">我有一份產品評論資料 [拖曳 CSV 檔案或貼上 20 則以上評論文字]。
-
-請幫我建立一個完整的情感分析專案：
-1. 建立資料夾結構：sentiment_radar/data/、sentiment_radar/output/、sentiment_radar/scripts/
-2. 撰寫 Python 腳本 analyze.py：
-   - 讀取評論資料，用 NLP 方式從每則評論中抽取「品質、價格、外觀、功能、客服」五個維度的情感分數（-1 到 +1）
-   - 計算各維度平均分數、正評比例、最具代表性的正面與負面評論各 3 則
-   - 用 matplotlib 繪製雷達圖存成 radar_chart.png
-3. 產出 report.html：包含雷達圖、各維度詳細數據表格、改善建議摘要
-4. 附上 requirements.txt 和執行說明 README.md
-5. 額外：找出評論中重複出現的關鍵字詞雲，存成 wordcloud.png</div>
+    <h2>競品功能矩陣分析儀</h2>
+    <div class="tagline">輸入多個競品網址或文件，自動產出功能對比矩陣與策略建議報告</div>
+    <p>把 3-5 個競品的官網截圖、功能頁面文字或產品文件丟進 Claude Code，它會自動建立功能對比矩陣（含定價、目標客群、獨特賣點），產出視覺化 HTML 比較表和 SWOT 分析報告。適合產品經理做競品研究、創業者評估市場切入點、或行銷團隊撰寫差異化訊息。最終產出可直接放進簡報或策略文件。</p>
+    <div class="prompt-box">我要分析以下競品 [列出 3-5 個產品名稱與簡述]。請幫我：1. 建立資料夾 competitor_analysis/ 2. 針對每個競品建立 {name}.md，整理其核心功能、定價方案、目標客群、技術架構 3. 產出 matrix.html：一個互動式功能對比矩陣表格，橫軸為競品、縱軸為功能維度（至少 15 個維度），用 ✅❌🔶 標示支援程度 4. 產出 swot.md：每個競品的 SWOT 分析 5. 產出 strategy.md：根據分析結果，建議我們產品的 3 個差異化切入點，每個附具體功能建議和優先級 6. 所有表格需支援深色模式，HTML 用 Tailwind CSS</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階練習整合資料處理、Python 腳本生成與視覺化輸出，學會用 Claude Code 建構完整分析流程
+      中階專案需整合多來源資訊並產出多種格式文件，訓練 Claude Code 的多步驟工作流與結構化分析能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時投票系統原型 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端個人記帳儀表板 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
       <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/21</span>
+      <span class="date-tag">9/22</span>
     </div>
-    <h2>多人即時投票系統原型</h2>
-    <div class="tagline">用 WebSocket 打造即時互動投票應用，支援建立議題、即時開票與結果動畫呈現</div>
-    <p>請 Claude Code 從零搭建一套全端即時投票系統：後端用 Node.js + WebSocket 處理即時連線與投票廣播，前端用 vanilla JS 實作投票介面與動態長條圖動畫。支援主持人建立多選題投票、設定倒數計時、即時顯示投票結果跳動動畫。適合團隊腦力激盪、課堂互動、社群活動使用，完成後可直接部署到免費平台展示。</p>
-    <div class="prompt-box">請幫我從零建立一個即時投票系統的完整專案：
+    <h2>全端個人記帳儀表板</h2>
+    <div class="tagline">從零建構含 CSV 匯入、分類標籤、圖表儀表板的完整記帳 Web 應用</div>
+    <p>請 Claude Code 從零搭建一個本地端可運行的個人記帳應用：支援 CSV 匯入銀行帳單、自動分類消費類別（餐飲/交通/娛樂等）、月度趨勢折線圖、類別佔比圓餅圖、異常消費提醒。前端用 React + Recharts，後端用 Node.js + SQLite，整個專案可用 Docker 一鍵啟動。適合想學全端架構的開發者，或需要隱私優先、不想上傳資料到雲端的記帳使用者。</p>
+    <div class="prompt-box">請幫我建構一個完整的個人記帳 Web 應用。專案結構：expense-tracker/├── frontend/ (React + Vite + Tailwind + Recharts)├── backend/ (Node.js + Express + SQLite)├── docker-compose.yml└── README.md
 
-專案結構：
-vote-live/
-├── server/
-│   ├── index.js（Express + ws WebSocket 伺服器）
-│   ├── rooms.js（投票房間管理邏輯：建立房間、加入、投票、關閉）
-│   └── package.json
-├── client/
-│   ├── index.html（首頁：建立投票 / 輸入房間代碼加入）
-│   ├── host.html（主持人頁面：設定題目、選項、倒數秒數、開始/結束投票）
-│   ├── vote.html（投票者頁面：顯示題目、點選投票、等待結果）
-│   ├── style.css（現代感 UI，深色主題，圓角卡片風格）
-│   └── app.js（WebSocket 連線、即時更新長條圖動畫用 CSS transition）
-└── README.md（含本地啟動指令與部署到 Render 的步驟）
-
-功能需求：
-1. 主持人建立房間後得到 6 碼房間代碼，投票者輸入代碼加入
-2. 支援 2-6 個選項的單選投票，可設定 10/30/60 秒倒數
-3. 投票進行中即時顯示各選項票數長條圖，有數字跳動動畫
-4. 倒數結束自動封票，顯示最終結果與冠軍選項的慶祝動畫（confetti 效果）
-5. 同一房間支援連續發起多輪投票
-6. 處理斷線重連與防止重複投票（用 sessionStorage 記錄）</div>
+功能需求：1. 首頁儀表板：本月總支出卡片、月度趨勢折線圖（近 6 個月）、類別佔比圓餅圖、每日消費柱狀圖 2. CSV 匯入頁：拖曳上傳銀行帳單 CSV，自動偵測欄位映射（日期/金額/描述），用關鍵字規則自動分類消費類別 3. 明細頁：可搜尋、篩選、手動修改類別的交易列表，支援分頁 4. 設定頁：自訂消費類別與關鍵字對應規則 5. 異常偵測：單筆超過月均值 3 倍時標記提醒 6. 後端 API 用 RESTful 設計，含完整錯誤處理 7. 前端支援深色/淺色模式切換 8. 附上 seed 資料（模擬 3 個月消費紀錄）方便展示 9. docker-compose 一鍵啟動前後端 10. README 含架構圖與操作說明</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階挑戰涵蓋 WebSocket 即時通訊、房間狀態管理、前端動畫與全端整合，考驗 Claude Code 的架構設計能力
+      高階專案涵蓋前後端整合、資料庫設計、資料視覺化、Docker 部署，全面測試 Claude Code 的大型專案架構能力
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -852,7 +815,101 @@ vote-live/
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每週餐點規劃助手 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件語氣改寫器 生產力">
+    <div class="card-header">
+      <span class="badge">240</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/21</span>
+    </div>
+    <h2>電子郵件語氣改寫器</h2>
+    <div class="tagline">把生硬的工作信件一鍵轉換成不同語氣版本，從正式到友善任你選</div>
+    <p>將你寫好的 Email 草稿丟給 Claude Code，它會幫你產出三種語氣版本：正式商務、友善專業、簡潔直接。每個版本都附上語氣分析說明，並輸出成 Markdown 檔案方便比較挑選。適合常寫跨部門溝通信、客戶回覆、或對語氣拿捏沒把握的職場工作者。</p>
+    <div class="prompt-box">我要寄一封工作信件，以下是草稿內容：
+[貼上你的 Email 草稿]
+
+請幫我：
+1. 分析原始草稿的語氣（正式程度 1-10 分、友善程度 1-10 分）
+2. 改寫成三個版本：(A) 正式商務版：適合對外客戶或高階主管 (B) 友善專業版：適合同事或合作夥伴 (C) 簡潔直接版：適合內部快速溝通
+3. 每個版本標註修改了哪些詞句、為什麼這樣改
+4. 輸出成 email_versions.md，用表格對比三個版本的差異
+5. 最後給一段「寄出前檢查清單」確認收件人、附件、主旨是否完整</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階入門最佳練習，體驗 Claude 的文字改寫與語氣調控能力，成果馬上能用在日常工作
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="產品評論情感雷達圖 資料分析">
+    <div class="card-header">
+      <span class="badge">241</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">55 分鐘</span>
+      <span class="date-tag">9/21</span>
+    </div>
+    <h2>產品評論情感雷達圖</h2>
+    <div class="tagline">爬取電商產品評論，自動分析情感維度並生成視覺化雷達圖報告</div>
+    <p>給 Claude Code 一組產品評論資料（CSV 或直接貼文字），它會從「品質、價格、外觀、功能、客服」五個維度進行情感分析，計算每個維度的正負評分數與比例，最終產出 Python 腳本生成雷達圖 PNG 以及完整的分析報告 HTML 頁面。適合電商賣家、PM 做產品改善決策參考。</p>
+    <div class="prompt-box">我有一份產品評論資料 [拖曳 CSV 檔案或貼上 20 則以上評論文字]。
+
+請幫我建立一個完整的情感分析專案：
+1. 建立資料夾結構：sentiment_radar/data/、sentiment_radar/output/、sentiment_radar/scripts/
+2. 撰寫 Python 腳本 analyze.py：
+   - 讀取評論資料，用 NLP 方式從每則評論中抽取「品質、價格、外觀、功能、客服」五個維度的情感分數（-1 到 +1）
+   - 計算各維度平均分數、正評比例、最具代表性的正面與負面評論各 3 則
+   - 用 matplotlib 繪製雷達圖存成 radar_chart.png
+3. 產出 report.html：包含雷達圖、各維度詳細數據表格、改善建議摘要
+4. 附上 requirements.txt 和執行說明 README.md
+5. 額外：找出評論中重複出現的關鍵字詞雲，存成 wordcloud.png</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階練習整合資料處理、Python 腳本生成與視覺化輸出，學會用 Claude Code 建構完整分析流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時投票系統原型 程式原型">
+    <div class="card-header">
+      <span class="badge">242</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/21</span>
+    </div>
+    <h2>多人即時投票系統原型</h2>
+    <div class="tagline">用 WebSocket 打造即時互動投票應用，支援建立議題、即時開票與結果動畫呈現</div>
+    <p>請 Claude Code 從零搭建一套全端即時投票系統：後端用 Node.js + WebSocket 處理即時連線與投票廣播，前端用 vanilla JS 實作投票介面與動態長條圖動畫。支援主持人建立多選題投票、設定倒數計時、即時顯示投票結果跳動動畫。適合團隊腦力激盪、課堂互動、社群活動使用，完成後可直接部署到免費平台展示。</p>
+    <div class="prompt-box">請幫我從零建立一個即時投票系統的完整專案：
+
+專案結構：
+vote-live/
+├── server/
+│   ├── index.js（Express + ws WebSocket 伺服器）
+│   ├── rooms.js（投票房間管理邏輯：建立房間、加入、投票、關閉）
+│   └── package.json
+├── client/
+│   ├── index.html（首頁：建立投票 / 輸入房間代碼加入）
+│   ├── host.html（主持人頁面：設定題目、選項、倒數秒數、開始/結束投票）
+│   ├── vote.html（投票者頁面：顯示題目、點選投票、等待結果）
+│   ├── style.css（現代感 UI，深色主題，圓角卡片風格）
+│   └── app.js（WebSocket 連線、即時更新長條圖動畫用 CSS transition）
+└── README.md（含本地啟動指令與部署到 Render 的步驟）
+
+功能需求：
+1. 主持人建立房間後得到 6 碼房間代碼，投票者輸入代碼加入
+2. 支援 2-6 個選項的單選投票，可設定 10/30/60 秒倒數
+3. 投票進行中即時顯示各選項票數長條圖，有數字跳動動畫
+4. 倒數結束自動封票，顯示最終結果與冠軍選項的慶祝動畫（confetti 效果）
+5. 同一房間支援連續發起多輪投票
+6. 處理斷線重連與防止重複投票（用 sessionStorage 記錄）</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階挑戰涵蓋 WebSocket 即時通訊、房間狀態管理、前端動畫與全端整合，考驗 Claude Code 的架構設計能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每週餐點規劃助手 生產力">
     <div class="card-header">
       <span class="badge">237</span>
       <span class="tag level-1">初階</span>
