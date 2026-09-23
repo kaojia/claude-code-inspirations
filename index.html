@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/22</span>
-      <span>📚 累計收錄：<span id="totalCount">245</span> 個專案</span>
+      <span>📅 最後更新：2026/09/23</span>
+      <span>📚 累計收錄：<span id="totalCount">248</span> 個專案</span>
     </div>
   </header>
 
@@ -664,78 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 245 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 248 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/22) ============ -->
+  <!-- ============ 今日新增 (9/23) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/22
+    今日新增 · 2026/09/23
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議機器人 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">20 分鐘</span>
-      <span class="date-tag">9/22</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/23</span>
     </div>
-    <h2>會議逐字稿摘要產生器</h2>
-    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化摘要與待辦事項清單</div>
-    <p>將會議逐字稿或筆記交給 Claude Code，它會自動辨識討論主題、各方立場、最終決議，並產出一頁式摘要（含時間軸）以及可匯入 Notion 或 Todoist 的待辦事項 JSON。適合每週開大量會議的 PM、主管、或需要追蹤跨部門決議的團隊成員。</p>
-    <div class="prompt-box">這份文字檔 [拖曳檔案] 是今天的會議逐字稿。請幫我：1. 辨識所有討論議題並依時間順序列出 2. 每個議題摘要成 3 句話：背景、討論要點、最終決議 3. 抽出所有待辦事項，格式為：負責人 / 任務內容 / 截止日 4. 輸出 meeting_summary.md（Markdown 格式一頁摘要）和 action_items.json（可匯入專案管理工具）5. 最後附上「本次會議 3 大重點」供轉發給未出席同事</div>
+    <h2>每日天氣穿搭建議機器人</h2>
+    <div class="tagline">輸入你的城市與衣櫃清單，自動產出一週穿搭建議與天氣提醒</div>
+    <p>把你的衣櫃品項清單（上衣、外套、褲子、鞋子等）和所在城市告訴 Claude Code，它會根據即時天氣資料產出一週每日穿搭組合建議，輸出成精美的 HTML 頁面，包含溫度、降雨機率與搭配理由。適合每天早上不知道穿什麼的上班族，或想建立膠囊衣櫥的極簡主義者。</p>
+    <div class="prompt-box">我住在 [你的城市]，以下是我的衣櫃清單：[貼上清單，格式如：白色襯衫x2、黑色西裝褲x1、牛仔外套x1...]。請幫我：1. 根據該城市未來 7 天的典型季節天氣（目前月份推估）產出每日穿搭建議 2. 每天包含：氣溫範圍、降雨機率、建議穿搭組合、搭配理由 3. 額外標註哪些單品使用頻率最高、哪些幾乎沒用到 4. 輸出成 weekly-outfit.html，用卡片式排版，每天一張卡，配色清新好閱讀 5. 另外輸出 wardrobe-analysis.md 分析衣櫃缺什麼類型的單品</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      讓初學者體驗 Claude 的文本摘要與結構化輸出能力，成果立刻可用於日常工作流程
+      初階練習讓 Claude 結合條件推理與 HTML 排版輸出，完成後馬上能打開瀏覽器查看成果
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析儀 資料分析">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="開源專案貢獻度儀表板 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
       <span class="tag">資料分析</span>
-      <span class="tag time">55 分鐘</span>
-      <span class="date-tag">9/22</span>
+      <span class="tag time">60 分鐘</span>
+      <span class="date-tag">9/23</span>
     </div>
-    <h2>競品功能矩陣分析儀</h2>
-    <div class="tagline">輸入多個競品網址或文件，自動產出功能對比矩陣與策略建議報告</div>
-    <p>把 3-5 個競品的官網截圖、功能頁面文字或產品文件丟進 Claude Code，它會自動建立功能對比矩陣（含定價、目標客群、獨特賣點），產出視覺化 HTML 比較表和 SWOT 分析報告。適合產品經理做競品研究、創業者評估市場切入點、或行銷團隊撰寫差異化訊息。最終產出可直接放進簡報或策略文件。</p>
-    <div class="prompt-box">我要分析以下競品 [列出 3-5 個產品名稱與簡述]。請幫我：1. 建立資料夾 competitor_analysis/ 2. 針對每個競品建立 {name}.md，整理其核心功能、定價方案、目標客群、技術架構 3. 產出 matrix.html：一個互動式功能對比矩陣表格，橫軸為競品、縱軸為功能維度（至少 15 個維度），用 ✅❌🔶 標示支援程度 4. 產出 swot.md：每個競品的 SWOT 分析 5. 產出 strategy.md：根據分析結果，建議我們產品的 3 個差異化切入點，每個附具體功能建議和優先級 6. 所有表格需支援深色模式，HTML 用 Tailwind CSS</div>
+    <h2>開源專案貢獻度儀表板</h2>
+    <div class="tagline">掃描 GitHub repo 的 commit 紀錄，產出視覺化團隊貢獻分析報表</div>
+    <p>給 Claude Code 一個 GitHub 公開 repo 的 clone，它會解析所有 git log，統計每位貢獻者的 commit 次數、程式碼增刪量、活躍時段與檔案觸及範圍，產出互動式 HTML 儀表板。包含折線圖（每月貢獻趨勢）、熱力圖（每週幾點最活躍）、圓餅圖（各人佔比）。適合開源維護者了解團隊動態，或求職者展示自己的貢獻視覺化。</p>
+    <div class="prompt-box">請幫我打造一個 Git 貢獻度分析儀表板。步驟：1. 讀取當前資料夾的 git log（請用 git log --all --pretty=format 取得作者、日期、增刪行數等）2. 統計以下維度：每位作者的 commit 數、新增/刪除行數、首次與最後一次貢獻日期、最常修改的前 5 個檔案路徑、每週各時段的 commit 熱力圖 3. 建立 dashboard/ 資料夾，產出 index.html，使用 Chart.js CDN 繪製：(a) 折線圖：月度 commit 趨勢，每人一條線 (b) 熱力圖：星期×小時的活躍度 (c) 橫條圖：各人程式碼增刪量 (d) 表格：貢獻者排行榜含所有指標 4. 加入深色模式切換按鈕 5. 頁面頂部顯示 repo 總覽：總 commit 數、貢獻者人數、專案活躍天數 6. 輸出 analysis.json 儲存原始統計資料</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階專案需整合多來源資訊並產出多種格式文件，訓練 Claude Code 的多步驟工作流與結構化分析能力
+      中階挑戰在於需要串接 git 指令、解析非結構化輸出、並用 Chart.js 做出多種圖表，練習資料處理到視覺化的完整流程
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/tutorials" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端個人記帳儀表板 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="多人即時協作看板系統 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/22</span>
+      <span class="tag time">150 分鐘</span>
+      <span class="date-tag">9/23</span>
     </div>
-    <h2>全端個人記帳儀表板</h2>
-    <div class="tagline">從零建構含 CSV 匯入、分類標籤、圖表儀表板的完整記帳 Web 應用</div>
-    <p>請 Claude Code 從零搭建一個本地端可運行的個人記帳應用：支援 CSV 匯入銀行帳單、自動分類消費類別（餐飲/交通/娛樂等）、月度趨勢折線圖、類別佔比圓餅圖、異常消費提醒。前端用 React + Recharts，後端用 Node.js + SQLite，整個專案可用 Docker 一鍵啟動。適合想學全端架構的開發者，或需要隱私優先、不想上傳資料到雲端的記帳使用者。</p>
-    <div class="prompt-box">請幫我建構一個完整的個人記帳 Web 應用。專案結構：expense-tracker/├── frontend/ (React + Vite + Tailwind + Recharts)├── backend/ (Node.js + Express + SQLite)├── docker-compose.yml└── README.md
-
-功能需求：1. 首頁儀表板：本月總支出卡片、月度趨勢折線圖（近 6 個月）、類別佔比圓餅圖、每日消費柱狀圖 2. CSV 匯入頁：拖曳上傳銀行帳單 CSV，自動偵測欄位映射（日期/金額/描述），用關鍵字規則自動分類消費類別 3. 明細頁：可搜尋、篩選、手動修改類別的交易列表，支援分頁 4. 設定頁：自訂消費類別與關鍵字對應規則 5. 異常偵測：單筆超過月均值 3 倍時標記提醒 6. 後端 API 用 RESTful 設計，含完整錯誤處理 7. 前端支援深色/淺色模式切換 8. 附上 seed 資料（模擬 3 個月消費紀錄）方便展示 9. docker-compose 一鍵啟動前後端 10. README 含架構圖與操作說明</div>
+    <h2>多人即時協作看板系統</h2>
+    <div class="tagline">從零搭建含 WebSocket 即時同步的 Kanban 看板，支援拖曳、標籤與多房間</div>
+    <p>用 Claude Code 一步步建出完整的 Trello 風格看板應用：Node.js + Express 後端搭配 Socket.IO 實現多人即時同步，前端用原生 JavaScript 實作拖曳排序，支援建立多個看板房間、新增/編輯/刪除卡片、標籤篩選與顏色分類、到期日提醒。資料以 SQLite 持久化儲存。適合想理解即時應用架構的開發者，做完可直接部署給小團隊使用。</p>
+    <div class="prompt-box">請幫我從零建立一個多人即時協作看板系統。資料夾結構：kanban-app/├── server/│ ├── index.js（Express + Socket.IO 伺服器）│ ├── db.js（SQLite 初始化與 CRUD）│ └── routes/（REST API）├── public/│ ├── index.html│ ├── style.css│ └── app.js（前端邏輯 + Socket 客戶端）└── package.json。功能需求：1. 看板房間：使用者輸入房間名即可加入，同房間的人即時同步 2. 欄位管理：預設「待辦」「進行中」「完成」三欄，可新增/重命名/刪除欄位 3. 卡片功能：標題、描述、標籤（可多選顏色）、到期日、指派人。支援拖曳在欄位間移動，移動時其他人即時看到 4. 前端拖曳用 HTML5 Drag and Drop API 實作，附帶動畫效果 5. Socket.IO 事件設計：card:create、card:move、card:update、card:delete、column:update 6. SQLite 儲存所有看板資料，伺服器重啟不遺失 7. 響應式設計，手機上可橫向捲動看各欄位 8. 頂部顯示目前房間人數與在線成員暱稱 9. 加入操作歷史紀錄側邊欄，顯示誰在什麼時候做了什麼操作</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階專案涵蓋前後端整合、資料庫設計、資料視覺化、Docker 部署，全面測試 Claude Code 的大型專案架構能力
+      高階專案涵蓋 WebSocket 即時通訊、拖曳互動、資料庫設計與前後端狀態同步，是全端工程的綜合練習
     </div>
-    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/common-tasks" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -815,7 +814,63 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件語氣改寫器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
+    <div class="card-header">
+      <span class="badge">243</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/22</span>
+    </div>
+    <h2>會議逐字稿摘要產生器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿丟進去，自動產出結構化摘要與待辦事項清單</div>
+    <p>將會議逐字稿或筆記交給 Claude Code，它會自動辨識討論主題、各方立場、最終決議，並產出一頁式摘要（含時間軸）以及可匯入 Notion 或 Todoist 的待辦事項 JSON。適合每週開大量會議的 PM、主管、或需要追蹤跨部門決議的團隊成員。</p>
+    <div class="prompt-box">這份文字檔 [拖曳檔案] 是今天的會議逐字稿。請幫我：1. 辨識所有討論議題並依時間順序列出 2. 每個議題摘要成 3 句話：背景、討論要點、最終決議 3. 抽出所有待辦事項，格式為：負責人 / 任務內容 / 截止日 4. 輸出 meeting_summary.md（Markdown 格式一頁摘要）和 action_items.json（可匯入專案管理工具）5. 最後附上「本次會議 3 大重點」供轉發給未出席同事</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      讓初學者體驗 Claude 的文本摘要與結構化輸出能力，成果立刻可用於日常工作流程
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="競品功能矩陣分析儀 資料分析">
+    <div class="card-header">
+      <span class="badge">244</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">資料分析</span>
+      <span class="tag time">55 分鐘</span>
+      <span class="date-tag">9/22</span>
+    </div>
+    <h2>競品功能矩陣分析儀</h2>
+    <div class="tagline">輸入多個競品網址或文件，自動產出功能對比矩陣與策略建議報告</div>
+    <p>把 3-5 個競品的官網截圖、功能頁面文字或產品文件丟進 Claude Code，它會自動建立功能對比矩陣（含定價、目標客群、獨特賣點），產出視覺化 HTML 比較表和 SWOT 分析報告。適合產品經理做競品研究、創業者評估市場切入點、或行銷團隊撰寫差異化訊息。最終產出可直接放進簡報或策略文件。</p>
+    <div class="prompt-box">我要分析以下競品 [列出 3-5 個產品名稱與簡述]。請幫我：1. 建立資料夾 competitor_analysis/ 2. 針對每個競品建立 {name}.md，整理其核心功能、定價方案、目標客群、技術架構 3. 產出 matrix.html：一個互動式功能對比矩陣表格，橫軸為競品、縱軸為功能維度（至少 15 個維度），用 ✅❌🔶 標示支援程度 4. 產出 swot.md：每個競品的 SWOT 分析 5. 產出 strategy.md：根據分析結果，建議我們產品的 3 個差異化切入點，每個附具體功能建議和優先級 6. 所有表格需支援深色模式，HTML 用 Tailwind CSS</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階專案需整合多來源資訊並產出多種格式文件，訓練 Claude Code 的多步驟工作流與結構化分析能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端個人記帳儀表板 程式原型">
+    <div class="card-header">
+      <span class="badge">245</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/22</span>
+    </div>
+    <h2>全端個人記帳儀表板</h2>
+    <div class="tagline">從零建構含 CSV 匯入、分類標籤、圖表儀表板的完整記帳 Web 應用</div>
+    <p>請 Claude Code 從零搭建一個本地端可運行的個人記帳應用：支援 CSV 匯入銀行帳單、自動分類消費類別（餐飲/交通/娛樂等）、月度趨勢折線圖、類別佔比圓餅圖、異常消費提醒。前端用 React + Recharts，後端用 Node.js + SQLite，整個專案可用 Docker 一鍵啟動。適合想學全端架構的開發者，或需要隱私優先、不想上傳資料到雲端的記帳使用者。</p>
+    <div class="prompt-box">請幫我建構一個完整的個人記帳 Web 應用。專案結構：expense-tracker/├── frontend/ (React + Vite + Tailwind + Recharts)├── backend/ (Node.js + Express + SQLite)├── docker-compose.yml└── README.md
+
+功能需求：1. 首頁儀表板：本月總支出卡片、月度趨勢折線圖（近 6 個月）、類別佔比圓餅圖、每日消費柱狀圖 2. CSV 匯入頁：拖曳上傳銀行帳單 CSV，自動偵測欄位映射（日期/金額/描述），用關鍵字規則自動分類消費類別 3. 明細頁：可搜尋、篩選、手動修改類別的交易列表，支援分頁 4. 設定頁：自訂消費類別與關鍵字對應規則 5. 異常偵測：單筆超過月均值 3 倍時標記提醒 6. 後端 API 用 RESTful 設計，含完整錯誤處理 7. 前端支援深色/淺色模式切換 8. 附上 seed 資料（模擬 3 個月消費紀錄）方便展示 9. docker-compose 一鍵啟動前後端 10. README 含架構圖與操作說明</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階專案涵蓋前後端整合、資料庫設計、資料視覺化、Docker 部署，全面測試 Claude Code 的大型專案架構能力
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="電子郵件語氣改寫器 生產力">
     <div class="card-header">
       <span class="badge">240</span>
       <span class="tag level-1">初階</span>
