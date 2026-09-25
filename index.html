@@ -635,8 +635,8 @@
     <h1>Claude Code 專案靈感集</h1>
     <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/24</span>
-      <span>📚 累計收錄：<span id="totalCount">251</span> 個專案</span>
+      <span>📅 最後更新：2026/09/25</span>
+      <span>📚 累計收錄：<span id="totalCount">254</span> 個專案</span>
     </div>
   </header>
 
@@ -664,90 +664,77 @@
       <button class="filter-chip" data-filter="資料分析">資料分析</button>
       <button class="filter-chip" data-filter="程式原型">程式原型</button>
     </div>
-    <div class="result-count" id="resultCount">顯示全部 251 個專案</div>
+    <div class="result-count" id="resultCount">顯示全部 254 個專案</div>
   </div>
 
   <div class="no-results" id="noResults">
     😕 沒有符合條件的專案，試試其他關鍵字？
   </div>
 
-  <!-- ============ 今日新增 (9/24) ============ -->
+  <!-- ============ 今日新增 (9/25) ============ -->
   <h3 class="section-title">
     <span class="dot"></span>
-    今日新增 · 2026/09/24
+    今日新增 · 2026/09/25
     <span class="count">3 個新專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人飲食紀錄與營養分析器 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="會議逐字稿摘要產生器 生產力">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-1">初階</span>
       <span class="tag">生產力</span>
-      <span class="tag time">30 分鐘</span>
-      <span class="date-tag">9/24</span>
+      <span class="tag time">20 分鐘</span>
+      <span class="date-tag">9/25</span>
     </div>
-    <h2>個人飲食紀錄與營養分析器</h2>
-    <div class="tagline">拍下餐點或輸入食物名稱，自動算出熱量與營養素並產出每週報告</div>
-    <p>把每天吃的食物用文字描述丟給 Claude Code，它會幫你估算熱量、蛋白質、碳水、脂肪等營養素，並累積成每週 HTML 報告，包含圖表趨勢與飲食建議。適合健身族、減重中、或想養成健康飲食習慣的人，做完馬上能天天用。</p>
-    <div class="prompt-box">請幫我建立一個飲食紀錄系統：1. 建立 diet_tracker/ 資料夾，裡面有 daily_log.json 用來存每日紀錄 2. 寫一個 Python 腳本 log_meal.py，接收輸入如「午餐：雞腿便當一個、珍珠奶茶中杯」，自動估算熱量與三大營養素，附加到 daily_log.json 3. 寫一個 weekly_report.py 讀取 JSON 產出 weekly_report.html，包含每日熱量長條圖（用 Chart.js）、營養素比例圓餅圖、以及一段個人化飲食建議 4. 先幫我填入過去三天的範例資料做示範</div>
+    <h2>會議逐字稿摘要產生器</h2>
+    <div class="tagline">把冗長的會議錄音逐字稿變成結構化的重點摘要與待辦事項</div>
+    <p>將會議逐字稿丟進 Claude Code，自動產出三層結構的會議摘要：關鍵決議、討論要點、各人待辦事項（含負責人與截止日）。輸出 Markdown 與 Notion 可貼格式，適合 PM、秘書、任何需要整理會議記錄的工作者。</p>
+    <div class="prompt-box">這份文字檔 [拖曳逐字稿] 是我們團隊的會議紀錄。請幫我：1. 列出本次會議的 3-5 項關鍵決議，每項用一句話概述 2. 整理各議題的討論摘要，保留不同意見與論點 3. 抽出所有待辦事項，格式為「- [ ] 待辦內容（負責人：OOO，截止日：YYYY/MM/DD）」 4. 最後產出兩個檔案：meeting_summary.md（完整 Markdown 格式）與 todo_list.csv（可匯入專案管理工具）5. 若逐字稿中有模糊或矛盾之處，請標註提醒我確認</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的初階專案</span>
-      初階友善：只需基本 Python 與 JSON 操作，成品視覺化且每天都能實用
+      初階使用者可體驗 Claude 的文本理解與結構化輸出能力，成果能立刻應用到日常工作流程中
     </div>
     <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="GitHub 倉庫文件自動翻譯站 內容創作">
+  <article class="card searchable" data-level="中階" data-category="資料分析" data-searchtext="互動式資料視覺化儀表板 資料分析">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-2">中階</span>
-      <span class="tag">內容創作</span>
+      <span class="tag">資料分析</span>
       <span class="tag time">75 分鐘</span>
-      <span class="date-tag">9/24</span>
+      <span class="date-tag">9/25</span>
     </div>
-    <h2>GitHub 倉庫文件自動翻譯站</h2>
-    <div class="tagline">指定任一 GitHub 開源專案，自動將 README 與文件翻譯成繁中並部署成靜態網站</div>
-    <p>給 Claude Code 一個 GitHub 倉庫連結，它會抓取 README.md 及 docs/ 資料夾中所有 Markdown 文件，翻譯成流暢的繁體中文，保留原始格式、程式碼區塊與超連結，最後用 VitePress 產生一個可部署的靜態文件網站。特別適合想為中文社群貢獻翻譯、或團隊內部需要中文版技術文件的情境。</p>
-    <div class="prompt-box">我想把這個 GitHub 專案的文件翻譯成繁體中文靜態網站。請幫我：1. 建立 translated-docs/ 專案，用 VitePress 初始化 2. 寫一個 fetch_docs.py 腳本，接收 GitHub 倉庫 URL 參數，用 GitHub API 下載 README.md 和 docs/ 下所有 .md 檔案到 source/ 資料夾 3. 寫一個 translate_docs.py，讀取 source/ 中每個 .md 檔，將自然語言段落翻譯成繁體中文，但保留所有程式碼區塊、YAML front matter、圖片連結不動，輸出到 docs/ 對應路徑 4. 自動產生 VitePress 的 sidebar 設定檔，按原始目錄結構排列 5. 加入 .github/workflows/deploy.yml 讓推上 GitHub 後自動部署到 GitHub Pages 6. 先用 https://github.com/expressjs/express 當範例執行一次完整流程</div>
+    <h2>互動式資料視覺化儀表板</h2>
+    <div class="tagline">上傳 CSV 資料集，自動生成可互動的 D3.js 統計圖表網頁</div>
+    <p>給 Claude Code 一份 CSV 資料集（如銷售數據、問卷結果、運動紀錄），它會分析欄位型態，自動選擇最適合的圖表類型（長條圖、折線圖、散布圖、圓餅圖），並用 D3.js 建構一個可互動的單頁儀表板網頁，支援篩選、滑鼠提示與 RWD。適合行銷人員、研究生、小型團隊快速做數據簡報。</p>
+    <div class="prompt-box">請用這份 CSV [拖曳檔案] 建立一個互動式資料儀表板。步驟：1. 先分析每個欄位的資料型態（數值/類別/時間），列出你的判斷 2. 建立資料夾結構：dashboard/index.html, dashboard/css/style.css, dashboard/js/main.js, dashboard/js/charts.js 3. 使用 D3.js v7 製作至少 4 種不同圖表，每張圖表需有標題與說明 4. 加入下拉選單可篩選資料維度，滑鼠 hover 顯示詳細數值 5. 頁面頂部放 KPI 摘要卡片（總數、平均值、趨勢箭頭）6. 支援手機瀏覽的 RWD 排版 7. 配色使用專業的商業簡報風格</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的中階專案</span>
-      中階挑戰：需處理 API 串接、Markdown 解析保留格式、靜態站架設與 CI/CD 部署流程
+      中階專案需整合前端框架、資料處理邏輯與視覺設計，學習 Claude Code 多檔案協作與迭代修改的工作流
     </div>
-    <a class="source-link" href="https://vitepress.dev/guide/getting-started" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://d3js.org/getting-started" target="_blank" rel="noopener">參考連結</a>
   </article>
-  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時費用分帳應用程式 程式原型">
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端部落格內容管理系統 程式原型">
     <div class="card-header">
       <span class="badge">＋</span>
       <span class="tag new">今日新增</span>
       <span class="tag level-3">高階</span>
       <span class="tag">程式原型</span>
-      <span class="tag time">120 分鐘</span>
-      <span class="date-tag">9/24</span>
+      <span class="tag time">180 分鐘</span>
+      <span class="date-tag">9/25</span>
     </div>
-    <h2>全端即時費用分帳應用程式</h2>
-    <div class="tagline">多人旅行或合租分帳，自動計算最少轉帳次數並產生結算通知</div>
-    <p>建立一個完整的全端分帳應用：前端用 React 讓使用者建立群組、記錄每筆花費與分攤方式（均分、比例、指定金額），後端用 Node.js + SQLite 儲存資料，核心演算法計算最少轉帳次數的最佳化結算方案。支援 WebSocket 即時同步，多人同時操作時畫面即時更新。最終可匯出 PDF 結算單，適合旅行團、合租室友、聚餐 AA 場景。</p>
-    <div class="prompt-box">請幫我建立一個全端分帳應用程式 splitease/：
-
-後端（backend/）：
-1. 用 Express.js + SQLite（better-sqlite3）建立 REST API，資料表包含 groups、members、expenses、splits
-2. POST /api/groups 建立群組、POST /api/expenses 新增花費（支援均分、按比例、自訂金額三種模式）
-3. GET /api/groups/:id/settlement 用貪心演算法計算最少轉帳次數的結算方案
-4. 用 Socket.io 實作即時同步，任一成員新增花費時所有人畫面即時更新
-5. GET /api/groups/:id/export 產出 PDF 結算單（用 pdfkit）
-
-前端（frontend/）：
-1. 用 React + Tailwind CSS，頁面包含：首頁建立/加入群組、群組頁顯示所有花費清單、新增花費表單（可選分攤模式）、結算頁以箭頭圖示顯示誰付誰多少
-2. 整合 Socket.io client 實現即時更新
-3. 支援 RWD 手機版面
-
-請先建好完整資料夾結構、安裝所有相依套件、寫好種子資料（一個 4 人旅行群組含 8 筆花費），啟動後直接可用</div>
+    <h2>全端部落格內容管理系統</h2>
+    <div class="tagline">用 Next.js 打造附有 AI 寫作輔助功能的個人部落格 CMS 系統</div>
+    <p>從零建構一套完整的部落格內容管理系統：前台支援 SSG 靜態生成、SEO 最佳化、深色模式切換與全文搜尋；後台提供 Markdown 編輯器、文章排程發布、標籤分類管理，並內建 AI 輔助功能（自動生成摘要、建議標題、SEO meta 描述）。使用 Next.js 14 App Router、SQLite 資料庫、NextAuth 驗證，可一鍵部署至 Vercel。</p>
+    <div class="prompt-box">請幫我建立一個完整的部落格 CMS 系統。技術棧：Next.js 14 (App Router) + TypeScript + Tailwind CSS + SQLite (better-sqlite3) + NextAuth.js。資料夾結構：blog-cms/src/app/(frontend)/ 前台頁面、blog-cms/src/app/(admin)/ 後台管理、blog-cms/src/lib/db/ 資料庫邏輯、blog-cms/src/components/ 共用元件。請依序完成：1. 設定 package.json 與所有依賴 2. 建立資料庫 schema（posts、tags、users 三張表）與 seed 假資料 3. 前台首頁文章列表含分頁、文章詳情頁含目錄導航、標籤篩選頁 4. 後台登入驗證（帳密式）、文章 CRUD 介面含 Markdown 即時預覽編輯器 5. 文章排程發布功能（設定未來時間自動上線）6. 內建 AI 輔助 API route：傳入文章內容回傳摘要、SEO 標題建議、meta description 7. 全站深色模式切換與 RWD 8. 全文搜尋功能 9. RSS feed 與 sitemap.xml 自動生成 10. 撰寫 README.md 含本地開發與 Vercel 部署說明</div>
     <div class="tip">
       <span class="tip-label">為什麼是好的高階專案</span>
-      高階綜合挑戰：涵蓋全端架構設計、資料庫建模、圖論最佳化演算法、WebSocket 即時通訊與 PDF 產生
+      高階專案涵蓋全端架構設計、資料庫建模、認證授權、API 設計與部署流程，考驗 Claude Code 處理大型多模組專案的能力
     </div>
-    <a class="source-link" href="https://socket.io/docs/v4/" target="_blank" rel="noopener">參考連結</a>
+    <a class="source-link" href="https://nextjs.org/docs/getting-started/installation" target="_blank" rel="noopener">參考連結</a>
   </article>
+
 
 
 
@@ -829,7 +816,75 @@
     歷史收錄
     <span class="count">8 個專案</span>
   </h3>
-  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議機器人 生產力">
+  <article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="個人飲食紀錄與營養分析器 生產力">
+    <div class="card-header">
+      <span class="badge">249</span>
+      <span class="tag level-1">初階</span>
+      <span class="tag">生產力</span>
+      <span class="tag time">30 分鐘</span>
+      <span class="date-tag">9/24</span>
+    </div>
+    <h2>個人飲食紀錄與營養分析器</h2>
+    <div class="tagline">拍下餐點或輸入食物名稱，自動算出熱量與營養素並產出每週報告</div>
+    <p>把每天吃的食物用文字描述丟給 Claude Code，它會幫你估算熱量、蛋白質、碳水、脂肪等營養素，並累積成每週 HTML 報告，包含圖表趨勢與飲食建議。適合健身族、減重中、或想養成健康飲食習慣的人，做完馬上能天天用。</p>
+    <div class="prompt-box">請幫我建立一個飲食紀錄系統：1. 建立 diet_tracker/ 資料夾，裡面有 daily_log.json 用來存每日紀錄 2. 寫一個 Python 腳本 log_meal.py，接收輸入如「午餐：雞腿便當一個、珍珠奶茶中杯」，自動估算熱量與三大營養素，附加到 daily_log.json 3. 寫一個 weekly_report.py 讀取 JSON 產出 weekly_report.html，包含每日熱量長條圖（用 Chart.js）、營養素比例圓餅圖、以及一段個人化飲食建議 4. 先幫我填入過去三天的範例資料做示範</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的初階專案</span>
+      初階友善：只需基本 Python 與 JSON 操作，成品視覺化且每天都能實用
+    </div>
+    <a class="source-link" href="https://docs.anthropic.com/en/docs/claude-code/overview" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="中階" data-category="內容創作" data-searchtext="GitHub 倉庫文件自動翻譯站 內容創作">
+    <div class="card-header">
+      <span class="badge">250</span>
+      <span class="tag level-2">中階</span>
+      <span class="tag">內容創作</span>
+      <span class="tag time">75 分鐘</span>
+      <span class="date-tag">9/24</span>
+    </div>
+    <h2>GitHub 倉庫文件自動翻譯站</h2>
+    <div class="tagline">指定任一 GitHub 開源專案，自動將 README 與文件翻譯成繁中並部署成靜態網站</div>
+    <p>給 Claude Code 一個 GitHub 倉庫連結，它會抓取 README.md 及 docs/ 資料夾中所有 Markdown 文件，翻譯成流暢的繁體中文，保留原始格式、程式碼區塊與超連結，最後用 VitePress 產生一個可部署的靜態文件網站。特別適合想為中文社群貢獻翻譯、或團隊內部需要中文版技術文件的情境。</p>
+    <div class="prompt-box">我想把這個 GitHub 專案的文件翻譯成繁體中文靜態網站。請幫我：1. 建立 translated-docs/ 專案，用 VitePress 初始化 2. 寫一個 fetch_docs.py 腳本，接收 GitHub 倉庫 URL 參數，用 GitHub API 下載 README.md 和 docs/ 下所有 .md 檔案到 source/ 資料夾 3. 寫一個 translate_docs.py，讀取 source/ 中每個 .md 檔，將自然語言段落翻譯成繁體中文，但保留所有程式碼區塊、YAML front matter、圖片連結不動，輸出到 docs/ 對應路徑 4. 自動產生 VitePress 的 sidebar 設定檔，按原始目錄結構排列 5. 加入 .github/workflows/deploy.yml 讓推上 GitHub 後自動部署到 GitHub Pages 6. 先用 https://github.com/expressjs/express 當範例執行一次完整流程</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的中階專案</span>
+      中階挑戰：需處理 API 串接、Markdown 解析保留格式、靜態站架設與 CI/CD 部署流程
+    </div>
+    <a class="source-link" href="https://vitepress.dev/guide/getting-started" target="_blank" rel="noopener">參考連結</a>
+  </article>
+  <article class="card searchable" data-level="高階" data-category="程式原型" data-searchtext="全端即時費用分帳應用程式 程式原型">
+    <div class="card-header">
+      <span class="badge">251</span>
+      <span class="tag level-3">高階</span>
+      <span class="tag">程式原型</span>
+      <span class="tag time">120 分鐘</span>
+      <span class="date-tag">9/24</span>
+    </div>
+    <h2>全端即時費用分帳應用程式</h2>
+    <div class="tagline">多人旅行或合租分帳，自動計算最少轉帳次數並產生結算通知</div>
+    <p>建立一個完整的全端分帳應用：前端用 React 讓使用者建立群組、記錄每筆花費與分攤方式（均分、比例、指定金額），後端用 Node.js + SQLite 儲存資料，核心演算法計算最少轉帳次數的最佳化結算方案。支援 WebSocket 即時同步，多人同時操作時畫面即時更新。最終可匯出 PDF 結算單，適合旅行團、合租室友、聚餐 AA 場景。</p>
+    <div class="prompt-box">請幫我建立一個全端分帳應用程式 splitease/：
+
+後端（backend/）：
+1. 用 Express.js + SQLite（better-sqlite3）建立 REST API，資料表包含 groups、members、expenses、splits
+2. POST /api/groups 建立群組、POST /api/expenses 新增花費（支援均分、按比例、自訂金額三種模式）
+3. GET /api/groups/:id/settlement 用貪心演算法計算最少轉帳次數的結算方案
+4. 用 Socket.io 實作即時同步，任一成員新增花費時所有人畫面即時更新
+5. GET /api/groups/:id/export 產出 PDF 結算單（用 pdfkit）
+
+前端（frontend/）：
+1. 用 React + Tailwind CSS，頁面包含：首頁建立/加入群組、群組頁顯示所有花費清單、新增花費表單（可選分攤模式）、結算頁以箭頭圖示顯示誰付誰多少
+2. 整合 Socket.io client 實現即時更新
+3. 支援 RWD 手機版面
+
+請先建好完整資料夾結構、安裝所有相依套件、寫好種子資料（一個 4 人旅行群組含 8 筆花費），啟動後直接可用</div>
+    <div class="tip">
+      <span class="tip-label">為什麼是好的高階專案</span>
+      高階綜合挑戰：涵蓋全端架構設計、資料庫建模、圖論最佳化演算法、WebSocket 即時通訊與 PDF 產生
+    </div>
+    <a class="source-link" href="https://socket.io/docs/v4/" target="_blank" rel="noopener">參考連結</a>
+  </article>
+<article class="card searchable" data-level="初階" data-category="生產力" data-searchtext="每日天氣穿搭建議機器人 生產力">
     <div class="card-header">
       <span class="badge">246</span>
       <span class="tag level-1">初階</span>
