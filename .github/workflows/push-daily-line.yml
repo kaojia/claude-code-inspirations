@@ -99,10 +99,13 @@ jobs:
               "projects": projects
           }
 
-          # 推送到 LINE Bot
+          # 推送到 LINE Bot（合併部署後端點為 /jenny/push/daily；容錯 /jenny 前綴）
+          _base = "${{ secrets.RENDER_DEPLOY_URL }}".rstrip("/")
+          if _base.endswith("/jenny"):
+              _base = _base[:-len("/jenny")]
           try:
               response = requests.post(
-                  "${{ secrets.RENDER_DEPLOY_URL }}/push/daily",
+                  f"{_base}/jenny/push/daily",
                   json=payload,
                   timeout=30
               )
