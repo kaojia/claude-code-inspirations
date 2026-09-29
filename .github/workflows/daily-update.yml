@@ -1,52 +1,36 @@
-name: Daily Update - Claude Code Inspirations
+name: Build site from recipes.json
+
+# 改版說明：從「每天呼叫 API 生成靈感」轉為「策展式食譜庫」。
+# 不再有排程、不再燒 API 費。改成 recipes.json / 模板 / build.py 有變動時，
+# 自動重建 index.html 並提交。編輯內容 = 改 recipes.json 後 push。
 
 on:
-  schedule:
-    # 每天早上 8:00 台灣時間 (UTC+8) = UTC 00:00
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # 允許手動觸發
+  push:
+    paths:
+      - 'recipes.json'
+      - 'scripts/template.html'
+      - 'scripts/build.py'
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
+      - name: Build index.html
+        run: python scripts/build.py
 
-      - name: Debug - Check secrets
-        run: |
-          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
-            echo "❌ ANTHROPIC_API_KEY is empty!"
-            exit 1
-          else
-            echo "✓ ANTHROPIC_API_KEY is set (length: ${#ANTHROPIC_API_KEY})"
-          fi
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-
-      - name: Generate and update projects
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: |
-          python scripts/generate_projects.py
-
-      - name: Commit and push changes
+      - name: Commit and push if changed
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -54,6 +38,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "每日更新：新增 3 個專案 ($(date +'%Y/%m/%d'))"
+            git commit -m "build: 從 recipes.json 重建 index.html"
             git push
           fi

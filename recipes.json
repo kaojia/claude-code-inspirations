@@ -1,0 +1,110 @@
+[
+  {
+    "level": "初階",
+    "title": "專案的 CLAUDE.md 起手式",
+    "tagline": "在專案根目錄放一份 CLAUDE.md，讓 Claude 每次都記得你的規則",
+    "description": "CLAUDE.md 是 Claude Code 每次啟動都會自動讀取的專案記憶檔。把建置指令、程式風格、常用路徑、禁止事項寫進去，就不用每次對話重講一遍。這是所有進階用法的地基。",
+    "prompt": "請幫我在專案根目錄建立一份 CLAUDE.md，內容包含：1. 這個專案是做什麼的（一句話）2. 如何建置與執行測試的指令 3. 我的程式風格偏好（例如縮排、命名）4. 有哪些檔案或目錄你不該修改。寫完後解釋每一段的用途。",
+    "tip": "官方支援、零成本、立即見效——這是把 Claude 從『通用助手』變成『懂你專案的隊友』最關鍵的一步。",
+    "category": "生產力",
+    "duration": "15",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/memory",
+    "source_label": "官方文件：Memory / CLAUDE.md"
+  },
+  {
+    "level": "初階",
+    "title": "把重複指令變成 Slash Command",
+    "tagline": "常打的長指令存成 /command，一個斜線就能重跑",
+    "description": "在 .claude/commands/ 放一個 Markdown 檔，檔名就是指令名。之後在對話輸入 /檔名 就會套用裡面的提示。適合『產生 commit 訊息』『跑 lint 並修』這類反覆做的事。",
+    "prompt": "我常常要你『檢查我這次的 git 變更、產生一段符合 Conventional Commits 規範的中文 commit 訊息』。請幫我把這個流程做成一個 slash command，存到 .claude/commands/commit.md，並告訴我怎麼觸發。",
+    "tip": "官方功能、可版控分享給團隊。把個人習慣沉澱成可重用資產，越用越省時間。",
+    "category": "生產力",
+    "duration": "20",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/slash-commands",
+    "source_label": "官方文件：Slash Commands"
+  },
+  {
+    "level": "初階",
+    "title": "貼一張截圖讓 Claude 讀懂畫面",
+    "tagline": "把錯誤畫面或設計稿直接貼進來，不用手打描述",
+    "description": "Claude Code 可以讀圖。遇到 UI bug、報錯畫面、或想照著設計稿做，直接把圖拖進終端機，讓 Claude 自己看再動手，比你逐字描述準得多。",
+    "prompt": "[拖曳一張錯誤畫面截圖] 這是我執行時出現的錯誤畫面。請先描述你看到什麼，再定位是哪個檔案造成的，最後提出修正方案讓我確認後再改。",
+    "tip": "多模態是被低估的功能。『給它看』常常比『跟它講』快十倍，尤其是排版與錯誤訊息。",
+    "category": "生產力",
+    "duration": "10",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "source_label": "官方文件：Claude Code 總覽"
+  },
+  {
+    "level": "中階",
+    "title": "用 Subagent 做程式碼審查",
+    "tagline": "建一個專職 code-reviewer 子代理，主線做事、它把關",
+    "description": "Subagent 是有獨立提示與工具權限的子代理，跑在自己的脈絡裡不污染主對話。設一個唯讀的審查子代理，每次改完自動抓 bug、風格與安全問題，等於隨身的第二雙眼睛。",
+    "prompt": "請在 .claude/agents/ 建立一個叫 code-reviewer 的 subagent：唯讀權限（只能讀檔與搜尋，不能改）、專門審查我剛改動的程式，聚焦正確性、邊界條件與安全性，輸出依嚴重度排序的清單。建好後示範對我最近一次變更跑一遍。",
+    "tip": "子代理把『做』與『審』分開，是提升產出品質最實際的一招；唯讀權限確保它不會亂改。",
+    "category": "程式原型",
+    "duration": "40",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+    "source_label": "官方文件：Subagents"
+  },
+  {
+    "level": "中階",
+    "title": "接一個 MCP 資料來源",
+    "tagline": "把資料庫／API／內部系統接進來，讓 Claude 直接查真資料",
+    "description": "MCP（Model Context Protocol）讓 Claude Code 連上外部工具與資料源。接上你的資料庫或內部 API 後，Claude 能查真實資料再回答，而不是憑空猜——這是讓它從『聊天』變『能辦事』的分水嶺。",
+    "prompt": "我想讓你能查詢我的 PostgreSQL 資料庫（唯讀）。請教我如何設定一個 MCP server 連上它，包含要裝什麼、設定檔怎麼寫、以及設好之後如何確認你真的讀得到資料。連線字串我會自己填。",
+    "tip": "MCP 是官方協定，生態系成長很快。接上真實資料源，回答才有根據、可查證。",
+    "category": "資料分析",
+    "duration": "50",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/mcp",
+    "source_label": "官方文件：MCP"
+  },
+  {
+    "level": "中階",
+    "title": "把一份雜亂 CSV 整理成分析報告",
+    "tagline": "丟一個 CSV，讓 Claude 清洗、找洞見、產出圖表與結論",
+    "description": "給 Claude 一份原始資料，讓它寫程式清洗、探索、統計，最後產出一份含圖表與『所以呢』結論的報告。重點是要求它每一步先說做什麼、給你確認，避免它自己腦補資料含義。",
+    "prompt": "這份 [拖曳 CSV] 是我的原始資料。請分四步：1. 先描述欄位與資料品質問題（缺值、重複、型別）2. 提出清洗方案讓我確認 3. 做探索性分析，找出 3 個值得注意的發現 4. 產出一份 report.html，含圖表與每個發現的白話結論。每步做完先停下來等我點頭。",
+    "tip": "資料分析最容易出錯在『它假設了你沒說的事』。強制分步確認，結果才可信。",
+    "category": "資料分析",
+    "duration": "45",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "source_label": "官方文件：Claude Code 總覽"
+  },
+  {
+    "level": "高階",
+    "title": "用 Hooks 自動守門",
+    "tagline": "在 Claude 每次改檔後自動跑格式化與測試，不合格就擋下",
+    "description": "Hooks 讓你在工具執行前後掛自訂指令。設一個 PostToolUse hook，Claude 每次寫檔就自動跑 formatter 與相關測試，失敗就把錯誤回饋給它自己修——等於建了一條個人 CI，把品質從『靠自律』變成『系統保證』。",
+    "prompt": "我想在 Claude 每次編輯 .py 檔後自動執行 `ruff format` 與該檔對應的 pytest，若失敗就把輸出回饋給你自動修正。請教我如何用 hooks 設定（設定檔放哪、格式怎麼寫），並解釋 PreToolUse 與 PostToolUse 的差異與風險。",
+    "tip": "Hooks 是把『希望它記得做』變成『它一定會做』的機制。適合已有穩定流程、想自動化把關的人。",
+    "category": "程式原型",
+    "duration": "60",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/hooks",
+    "source_label": "官方文件：Hooks"
+  },
+  {
+    "level": "高階",
+    "title": "多 Subagent 平行審查一份 PR",
+    "tagline": "同時派出資安、效能、可讀性三個子代理，各查一面向再彙整",
+    "description": "把一次審查拆成幾個獨立面向，各交給一個專職 subagent 平行跑，最後主線彙整、去重、依嚴重度排序。比單一提示『幫我全面審查』更深、更不會漏，也是多代理協作最實用的入門場景。",
+    "prompt": "我要審查目前的 git 變更。請規劃並執行一個多子代理流程：分別派出 security、performance、readability 三個唯讀子代理各查一個面向，各自回傳發現清單；主線再合併、去除重複、依『嚴重度』排序，最後給我一份彙整報告並標明每項來自哪個子代理。",
+    "tip": "把大任務拆成可平行的獨立子任務，是多代理協作的核心心法。分面向審查能顯著降低漏網率。",
+    "category": "程式原型",
+    "duration": "75",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/sub-agents",
+    "source_label": "官方文件：Subagents"
+  },
+  {
+    "level": "高階",
+    "title": "把重複的內容流程做成可重用 Skill",
+    "tagline": "把『每週電子報』這類多步驟產出封裝成一個技能，之後一句話喚起",
+    "description": "Skill 把一套帶步驟、格式與範例的工作流打包起來，需要時才載入。適合『每週電子報』『客戶回覆信』這種格式固定、要反覆做的內容任務——沉澱一次，之後叫一聲就照規格產出。",
+    "prompt": "我每週要寫一封產品電子報，固定結構是：本週亮點 3 點、一個小教學、下週預告。請幫我把這個流程做成一個 skill：包含步驟、語氣規範、字數限制與一個範例輸出。建好後示範用它產出這週的草稿。",
+    "tip": "Skill 讓『高品質但繁瑣』的內容產出可複製、可維持一致品質，是內容工作者最值得投資的自動化。",
+    "category": "內容創作",
+    "duration": "60",
+    "source_link": "https://docs.anthropic.com/en/docs/claude-code/overview",
+    "source_label": "官方文件：Claude Code 總覽"
+  }
+]
