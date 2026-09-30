@@ -351,9 +351,9 @@
     border: 1px solid rgba(240,130,74,0.16);
     border-radius: 14px;
     padding: 44px 20px 18px;
-    font-family: var(--font-mono);
-    font-size: 13px;
-    line-height: 1.75;
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.8;
     margin: 12px 0 18px 0;
     white-space: pre-wrap;
     word-break: break-word;
@@ -369,6 +369,34 @@
     font-size: 11px;
     letter-spacing: 2px;
     font-family: var(--font);
+  }
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--code-text);
+    background: rgba(240,130,74,0.14);
+    border: 1px solid rgba(240,130,74,0.30);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .copy-btn:hover {
+    background: rgba(240,130,74,0.24);
+    color: #FBECE2;
+  }
+  .copy-btn.copied {
+    background: #16A34A;
+    border-color: #16A34A;
+    color: #fff;
   }
   .tip {
     background: #F0FDF4;
@@ -1017,6 +1045,27 @@
 
   // 初始化
   applyFilter();
+})();
+
+// 一鍵複製起手式提示詞
+(function () {
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.copy-btn');
+    if (!btn) return;
+    const text = btn.getAttribute('data-prompt') || '';
+    navigator.clipboard.writeText(text).then(() => {
+      const original = btn.innerHTML;
+      btn.innerHTML = '已複製 ✓';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.classList.remove('copied');
+      }, 1600);
+    }).catch(() => {
+      btn.innerHTML = '複製失敗';
+      setTimeout(() => { btn.innerHTML = '⧉ 複製'; }, 1600);
+    });
+  });
 })();
 </script>
 

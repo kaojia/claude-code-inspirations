@@ -351,9 +351,9 @@
     border: 1px solid rgba(240,130,74,0.16);
     border-radius: 14px;
     padding: 44px 20px 18px;
-    font-family: var(--font-mono);
-    font-size: 13px;
-    line-height: 1.75;
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 1.8;
     margin: 12px 0 18px 0;
     white-space: pre-wrap;
     word-break: break-word;
@@ -369,6 +369,34 @@
     font-size: 11px;
     letter-spacing: 2px;
     font-family: var(--font);
+  }
+  .copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: var(--code-text);
+    background: rgba(240,130,74,0.14);
+    border: 1px solid rgba(240,130,74,0.30);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+  }
+  .copy-btn:hover {
+    background: rgba(240,130,74,0.24);
+    color: #FBECE2;
+  }
+  .copy-btn.copied {
+    background: #16A34A;
+    border-color: #16A34A;
+    color: #fff;
   }
   .tip {
     background: #F0FDF4;
@@ -747,7 +775,7 @@
     <h2>跑完第一個真實任務</h2>
     <div class="tagline">照官方 Quickstart 走一遍：從探索程式碼到提交一個修正</div>
     <p>還沒把 Claude Code 用在真專案上的第一步。官方 Quickstart 帶你在自己的專案裡完成一個完整循環：讓它讀懂程式碼、找出問題、動手改、再幫你 commit。做完就抓到基本節奏。</p>
-    <div class="prompt-box">先幫我用幾句話說明這個專案的架構與進入點；接著我描述一個小問題，請你定位相關檔案、提出修正方案讓我確認後再動手，最後幫我用清楚的訊息 commit。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="先幫我用幾句話說明這個專案的架構與進入點；接著我描述一個小問題，請你定位相關檔案、提出修正方案讓我確認後再動手，最後幫我用清楚的訊息 commit。">⧉ 複製</button>先幫我用幾句話說明這個專案的架構與進入點；接著我描述一個小問題，請你定位相關檔案、提出修正方案讓我確認後再動手，最後幫我用清楚的訊息 commit。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       官方入門路徑，零基礎也能在 10 分鐘內體驗完整『讀→改→提交』循環，是所有後續玩法的地基。
@@ -764,7 +792,7 @@
     <h2>用 CLAUDE.md 記住專案規則</h2>
     <div class="tagline">在專案根目錄放一份 CLAUDE.md，讓 Claude 每次都記得你的規則</div>
     <p>CLAUDE.md 是 Claude Code 每次啟動都會自動讀取的專案記憶檔。把建置指令、程式風格、常用路徑、禁止事項寫進去，就不用每次對話重講一遍。這是把它從通用助手變成懂你專案隊友的關鍵一步。</p>
-    <div class="prompt-box">請幫我在專案根目錄建立一份 CLAUDE.md，內容包含：1. 這個專案是做什麼的（一句話）2. 如何建置與執行測試的指令 3. 我的程式風格偏好（縮排、命名）4. 有哪些檔案或目錄你不該修改。寫完後解釋每一段的用途。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="請幫我在專案根目錄建立一份 CLAUDE.md，內容包含：1. 這個專案是做什麼的（一句話）2. 如何建置與執行測試的指令 3. 我的程式風格偏好（縮排、命名）4. 有哪些檔案或目錄你不該修改。寫完後解釋每一段的用途。">⧉ 複製</button>請幫我在專案根目錄建立一份 CLAUDE.md，內容包含：1. 這個專案是做什麼的（一句話）2. 如何建置與執行測試的指令 3. 我的程式風格偏好（縮排、命名）4. 有哪些檔案或目錄你不該修改。寫完後解釋每一段的用途。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       官方支援、零成本、立即見效。專案記憶讓 Claude 每次都在正確的脈絡下工作。
@@ -781,7 +809,7 @@
     <h2>把重複指令變成 Slash Command</h2>
     <div class="tagline">常打的長指令存成 /command，一個斜線就能重跑</div>
     <p>在 .claude/commands/ 放一個 Markdown 檔，檔名就是指令名。之後在對話輸入 /檔名 就會套用裡面的提示。適合『產生 commit 訊息』『跑 lint 並修』這類反覆做的事，還能版控分享給團隊。</p>
-    <div class="prompt-box">我常常要你『檢查我這次的 git 變更、產生一段符合 Conventional Commits 規範的中文 commit 訊息』。請幫我把這個流程做成一個自訂 slash command，存到 .claude/commands/commit.md，並告訴我怎麼觸發。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="我常常要你『檢查我這次的 git 變更、產生一段符合 Conventional Commits 規範的中文 commit 訊息』。請幫我把這個流程做成一個自訂 slash command，存到 .claude/commands/commit.md，並告訴我怎麼觸發。">⧉ 複製</button>我常常要你『檢查我這次的 git 變更、產生一段符合 Conventional Commits 規範的中文 commit 訊息』。請幫我把這個流程做成一個自訂 slash command，存到 .claude/commands/commit.md，並告訴我怎麼觸發。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       把個人習慣沉澱成可重用、可分享的指令，越用越省時間。官方原生功能，設定簡單。
@@ -798,7 +826,7 @@
     <h2>用 Subagent 做程式碼審查</h2>
     <div class="tagline">建一個專職 code-reviewer 子代理，主線做事、它把關</div>
     <p>Subagent 是有獨立提示與工具權限的子代理，跑在自己的脈絡裡不污染主對話。設一個唯讀的審查子代理，每次改完自動抓 bug、風格與安全問題，等於隨身的第二雙眼睛。</p>
-    <div class="prompt-box">請在 .claude/agents/ 建立一個叫 code-reviewer 的 subagent：唯讀權限（只能讀檔與搜尋，不能改）、專門審查我剛改動的程式，聚焦正確性、邊界條件與安全性，輸出依嚴重度排序的清單。建好後示範對我最近一次變更跑一遍。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="請在 .claude/agents/ 建立一個叫 code-reviewer 的 subagent：唯讀權限（只能讀檔與搜尋，不能改）、專門審查我剛改動的程式，聚焦正確性、邊界條件與安全性，輸出依嚴重度排序的清單。建好後示範對我最近一次變更跑一遍。">⧉ 複製</button>請在 .claude/agents/ 建立一個叫 code-reviewer 的 subagent：唯讀權限（只能讀檔與搜尋，不能改）、專門審查我剛改動的程式，聚焦正確性、邊界條件與安全性，輸出依嚴重度排序的清單。建好後示範對我最近一次變更跑一遍。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       子代理把『做』與『審』分開，是提升產出品質最實際的一招；唯讀權限確保它不會亂改。
@@ -815,7 +843,7 @@
     <h2>接一個 MCP 資料來源</h2>
     <div class="tagline">把資料庫／API／內部系統接進來，讓 Claude 直接查真資料</div>
     <p>MCP（Model Context Protocol）讓 Claude Code 連上外部工具與資料源。接上資料庫或內部 API 後，Claude 能查真實資料再回答，而不是憑空猜——這是讓它從『聊天』變『能辦事』的分水嶺。官方 MCP Quickstart 帶你端到端接起第一個 server。</p>
-    <div class="prompt-box">我想讓你能查詢我的 PostgreSQL 資料庫（唯讀）。請照官方 MCP Quickstart 教我：要裝什麼、設定檔怎麼寫、設好之後如何確認你真的讀得到資料。連線字串我會自己填。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="我想讓你能查詢我的 PostgreSQL 資料庫（唯讀）。請照官方 MCP Quickstart 教我：要裝什麼、設定檔怎麼寫、設好之後如何確認你真的讀得到資料。連線字串我會自己填。">⧉ 複製</button>我想讓你能查詢我的 PostgreSQL 資料庫（唯讀）。請照官方 MCP Quickstart 教我：要裝什麼、設定檔怎麼寫、設好之後如何確認你真的讀得到資料。連線字串我會自己填。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       MCP 是官方開放協定，生態系成長很快。接上真實資料源，回答才有根據、可查證。
@@ -832,7 +860,7 @@
     <h2>用 Hooks 自動守門</h2>
     <div class="tagline">在 Claude 每次改檔後自動跑格式化與測試，不合格就回饋修正</div>
     <p>Hooks 讓你在工具執行前後掛自訂指令。設一個 PostToolUse hook，Claude 每次寫檔就自動跑 formatter 與相關測試，失敗就把錯誤回饋給它自己修——等於建了一條個人 CI，把品質從『靠自律』變成『系統保證』。</p>
-    <div class="prompt-box">我想在 Claude 每次編輯 .py 檔後自動執行 `ruff format` 與該檔對應的 pytest，若失敗就把輸出回饋給你自動修正。請照官方 Hooks 指南教我設定（設定檔放哪、格式怎麼寫），並解釋 PreToolUse 與 PostToolUse 的差異與風險。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="我想在 Claude 每次編輯 .py 檔後自動執行 `ruff format` 與該檔對應的 pytest，若失敗就把輸出回饋給你自動修正。請照官方 Hooks 指南教我設定（設定檔放哪、格式怎麼寫），並解釋 PreToolUse 與 PostToolUse 的差異與風險。">⧉ 複製</button>我想在 Claude 每次編輯 .py 檔後自動執行 `ruff format` 與該檔對應的 pytest，若失敗就把輸出回饋給你自動修正。請照官方 Hooks 指南教我設定（設定檔放哪、格式怎麼寫），並解釋 PreToolUse 與 PostToolUse 的差異與風險。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       Hooks 把『希望它記得做』變成『它一定會做』。適合已有穩定流程、想自動化把關的人。
@@ -849,7 +877,7 @@
     <h2>把內容流程封裝成 Skill</h2>
     <div class="tagline">把『每週電子報』這類多步驟產出封裝成技能，之後一句話喚起</div>
     <p>Skill 把一套帶步驟、格式與範例的工作流打包起來，需要時才載入，還能分享給團隊。適合『每週電子報』『客戶回覆信』這種格式固定、要反覆做的內容任務——沉澱一次，之後叫一聲就照規格產出。</p>
-    <div class="prompt-box">我每週要寫一封產品電子報，固定結構是：本週亮點 3 點、一個小教學、下週預告。請照官方 Skills 文件幫我把這個流程做成一個 skill：包含步驟、語氣規範、字數限制與一個範例輸出。建好後示範用它產出這週的草稿。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="我每週要寫一封產品電子報，固定結構是：本週亮點 3 點、一個小教學、下週預告。請照官方 Skills 文件幫我把這個流程做成一個 skill：包含步驟、語氣規範、字數限制與一個範例輸出。建好後示範用它產出這週的草稿。">⧉ 複製</button>我每週要寫一封產品電子報，固定結構是：本週亮點 3 點、一個小教學、下週預告。請照官方 Skills 文件幫我把這個流程做成一個 skill：包含步驟、語氣規範、字數限制與一個範例輸出。建好後示範用它產出這週的草稿。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       Skill 讓『高品質但繁瑣』的內容產出可複製、可維持一致品質，是內容工作者最值得投資的自動化。
@@ -866,7 +894,7 @@
     <h2>用 Dynamic Workflows 指揮多代理</h2>
     <div class="tagline">同時派出資安、效能、可讀性三個子代理審一份 PR，再彙整</div>
     <p>Dynamic Workflows 用程式碼確定性地編排多個子代理。把一次審查拆成幾個獨立面向，各交給一個子代理平行跑，最後彙整、去重、依嚴重度排序。比單一提示『幫我全面審查』更深、更不會漏，是多代理協作最實用的場景。</p>
-    <div class="prompt-box">我要審查目前的 git 變更。請用 dynamic workflow 規劃並執行：分別派出 security、performance、readability 三個唯讀子代理各查一個面向並回傳發現；主線再合併、去除重複、依嚴重度排序，最後給我一份彙整報告並標明每項來自哪個子代理。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="我要審查目前的 git 變更。請用 dynamic workflow 規劃並執行：分別派出 security、performance、readability 三個唯讀子代理各查一個面向並回傳發現；主線再合併、去除重複、依嚴重度排序，最後給我一份彙整報告並標明每項來自哪個子代理。">⧉ 複製</button>我要審查目前的 git 變更。請用 dynamic workflow 規劃並執行：分別派出 security、performance、readability 三個唯讀子代理各查一個面向並回傳發現；主線再合併、去除重複、依嚴重度排序，最後給我一份彙整報告並標明每項來自哪個子代理。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       把大任務拆成可平行的獨立子任務，是多代理協作的核心心法。分面向審查能顯著降低漏網率。
@@ -883,7 +911,7 @@
     <h2>在 CI／管線裡跑 Headless 模式</h2>
     <div class="tagline">用 claude -p 把 Claude 接進腳本與 CI，自動審查、分析、通報</div>
     <p>Headless 模式（claude -p）讓 Claude Code 能被管線與 CI 呼叫，遵循 Unix 哲學可組合、可 pipe。把 git diff 丟給它做安全審查、把 log 丟給它找異常、在 CI 自動翻譯字串並開 PR——讓它從互動工具變成自動化元件。</p>
-    <div class="prompt-box">請教我用 headless 模式把你接進我的 CI：範例一，`git diff main --name-only | claude -p &quot;審查這些變更的安全性&quot;`；範例二，`tail -200 app.log | claude -p &quot;發現異常就摘要重點&quot;`。說明如何取得結構化輸出、如何在 GitHub Actions 裡跑，以及權限與成本要注意什麼。</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="請教我用 headless 模式把你接進我的 CI：範例一，`git diff main --name-only | claude -p &quot;審查這些變更的安全性&quot;`；範例二，`tail -200 app.log | claude -p &quot;發現異常就摘要重點&quot;`。說明如何取得結構化輸出、如何在 GitHub Actions 裡跑，以及權限與成本要注意什麼。">⧉ 複製</button>請教我用 headless 模式把你接進我的 CI：範例一，`git diff main --name-only | claude -p &quot;審查這些變更的安全性&quot;`；範例二，`tail -200 app.log | claude -p &quot;發現異常就摘要重點&quot;`。說明如何取得結構化輸出、如何在 GitHub Actions 裡跑，以及權限與成本要注意什麼。</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       Headless 是把 Claude 規模化的關鍵：一次設定、天天自動跑。適合想把審查／分析納入既有管線的人。
@@ -1169,6 +1197,27 @@
 
   // 初始化
   applyFilter();
+})();
+
+// 一鍵複製起手式提示詞
+(function () {
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.copy-btn');
+    if (!btn) return;
+    const text = btn.getAttribute('data-prompt') || '';
+    navigator.clipboard.writeText(text).then(() => {
+      const original = btn.innerHTML;
+      btn.innerHTML = '已複製 ✓';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.classList.remove('copied');
+      }, 1600);
+    }).catch(() => {
+      btn.innerHTML = '複製失敗';
+      setTimeout(() => { btn.innerHTML = '⧉ 複製'; }, 1600);
+    });
+  });
 })();
 </script>
 

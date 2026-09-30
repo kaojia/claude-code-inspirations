@@ -65,7 +65,7 @@ def render_card(r, badge):
     <h2>{esc(r['title'])}</h2>
     <div class="tagline">{esc(r['tagline'])}</div>
     <p>{esc(r['description'])}</p>
-    <div class="prompt-box">{esc(r['prompt'])}</div>
+    <div class="prompt-box"><button class="copy-btn" type="button" data-prompt="{esc(r['prompt'])}">⧉ 複製</button>{esc(r['prompt'])}</div>
     <div class="tip">
       <span class="tip-label">為什麼收錄</span>
       {esc(r['tip'])}
