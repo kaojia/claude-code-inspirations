@@ -3,40 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claude Code 專案靈感集</title>
+<title>Claude Code 精選食譜庫</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #F8FAFC;
+    --bg: #FBF7F3;
     --card-bg: #FFFFFF;
-    --primary: #E86C3A;
-    --primary-soft: #FFF4EE;
-    --text: #1E293B;
-    --muted: #64748B;
-    --border: #E2E8F0;
-    --tag-bg: #FFF4EE;
+    --primary: #E1622F;
+    --primary-strong: #C2410C;
+    --primary-soft: #FEF1E9;
+    --grad-primary: linear-gradient(135deg, #F0824A 0%, #E1622F 55%, #C2410C 100%);
+    --text: #211A15;
+    --muted: #7A6E64;
+    --border: #ECE3DA;
+    --border-strong: #DFD3C7;
+    --tag-bg: #FEF1E9;
     --tag-text: #C2410C;
-    --accent: #22C55E;
-    --code-bg: #1E293B;
-    --code-text: #22C55E;
+    --accent: #16A34A;
+    --code-bg: #1B1714;
+    --code-text: #F0824A;
     --new-bg: #ECFDF5;
     --new-text: #166534;
-    --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-    --shadow-lg: 0 12px 32px rgba(0,0,0,0.08);
-    --radius: 16px;
+    --shadow-sm: 0 1px 2px rgba(33,26,21,0.05);
+    --shadow-md: 0 6px 18px rgba(33,26,21,0.07);
+    --shadow-lg: 0 18px 42px rgba(33,26,21,0.12);
+    --radius: 18px;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
-    background: var(--bg);
+    background:
+      radial-gradient(900px 480px at 100% -8%, rgba(240,130,74,0.10), transparent 60%),
+      radial-gradient(720px 420px at -10% 8%, rgba(22,163,74,0.06), transparent 55%),
+      var(--bg);
+    background-attachment: fixed;
     color: var(--text);
     line-height: 1.7;
-    padding: 40px 20px;
+    padding: 48px 20px;
+    -webkit-font-smoothing: antialiased;
   }
+  ::selection { background: rgba(225,98,47,0.18); }
   .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -47,26 +56,46 @@
     border-bottom: 1px solid var(--border);
   }
   .eyebrow {
-    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-strong);
+    background: var(--primary-soft);
+    border: 1px solid var(--border-strong);
+    border-radius: 999px;
+    padding: 5px 14px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+  }
+  .eyebrow::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--grad-primary);
+    box-shadow: 0 0 0 3px rgba(225,98,47,0.15);
   }
   h1 {
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 36px;
+    font-size: 44px;
     font-weight: 700;
-    letter-spacing: -0.5px;
-    color: var(--text);
+    letter-spacing: -1px;
+    line-height: 1.1;
+    background: linear-gradient(120deg, #211A15 0%, #C2410C 120%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .subtitle {
     color: var(--muted);
-    font-size: 15px;
+    font-size: 16px;
     margin: 0 0 8px 0;
+    max-width: 620px;
   }
   .meta-info {
     display: flex;
@@ -76,8 +105,12 @@
     margin-top: 10px;
   }
   .summary-banner {
-    background: linear-gradient(135deg, #1E293B 0%, #334155 100%);
-    color: #F8FAFC;
+    position: relative;
+    background:
+      radial-gradient(140% 120% at 100% 0%, rgba(240,130,74,0.22), transparent 55%),
+      linear-gradient(135deg, #2A211B 0%, #1B1714 100%);
+    color: #F4ECE4;
+    border: 1px solid rgba(240,130,74,0.18);
     border-radius: var(--radius);
     padding: 22px 28px;
     margin-bottom: 24px;
@@ -85,13 +118,13 @@
     line-height: 1.8;
     box-shadow: var(--shadow-lg);
   }
-  .summary-banner strong { font-weight: 600; color: var(--accent); }
+  .summary-banner strong { font-weight: 600; color: #F0824A; }
 
   /* 搜尋區 */
   .search-area {
     position: sticky;
     top: 0;
-    background: rgba(248, 250, 252, 0.9);
+    background: rgba(251, 247, 243, 0.88);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 16px 0;
@@ -104,19 +137,21 @@
   }
   .search-input {
     width: 100%;
-    padding: 14px 48px 14px 44px;
+    padding: 15px 48px 15px 46px;
     font-size: 15px;
     font-family: 'DM Sans', sans-serif;
     border: 1.5px solid var(--border);
-    border-radius: 12px;
+    border-radius: 14px;
     background: var(--card-bg);
+    color: var(--text);
     transition: border-color .2s, box-shadow .2s;
     box-shadow: var(--shadow-sm);
   }
+  .search-input::placeholder { color: #B3A79C; }
   .search-input:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(232, 108, 58, 0.1);
+    box-shadow: 0 0 0 4px rgba(225, 98, 47, 0.14);
   }
   .search-icon {
     position: absolute;
@@ -171,10 +206,10 @@
     background: var(--primary-soft);
   }
   .filter-chip.active {
-    background: var(--primary);
+    background: var(--grad-primary);
     color: #fff;
-    border-color: var(--primary);
-    box-shadow: 0 2px 8px rgba(232, 108, 58, 0.3);
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(225, 98, 47, 0.32);
   }
   .result-count {
     font-size: 13px;
@@ -218,18 +253,34 @@
 
   /* 卡片 */
   .card {
+    position: relative;
     background: var(--card-bg);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 28px 30px;
+    padding: 28px 30px 28px 34px;
     margin-bottom: 20px;
     box-shadow: var(--shadow-sm);
-    transition: box-shadow .25s, transform .25s;
+    transition: box-shadow .28s ease, transform .28s ease, border-color .28s ease;
+    overflow: hidden;
   }
+  .card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 5px;
+    background: var(--card-accent, var(--primary));
+    opacity: .85;
+    transition: width .28s ease, opacity .28s ease;
+  }
+  .card[data-level="初階"] { --card-accent: #16A34A; }
+  .card[data-level="中階"] { --card-accent: #2563EB; }
+  .card[data-level="高階"] { --card-accent: #DB2777; }
   .card:hover {
     box-shadow: var(--shadow-lg);
-    transform: translateY(-2px);
+    transform: translateY(-4px);
+    border-color: var(--border-strong);
   }
+  .card:hover::before { width: 7px; opacity: 1; }
   .card.hidden { display: none; }
   .card-header {
     display: flex;
@@ -271,11 +322,12 @@
   }
   .card h2 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 21px;
-    margin: 0 0 8px 0;
+    font-size: 23px;
+    margin: 2px 0 8px 0;
     font-weight: 700;
     color: var(--text);
-    line-height: 1.4;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
   }
   .card .tagline {
     font-size: 14px;
@@ -289,26 +341,31 @@
     color: #44403c;
   }
   .prompt-box {
-    background: var(--code-bg);
-    color: #E2E8F0;
-    border-radius: 12px;
-    padding: 18px 20px;
+    position: relative;
+    background:
+      radial-gradient(120% 100% at 0% 0%, rgba(240,130,74,0.10), transparent 45%),
+      var(--code-bg);
+    color: #EDE6DF;
+    border: 1px solid rgba(240,130,74,0.16);
+    border-radius: 14px;
+    padding: 44px 20px 18px;
     font-family: 'JetBrains Mono', "SF Mono", "Monaco", monospace;
     font-size: 13px;
-    line-height: 1.7;
-    margin: 10px 0 18px 0;
+    line-height: 1.75;
+    margin: 12px 0 18px 0;
     white-space: pre-wrap;
     word-break: break-word;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), var(--shadow-md);
   }
   .prompt-box::before {
     content: "▸ 起手式提示詞";
-    display: block;
+    position: absolute;
+    top: 14px;
+    left: 20px;
     color: var(--code-text);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 11px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
     font-family: 'JetBrains Mono', monospace;
   }
   .tip {
@@ -631,18 +688,19 @@
     <!-- 主要內容 -->
     <div class="main-content">
       <header>
-    <div class="eyebrow">Inspiration Library</div>
-    <h1>Claude Code 專案靈感集</h1>
-    <p class="subtitle">每天新增 3 個專案（初階 / 中階 / 高階）· 累積你的靈感資料庫</p>
+    <div class="eyebrow">Curated Recipe Library</div>
+    <h1>Claude Code 精選食譜庫</h1>
+    <p class="subtitle">少而精、驗證過才收錄的實戰食譜——每則聚焦一個真實可用的能力，附可直接複製的起手式提示詞，並連到官方文件。</p>
     <div class="meta-info">
-      <span>📅 最後更新：2026/09/29</span>
       <span>📚 精選食譜：<span id="totalCount">0</span> 則</span>
+      <span>🎯 初階 / 中階 / 高階</span>
+      <span>🔗 皆連官方文件</span>
     </div>
   </header>
 
   <div class="summary-banner">
-    <strong>使用說明：</strong>
-    上方搜尋欄可以即時過濾——可以搜尋關鍵字（如「網站」、「資料」、「Slack」），或點下方分類標籤快速篩選。每張卡片都附「起手式提示詞」，複製貼到 Claude Code 就能開始。
+    <strong>怎麼用：</strong>
+    上方搜尋欄可即時過濾（試試「MCP」「Hooks」「審查」），或點下方標籤依難度／主題篩選。每張卡片都附「起手式提示詞」，複製貼到 Claude Code 就能開始，卡片底部連到對應的官方文件。
   </div>
 
   <!-- 搜尋區 -->
@@ -651,7 +709,7 @@
       <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 11a6 6 0 11-12 0 6 6 0 0112 0z"/>
       </svg>
-      <input type="text" id="searchInput" class="search-input" placeholder="搜尋專案（標題、描述、標籤都可以）...">
+      <input type="text" id="searchInput" class="search-input" placeholder="搜尋食譜（標題、描述、標籤都可以）...">
       <button class="clear-btn" id="clearBtn" aria-label="清除">✕</button>
     </div>
     <div class="filter-row">
@@ -668,7 +726,7 @@
   </div>
 
   <div class="no-results" id="noResults">
-    😕 沒有符合條件的專案，試試其他關鍵字？
+    😕 沒有符合條件的食譜，試試其他關鍵字？
   </div>
 
   <!-- ============ 食譜庫 ============ -->
