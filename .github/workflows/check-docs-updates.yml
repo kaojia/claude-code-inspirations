@@ -1,8 +1,9 @@
-name: Weekly docs update check
+name: Weekly auto-add from What's New
 
-# 每週檢查官方 What's New 有沒有新的一週彙整。
-# 有 → 開一個 Issue 提醒你去看看有沒有值得收錄成食譜的新功能。
-# 這不是自動生成內容，只是提醒；要不要加、加什麼仍由你決定。
+# 每週檢查官方 What's New。偵測到新的一週彙整時，用 Claude API 依「當週真實內容」
+# 起草食譜、通過驗證（連結可達的官方文件頁、欄位齊全、標題不重複）後，
+# 自動寫入 recipes.json、重建 index.html 並推上線。
+# 沒有新週報、或沒有任何一則通過驗證，就安靜結束、不改檔。
 
 on:
   schedule:
@@ -12,10 +13,9 @@ on:
 
 permissions:
   contents: write
-  issues: write
 
 jobs:
-  check:
+  auto-add:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -26,38 +26,32 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Check for new What's New digest
+      - name: Detect new What's New week
         id: check
         run: python scripts/check_docs_updates.py
 
-      - name: Open reminder issue
+      - name: Draft recipes from this week's digest
+        id: gen
         if: steps.check.outputs.changed == 'true'
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh issue create \
-            --title "📢 Claude Code 官方週報更新：${{ steps.check.outputs.week }} — 檢查是否有值得收錄的新食譜" \
-            --body "官方 What's New 出了新的一週彙整。
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WEEK_URL: ${{ steps.check.outputs.url }}
+        run: python scripts/generate_from_whatsnew.py
 
-          👉 週報頁面：${{ steps.check.outputs.url }}
-          📋 完整 changelog：https://code.claude.com/docs/en/changelog
+      - name: Rebuild index.html
+        if: steps.gen.outputs.added == 'true'
+        run: python scripts/build.py
 
-          請看看這週有沒有新功能值得收錄成食譜。若有：
-          1. 編輯 \`recipes.json\` 新增一則（\`source_link\` 填對應的官方文件頁）
-          2. 本機跑 \`python scripts/build.py\` 預覽
-          3. commit + push（Action 會自動重建 index.html）
-
-          若這週沒有值得收錄的，直接關掉這個 Issue 即可。"
-
-      - name: Commit updated state
+      - name: Commit and push
+        # 只要偵測到新週報就提交（至少更新 .docs-watch 基準；若有新食譜一併提交）
         if: steps.check.outputs.changed == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .docs-watch/last_week.txt
+          git add recipes.json index.html .docs-watch/last_week.txt
           if git diff --cached --quiet; then
-            echo "No state change to commit"
+            echo "No changes to commit"
           else
-            git commit -m "chore(docs-watch): 記錄已檢查到 ${{ steps.check.outputs.week }}"
+            git commit -m "auto: 依官方週報 ${{ steps.check.outputs.week }} 更新食譜庫"
             git push
           fi

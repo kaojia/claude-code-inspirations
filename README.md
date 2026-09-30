@@ -2,7 +2,7 @@
 
 少而精、驗證過才收錄的 Claude Code 實戰食譜。每則食譜聚焦一個**真實可用**的 Claude Code 能力或工作流，附可直接複製的起手式提示詞，並連到官方文件。
 
-> 改版說明：本專案原為「每日自動生成靈感」，內容多為模型憑空發想、參考連結常失準。已轉型為**策展式食譜庫**——品質優先、有好東西才發，不再每日排程、不再燒 API 費。
+> 改版說明：本專案原為「每日自動生成靈感」，內容多為模型憑空發想、參考連結常失準。已轉型為**策展式食譜庫**——品質優先，並改為**每週**依官方 What's New 的真實內容自動補充（見下方「每週自動加入」）。
 
 ## 線上瀏覽
 
@@ -20,6 +20,19 @@ https://kaojia.github.io/claude-code-inspirations/
    （會做欄位驗證 + 從 `scripts/template.html` 產生 `index.html`）
 3. commit `recipes.json` 與 `index.html` 後 push。
    - GitHub Action（`.github/workflows/daily-update.yml`）也會在 `recipes.json` 變動時自動重建並提交，作為保險。
+
+## 每週自動加入（What's New → 食譜）
+
+`.github/workflows/check-docs-updates.yml` 每週一 09:00（台灣時間）執行：
+
+1. `scripts/check_docs_updates.py` 檢查官方 What's New 有沒有比 `.docs-watch/last_week.txt` 更新的一週彙整。
+2. 有新週報 → `scripts/generate_from_whatsnew.py` 抓當週**真實內容**，用 Claude API 起草 1-2 則食譜。
+3. **驗證關卡**：每則必須欄位齊全、`source_link` 是**實際可達（HTTP 200）的官方文件頁**、標題不與現有重複，才會被收錄；全部沒通過就不改檔。
+4. 通過的食譜寫入 `recipes.json` → 重建 `index.html` → 自動 commit + push 上線。
+
+需要 repo secret **`ANTHROPIC_API_KEY`**（每週一次呼叫，成本極小）。可用環境變數 `CLAUDE_MODEL` 指定模型（預設 `claude-sonnet-5-5`）。
+
+> 這是「直接 commit 上線」模式：AI 起草的食譜會自動公開，不經人工審核。驗證關卡把亂寫／死連結擋掉，但語意品質仍可能參差——不滿意時直接編 `recipes.json` 移除該則再 push 即可。
 
 ## recipes.json 欄位
 
