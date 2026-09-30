@@ -6,7 +6,7 @@
 <title>Claude Code 精選食譜庫</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #FBF7F3;
@@ -30,11 +30,13 @@
     --shadow-md: 0 6px 18px rgba(33,26,21,0.07);
     --shadow-lg: 0 18px 42px rgba(33,26,21,0.12);
     --radius: 18px;
+    --font: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    --font-mono: 'JetBrains Mono', "SF Mono", "Monaco", monospace;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    font-family: var(--font);
     background:
       radial-gradient(900px 480px at 100% -8%, rgba(240,130,74,0.10), transparent 60%),
       radial-gradient(720px 420px at -10% 8%, rgba(22,163,74,0.06), transparent 55%),
@@ -64,7 +66,7 @@
     border: 1px solid var(--border-strong);
     border-radius: 999px;
     padding: 5px 14px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font);
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 2.5px;
@@ -81,7 +83,7 @@
   }
   h1 {
     margin: 0 0 12px 0;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--font);
     font-size: 44px;
     font-weight: 700;
     letter-spacing: -1px;
@@ -139,7 +141,7 @@
     width: 100%;
     padding: 15px 48px 15px 46px;
     font-size: 15px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: var(--font);
     border: 1.5px solid var(--border);
     border-radius: 14px;
     background: var(--card-bg);
@@ -231,7 +233,7 @@
     align-items: center;
     gap: 12px;
     margin: 36px 0 20px 0;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--font);
     font-size: 18px;
     font-weight: 700;
     color: var(--text);
@@ -298,7 +300,7 @@
     border-radius: 10px;
     background: linear-gradient(135deg, var(--primary) 0%, #D4580A 100%);
     color: #fff;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font);
     font-size: 13px;
     font-weight: 600;
     flex-shrink: 0;
@@ -321,7 +323,7 @@
     font-weight: 700;
   }
   .card h2 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: var(--font);
     font-size: 23px;
     margin: 2px 0 8px 0;
     font-weight: 700;
@@ -349,7 +351,7 @@
     border: 1px solid rgba(240,130,74,0.16);
     border-radius: 14px;
     padding: 44px 20px 18px;
-    font-family: 'JetBrains Mono', "SF Mono", "Monaco", monospace;
+    font-family: var(--font-mono);
     font-size: 13px;
     line-height: 1.75;
     margin: 12px 0 18px 0;
@@ -366,7 +368,7 @@
     font-weight: 500;
     font-size: 11px;
     letter-spacing: 2px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font);
   }
   .tip {
     background: #F0FDF4;
@@ -384,7 +386,7 @@
     letter-spacing: 1.5px;
     display: block;
     margin-bottom: 6px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font);
   }
   .source-link {
     display: inline-flex;
@@ -435,7 +437,7 @@
   }
 
   .sidebar-title {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: var(--font);
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 3px;
