@@ -39,7 +39,7 @@ https://kaojia.github.io/claude-code-inspirations/
 ## 收錄標準（品質門檻）
 
 - **真的可用**：提示詞是實際跑過、能重現的，不是憑空想像的點子。
-- **連結為真**：`source_link` 指向真實可達的頁面，優先 `docs.anthropic.com`。
+- **連結為真**：`source_link` 指向真實可達的頁面，優先官方文件 `code.claude.com/docs`。
 - **少而精**：寧缺勿濫，沒有好東西就不發。
 
 ## 檔案結構
