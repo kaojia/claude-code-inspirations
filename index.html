@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #F2F8F6;
+    --bg: #F8FAFB;
     --card-bg: #FFFFFF;
     --primary: #0F766E;
     --primary-strong: #115E59;
@@ -37,11 +37,7 @@
   body {
     margin: 0;
     font-family: var(--font);
-    background:
-      radial-gradient(900px 480px at 100% -8%, rgba(20,184,166,0.10), transparent 60%),
-      radial-gradient(720px 420px at -10% 8%, rgba(22,163,74,0.06), transparent 55%),
-      var(--bg);
-    background-attachment: fixed;
+    background: var(--bg);
     color: var(--text);
     line-height: 1.7;
     padding: 48px 20px;
@@ -276,7 +272,7 @@
   }
   .card[data-level="初階"] { --card-accent: #16A34A; }
   .card[data-level="中階"] { --card-accent: #2563EB; }
-  .card[data-level="高階"] { --card-accent: #DB2777; }
+  .card[data-level="高階"] { --card-accent: #7C3AED; }
   .card:hover {
     box-shadow: var(--shadow-lg);
     transform: translateY(-4px);
@@ -315,7 +311,7 @@
   }
   .tag.level-1 { background: #ECFDF5; color: #166534; }
   .tag.level-2 { background: #EFF6FF; color: #1E40AF; }
-  .tag.level-3 { background: #FDF2F8; color: #9D174D; }
+  .tag.level-3 { background: #F5F3FF; color: #5B21B6; }
   .tag.time { background: #F1F5F9; color: #475569; }
   .tag.new {
     background: var(--new-bg);
