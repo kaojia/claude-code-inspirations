@@ -9,26 +9,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #FBF7F3;
+    --bg: #F7F6F2;
     --card-bg: #FFFFFF;
-    --primary: #E1622F;
-    --primary-strong: #C2410C;
-    --primary-soft: #FEF1E9;
-    --grad-primary: linear-gradient(135deg, #F0824A 0%, #E1622F 55%, #C2410C 100%);
-    --text: #211A15;
-    --muted: #7A6E64;
-    --border: #ECE3DA;
-    --border-strong: #DFD3C7;
-    --tag-bg: #FEF1E9;
-    --tag-text: #C2410C;
-    --accent: #16A34A;
-    --code-bg: #1B1714;
-    --code-text: #F0824A;
+    --primary: #0F766E;
+    --primary-strong: #115E59;
+    --primary-soft: #F0FDFA;
+    --grad-primary: linear-gradient(135deg, #14B8A6 0%, #0F766E 55%, #115E59 100%);
+    --text: #1C2321;
+    --muted: #6B7B77;
+    --border: #E5E7E3;
+    --border-strong: #D4DAD6;
+    --tag-bg: #F0FDFA;
+    --tag-text: #115E59;
+    --accent: #0F766E;
+    --code-bg: #0F1B1A;
+    --code-text: #2DD4BF;
     --new-bg: #ECFDF5;
     --new-text: #166534;
-    --shadow-sm: 0 1px 2px rgba(33,26,21,0.05);
-    --shadow-md: 0 6px 18px rgba(33,26,21,0.07);
-    --shadow-lg: 0 18px 42px rgba(33,26,21,0.12);
+    --shadow-sm: 0 1px 2px rgba(15,42,38,0.05);
+    --shadow-md: 0 6px 18px rgba(15,42,38,0.07);
+    --shadow-lg: 0 18px 42px rgba(15,42,38,0.12);
     --radius: 18px;
     --font: 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
     --font-mono: 'JetBrains Mono', "SF Mono", "Monaco", monospace;
@@ -38,7 +38,7 @@
     margin: 0;
     font-family: var(--font);
     background:
-      radial-gradient(900px 480px at 100% -8%, rgba(240,130,74,0.10), transparent 60%),
+      radial-gradient(900px 480px at 100% -8%, rgba(20,184,166,0.10), transparent 60%),
       radial-gradient(720px 420px at -10% 8%, rgba(22,163,74,0.06), transparent 55%),
       var(--bg);
     background-attachment: fixed;
@@ -47,7 +47,7 @@
     padding: 48px 20px;
     -webkit-font-smoothing: antialiased;
   }
-  ::selection { background: rgba(225,98,47,0.18); }
+  ::selection { background: rgba(15,118,110,0.18); }
   .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -79,7 +79,7 @@
     height: 7px;
     border-radius: 50%;
     background: var(--grad-primary);
-    box-shadow: 0 0 0 3px rgba(225,98,47,0.15);
+    box-shadow: 0 0 0 3px rgba(15,118,110,0.15);
   }
   h1 {
     margin: 0 0 12px 0;
@@ -88,7 +88,7 @@
     font-weight: 700;
     letter-spacing: -1px;
     line-height: 1.1;
-    background: linear-gradient(120deg, #211A15 0%, #C2410C 120%);
+    background: linear-gradient(120deg, #1C2321 0%, #0F766E 120%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,10 +109,10 @@
   .summary-banner {
     position: relative;
     background:
-      radial-gradient(140% 120% at 100% 0%, rgba(240,130,74,0.22), transparent 55%),
-      linear-gradient(135deg, #2A211B 0%, #1B1714 100%);
-    color: #F4ECE4;
-    border: 1px solid rgba(240,130,74,0.18);
+      radial-gradient(140% 120% at 100% 0%, rgba(20,184,166,0.22), transparent 55%),
+      linear-gradient(135deg, #14312E 0%, #0F1B1A 100%);
+    color: #E6F0EE;
+    border: 1px solid rgba(20,184,166,0.18);
     border-radius: var(--radius);
     padding: 22px 28px;
     margin-bottom: 24px;
@@ -120,7 +120,7 @@
     line-height: 1.8;
     box-shadow: var(--shadow-lg);
   }
-  .summary-banner strong { font-weight: 600; color: #F0824A; }
+  .summary-banner strong { font-weight: 600; color: #2DD4BF; }
 
   /* 搜尋區 */
   .search-area {
@@ -345,10 +345,10 @@
   .prompt-box {
     position: relative;
     background:
-      radial-gradient(120% 100% at 0% 0%, rgba(240,130,74,0.10), transparent 45%),
+      radial-gradient(120% 100% at 0% 0%, rgba(20,184,166,0.10), transparent 45%),
       var(--code-bg);
-    color: #EDE6DF;
-    border: 1px solid rgba(240,130,74,0.16);
+    color: #DDE7E4;
+    border: 1px solid rgba(20,184,166,0.16);
     border-radius: 14px;
     padding: 44px 20px 18px;
     font-family: var(--font);
@@ -383,15 +383,15 @@
     font-weight: 500;
     letter-spacing: 0.5px;
     color: var(--code-text);
-    background: rgba(240,130,74,0.14);
-    border: 1px solid rgba(240,130,74,0.30);
+    background: rgba(20,184,166,0.14);
+    border: 1px solid rgba(20,184,166,0.30);
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
   }
   .copy-btn:hover {
-    background: rgba(240,130,74,0.24);
-    color: #FBECE2;
+    background: rgba(20,184,166,0.24);
+    color: #E6F7F4;
   }
   .copy-btn.copied {
     background: #16A34A;
