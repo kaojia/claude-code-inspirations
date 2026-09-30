@@ -1,0 +1,63 @@
+name: Weekly docs update check
+
+# 每週檢查官方 What's New 有沒有新的一週彙整。
+# 有 → 開一個 Issue 提醒你去看看有沒有值得收錄成食譜的新功能。
+# 這不是自動生成內容，只是提醒；要不要加、加什麼仍由你決定。
+
+on:
+  schedule:
+    # 每週一 09:00 台灣時間 (UTC+8) = UTC 週一 01:00
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Check for new What's New digest
+        id: check
+        run: python scripts/check_docs_updates.py
+
+      - name: Open reminder issue
+        if: steps.check.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "📢 Claude Code 官方週報更新：${{ steps.check.outputs.week }} — 檢查是否有值得收錄的新食譜" \
+            --body "官方 What's New 出了新的一週彙整。
+
+          👉 週報頁面：${{ steps.check.outputs.url }}
+          📋 完整 changelog：https://code.claude.com/docs/en/changelog
+
+          請看看這週有沒有新功能值得收錄成食譜。若有：
+          1. 編輯 \`recipes.json\` 新增一則（\`source_link\` 填對應的官方文件頁）
+          2. 本機跑 \`python scripts/build.py\` 預覽
+          3. commit + push（Action 會自動重建 index.html）
+
+          若這週沒有值得收錄的，直接關掉這個 Issue 即可。"
+
+      - name: Commit updated state
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .docs-watch/last_week.txt
+          if git diff --cached --quiet; then
+            echo "No state change to commit"
+          else
+            git commit -m "chore(docs-watch): 記錄已檢查到 ${{ steps.check.outputs.week }}"
+            git push
+          fi
